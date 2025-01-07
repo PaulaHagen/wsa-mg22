@@ -1,0 +1,2946 @@
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_preprocessing_nature.py
+[?2004l
+[nltk_data] Downloading package averaged_perceptron_tagger_eng to
+[nltk_data]     /home/phagen/nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger_eng is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading collection 'popular'
+[nltk_data]    | 
+[nltk_data]    | Downloading package cmudict to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package cmudict is already up-to-date!
+[nltk_data]    | Downloading package gazetteers to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package gazetteers is already up-to-date!
+[nltk_data]    | Downloading package genesis to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package genesis is already up-to-date!
+[nltk_data]    | Downloading package gutenberg to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package gutenberg is already up-to-date!
+[nltk_data]    | Downloading package inaugural to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package inaugural is already up-to-date!
+[nltk_data]    | Downloading package movie_reviews to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package movie_reviews is already up-to-date!
+[nltk_data]    | Downloading package names to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package names is already up-to-date!
+[nltk_data]    | Downloading package shakespeare to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package shakespeare is already up-to-date!
+[nltk_data]    | Downloading package stopwords to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package stopwords is already up-to-date!
+[nltk_data]    | Downloading package treebank to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package treebank is already up-to-date!
+[nltk_data]    | Downloading package twitter_samples to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package twitter_samples is already up-to-date!
+[nltk_data]    | Downloading package omw to /home/phagen/nltk_data...
+[nltk_data]    |   Package omw is already up-to-date!
+[nltk_data]    | Downloading package omw-1.4 to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package omw-1.4 is already up-to-date!
+[nltk_data]    | Downloading package wordnet to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet is already up-to-date!
+[nltk_data]    | Downloading package wordnet2021 to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet2021 is already up-to-date!
+[nltk_data]    | Downloading package wordnet31 to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet31 is already up-to-date!
+[nltk_data]    | Downloading package wordnet_ic to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet_ic is already up-to-date!
+[nltk_data]    | Downloading package words to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package words is already up-to-date!
+[nltk_data]    | Downloading package maxent_ne_chunker to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package maxent_ne_chunker is already up-to-date!
+[nltk_data]    | Downloading package punkt to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package punkt is already up-to-date!
+[nltk_data]    | Downloading package snowball_data to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package snowball_data is already up-to-date!
+[nltk_data]    | Downloading package averaged_perceptron_tagger to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package averaged_perceptron_tagger is already up-
+[nltk_data]    |       to-date!
+[nltk_data]    | 
+[nltk_data]  Done downloading collection popular
+[nltk_data] Downloading package stopwords to /home/phagen/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Importing Nature data...
+
+Cleaning data...
+None values removed.
+Number of (title + desc) duplicates: 6. Duplicates Removed.
+Dataframe has now {len(clean_df)} entries.
+
+Preprocessing data...
+
+Saving preprocessed corpus to file...
+
+Adding bigrams...
+
+Filtering data...
+
+Transforming into octis format...
+
+Splitting data into years...
+Result: number of dataframes/ calculated years/ t: 20
+
+Repeating steps for different years t...
+
+Preprocessing DONE! Files can be found in Data folder.
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_topic_analysis.py
+[?2004l
+Training first model (t = 1)...
+
+Coherence Score for Model with k = 21: 0.4011823146165806
+Coherence Score for Model with k = 22: 0.43258963260833005
+Coherence Score for Model with k = 23: 0.41350000393974246
+Coherence Score for Model with k = 24: 0.4058644261273964
+Coherence Score for Model with k = 25: 0.40000560341629243
+Coherence Score for Model with k = 26: 0.4207573806256216
+Coherence Score for Model with k = 27: 0.3917637178760458
+Coherence Score for Model with k = 28: 0.38111121472839427
+Coherence Score for Model with k = 29: 0.40636243100378977
+Coherence Score for Model with k = 30: 0.41000948260378667
+Coherence Score for Model with k = 31: 0.39293143541037157
+Coherence Score for Model with k = 32: 0.36596855945742784
+Coherence Score for Model with k = 33: 0.3894645308089407
+Coherence Score for Model with k = 34: 0.37110347036335745
+Coherence Score for Model with k = 35: 0.3819903542591492
+Coherence Score for Model with k = 36: 0.42538903956955226
+Coherence Score for Model with k = 37: 0.391264113325601
+Coherence Score for Model with k = 38: 0.3960417183380246
+Coherence Score for Model with k = 39: 0.3854998768220799
+Coherence Score for the best model with k = 22: 0.43258963260833005
+
+###############################
+Now starts iteration for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Training second model (t = 2)...
+
+Coherence Score for Model using old k = 22: 0.31823142883369576
+This coherence of 0.31823142883369576 is worse than the old coherence of 0.43258963260833005.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.33632500368610474
+Coherence Score for Model with k = 24: 0.3569695160896344
+Coherence Score for Model with k = 25: 0.3358575779816744
+Coherence Score for Model with k = 26: 0.33867786439834646
+Coherence Score for Model with k = 27: 0.339906166109061
+Coherence Score for Model with k = 28: 0.3299980848167472
+Coherence Score for Model with k = 29: 0.35585182393866627
+Coherence Score for Model with k = 30: 0.3383373517582133
+Coherence Score for Model with k = 31: 0.3290058723689734
+Coherence Score for Model with k = 32: 0.35242007459425484
+Coherence Score for Model with k = 33: 0.329229427891656
+Coherence Score for Model with k = 34: 0.3770673662190041
+Coherence Score for Model with k = 35: 0.33276539181697723
+Coherence Score for Model with k = 36: 0.35109368560039755
+Coherence Score for Model with k = 37: 0.3407962522666403
+Coherence Score for Model with k = 38: 0.3344288532489742
+Coherence Score for Model with k = 39: 0.3505457837061798
+Coherence Score for Model with k = 40: 0.3390949627587503
+Coherence Score for Model with k = 41: 0.31959800067544
+Coherence Score for Model with k = 42: 0.34518479324291507
+Coherence Score for the best model with k = 34: 0.3770673662190041
+Coherence Score for Model using a new best k = 34: 0.3770673662190041
+This coherence for k = 34 of 0.3770673662190041 is still worse than the old coherence of 0.43258963260833005.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           14         8
+
+###############################
+Now starts iteration for t = 2.
+###############################
+
+
+Loading first model (t = 2)...
+
+
+Training second model (t = 3)...
+
+Coherence Score for Model using old k = 22: 0.38253080266551115
+This coherence of 0.38253080266551115 is better than the old coherence of 0.31823142883369576.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        11
+
+###############################
+Now starts iteration for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Training second model (t = 4)...
+
+Coherence Score for Model using old k = 22: 0.5017932451770606
+This coherence of 0.5017932451770606 is better than the old coherence of 0.38253080266551115.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        10
+
+###############################
+Now starts iteration for t = 4.
+###############################
+
+
+Loading first model (t = 4)...
+
+
+Training second model (t = 5)...
+
+Coherence Score for Model using old k = 22: 0.3368638615101511
+This coherence of 0.3368638615101511 is worse than the old coherence of 0.5017932451770606.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.3532222812173568
+Coherence Score for Model with k = 24: 0.34390476380143237
+Coherence Score for Model with k = 25: 0.3455052960247247
+Coherence Score for Model with k = 26: 0.34296594131545877
+Coherence Score for Model with k = 27: 0.34183452258323094
+Coherence Score for Model with k = 28: 0.3394874122406433
+Coherence Score for Model with k = 29: 0.33779336692217443
+Coherence Score for Model with k = 30: 0.3342058093627688
+Coherence Score for Model with k = 31: 0.34506421711227314
+Coherence Score for Model with k = 32: 0.3418902792588464
+Coherence Score for Model with k = 33: 0.33182121299680295
+Coherence Score for Model with k = 34: 0.33011787375264967
+Coherence Score for Model with k = 35: 0.3454907460178458
+Coherence Score for Model with k = 36: 0.33561258865684773
+Coherence Score for Model with k = 37: 0.34415576228972666
+Coherence Score for Model with k = 38: 0.3452789752191965
+Coherence Score for Model with k = 39: 0.33901443447515567
+Coherence Score for Model with k = 40: 0.338188696136218
+Coherence Score for Model with k = 41: 0.3390780678148729
+Coherence Score for Model with k = 42: 0.3339012815407179
+Coherence Score for the best model with k = 23: 0.3532222812173568
+Coherence Score for Model using a new best k = 23: 0.3532222812173568
+This coherence for k = 23 of 0.3532222812173568 is still worse than the old coherence of 0.5017932451770606.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           10        12
+
+###############################
+Now starts iteration for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Training second model (t = 6)...
+
+Coherence Score for Model using old k = 22: 0.3436853412192944
+This coherence of 0.3436853412192944 is better than the old coherence of 0.3368638615101511.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        10
+
+###############################
+Now starts iteration for t = 6.
+###############################
+
+
+Loading first model (t = 6)...
+
+
+Training second model (t = 7)...
+
+Coherence Score for Model using old k = 22: 0.37627239106393956
+This coherence of 0.37627239106393956 is better than the old coherence of 0.3436853412192944.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['large', 'data', 'report', 'show', 'result', 'model', 'increase', 'provide', 'plume', 'cause']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           11        10
+
+###############################
+Now starts iteration for t = 7.
+###############################
+
+
+Loading first model (t = 7)...
+
+
+Training second model (t = 8)...
+
+Coherence Score for Model using old k = 24: 0.3656967659509467
+This coherence of 0.3656967659509467 is worse than the old coherence of 0.38444538335341544.
+Finding new model...
+
+Coherence Score for Model with k = 21: 0.3504836183907986
+Coherence Score for Model with k = 22: 0.3377337310530219
+Coherence Score for Model with k = 23: 0.3666689051521998
+Coherence Score for Model with k = 24: 0.35719133638269424
+Coherence Score for Model with k = 25: 0.3573200013987097
+Coherence Score for Model with k = 26: 0.3523835853205982
+Coherence Score for Model with k = 27: 0.3486228241238405
+Coherence Score for Model with k = 28: 0.3491016704475484
+Coherence Score for Model with k = 29: 0.3611118932828699
+Coherence Score for Model with k = 30: 0.3496439158744271
+Coherence Score for Model with k = 31: 0.34245575789761457
+Coherence Score for Model with k = 32: 0.3403286728806125
+Coherence Score for Model with k = 33: 0.34100653838489614
+Coherence Score for Model with k = 34: 0.32711224345892087
+Coherence Score for Model with k = 35: 0.3487379118110416
+Coherence Score for Model with k = 36: 0.34771895845873524
+Coherence Score for Model with k = 37: 0.3435025680547672
+Coherence Score for Model with k = 38: 0.34755653449026014
+Coherence Score for the best model with k = 23: 0.3666689051521998
+Coherence Score for Model using a new best k = 23: 0.3666689051521998
+This coherence for k = 23 of 0.3666689051521998 is still worse than the old coherence of 0.38444538335341544.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            9        15
+
+###############################
+Now starts iteration for t = 8.
+###############################
+
+
+Loading first model (t = 8)...
+
+
+Training second model (t = 9)...
+
+Coherence Score for Model using old k = 24: 0.3477043604440165
+This coherence of 0.3477043604440165 is worse than the old coherence of 0.3656967659509467.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.3503770535043535
+Coherence Score for Model with k = 24: 0.3421465735420237
+Coherence Score for Model with k = 25: 0.33989642096185624
+Coherence Score for Model with k = 26: 0.35529169726806015
+Coherence Score for Model with k = 27: 0.3569662798761218
+Coherence Score for Model with k = 28: 0.36324716983169186
+Coherence Score for Model with k = 29: 0.3526242441326483
+Coherence Score for Model with k = 30: 0.34821630412359855
+Coherence Score for Model with k = 31: 0.3560443958252855
+Coherence Score for Model with k = 32: 0.36017867590255354
+Coherence Score for Model with k = 33: 0.3469399091224842
+Coherence Score for Model with k = 34: 0.3449541518554613
+Coherence Score for Model with k = 35: 0.3467472837573031
+Coherence Score for Model with k = 36: 0.34443279697811263
+Coherence Score for Model with k = 37: 0.35574741236964774
+Coherence Score for Model with k = 38: 0.3454692435963825
+Coherence Score for Model with k = 39: 0.34180751198401704
+Coherence Score for Model with k = 40: 0.3482187694827064
+Coherence Score for Model with k = 41: 0.35278601819448224
+Coherence Score for Model with k = 42: 0.34371137300480353
+Coherence Score for Model with k = 43: 0.35047954977446555
+Coherence Score for Model with k = 44: 0.3453757080979075
+Coherence Score for the best model with k = 28: 0.36324716983169186
+Coherence Score for Model using a new best k = 28: 0.36324716983169186
+This coherence for k = 28 of 0.36324716983169186 is still worse than the old coherence of 0.3656967659509467.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        13
+
+###############################
+Now starts iteration for t = 9.
+###############################
+
+
+Loading first model (t = 9)...
+
+
+Training second model (t = 10)...
+
+Coherence Score for Model using old k = 24: 0.32657478607662943
+This coherence of 0.32657478607662943 is worse than the old coherence of 0.3477043604440165.
+Finding new model...
+
+Coherence Score for Model with k = 17: 0.35217877144427934
+Coherence Score for Model with k = 18: 0.34049871446595925
+Coherence Score for Model with k = 19: 0.35651296201543653
+Coherence Score for Model with k = 20: 0.3304377815013435
+Coherence Score for Model with k = 21: 0.32657212498005955
+Coherence Score for Model with k = 22: 0.3758627789475619
+Coherence Score for Model with k = 23: 0.3336989189875188
+Coherence Score for Model with k = 24: 0.33406539262241436
+Coherence Score for Model with k = 25: 0.33512365315830567
+Coherence Score for Model with k = 26: 0.3151095866135636
+Coherence Score for Model with k = 27: 0.3314269882355354
+Coherence Score for Model with k = 28: 0.33063072157587003
+Coherence Score for Model with k = 29: 0.32670072327164573
+Coherence Score for Model with k = 30: 0.32741745116436116
+Coherence Score for Model with k = 31: 0.3550528531518895
+Coherence Score for Model with k = 32: 0.3370018649438753
+Coherence Score for the best model with k = 22: 0.3758627789475619
+Coherence Score for Model using a new best k = 22: 0.3758627789475619
+This coherence for k = 22 of 0.3758627789475619 is better than the old coherence of 0.3477043604440165.
+Model is updated. New k is 22.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        10
+
+###############################
+Now starts iteration for t = 10.
+###############################
+
+
+Loading first model (t = 10)...
+
+
+Training second model (t = 11)...
+
+Coherence Score for Model using old k = 22: 0.37477757921591776
+This coherence of 0.37477757921591776 is worse than the old coherence of 0.3758627789475619.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.352805337587717
+Coherence Score for Model with k = 24: 0.36192112362633405
+Coherence Score for Model with k = 25: 0.3614230256679115
+Coherence Score for Model with k = 26: 0.36243341142114993
+Coherence Score for Model with k = 27: 0.3779786027443177
+Coherence Score for Model with k = 28: 0.3587574915340453
+Coherence Score for Model with k = 29: 0.3729896848072527
+Coherence Score for Model with k = 30: 0.38497555409400486
+Coherence Score for Model with k = 31: 0.3525073400660201
+Coherence Score for Model with k = 32: 0.353643760023386
+Coherence Score for Model with k = 33: 0.3499888429652923
+Coherence Score for Model with k = 34: 0.3565716378683483
+Coherence Score for Model with k = 35: 0.34842690798918685
+Coherence Score for Model with k = 36: 0.34848056178585185
+Coherence Score for Model with k = 37: 0.35854665861518825
+Coherence Score for Model with k = 38: 0.35578825445485834
+Coherence Score for Model with k = 39: 0.3529922128113788
+Coherence Score for Model with k = 40: 0.37536166517782554
+Coherence Score for Model with k = 41: 0.36341409295579763
+Coherence Score for Model with k = 42: 0.35784772282188776
+Coherence Score for Model with k = 43: 0.35680827037777435
+Coherence Score for the best model with k = 30: 0.38497555409400486
+Coherence Score for Model using a new best k = 30: 0.38497555409400486
+This coherence for k = 30 of 0.38497555409400486 is better than the old coherence of 0.3758627789475619.
+Model is updated. New k is 30.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'trending', 27: 'declining', 28: 'declining', 29: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           13        17
+
+###############################
+Now starts iteration for t = 11.
+###############################
+
+
+Loading first model (t = 11)...
+
+
+Training second model (t = 12)...
+
+Coherence Score for Model using old k = 30: 0.3608952384032874
+This coherence of 0.3608952384032874 is worse than the old coherence of 0.38497555409400486.
+Finding new model...
+
+Coherence Score for Model with k = 21: 0.3633800237062865
+Coherence Score for Model with k = 22: 0.3657528119480001
+Coherence Score for Model with k = 23: 0.3597505827568158
+Coherence Score for Model with k = 24: 0.34587334071917847
+Coherence Score for Model with k = 25: 0.35678936757712365
+Coherence Score for Model with k = 26: 0.3715090019189414
+Coherence Score for Model with k = 27: 0.3506974660567227
+Coherence Score for Model with k = 28: 0.3653277406899275
+Coherence Score for Model with k = 29: 0.3500466973817677
+Coherence Score for Model with k = 30: 0.35579527284651974
+Coherence Score for Model with k = 31: 0.36930982720608935
+Coherence Score for Model with k = 32: 0.34218265713966733
+Coherence Score for Model with k = 33: 0.3446303628493493
+Coherence Score for Model with k = 34: 0.3556760313818251
+Coherence Score for Model with k = 35: 0.3486933234301812
+Coherence Score for Model with k = 36: 0.3665558213435535
+Coherence Score for Model with k = 37: 0.3537903856342331
+Coherence Score for Model with k = 38: 0.3563792711593744
+Coherence Score for Model with k = 39: 0.3488163295598238
+Coherence Score for the best model with k = 26: 0.3715090019189414
+Coherence Score for Model using a new best k = 26: 0.3715090019189414
+This coherence for k = 26 of 0.3715090019189414 is still worse than the old coherence of 0.38497555409400486.
+Continue to use old k of 30.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular'}
+
+These are the emerging topics:
+
+['use', 'bond', 'human', 'functional_group', 'group', 'online_version', 'year', 'report', 'correct_online', 'surface']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'trending', 22: 'trending', 23: 'trending', 24: 'trending', 25: 'declining', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining'}
+
+These are the emerging + trending topics:
+
+['use', 'bond', 'human', 'functional_group', 'group', 'online_version', 'year', 'report', 'correct_online', 'surface']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           18        11
+
+###############################
+Now starts iteration for t = 12.
+###############################
+
+
+Loading first model (t = 12)...
+
+
+Training second model (t = 13)...
+
+Coherence Score for Model using old k = 30: 0.3483066901989432
+This coherence of 0.3483066901989432 is worse than the old coherence of 0.3608952384032874.
+Finding new model...
+
+Coherence Score for Model with k = 22: 0.3505590086981437
+Coherence Score for Model with k = 23: 0.3408486567061571
+Coherence Score for Model with k = 24: 0.3614518442014513
+Coherence Score for Model with k = 25: 0.34623314401237165
+Coherence Score for Model with k = 26: 0.3566471842830984
+Coherence Score for Model with k = 27: 0.3496331867701188
+Coherence Score for Model with k = 28: 0.33237552152969413
+Coherence Score for Model with k = 29: 0.3402019941782384
+Coherence Score for Model with k = 30: 0.3339847793157124
+Coherence Score for Model with k = 31: 0.34390478915059636
+Coherence Score for Model with k = 32: 0.3476706709245889
+Coherence Score for Model with k = 33: 0.3580149903941384
+Coherence Score for Model with k = 34: 0.34831119174939806
+Coherence Score for Model with k = 35: 0.3346290306308275
+Coherence Score for Model with k = 36: 0.3385020274185988
+Coherence Score for Model with k = 37: 0.3576774165188127
+Coherence Score for Model with k = 38: 0.34996661316541466
+Coherence Score for Model with k = 39: 0.35295986298953713
+Coherence Score for Model with k = 40: 0.3325678108493836
+Coherence Score for Model with k = 41: 0.3389649839189176
+Coherence Score for Model with k = 42: 0.3473400052886591
+Coherence Score for the best model with k = 24: 0.3614518442014513
+Coherence Score for Model using a new best k = 24: 0.3614518442014513
+This coherence for k = 24 of 0.3614518442014513 is better than the old coherence of 0.3608952384032874.
+Model is updated. New k is 24.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           14        10
+
+###############################
+Now starts iteration for t = 13.
+###############################
+
+
+Loading first model (t = 13)...
+
+
+Training second model (t = 14)...
+
+Coherence Score for Model using old k = 24: 0.32634143576528374
+This coherence of 0.32634143576528374 is worse than the old coherence of 0.3614518442014513.
+Finding new model...
+
+Coherence Score for Model with k = 28: 0.3496625863110974
+Coherence Score for Model with k = 29: 0.3554141181036321
+Coherence Score for Model with k = 30: 0.3353262275300083
+Coherence Score for Model with k = 31: 0.36019879927711856
+Coherence Score for Model with k = 32: 0.3459403705895734
+Coherence Score for Model with k = 33: 0.33239257815280754
+Coherence Score for Model with k = 34: 0.36294596309299243
+Coherence Score for Model with k = 35: 0.339146000334156
+Coherence Score for Model with k = 36: 0.34527648803982014
+Coherence Score for Model with k = 37: 0.35039536652066033
+Coherence Score for Model with k = 38: 0.34116599123498836
+Coherence Score for Model with k = 39: 0.3505567936570727
+Coherence Score for Model with k = 40: 0.32897795931033713
+Coherence Score for Model with k = 41: 0.3578466621237917
+Coherence Score for Model with k = 42: 0.360393400501638
+Coherence Score for Model with k = 43: 0.3284774175656815
+Coherence Score for Model with k = 44: 0.34374514100894826
+Coherence Score for Model with k = 45: 0.3556328944111767
+Coherence Score for Model with k = 46: 0.34970263973627747
+Coherence Score for Model with k = 47: 0.34051377668014404
+Coherence Score for Model with k = 48: 0.3125215172219691
+Coherence Score for Model with k = 49: 0.32601175797746157
+Coherence Score for Model with k = 50: 0.3209068433898458
+Coherence Score for Model with k = 51: 0.3480498063149293
+Coherence Score for Model with k = 52: 0.330896719680367
+Coherence Score for Model with k = 53: 0.3368795009823828
+Coherence Score for the best model with k = 34: 0.36294596309299243
+Coherence Score for Model using a new best k = 34: 0.36294596309299243
+This coherence for k = 34 of 0.36294596309299243 is better than the old coherence of 0.3614518442014513.
+Model is updated. New k is 34.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'trending', 29: 'declining', 30: 'declining', 31: 'trending', 32: 'trending', 33: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           20        14
+
+###############################
+Now starts iteration for t = 14.
+###############################
+
+
+Loading first model (t = 14)...
+
+
+Training second model (t = 15)...
+
+Coherence Score for Model using old k = 34: 0.35267504019297163
+This coherence of 0.35267504019297163 is worse than the old coherence of 0.36294596309299243.
+Finding new model...
+
+Coherence Score for Model with k = 28: 0.3545297180298413
+Coherence Score for Model with k = 29: 0.3502157887072133
+Coherence Score for Model with k = 30: 0.3517577378464699
+Coherence Score for Model with k = 31: 0.3647181206350537
+Coherence Score for Model with k = 32: 0.3490690097498774
+Coherence Score for Model with k = 33: 0.33998150480500516
+Coherence Score for Model with k = 34: 0.36002536700228854
+Coherence Score for Model with k = 35: 0.3410696273565341
+Coherence Score for Model with k = 36: 0.3392239633507901
+Coherence Score for Model with k = 37: 0.3644255617924685
+Coherence Score for Model with k = 38: 0.33374864991213027
+Coherence Score for Model with k = 39: 0.35305593458161877
+Coherence Score for Model with k = 40: 0.3435257651660348
+Coherence Score for Model with k = 41: 0.3641834591688349
+Coherence Score for Model with k = 42: 0.3547506537995786
+Coherence Score for Model with k = 43: 0.33973099368047105
+Coherence Score for Model with k = 44: 0.32897941653422313
+Coherence Score for Model with k = 45: 0.3305450152422304
+Coherence Score for Model with k = 46: 0.3518023912355826
+Coherence Score for Model with k = 47: 0.33149527663600536
+Coherence Score for Model with k = 48: 0.3553300626487854
+Coherence Score for Model with k = 49: 0.3487006068236085
+Coherence Score for Model with k = 50: 0.3418791401205191
+Coherence Score for Model with k = 51: 0.3638248602233243
+Coherence Score for Model with k = 52: 0.3322788311745685
+Coherence Score for Model with k = 53: 0.33965248387836605
+Coherence Score for the best model with k = 31: 0.3647181206350537
+Coherence Score for Model using a new best k = 31: 0.3647181206350537
+This coherence for k = 31 of 0.3647181206350537 is better than the old coherence of 0.36294596309299243.
+Model is updated. New k is 31.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'trending', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'trending', 29: 'trending', 30: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        19
+
+###############################
+Now starts iteration for t = 15.
+###############################
+
+
+Loading first model (t = 15)...
+
+
+Training second model (t = 16)...
+
+Coherence Score for Model using old k = 31: 0.3866456602216648
+This coherence of 0.3866456602216648 is better than the old coherence of 0.3647181206350537.
+Continue to use old k of 31.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'trending', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'trending', 30: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           15        16
+
+###############################
+Now starts iteration for t = 16.
+###############################
+
+
+Loading first model (t = 16)...
+
+
+Training second model (t = 17)...
+
+Coherence Score for Model using old k = 31: 0.38191498983351346
+This coherence of 0.38191498983351346 is worse than the old coherence of 0.3866456602216648.
+Finding new model...
+
+Coherence Score for Model with k = 25: 0.38871153369903
+Coherence Score for Model with k = 26: 0.36117694944989664
+Coherence Score for Model with k = 27: 0.3512059107236454
+Coherence Score for Model with k = 28: 0.3601188192783294
+Coherence Score for Model with k = 29: 0.36434201345528094
+Coherence Score for Model with k = 30: 0.3662138871035193
+Coherence Score for Model with k = 31: 0.3847939975352706
+Coherence Score for Model with k = 32: 0.3590550868790948
+Coherence Score for Model with k = 33: 0.3550021853394648
+Coherence Score for Model with k = 34: 0.3574170442508007
+Coherence Score for Model with k = 35: 0.3596464929404917
+Coherence Score for Model with k = 36: 0.36216072778609737
+Coherence Score for Model with k = 37: 0.36697179081911285
+Coherence Score for Model with k = 38: 0.35657807449183787
+Coherence Score for Model with k = 39: 0.3672046785010711
+Coherence Score for Model with k = 40: 0.3606010774797782
+Coherence Score for Model with k = 41: 0.3552956164964255
+Coherence Score for Model with k = 42: 0.3374732388061884
+Coherence Score for Model with k = 43: 0.37113104512127965
+Coherence Score for Model with k = 44: 0.3629814945855093
+Coherence Score for Model with k = 45: 0.3569355455886951
+Coherence Score for Model with k = 46: 0.3666087575908925
+Coherence Score for Model with k = 47: 0.35399168597869807
+Coherence Score for the best model with k = 25: 0.38871153369903
+Coherence Score for Model using a new best k = 25: 0.38871153369903
+This coherence for k = 25 of 0.38871153369903 is better than the old coherence of 0.3866456602216648.
+Model is updated. New k is 25.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           13        12
+
+###############################
+Now starts iteration for t = 17.
+###############################
+
+
+Loading first model (t = 17)...
+
+
+Training second model (t = 18)...
+
+Coherence Score for Model using old k = 25: 0.3420153505027093
+This coherence of 0.3420153505027093 is worse than the old coherence of 0.38871153369903.
+Finding new model...
+
+Coherence Score for Model with k = 30: 0.3492292037220313
+Coherence Score for Model with k = 31: 0.3484800907788944
+Coherence Score for Model with k = 32: 0.3554133343521804
+Coherence Score for Model with k = 33: 0.3745526781416558
+Coherence Score for Model with k = 34: 0.3351115149433639
+Coherence Score for Model with k = 35: 0.3347227680837379
+Coherence Score for Model with k = 36: 0.3350557089541657
+Coherence Score for Model with k = 37: 0.35378231669466437
+Coherence Score for Model with k = 38: 0.3350658626405845
+Coherence Score for Model with k = 39: 0.3377339187851869
+Coherence Score for Model with k = 40: 0.33792077393660425
+Coherence Score for Model with k = 41: 0.33948747282820574
+Coherence Score for Model with k = 42: 0.32672351867225236
+Coherence Score for Model with k = 43: 0.3571333535908651
+Coherence Score for Model with k = 44: 0.3406407400650931
+Coherence Score for Model with k = 45: 0.3562967380471132
+Coherence Score for Model with k = 46: 0.3400785756917438
+Coherence Score for Model with k = 47: 0.3534809860782606
+Coherence Score for Model with k = 48: 0.34294702511833003
+Coherence Score for Model with k = 49: 0.34680824659452364
+Coherence Score for Model with k = 50: 0.3490357226532213
+Coherence Score for Model with k = 51: 0.3424250751941181
+Coherence Score for Model with k = 52: 0.3365044657455919
+Coherence Score for Model with k = 53: 0.3371390291577845
+Coherence Score for Model with k = 54: 0.3247616219502383
+Coherence Score for Model with k = 55: 0.3386635867011701
+Coherence Score for Model with k = 56: 0.33697446118571533
+Coherence Score for the best model with k = 33: 0.3745526781416558
+Coherence Score for Model using a new best k = 33: 0.3745526781416558
+This coherence for k = 33 of 0.3745526781416558 is still worse than the old coherence of 0.38871153369903.
+Continue to use old k of 25.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           14        11
+
+###############################
+Now starts iteration for t = 18.
+###############################
+
+
+Loading first model (t = 18)...
+
+
+Training second model (t = 19)...
+
+Coherence Score for Model using old k = 25: 0.407524888647395
+This coherence of 0.407524888647395 is better than the old coherence of 0.3420153505027093.
+Continue to use old k of 25.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+['figure', 'supplementary', 'blot', 'panel', 'supplementary_information', 'original', 'supplementary_figure', 'show', 'data', 'information']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'trending', 23: 'declining', 24: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           10        14
+
+###############################
+Now starts iteration for t = 19.
+###############################
+
+
+Loading first model (t = 19)...
+
+
+Training second model (t = 20)...
+
+Coherence Score for Model using old k = 25: 0.3733764403381224
+This coherence of 0.3733764403381224 is worse than the old coherence of 0.407524888647395.
+Finding new model...
+
+Coherence Score for Model with k = 28: 0.3920632878796294
+Coherence Score for Model with k = 29: 0.380940219862664
+Coherence Score for Model with k = 30: 0.3724721845641023
+Coherence Score for Model with k = 31: 0.3760829692988063
+Coherence Score for Model with k = 32: 0.3709747064185149
+Coherence Score for Model with k = 33: 0.37081473382219965
+Coherence Score for Model with k = 34: 0.3645220431189993
+Coherence Score for Model with k = 35: 0.3595139087701755
+Coherence Score for Model with k = 36: 0.3691244752648647
+Coherence Score for Model with k = 37: 0.3809779295524749
+Coherence Score for Model with k = 38: 0.3714366297022882
+Coherence Score for Model with k = 39: 0.3568722855542218
+Coherence Score for Model with k = 40: 0.3649056722556529
+Coherence Score for Model with k = 41: 0.37727776505940497
+Coherence Score for Model with k = 42: 0.35414580833145404
+Coherence Score for Model with k = 43: 0.34753094573795396
+Coherence Score for Model with k = 44: 0.37298375899683156
+Coherence Score for Model with k = 45: 0.3984649365228893
+Coherence Score for Model with k = 46: 0.3761968262056737
+Coherence Score for Model with k = 47: 0.35358898582985954
+Coherence Score for Model with k = 48: 0.375612476237639
+Coherence Score for Model with k = 49: 0.3553692918332937
+Coherence Score for Model with k = 50: 0.35095107326109526
+Coherence Score for Model with k = 51: 0.3696416064465884
+Coherence Score for the best model with k = 45: 0.3984649365228893
+Coherence Score for Model using a new best k = 45: 0.3984649365228893
+This coherence for k = 45 of 0.3984649365228893 is still worse than the old coherence of 0.407524888647395.
+Continue to use old k of 25.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           14        11
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_topic_analysis.py
+[?2004l
+Training first model (t = 1)...
+
+Coherence Score for Model with k = 21: 0.41290305625163043
+Coherence Score for Model with k = 22: 0.43240121014185834
+Coherence Score for Model with k = 23: 0.39925978165914716
+Coherence Score for Model with k = 24: 0.3947548326177965
+Coherence Score for Model with k = 25: 0.4021536540402307
+Coherence Score for Model with k = 26: 0.4170715256924227
+Coherence Score for Model with k = 27: 0.3834073724079943
+Coherence Score for Model with k = 28: 0.3910668950629396
+Coherence Score for Model with k = 29: 0.4153424298954478
+Coherence Score for Model with k = 30: 0.38812969808503844
+Coherence Score for Model with k = 31: 0.38576951129456766
+Coherence Score for Model with k = 32: 0.40151814768637606
+Coherence Score for Model with k = 33: 0.3952067911854017
+Coherence Score for Model with k = 34: 0.40755981626922244
+Coherence Score for Model with k = 35: 0.4091047683751707
+Coherence Score for Model with k = 36: 0.39351606244998805
+Coherence Score for Model with k = 37: 0.36470404388705174
+Coherence Score for Model with k = 38: 0.41232380701029175
+Coherence Score for Model with k = 39: 0.4139149498160104
+Coherence Score for the best model with k = 22: 0.43240121014185834
+
+###############################
+Now starts iteration for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Training second model (t = 2)...
+
+Coherence Score for Model using old k = 22: 0.35359696839974714
+This coherence of 0.35359696839974714 is worse than the old coherence of 0.43240121014185834.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.37333501991090934
+Coherence Score for Model with k = 24: 0.34373386697906194
+Coherence Score for Model with k = 25: 0.33540778334090127
+Coherence Score for Model with k = 26: 0.3429668311290647
+Coherence Score for Model with k = 27: 0.33348313532453866
+Coherence Score for Model with k = 28: 0.3302867618902626
+Coherence Score for Model with k = 29: 0.32033021615816454
+Coherence Score for Model with k = 30: 0.35721482149344025
+Coherence Score for Model with k = 31: 0.3320813047230984
+Coherence Score for Model with k = 32: 0.3297424703314372
+Coherence Score for Model with k = 33: 0.3311995977907903
+Coherence Score for Model with k = 34: 0.33832370048530114
+Coherence Score for Model with k = 35: 0.3448329565329115
+Coherence Score for Model with k = 36: 0.34766456597659723
+Coherence Score for Model with k = 37: 0.3365525653667485
+Coherence Score for Model with k = 38: 0.33362021767181543
+Coherence Score for Model with k = 39: 0.34889867899442895
+Coherence Score for Model with k = 40: 0.33993521074169114
+Coherence Score for Model with k = 41: 0.33217933111826736
+Coherence Score for Model with k = 42: 0.341763819281774
+Coherence Score for the best model with k = 23: 0.37333501991090934
+Coherence Score for Model using a new best k = 23: 0.37333501991090934
+This coherence for k = 23 of 0.37333501991090934 is still worse than the old coherence of 0.43240121014185834.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'emerging', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['histone', 'cell', 'new', 'neuron', 'spine', 'function', 'show', 'human', 'phd_finger', 'histone_h3']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           13         8
+
+###############################
+Now starts iteration for t = 2.
+###############################
+
+
+Loading first model (t = 2)...
+
+
+Training second model (t = 3)...
+
+Coherence Score for Model using old k = 22: 0.3963754649427085
+This coherence of 0.3963754649427085 is better than the old coherence of 0.35359696839974714.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['stem_cell', 'cell', 'quantum', 'use', 'gene', 'system', 'control', 'stem', 'dynamic', 'model']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           12         9
+
+###############################
+Now starts iteration for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Training second model (t = 4)...
+
+Coherence Score for Model using old k = 22: 0.5057334450559027
+This coherence of 0.5057334450559027 is better than the old coherence of 0.3963754649427085.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'emerging', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['nature_publishing', 'nature', 'publishing', 'cell', 'gene', 'quantum', 'small', 'temperature', 'climate', 'rna']
+['macmillan_publisher', 'publisher_right', 'macmillan', 'right', 'carbon_dioxide', 'macmillan_publisher_publisher_right', 'publisher', 'use', 'structure', 'carbon']
+['macmillan_publisher', 'publisher_right', 'publisher', 'right', 'macmillan', 'macmillan_publisher_publisher_right', 'quantum', 'antarctic_ice', 'spin', 'ice']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+['macmillan_publisher', 'publisher_right', 'publisher', 'right', 'macmillan', 'macmillan_publisher_publisher_right', 'quantum', 'antarctic_ice', 'spin', 'ice']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         1
+popular           10         9
+
+###############################
+Now starts iteration for t = 4.
+###############################
+
+
+Loading first model (t = 4)...
+
+
+Training second model (t = 5)...
+
+Coherence Score for Model using old k = 22: 0.34701256035237854
+This coherence of 0.34701256035237854 is worse than the old coherence of 0.5057334450559027.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.33635111035238474
+Coherence Score for Model with k = 24: 0.3541783234535094
+Coherence Score for Model with k = 25: 0.3441106597973201
+Coherence Score for Model with k = 26: 0.34050178819138066
+Coherence Score for Model with k = 27: 0.33781864602586514
+Coherence Score for Model with k = 28: 0.35106890752910586
+Coherence Score for Model with k = 29: 0.32692434716252106
+Coherence Score for Model with k = 30: 0.3436318896031082
+Coherence Score for Model with k = 31: 0.3404921768614842
+Coherence Score for Model with k = 32: 0.33833004186002075
+Coherence Score for Model with k = 33: 0.3399690572390208
+Coherence Score for Model with k = 34: 0.3347282818116209
+Coherence Score for Model with k = 35: 0.34240374948065366
+Coherence Score for Model with k = 36: 0.35039706774042695
+Coherence Score for Model with k = 37: 0.34745286747791365
+Coherence Score for Model with k = 38: 0.33553920015925637
+Coherence Score for Model with k = 39: 0.34142435963589435
+Coherence Score for Model with k = 40: 0.33149703645050577
+Coherence Score for Model with k = 41: 0.34382521886850137
+Coherence Score for Model with k = 42: 0.3359858827328629
+Coherence Score for the best model with k = 24: 0.3541783234535094
+Coherence Score for Model using a new best k = 24: 0.3541783234535094
+This coherence for k = 24 of 0.3541783234535094 is still worse than the old coherence of 0.5057334450559027.
+Continue to use old k of 22.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'emerging', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'emerging'}
+
+These are the emerging topics:
+
+['publisher_right', 'right', 'macmillan_publisher_publisher_right', 'san_andreas', 'cell', 'suggest', 'show', 'brain', 'specie', 'study']
+['spin', 'publisher_right', 'carbon', 'quantum', 'star', 'state', 'electron', 'magnetic', 'report', 'mechanism']
+['publisher_right', 'macmillan_publisher_publisher_right', 'right', 'galaxy', 'star', 'use', 'cell', 'supernova', 'show', 'report']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         0
+popular            6        13
+
+###############################
+Now starts iteration for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Training second model (t = 6)...
+
+Coherence Score for Model using old k = 22: 0.33884327153695526
+This coherence of 0.33884327153695526 is worse than the old coherence of 0.34701256035237854.
+Finding new model...
+
+Coherence Score for Model with k = 20: 0.34720096791951693
+Coherence Score for Model with k = 21: 0.33042083930006677
+Coherence Score for Model with k = 22: 0.34077466150318103
+Coherence Score for Model with k = 23: 0.34327473467481917
+Coherence Score for Model with k = 24: 0.3645966068229864
+Coherence Score for Model with k = 25: 0.3331112947343688
+Coherence Score for Model with k = 26: 0.3397227927680102
+Coherence Score for Model with k = 27: 0.3230542600013052
+Coherence Score for Model with k = 28: 0.34994571295142185
+Coherence Score for Model with k = 29: 0.3482557724802028
+Coherence Score for Model with k = 30: 0.3469575720696986
+Coherence Score for Model with k = 31: 0.32028363191160725
+Coherence Score for Model with k = 32: 0.346206496867771
+Coherence Score for Model with k = 33: 0.3479011189567056
+Coherence Score for Model with k = 34: 0.3542248223883164
+Coherence Score for Model with k = 35: 0.33182710817691047
+Coherence Score for Model with k = 36: 0.32267044924467947
+Coherence Score for Model with k = 37: 0.35097330009632255
+Coherence Score for Model with k = 38: 0.347319775165712
+Coherence Score for the best model with k = 24: 0.3645966068229864
+Coherence Score for Model using a new best k = 24: 0.3645966068229864
+This coherence for k = 24 of 0.3645966068229864 is better than the old coherence of 0.34701256035237854.
+Model is updated. New k is 24.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'emerging', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'emerging', 15: 'emerging', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'emerging', 23: 'popular'}
+
+These are the emerging topics:
+
+['cell', 'cancer', 'structure', 'temperature', 'electron', 'two', 'breast_cancer', 'dna', 'study', 'control']
+['cell', 'flow', 'signal', 'show', 'gene', 'lead', 'control', 'mutation', 'provide', 'human']
+['control', 'quantum', 'state', 'cell', 'use', 'electron', 'show', 'structure', 'two', 'system']
+['quantum', 'use', 'show', 'result', 'earthquake', 'rna', 'cell', 'protein', 'require', 'gene']
+['cell', 'dendritic_cell', 'show', 'gene', 'change', 'protein', 'response', 'quantum', 'cell_cycle', 'global']
+['galaxy', 'star', 'cell', 'form', 'early', 'show', 'star_formation', 'mass', 'formation', 'ice']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'trending', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+['control', 'quantum', 'state', 'cell', 'use', 'electron', 'show', 'structure', 'two', 'system']
+['quantum', 'use', 'show', 'result', 'earthquake', 'rna', 'cell', 'protein', 'require', 'gene']
+['cell', 'dendritic_cell', 'show', 'gene', 'change', 'protein', 'response', 'quantum', 'cell_cycle', 'global']
+['galaxy', 'star', 'cell', 'form', 'early', 'show', 'star_formation', 'mass', 'formation', 'ice']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         4
+popular           10         8
+
+###############################
+Now starts iteration for t = 6.
+###############################
+
+
+Loading first model (t = 6)...
+
+
+Training second model (t = 7)...
+
+Coherence Score for Model using old k = 24: 0.38444538335341544
+This coherence of 0.38444538335341544 is better than the old coherence of 0.3645966068229864.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'emerging', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'emerging', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'emerging', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['receptor', 'use', 'activation', 'innate_immune', 'structure', 'cell', 'report', 'protein', 'star', 'plant']
+['cell', 'quantum', 'use', 'show', 'dna', 'reg_cell', 'mouse', 'provide', 'state', 'result']
+['human', 'million_year', 'protein', 'year', 'show', 'million', 'neuron', 'model', 'mantle', 'storm']
+['cell', 'stem_cell', 'use', 'show', 'stem', 'human', 'receptor', 'result', 'channel', 'mouse']
+['sea_level', 'ice', 'ice_sheet', 'year', 'cell', 'antarctic_ice', 'change', 'suggest', 'glacier', 'sea']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+['cell', 'quantum', 'use', 'show', 'dna', 'reg_cell', 'mouse', 'provide', 'state', 'result']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           4         1
+popular            7        12
+
+###############################
+Now starts iteration for t = 7.
+###############################
+
+
+Loading first model (t = 7)...
+
+
+Training second model (t = 8)...
+
+Coherence Score for Model using old k = 24: 0.3640513869932464
+This coherence of 0.3640513869932464 is worse than the old coherence of 0.38444538335341544.
+Finding new model...
+
+Coherence Score for Model with k = 21: 0.36299456198834745
+Coherence Score for Model with k = 22: 0.3589782430559052
+Coherence Score for Model with k = 23: 0.367932101355089
+Coherence Score for Model with k = 24: 0.34142902543200254
+Coherence Score for Model with k = 25: 0.3531157753283613
+Coherence Score for Model with k = 26: 0.3536747594228172
+Coherence Score for Model with k = 27: 0.35810468102978565
+Coherence Score for Model with k = 28: 0.36128185848548794
+Coherence Score for Model with k = 29: 0.3737152146521841
+Coherence Score for Model with k = 30: 0.34309106997926075
+Coherence Score for Model with k = 31: 0.35312418636869686
+Coherence Score for Model with k = 32: 0.3582792320971169
+Coherence Score for Model with k = 33: 0.3670679239116419
+Coherence Score for Model with k = 34: 0.340637904813696
+Coherence Score for Model with k = 35: 0.3566702705730899
+Coherence Score for Model with k = 36: 0.3696667584591516
+Coherence Score for Model with k = 37: 0.3595372642483785
+Coherence Score for Model with k = 38: 0.3539774583844563
+Coherence Score for the best model with k = 29: 0.3737152146521841
+Coherence Score for Model using a new best k = 29: 0.3737152146521841
+This coherence for k = 29 of 0.3737152146521841 is still worse than the old coherence of 0.38444538335341544.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging'}
+
+These are the emerging topics:
+
+['cell', 'mantle', 'stromal_cell', 'result', 'resistance', 'associate', 'show', 'protein', 'human', 'melt']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+['cell', 'mantle', 'stromal_cell', 'result', 'resistance', 'associate', 'show', 'protein', 'human', 'melt']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           13        10
+
+###############################
+Now starts iteration for t = 8.
+###############################
+
+
+Loading first model (t = 8)...
+
+
+Training second model (t = 9)...
+
+Coherence Score for Model using old k = 24: 0.36040233427317836
+This coherence of 0.36040233427317836 is worse than the old coherence of 0.3640513869932464.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.3487301432105139
+Coherence Score for Model with k = 24: 0.34336724121850565
+Coherence Score for Model with k = 25: 0.3389644452480071
+Coherence Score for Model with k = 26: 0.34761421570427853
+Coherence Score for Model with k = 27: 0.3451719761022844
+Coherence Score for Model with k = 28: 0.35278933548469654
+Coherence Score for Model with k = 29: 0.3540125770197751
+Coherence Score for Model with k = 30: 0.3604587125908167
+Coherence Score for Model with k = 31: 0.355639744553375
+Coherence Score for Model with k = 32: 0.35503311490334366
+Coherence Score for Model with k = 33: 0.35449069536312355
+Coherence Score for Model with k = 34: 0.34831881511018525
+Coherence Score for Model with k = 35: 0.35767126962182966
+Coherence Score for Model with k = 36: 0.3537810012271103
+Coherence Score for Model with k = 37: 0.3500234483266046
+Coherence Score for Model with k = 38: 0.36278000488949935
+Coherence Score for Model with k = 39: 0.3581124520866929
+Coherence Score for Model with k = 40: 0.3462074405294409
+Coherence Score for Model with k = 41: 0.3517169255879181
+Coherence Score for Model with k = 42: 0.34493302002220655
+Coherence Score for Model with k = 43: 0.35425152490519374
+Coherence Score for Model with k = 44: 0.34355526717399754
+Coherence Score for the best model with k = 38: 0.36278000488949935
+Coherence Score for Model using a new best k = 38: 0.36278000488949935
+This coherence for k = 38 of 0.36278000488949935 is still worse than the old coherence of 0.3640513869932464.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['publisher_right', 'increase', 'quantum', 'show', 'right', 'control', 'neuron', 'result', 'report', 'type']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           13        10
+
+###############################
+Now starts iteration for t = 9.
+###############################
+
+
+Loading first model (t = 9)...
+
+
+Training second model (t = 10)...
+
+Coherence Score for Model using old k = 24: 0.3413401769250149
+This coherence of 0.3413401769250149 is worse than the old coherence of 0.36040233427317836.
+Finding new model...
+
+Coherence Score for Model with k = 17: 0.3571391078571149
+Coherence Score for Model with k = 18: 0.3293955092176496
+Coherence Score for Model with k = 19: 0.350365471802756
+Coherence Score for Model with k = 20: 0.32780151331713886
+Coherence Score for Model with k = 21: 0.34854381062637696
+Coherence Score for Model with k = 22: 0.32290038459580594
+Coherence Score for Model with k = 23: 0.33190595578693677
+Coherence Score for Model with k = 24: 0.3351907810507589
+Coherence Score for Model with k = 25: 0.325790941571711
+Coherence Score for Model with k = 26: 0.33037615314364793
+Coherence Score for Model with k = 27: 0.33461366868013415
+Coherence Score for Model with k = 28: 0.35549541359688025
+Coherence Score for Model with k = 29: 0.3583520992341887
+Coherence Score for Model with k = 30: 0.32570864166054897
+Coherence Score for Model with k = 31: 0.32172343421557004
+Coherence Score for Model with k = 32: 0.312519378129681
+Coherence Score for the best model with k = 29: 0.3583520992341887
+Coherence Score for Model using a new best k = 29: 0.3583520992341887
+This coherence for k = 29 of 0.3583520992341887 is still worse than the old coherence of 0.36040233427317836.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'emerging', 13: 'emerging', 14: 'popular', 15: 'emerging', 16: 'emerging', 17: 'emerging', 18: 'emerging', 19: 'popular', 20: 'emerging', 21: 'emerging', 22: 'popular', 23: 'emerging'}
+
+These are the emerging topics:
+
+['structure', 'cell', 'mutation', 'activity', 'complex', 'crystal_structure', 'mouse', 'earthquake', 'movement', 'gene']
+['cell', 'provide', 'show', 'form', 'two', 'role', 'use', 'rna', 'protein', 'suggest']
+['use', 'connection', 'show', 'result', 'glucose', 'amygdala', 'strong', 'cell', 'insulin', 'response']
+['human', 'use', 'cell', 'function', 'tumour', 'structure', 'mutation', 'receptor', 'provide', 'protein']
+['cell', 'gas', 'change', 'result', 'increase', 'show', 'find', 'tumour', 'associate', 'effect']
+['black_hole', 'black', 'hole', 'mass', 'protein', 'show', 'high', 'hole_mass', 'supermassive_black', 'cell']
+['cell', 'bond', 'stem_cell', 'result', 'use', 'melt', 'show', 'mutation', 'centre', 'structure']
+['show', 'gene', 'cell', 'rna', 'use', 'model', 'response', 'increase', 'two', 'dna']
+['star', 'rna', 'cell', 'use', 'structure', 'show', 'cluster', 'gas', 'galaxy', 'large']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+['cell', 'provide', 'show', 'form', 'two', 'role', 'use', 'rna', 'protein', 'suggest']
+['use', 'connection', 'show', 'result', 'glucose', 'amygdala', 'strong', 'cell', 'insulin', 'response']
+['human', 'use', 'cell', 'function', 'tumour', 'structure', 'mutation', 'receptor', 'provide', 'protein']
+['cell', 'gas', 'change', 'result', 'increase', 'show', 'find', 'tumour', 'associate', 'effect']
+['black_hole', 'black', 'hole', 'mass', 'protein', 'show', 'high', 'hole_mass', 'supermassive_black', 'cell']
+['cell', 'bond', 'stem_cell', 'result', 'use', 'melt', 'show', 'mutation', 'centre', 'structure']
+['show', 'gene', 'cell', 'rna', 'use', 'model', 'response', 'increase', 'two', 'dna']
+['star', 'rna', 'cell', 'use', 'structure', 'show', 'cluster', 'gas', 'galaxy', 'large']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         8
+popular            7         8
+
+###############################
+Now starts iteration for t = 10.
+###############################
+
+
+Loading first model (t = 10)...
+
+
+Training second model (t = 11)...
+
+Coherence Score for Model using old k = 24: 0.37916411495002994
+This coherence of 0.37916411495002994 is better than the old coherence of 0.3413401769250149.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'emerging', 17: 'emerging', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['influenza_virus', 'virus', 'show', 'low', 'element', 'white_dwarf', 'influenza', 'star', 'nuclear', 'activity']
+['use', 'result', 'show', 'complex', 'circuit', 'provide', 'large', 'visual_cortex', 'neuron', 'small']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'trending', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         0
+popular           10        12
+
+###############################
+Now starts iteration for t = 11.
+###############################
+
+
+Loading first model (t = 11)...
+
+
+Training second model (t = 12)...
+
+Coherence Score for Model using old k = 24: 0.35905519946992115
+This coherence of 0.35905519946992115 is worse than the old coherence of 0.37916411495002994.
+Finding new model...
+
+Coherence Score for Model with k = 21: 0.3702733229853277
+Coherence Score for Model with k = 22: 0.37296281673844367
+Coherence Score for Model with k = 23: 0.3662823371664072
+Coherence Score for Model with k = 24: 0.3571735755203674
+Coherence Score for Model with k = 25: 0.3722706657917647
+Coherence Score for Model with k = 26: 0.35787225908776243
+Coherence Score for Model with k = 27: 0.36377917418981204
+Coherence Score for Model with k = 28: 0.35245893821859425
+Coherence Score for Model with k = 29: 0.35326025346862105
+Coherence Score for Model with k = 30: 0.34496003068170467
+Coherence Score for Model with k = 31: 0.3564951562222999
+Coherence Score for Model with k = 32: 0.36403783439160586
+Coherence Score for Model with k = 33: 0.34103230616369995
+Coherence Score for Model with k = 34: 0.36620570374981437
+Coherence Score for Model with k = 35: 0.33489988983806074
+Coherence Score for Model with k = 36: 0.3627348067317888
+Coherence Score for Model with k = 37: 0.3685384964319872
+Coherence Score for Model with k = 38: 0.3481801489919952
+Coherence Score for Model with k = 39: 0.36439365263937146
+Coherence Score for the best model with k = 22: 0.37296281673844367
+Coherence Score for Model using a new best k = 22: 0.37296281673844367
+This coherence for k = 22 of 0.37296281673844367 is still worse than the old coherence of 0.37916411495002994.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'emerging', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging'}
+
+These are the emerging topics:
+
+['current', 'ring', 'show', 'state', 'use', 'change', 'million_year', 'large', 'quantum', 'farmer']
+['use', 'quantum', 'show', 'human', 'year', 'complex', 'charge', 'kyr', 'system', 'analysis']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+['current', 'ring', 'show', 'state', 'use', 'change', 'million_year', 'large', 'quantum', 'farmer']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular           15         7
+
+###############################
+Now starts iteration for t = 12.
+###############################
+
+
+Loading first model (t = 12)...
+
+
+Training second model (t = 13)...
+
+Coherence Score for Model using old k = 24: 0.34806280532764067
+This coherence of 0.34806280532764067 is worse than the old coherence of 0.35905519946992115.
+Finding new model...
+
+Coherence Score for Model with k = 22: 0.3256411329785042
+Coherence Score for Model with k = 23: 0.3516929923061417
+Coherence Score for Model with k = 24: 0.3427007435795854
+Coherence Score for Model with k = 25: 0.3615396217498112
+Coherence Score for Model with k = 26: 0.36579458461930403
+Coherence Score for Model with k = 27: 0.3417858650389884
+Coherence Score for Model with k = 28: 0.36519499698324864
+Coherence Score for Model with k = 29: 0.3329017359603021
+Coherence Score for Model with k = 30: 0.34520106143451446
+Coherence Score for Model with k = 31: 0.34681139915714815
+Coherence Score for Model with k = 32: 0.33197838720341344
+Coherence Score for Model with k = 33: 0.3328743225720434
+Coherence Score for Model with k = 34: 0.3374447635753503
+Coherence Score for Model with k = 35: 0.35028271807798905
+Coherence Score for Model with k = 36: 0.35989101477883445
+Coherence Score for Model with k = 37: 0.3437006640638297
+Coherence Score for Model with k = 38: 0.33256646217461183
+Coherence Score for Model with k = 39: 0.3632995485786299
+Coherence Score for Model with k = 40: 0.3452226606084466
+Coherence Score for Model with k = 41: 0.35430861839282585
+Coherence Score for Model with k = 42: 0.3422429681297019
+Coherence Score for the best model with k = 26: 0.36579458461930403
+Coherence Score for Model using a new best k = 26: 0.36579458461930403
+This coherence for k = 26 of 0.36579458461930403 is better than the old coherence of 0.35905519946992115.
+Model is updated. New k is 26.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging', 12: 'emerging', 13: 'popular', 14: 'popular', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'emerging', 22: 'popular', 23: 'emerging', 24: 'emerging', 25: 'popular'}
+
+These are the emerging topics:
+
+['structure', 'mechanism', 'receptor', 'domain', 'peptide', 'show', 'galaxy', 'protein', 'result', 'ice']
+['human', 'cell', 'show', 'use', 'modern_human', 'quantum', 'year', 'early', 'neuron', 'find']
+['quantum', 'use', 'show', 'surface', 'increase', 'ice', 'result', 'provide', 'state', 'change']
+['rna', 'cell', 'dna', 'complex', 'provide', 'response', 'structure', 'coral_reef', 'rna_polymerase', 'author']
+['cell', 'use', 'identify', 'mouse', 'result', 'target', 'show', 'gene', 'include', 'neoantigen']
+['use', 'tandem_duplication', 'structure', 'cell', 'magnetic', 'show', 'control', 'different', 'mechanism', 'formation']
+['cell', 'tumour', 'genome', 'use', 'human', 'lung', 'gene', 'cancer', 'quantum', 'show']
+['cell', 'use', 'virus', 'th17_cell', 'cell_differentiation', 'expression', 'reveal', 'rna', 'gene', 'mouse']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending'}
+
+These are the emerging + trending topics:
+
+['structure', 'mechanism', 'receptor', 'domain', 'peptide', 'show', 'galaxy', 'protein', 'result', 'ice']
+['rna', 'cell', 'dna', 'complex', 'provide', 'response', 'structure', 'coral_reef', 'rna_polymerase', 'author']
+['cell', 'use', 'identify', 'mouse', 'result', 'target', 'show', 'gene', 'include', 'neoantigen']
+['use', 'tandem_duplication', 'structure', 'cell', 'magnetic', 'show', 'control', 'different', 'mechanism', 'formation']
+['cell', 'use', 'virus', 'th17_cell', 'cell_differentiation', 'expression', 'reveal', 'rna', 'gene', 'mouse']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         5
+popular           10         8
+
+###############################
+Now starts iteration for t = 13.
+###############################
+
+
+Loading first model (t = 13)...
+
+
+Training second model (t = 14)...
+
+Coherence Score for Model using old k = 26: 0.3491146059048322
+This coherence of 0.3491146059048322 is worse than the old coherence of 0.36579458461930403.
+Finding new model...
+
+Coherence Score for Model with k = 28: 0.3354094144629099
+Coherence Score for Model with k = 29: 0.3483718526433039
+Coherence Score for Model with k = 30: 0.34509528723210453
+Coherence Score for Model with k = 31: 0.33513439843977505
+Coherence Score for Model with k = 32: 0.35207599864623035
+Coherence Score for Model with k = 33: 0.3429103281861561
+Coherence Score for Model with k = 34: 0.3365791911620226
+Coherence Score for Model with k = 35: 0.3409626777249799
+Coherence Score for Model with k = 36: 0.3478604409341131
+Coherence Score for Model with k = 37: 0.35113084714756493
+Coherence Score for Model with k = 38: 0.3211553205632426
+Coherence Score for Model with k = 39: 0.33309674611298073
+Coherence Score for Model with k = 40: 0.3546332510938715
+Coherence Score for Model with k = 41: 0.3520408124523585
+Coherence Score for Model with k = 42: 0.3400112837980692
+Coherence Score for Model with k = 43: 0.35348649986416125
+Coherence Score for Model with k = 44: 0.3528595175959238
+Coherence Score for Model with k = 45: 0.3401171897265087
+Coherence Score for Model with k = 46: 0.34782168820205467
+Coherence Score for Model with k = 47: 0.3457771853627224
+Coherence Score for Model with k = 48: 0.33512511517083543
+Coherence Score for Model with k = 49: 0.33591777551925545
+Coherence Score for Model with k = 50: 0.3252594687277076
+Coherence Score for Model with k = 51: 0.3191146958437137
+Coherence Score for Model with k = 52: 0.3493821822749053
+Coherence Score for Model with k = 53: 0.32827609895702486
+Coherence Score for the best model with k = 40: 0.3546332510938715
+Coherence Score for Model using a new best k = 40: 0.3546332510938715
+This coherence for k = 40 of 0.3546332510938715 is still worse than the old coherence of 0.36579458461930403.
+Continue to use old k of 26.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'emerging', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular'}
+
+These are the emerging topics:
+
+['use', 'protein', 'show', 'cell', 'quantum', 'brain', 'photon', 'structure', 'activity', 'genetic']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining'}
+
+These are the emerging + trending topics:
+
+['use', 'protein', 'show', 'cell', 'quantum', 'brain', 'photon', 'structure', 'activity', 'genetic']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           20         5
+
+###############################
+Now starts iteration for t = 14.
+###############################
+
+
+Loading first model (t = 14)...
+
+
+Training second model (t = 15)...
+
+Coherence Score for Model using old k = 26: 0.3536702883515588
+This coherence of 0.3536702883515588 is better than the old coherence of 0.3491146059048322.
+Continue to use old k of 26.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'popular', 16: 'emerging', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'popular', 21: 'emerging', 22: 'popular', 23: 'emerging', 24: 'emerging', 25: 'popular'}
+
+These are the emerging topics:
+
+['show', 'change', 'publish_access', 'access_link', 'paper_publish', 'use', 'amendment_paper', 'link_top', 'cell', 'temperature']
+['carbon', 'cell', 'cancer', 'increase', 'show', 'use', 'carbon_dioxide', 'protein', 'access_link', 'amendment_paper']
+['cell', 'use', 'human', 'quantum', 'rna', 'dna', 'stem_cell', 'show', 'expression', 'mutation']
+['cell', 'show', 'use', 'remain', 'protein', 'complex', 'report', 'length_scale', 'human', 'two']
+['use', 'data', 'cell', 'increase', 'show', 'state', 'methane', 'year', 'large', 'result']
+['use', 'quantum', 'initiation', 'complex', 'report', 'result', 'spin', 'model', 'provide', 'show']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'trending'}
+
+These are the emerging + trending topics:
+
+['carbon', 'cell', 'cancer', 'increase', 'show', 'use', 'carbon_dioxide', 'protein', 'access_link', 'amendment_paper']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           5         1
+popular            5        15
+
+###############################
+Now starts iteration for t = 15.
+###############################
+
+
+Loading first model (t = 15)...
+
+
+Training second model (t = 16)...
+
+Coherence Score for Model using old k = 26: 0.33584668657138905
+This coherence of 0.33584668657138905 is worse than the old coherence of 0.3536702883515588.
+Finding new model...
+
+Coherence Score for Model with k = 25: 0.36320274278332454
+Coherence Score for Model with k = 26: 0.32040301424552975
+Coherence Score for Model with k = 27: 0.31557544767845364
+Coherence Score for Model with k = 28: 0.3433085980869292
+Coherence Score for Model with k = 29: 0.36858559227180787
+Coherence Score for Model with k = 30: 0.35565719387317146
+Coherence Score for Model with k = 31: 0.3465341963563241
+Coherence Score for Model with k = 32: 0.34992770885157237
+Coherence Score for Model with k = 33: 0.36510520513057765
+Coherence Score for Model with k = 34: 0.34865821877535935
+Coherence Score for Model with k = 35: 0.36058044590551214
+Coherence Score for Model with k = 36: 0.33089528594261647
+Coherence Score for Model with k = 37: 0.3341152295592451
+Coherence Score for Model with k = 38: 0.3854374086660315
+Coherence Score for Model with k = 39: 0.36215949103457257
+Coherence Score for Model with k = 40: 0.342303591282361
+Coherence Score for Model with k = 41: 0.3490305661867424
+Coherence Score for Model with k = 42: 0.3651696493150836
+Coherence Score for Model with k = 43: 0.35562622014742046
+Coherence Score for Model with k = 44: 0.3455489309008415
+Coherence Score for Model with k = 45: 0.36155246105640587
+Coherence Score for Model with k = 46: 0.32803603431416267
+Coherence Score for the best model with k = 38: 0.3854374086660315
+Coherence Score for Model using a new best k = 38: 0.3854374086660315
+This coherence for k = 38 of 0.3854374086660315 is better than the old coherence of 0.3536702883515588.
+Model is updated. New k is 38.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'emerging', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'emerging', 35: 'popular', 36: 'emerging', 37: 'popular'}
+
+These are the emerging topics:
+
+['quantum', 'use', 'high', 'mechanism', 'original_article', 'article_correct', 'structure', 'state', 'demonstrate', 'control']
+['protein', 'cell', 'use', 'small', 'show', 'coronavirus', 'severe_acute', 'respiratory_syndrome', 'human', 'remain']
+['use', 'chern_number', 'measurement', 'stem_cell', 'demonstrate', 'state', 'magnetic', 'clock', 'optical', 'ice']
+['electron', 'change', 'phase', 'use', 'spin', 'social', 'bilayer_graphene', 'topological', 'system', 'field']
+['publish_access', 'access_link', 'amendment_paper', 'link_top', 'paper_publish', 'link', 'publish_access_access_link', 'access_link_link_top', 'amendment', 'top']
+['ocean', 'intervention', 'use', 'maternal', 'tumour', 'heat', 'cell', 'fetal', 'carbon', 'model']
+['electron', 'structure', 'material', 'antibody', 'mechanism', 'print_version', 'protein', 'system', 'use', 'version']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'declining', 26: 'declining', 27: 'declining', 28: 'trending', 29: 'trending', 30: 'trending', 31: 'trending', 32: 'trending', 33: 'trending', 34: 'trending', 35: 'trending', 36: 'trending', 37: 'declining'}
+
+These are the emerging + trending topics:
+
+['quantum', 'use', 'high', 'mechanism', 'original_article', 'article_correct', 'structure', 'state', 'demonstrate', 'control']
+['protein', 'cell', 'use', 'small', 'show', 'coronavirus', 'severe_acute', 'respiratory_syndrome', 'human', 'remain']
+['ocean', 'intervention', 'use', 'maternal', 'tumour', 'heat', 'cell', 'fetal', 'carbon', 'model']
+['electron', 'structure', 'material', 'antibody', 'mechanism', 'print_version', 'protein', 'system', 'use', 'version']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         4
+popular           12        19
+
+###############################
+Now starts iteration for t = 16.
+###############################
+
+
+Loading first model (t = 16)...
+
+
+Training second model (t = 17)...
+
+Coherence Score for Model using old k = 38: 0.35867770561672235
+This coherence of 0.35867770561672235 is worse than the old coherence of 0.3854374086660315.
+Finding new model...
+
+Coherence Score for Model with k = 25: 0.35456988140290124
+Coherence Score for Model with k = 26: 0.3715380059123622
+Coherence Score for Model with k = 27: 0.3408085017566374
+Coherence Score for Model with k = 28: 0.3406586453516942
+Coherence Score for Model with k = 29: 0.3805854645436192
+Coherence Score for Model with k = 30: 0.36040206995747653
+Coherence Score for Model with k = 31: 0.37114190310321005
+Coherence Score for Model with k = 32: 0.3551110823772027
+Coherence Score for Model with k = 33: 0.35164018208005393
+Coherence Score for Model with k = 34: 0.3693266807988337
+Coherence Score for Model with k = 35: 0.35975354336791615
+Coherence Score for Model with k = 36: 0.3383495594105821
+Coherence Score for Model with k = 37: 0.34693251299798317
+Coherence Score for Model with k = 38: 0.36186599051951535
+Coherence Score for Model with k = 39: 0.3579889673972115
+Coherence Score for Model with k = 40: 0.3517346034580877
+Coherence Score for Model with k = 41: 0.3496490795718554
+Coherence Score for Model with k = 42: 0.3576049412032955
+Coherence Score for Model with k = 43: 0.3389121287687904
+Coherence Score for Model with k = 44: 0.3455921477682204
+Coherence Score for Model with k = 45: 0.35676322368261726
+Coherence Score for Model with k = 46: 0.36267486045234454
+Coherence Score for Model with k = 47: 0.35214689212821676
+Coherence Score for the best model with k = 29: 0.3805854645436192
+Coherence Score for Model using a new best k = 29: 0.3805854645436192
+This coherence for k = 29 of 0.3805854645436192 is still worse than the old coherence of 0.3854374086660315.
+Continue to use old k of 38.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'emerging', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'emerging', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'emerging', 32: 'popular', 33: 'popular', 34: 'emerging', 35: 'emerging', 36: 'popular', 37: 'popular'}
+
+These are the emerging topics:
+
+['use', 'water', 'change', 'mutation', 'emission', 'temperature', 'spike', 'result', 'antibody', 'climate']
+['show', 'human', 'social', 'cell', 'use', 'increase', 'cent', 'limit', 'homologous_recombination', 'global']
+['use', 'energy', 'show', 'quantum', 'aquaculture', 'provide', 'evidence', 'source', 'lead', 'change']
+['use', 'plastic', 'water', 'material', 'see', 'high', 'electron', 'source', 'research_see', 'show']
+['use', 'show', 'quantum', 'structure', 'material', 'provide', 'suggest', 'atmospheric', 'high', 'hot_jupiter']
+['result', 'use', 'social', 'show', 'cell', 'model', 'surface', 'human', 'alk', 'state']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'trending', 27: 'declining', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'trending', 34: 'trending', 35: 'declining', 36: 'declining', 37: 'declining'}
+
+These are the emerging + trending topics:
+
+['use', 'show', 'quantum', 'structure', 'material', 'provide', 'suggest', 'atmospheric', 'high', 'hot_jupiter']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           5         1
+popular           17        15
+
+###############################
+Now starts iteration for t = 17.
+###############################
+
+
+Loading first model (t = 17)...
+
+
+Training second model (t = 18)...
+
+Coherence Score for Model using old k = 38: 0.32417176509455947
+This coherence of 0.32417176509455947 is worse than the old coherence of 0.35867770561672235.
+Finding new model...
+
+Coherence Score for Model with k = 30: 0.35043216000162186
+Coherence Score for Model with k = 31: 0.35723250287439146
+Coherence Score for Model with k = 32: 0.3373555074986976
+Coherence Score for Model with k = 33: 0.3450396365392445
+Coherence Score for Model with k = 34: 0.3423442055729655
+Coherence Score for Model with k = 35: 0.352307749584184
+Coherence Score for Model with k = 36: 0.3391883223988045
+Coherence Score for Model with k = 37: 0.3274073899180445
+Coherence Score for Model with k = 38: 0.3411462819391593
+Coherence Score for Model with k = 39: 0.3464432984433539
+Coherence Score for Model with k = 40: 0.34667118557289456
+Coherence Score for Model with k = 41: 0.35354595748910084
+Coherence Score for Model with k = 42: 0.3566333052023865
+Coherence Score for Model with k = 43: 0.3480474825789133
+Coherence Score for Model with k = 44: 0.3449939605256142
+Coherence Score for Model with k = 45: 0.32048740909845563
+Coherence Score for Model with k = 46: 0.35545161544230613
+Coherence Score for Model with k = 47: 0.33534857331928797
+Coherence Score for Model with k = 48: 0.3341741186155696
+Coherence Score for Model with k = 49: 0.3281689252290517
+Coherence Score for Model with k = 50: 0.3379216126213978
+Coherence Score for Model with k = 51: 0.34127120889450063
+Coherence Score for Model with k = 52: 0.3394476473978403
+Coherence Score for Model with k = 53: 0.3368395853058687
+Coherence Score for Model with k = 54: 0.34090841449652026
+Coherence Score for Model with k = 55: 0.3327452814330221
+Coherence Score for Model with k = 56: 0.36410438345226653
+Coherence Score for the best model with k = 56: 0.36410438345226653
+Coherence Score for Model using a new best k = 56: 0.36410438345226653
+This coherence for k = 56 of 0.36410438345226653 is better than the old coherence of 0.35867770561672235.
+Model is updated. New k is 56.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'emerging', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'emerging', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'emerging', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular', 36: 'emerging', 37: 'popular', 38: 'popular', 39: 'emerging', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'emerging', 44: 'popular', 45: 'emerging', 46: 'popular', 47: 'popular', 48: 'emerging', 49: 'popular', 50: 'popular', 51: 'emerging', 52: 'emerging', 53: 'popular', 54: 'popular', 55: 'emerging'}
+
+These are the emerging topics:
+
+['see', 'html_pdf', 'pdf_version', 'version', 'version_article', 'use', 'cell', 'correct_html', 'html_pdf_pdf_version', 'html']
+['show', 'use', 'system', 'field', 'report', 'global', 'see', 'structure', 'protein', 'letter_editor']
+['climate', 'show', 'ice_sheet', 'change', 'use', 'rna', 'antarctic_ice', 'ice', 'increase', 'human']
+['version', 'version_article', 'pdf_version', 'html_pdf', 'cell', 'light', 'cancer', 'university', 'correct_html', 'loss']
+['use', 'virus', 'show', 'large', 'conservation', 'dynamic', 'mantle', 'one', 'cell', 'electron']
+['drug', 'cell', 'show', 'tumour', 'ferroptosis', 'increase', 'use', 'water', 'effect', 'inhibition']
+['growth', 'show', 'human', 'use', 'two', 'chromosome', 'bond', 'cell', 'activity', 'selective']
+['mitochondrial', 'mitochondrial_protein', 'show', 'protein', 'human', 'cell', 'magnetic', 'interaction', 'myc', 'mutation']
+['see', 'system', 'show', 'use', 'data', 'algorithm', 'base', 'result', 'affect', 'matrix']
+['cell', 'show', 'change', 'protein', 'water', 'result', 'use', 'ice', 'pdf_version', 'html_pdf']
+['cell', 'loop', 'structure', 'use', 'reveal', 'domain', 'show', 'interaction', 'human', 'complex']
+['ice', 'use', 'protein', 'faculty', 'show', 'quantum', 'result', 'thwaites_glacier', 'find', 'development']
+['version_article', 'use', 'version', 'html_pdf', 'pdf_version', 'article', 'loss', 'measure', 'include', 'data']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'trending', 23: 'declining', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'trending', 29: 'trending', 30: 'trending', 31: 'trending', 32: 'trending', 33: 'declining', 34: 'trending', 35: 'trending', 36: 'trending', 37: 'declining', 38: 'declining', 39: 'declining', 40: 'declining', 41: 'trending', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'trending', 46: 'trending', 47: 'trending', 48: 'trending', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'declining', 55: 'trending'}
+
+These are the emerging + trending topics:
+
+['see', 'html_pdf', 'pdf_version', 'version', 'version_article', 'use', 'cell', 'correct_html', 'html_pdf_pdf_version', 'html']
+['show', 'use', 'system', 'field', 'report', 'global', 'see', 'structure', 'protein', 'letter_editor']
+['use', 'virus', 'show', 'large', 'conservation', 'dynamic', 'mantle', 'one', 'cell', 'electron']
+['drug', 'cell', 'show', 'tumour', 'ferroptosis', 'increase', 'use', 'water', 'effect', 'inhibition']
+['see', 'system', 'show', 'use', 'data', 'algorithm', 'base', 'result', 'affect', 'matrix']
+['cell', 'show', 'change', 'protein', 'water', 'result', 'use', 'ice', 'pdf_version', 'html_pdf']
+['ice', 'use', 'protein', 'faculty', 'show', 'quantum', 'result', 'thwaites_glacier', 'find', 'development']
+['version_article', 'use', 'version', 'html_pdf', 'pdf_version', 'article', 'loss', 'measure', 'include', 'data']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           5         8
+popular           18        25
+
+###############################
+Now starts iteration for t = 18.
+###############################
+
+
+Loading first model (t = 18)...
+
+
+Training second model (t = 19)...
+
+Coherence Score for Model using old k = 56: 0.40699481882917443
+This coherence of 0.40699481882917443 is better than the old coherence of 0.36410438345226653.
+Continue to use old k of 56.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'emerging', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'emerging', 36: 'emerging', 37: 'popular', 38: 'emerging', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'emerging', 47: 'popular', 48: 'popular', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'popular', 54: 'popular', 55: 'popular'}
+
+These are the emerging topics:
+
+['pdf_version', 'html_pdf', 'publish_online', 'version', 'version_article', 'correction', 'publish', 'nature', 'nature_publish', 'correction_nature']
+['bile_acid', 'optical', 'bile', 'acid', 'multidisciplinary', 'article_surname', 'disordered_protein', 'reference', 'demonstrate', 'soliton']
+['quantum', 'noise', 'frequency', 'quantum_error', 'mass_loss', 'angle', 'spatial_genomics', 'steer', 'error', 'united_state']
+['material', 'parametric', 'genomic_data', 'mathematical', 'scale', 'printing', 'base_pair', 'vascular', 'problem', 'universal']
+['phase_separation', 'speech', 'bacterial_defence', 'defence', 'word', 'conservation_effort', 'separation', 'protein', 'production_use', 'wireless']
+['human', 'omicron', 'human_embryo', 'light_curve', 'human_pluripotent', 'early', 'cell', 'persistent', 'infection', 'early_human']
+['black_hole', 'black', 'hole', 'gender_bias', 'compact_object', 'exposure', 'city', 'neutron_star', 'mobility', 'repeat']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'trending', 22: 'trending', 23: 'trending', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'trending', 34: 'trending', 35: 'trending', 36: 'trending', 37: 'trending', 38: 'trending', 39: 'trending', 40: 'trending', 41: 'declining', 42: 'trending', 43: 'trending', 44: 'trending', 45: 'declining', 46: 'trending', 47: 'trending', 48: 'trending', 49: 'trending', 50: 'declining', 51: 'trending', 52: 'trending', 53: 'trending', 54: 'declining', 55: 'declining'}
+
+These are the emerging + trending topics:
+
+['pdf_version', 'html_pdf', 'publish_online', 'version', 'version_article', 'correction', 'publish', 'nature', 'nature_publish', 'correction_nature']
+['material', 'parametric', 'genomic_data', 'mathematical', 'scale', 'printing', 'base_pair', 'vascular', 'problem', 'universal']
+['phase_separation', 'speech', 'bacterial_defence', 'defence', 'word', 'conservation_effort', 'separation', 'protein', 'production_use', 'wireless']
+['human', 'omicron', 'human_embryo', 'light_curve', 'human_pluripotent', 'early', 'cell', 'persistent', 'infection', 'early_human']
+['black_hole', 'black', 'hole', 'gender_bias', 'compact_object', 'exposure', 'city', 'neutron_star', 'mobility', 'repeat']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         5
+popular           14        35
+
+###############################
+Now starts iteration for t = 19.
+###############################
+
+
+Loading first model (t = 19)...
+
+
+Training second model (t = 20)...
+
+Coherence Score for Model using old k = 56: 0.34248912076032856
+This coherence of 0.34248912076032856 is worse than the old coherence of 0.40699481882917443.
+Finding new model...
+
+Coherence Score for Model with k = 28: 0.37151217494990024
+Coherence Score for Model with k = 29: 0.3682902019845334
+Coherence Score for Model with k = 30: 0.37058908202550145
+Coherence Score for Model with k = 31: 0.3548839500051077
+Coherence Score for Model with k = 32: 0.35376890443408193
+Coherence Score for Model with k = 33: 0.38734422315969386
+Coherence Score for Model with k = 34: 0.3589703535679229
+Coherence Score for Model with k = 35: 0.3664668876576244
+Coherence Score for Model with k = 36: 0.3727379768093585
+Coherence Score for Model with k = 37: 0.3712663423172062
+Coherence Score for Model with k = 38: 0.3454415280335667
+Coherence Score for Model with k = 39: 0.38069788199816085
+Coherence Score for Model with k = 40: 0.36086032788829037
+Coherence Score for Model with k = 41: 0.3430802627744033
+Coherence Score for Model with k = 42: 0.36382527653250624
+Coherence Score for Model with k = 43: 0.36469824835244447
+Coherence Score for Model with k = 44: 0.33821370200010187
+Coherence Score for Model with k = 45: 0.3697388165415587
+Coherence Score for Model with k = 46: 0.34470597180883034
+Coherence Score for Model with k = 47: 0.36298217434738683
+Coherence Score for Model with k = 48: 0.3280798278243744
+Coherence Score for Model with k = 49: 0.375426404943358
+Coherence Score for Model with k = 50: 0.35187574399288324
+Coherence Score for Model with k = 51: 0.3486940720915927
+Coherence Score for the best model with k = 33: 0.38734422315969386
+Coherence Score for Model using a new best k = 33: 0.38734422315969386
+This coherence for k = 33 of 0.38734422315969386 is still worse than the old coherence of 0.40699481882917443.
+Continue to use old k of 56.
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'emerging', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular', 36: 'popular', 37: 'popular', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'popular', 48: 'popular', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'popular', 54: 'popular', 55: 'popular'}
+
+These are the emerging topics:
+
+['letter_editor', 'use', 'letter', 'editor', 'protein', 'quantum', 'terahertz', 'researcher', 'new', 'transmission_spectrum']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'trending', 24: 'trending', 25: 'trending', 26: 'trending', 27: 'declining', 28: 'trending', 29: 'trending', 30: 'trending', 31: 'trending', 32: 'trending', 33: 'trending', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'declining', 38: 'declining', 39: 'declining', 40: 'trending', 41: 'declining', 42: 'trending', 43: 'trending', 44: 'declining', 45: 'declining', 46: 'trending', 47: 'trending', 48: 'trending', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'declining', 53: 'declining', 54: 'declining', 55: 'trending'}
+
+These are the emerging + trending topics:
+
+['letter_editor', 'use', 'letter', 'editor', 'protein', 'quantum', 'terahertz', 'researcher', 'new', 'transmission_spectrum']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           24        31
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_topic_analysis.py
+[?2004l
+
+###############################
+Now starts iteration for t = 7.
+###############################
+
+
+Loading first model (t = 7)...
+
+
+Training second model (t = 8)...
+
+Coherence Score for Model using old k = 24: 0.3656967659509467
+This coherence of 0.3656967659509467 is worse than the old coherence of 0.38444538335341544.
+Finding new model...
+
+Coherence Score for Model with k = 21: 0.3504836183907986
+Coherence Score for Model with k = 22: 0.3377337310530219
+Coherence Score for Model with k = 23: 0.3666689051521998
+Coherence Score for Model with k = 24: 0.35719133638269424
+Coherence Score for Model with k = 25: 0.3573200013987097
+Coherence Score for Model with k = 26: 0.3523835853205982
+Coherence Score for Model with k = 27: 0.3486228241238405
+Coherence Score for Model with k = 28: 0.3491016704475484
+Coherence Score for Model with k = 29: 0.3611118932828699
+Coherence Score for Model with k = 30: 0.3496439158744271
+Coherence Score for Model with k = 31: 0.34245575789761457
+Coherence Score for Model with k = 32: 0.3403286728806125
+Coherence Score for Model with k = 33: 0.34100653838489614
+Coherence Score for Model with k = 34: 0.32711224345892087
+Coherence Score for Model with k = 35: 0.3487379118110416
+Coherence Score for Model with k = 36: 0.34771895845873524
+Coherence Score for Model with k = 37: 0.3435025680547672
+Coherence Score for Model with k = 38: 0.34755653449026014
+Coherence Score for the best model with k = 23: 0.3666689051521998
+Coherence Score for Model using a new best k = 23: 0.3666689051521998
+This coherence for k = 23 of 0.3666689051521998 is still worse than the old coherence of 0.38444538335341544.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            9        15
+
+###############################
+Now starts iteration for t = 8.
+###############################
+
+
+Loading first model (t = 8)...
+
+
+Training second model (t = 9)...
+
+Coherence Score for Model using old k = 24: 0.3477043604440165
+This coherence of 0.3477043604440165 is worse than the old coherence of 0.3656967659509467.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.3503770535043535
+Coherence Score for Model with k = 24: 0.3421465735420237
+Coherence Score for Model with k = 25: 0.33989642096185624
+Coherence Score for Model with k = 26: 0.35529169726806015
+Coherence Score for Model with k = 27: 0.3569662798761218
+Coherence Score for Model with k = 28: 0.36324716983169186
+Coherence Score for Model with k = 29: 0.3526242441326483
+Coherence Score for Model with k = 30: 0.34821630412359855
+Coherence Score for Model with k = 31: 0.3560443958252855
+Coherence Score for Model with k = 32: 0.36017867590255354
+Coherence Score for Model with k = 33: 0.3469399091224842
+Coherence Score for Model with k = 34: 0.3449541518554613
+Coherence Score for Model with k = 35: 0.3467472837573031
+Coherence Score for Model with k = 36: 0.34443279697811263
+Coherence Score for Model with k = 37: 0.35574741236964774
+Coherence Score for Model with k = 38: 0.3454692435963825
+Coherence Score for Model with k = 39: 0.34180751198401704
+Coherence Score for Model with k = 40: 0.3482187694827064
+Coherence Score for Model with k = 41: 0.35278601819448224
+Coherence Score for Model with k = 42: 0.34371137300480353
+Coherence Score for Model with k = 43: 0.35047954977446555
+Coherence Score for Model with k = 44: 0.3453757080979075
+Coherence Score for the best model with k = 28: 0.36324716983169186
+Coherence Score for Model using a new best k = 28: 0.36324716983169186
+This coherence for k = 28 of 0.36324716983169186 is still worse than the old coherence of 0.3656967659509467.
+Continue to use old k of 24.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        13
+
+###############################
+Now starts iteration for t = 9.
+###############################
+
+
+Loading first model (t = 9)...
+
+
+Training second model (t = 10)...
+
+Coherence Score for Model using old k = 24: 0.32657478607662943
+This coherence of 0.32657478607662943 is worse than the old coherence of 0.3477043604440165.
+Finding new model...
+
+Coherence Score for Model with k = 17: 0.35217877144427934
+Coherence Score for Model with k = 18: 0.34049871446595925
+Coherence Score for Model with k = 19: 0.35651296201543653
+Coherence Score for Model with k = 20: 0.3304377815013435
+Coherence Score for Model with k = 21: 0.32657212498005955
+Coherence Score for Model with k = 22: 0.3758627789475619
+Coherence Score for Model with k = 23: 0.3336989189875188
+Coherence Score for Model with k = 24: 0.33406539262241436
+Coherence Score for Model with k = 25: 0.33512365315830567
+Coherence Score for Model with k = 26: 0.3151095866135636
+Coherence Score for Model with k = 27: 0.3314269882355354
+Coherence Score for Model with k = 28: 0.33063072157587003
+Coherence Score for Model with k = 29: 0.32670072327164573
+Coherence Score for Model with k = 30: 0.32741745116436116
+Coherence Score for Model with k = 31: 0.3550528531518895
+Coherence Score for Model with k = 32: 0.3370018649438753
+Coherence Score for the best model with k = 22: 0.3758627789475619
+Coherence Score for Model using a new best k = 22: 0.3758627789475619
+This coherence for k = 22 of 0.3758627789475619 is better than the old coherence of 0.3477043604440165.
+Model is updated. New k is 22.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        10
+
+###############################
+Now starts iteration for t = 10.
+###############################
+
+
+Loading first model (t = 10)...
+
+
+Training second model (t = 11)...
+
+Coherence Score for Model using old k = 22: 0.37477757921591776
+This coherence of 0.37477757921591776 is worse than the old coherence of 0.3758627789475619.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.352805337587717
+Coherence Score for Model with k = 24: 0.36192112362633405
+Coherence Score for Model with k = 25: 0.3614230256679115
+Coherence Score for Model with k = 26: 0.36243341142114993
+Coherence Score for Model with k = 27: 0.3779786027443177
+Coherence Score for Model with k = 28: 0.3587574915340453
+Coherence Score for Model with k = 29: 0.3729896848072527
+Coherence Score for Model with k = 30: 0.38497555409400486
+Coherence Score for Model with k = 31: 0.3525073400660201
+Coherence Score for Model with k = 32: 0.353643760023386
+Coherence Score for Model with k = 33: 0.3499888429652923
+Coherence Score for Model with k = 34: 0.3565716378683483
+Coherence Score for Model with k = 35: 0.34842690798918685
+Coherence Score for Model with k = 36: 0.34848056178585185
+Coherence Score for Model with k = 37: 0.35854665861518825
+Coherence Score for Model with k = 38: 0.35578825445485834
+Coherence Score for Model with k = 39: 0.3529922128113788
+Coherence Score for Model with k = 40: 0.37536166517782554
+Coherence Score for Model with k = 41: 0.36341409295579763
+Coherence Score for Model with k = 42: 0.35784772282188776
+Coherence Score for Model with k = 43: 0.35680827037777435
+Coherence Score for the best model with k = 30: 0.38497555409400486
+Coherence Score for Model using a new best k = 30: 0.38497555409400486
+This coherence for k = 30 of 0.38497555409400486 is better than the old coherence of 0.3758627789475619.
+Model is updated. New k is 30.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'trending', 27: 'declining', 28: 'declining', 29: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           13        17
+
+###############################
+Now starts iteration for t = 11.
+###############################
+
+
+Loading first model (t = 11)...
+
+
+Training second model (t = 12)...
+
+Coherence Score for Model using old k = 30: 0.3608952384032874
+This coherence of 0.3608952384032874 is worse than the old coherence of 0.38497555409400486.
+Finding new model...
+
+Coherence Score for Model with k = 21: 0.3633800237062865
+Coherence Score for Model with k = 22: 0.3657528119480001
+Coherence Score for Model with k = 23: 0.3597505827568158
+Coherence Score for Model with k = 24: 0.34587334071917847
+Coherence Score for Model with k = 25: 0.35678936757712365
+Coherence Score for Model with k = 26: 0.3715090019189414
+Coherence Score for Model with k = 27: 0.3506974660567227
+Coherence Score for Model with k = 28: 0.3653277406899275
+Coherence Score for Model with k = 29: 0.3500466973817677
+Coherence Score for Model with k = 30: 0.35579527284651974
+Coherence Score for Model with k = 31: 0.36930982720608935
+Coherence Score for Model with k = 32: 0.34218265713966733
+Coherence Score for Model with k = 33: 0.3446303628493493
+Coherence Score for Model with k = 34: 0.3556760313818251
+Coherence Score for Model with k = 35: 0.3486933234301812
+Coherence Score for Model with k = 36: 0.3665558213435535
+Coherence Score for Model with k = 37: 0.3537903856342331
+Coherence Score for Model with k = 38: 0.3563792711593744
+Coherence Score for Model with k = 39: 0.3488163295598238
+Coherence Score for the best model with k = 26: 0.3715090019189414
+Coherence Score for Model using a new best k = 26: 0.3715090019189414
+This coherence for k = 26 of 0.3715090019189414 is still worse than the old coherence of 0.38497555409400486.
+Continue to use old k of 30.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular'}
+
+These are the emerging topics:
+
+['use', 'bond', 'human', 'functional_group', 'group', 'online_version', 'year', 'report', 'correct_online', 'surface']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'trending', 22: 'trending', 23: 'trending', 24: 'trending', 25: 'declining', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining'}
+
+These are the emerging + trending topics:
+
+['use', 'bond', 'human', 'functional_group', 'group', 'online_version', 'year', 'report', 'correct_online', 'surface']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           18        11
+
+###############################
+Now starts iteration for t = 12.
+###############################
+
+
+Loading first model (t = 12)...
+
+
+Training second model (t = 13)...
+
+Coherence Score for Model using old k = 30: 0.3483066901989432
+This coherence of 0.3483066901989432 is worse than the old coherence of 0.3608952384032874.
+Finding new model...
+
+Coherence Score for Model with k = 22: 0.3505590086981437
+Coherence Score for Model with k = 23: 0.3408486567061571
+Coherence Score for Model with k = 24: 0.3614518442014513
+Coherence Score for Model with k = 25: 0.34623314401237165
+Coherence Score for Model with k = 26: 0.3566471842830984
+Coherence Score for Model with k = 27: 0.3496331867701188
+Coherence Score for Model with k = 28: 0.33237552152969413
+Coherence Score for Model with k = 29: 0.3402019941782384
+Coherence Score for Model with k = 30: 0.3339847793157124
+Coherence Score for Model with k = 31: 0.34390478915059636
+Coherence Score for Model with k = 32: 0.3476706709245889
+Coherence Score for Model with k = 33: 0.3580149903941384
+Coherence Score for Model with k = 34: 0.34831119174939806
+Coherence Score for Model with k = 35: 0.3346290306308275
+Coherence Score for Model with k = 36: 0.3385020274185988
+Coherence Score for Model with k = 37: 0.3576774165188127
+Coherence Score for Model with k = 38: 0.34996661316541466
+Coherence Score for Model with k = 39: 0.35295986298953713
+Coherence Score for Model with k = 40: 0.3325678108493836
+Coherence Score for Model with k = 41: 0.3389649839189176
+Coherence Score for Model with k = 42: 0.3473400052886591
+Coherence Score for the best model with k = 24: 0.3614518442014513
+Coherence Score for Model using a new best k = 24: 0.3614518442014513
+This coherence for k = 24 of 0.3614518442014513 is better than the old coherence of 0.3608952384032874.
+Model is updated. New k is 24.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           14        10
+
+###############################
+Now starts iteration for t = 13.
+###############################
+
+
+Loading first model (t = 13)...
+
+
+Training second model (t = 14)...
+
+Coherence Score for Model using old k = 24: 0.32634143576528374
+This coherence of 0.32634143576528374 is worse than the old coherence of 0.3614518442014513.
+Finding new model...
+
+Coherence Score for Model with k = 28: 0.3496625863110974
+Coherence Score for Model with k = 29: 0.3554141181036321
+Coherence Score for Model with k = 30: 0.3353262275300083
+Coherence Score for Model with k = 31: 0.36019879927711856
+Coherence Score for Model with k = 32: 0.3459403705895734
+Coherence Score for Model with k = 33: 0.33239257815280754
+Coherence Score for Model with k = 34: 0.36294596309299243
+Coherence Score for Model with k = 35: 0.339146000334156
+Coherence Score for Model with k = 36: 0.34527648803982014
+Coherence Score for Model with k = 37: 0.35039536652066033
+Coherence Score for Model with k = 38: 0.34116599123498836
+Coherence Score for Model with k = 39: 0.3505567936570727
+Coherence Score for Model with k = 40: 0.32897795931033713
+Coherence Score for Model with k = 41: 0.3578466621237917
+Coherence Score for Model with k = 42: 0.360393400501638
+Coherence Score for Model with k = 43: 0.3284774175656815
+Coherence Score for Model with k = 44: 0.34374514100894826
+Coherence Score for Model with k = 45: 0.3556328944111767
+Coherence Score for Model with k = 46: 0.34970263973627747
+Coherence Score for Model with k = 47: 0.34051377668014404
+Coherence Score for Model with k = 48: 0.3125215172219691
+Coherence Score for Model with k = 49: 0.32601175797746157
+Coherence Score for Model with k = 50: 0.3209068433898458
+Coherence Score for Model with k = 51: 0.3480498063149293
+Coherence Score for Model with k = 52: 0.330896719680367
+Coherence Score for Model with k = 53: 0.3368795009823828
+Coherence Score for the best model with k = 34: 0.36294596309299243
+Coherence Score for Model using a new best k = 34: 0.36294596309299243
+This coherence for k = 34 of 0.36294596309299243 is better than the old coherence of 0.3614518442014513.
+Model is updated. New k is 34.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'trending', 29: 'declining', 30: 'declining', 31: 'trending', 32: 'trending', 33: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           20        14
+
+###############################
+Now starts iteration for t = 14.
+###############################
+
+
+Loading first model (t = 14)...
+
+
+Training second model (t = 15)...
+
+Coherence Score for Model using old k = 34: 0.35267504019297163
+This coherence of 0.35267504019297163 is worse than the old coherence of 0.36294596309299243.
+Finding new model...
+
+Coherence Score for Model with k = 28: 0.3545297180298413
+Coherence Score for Model with k = 29: 0.3502157887072133
+Coherence Score for Model with k = 30: 0.3517577378464699
+Coherence Score for Model with k = 31: 0.3647181206350537
+Coherence Score for Model with k = 32: 0.3490690097498774
+Coherence Score for Model with k = 33: 0.33998150480500516
+Coherence Score for Model with k = 34: 0.36002536700228854
+Coherence Score for Model with k = 35: 0.3410696273565341
+Coherence Score for Model with k = 36: 0.3392239633507901
+Coherence Score for Model with k = 37: 0.3644255617924685
+Coherence Score for Model with k = 38: 0.33374864991213027
+Coherence Score for Model with k = 39: 0.35305593458161877
+Coherence Score for Model with k = 40: 0.3435257651660348
+Coherence Score for Model with k = 41: 0.3641834591688349
+Coherence Score for Model with k = 42: 0.3547506537995786
+Coherence Score for Model with k = 43: 0.33973099368047105
+Coherence Score for Model with k = 44: 0.32897941653422313
+Coherence Score for Model with k = 45: 0.3305450152422304
+Coherence Score for Model with k = 46: 0.3518023912355826
+Coherence Score for Model with k = 47: 0.33149527663600536
+Coherence Score for Model with k = 48: 0.3553300626487854
+Coherence Score for Model with k = 49: 0.3487006068236085
+Coherence Score for Model with k = 50: 0.3418791401205191
+Coherence Score for Model with k = 51: 0.3638248602233243
+Coherence Score for Model with k = 52: 0.3322788311745685
+Coherence Score for Model with k = 53: 0.33965248387836605
+Coherence Score for the best model with k = 31: 0.3647181206350537
+Coherence Score for Model using a new best k = 31: 0.3647181206350537
+This coherence for k = 31 of 0.3647181206350537 is better than the old coherence of 0.36294596309299243.
+Model is updated. New k is 31.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'trending', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'trending', 29: 'trending', 30: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        19
+
+###############################
+Now starts iteration for t = 15.
+###############################
+
+
+Loading first model (t = 15)...
+
+
+Training second model (t = 16)...
+
+Coherence Score for Model using old k = 31: 0.3866456602216648
+This coherence of 0.3866456602216648 is better than the old coherence of 0.3647181206350537.
+Continue to use old k of 31.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'trending', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'trending', 30: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           15        16
+
+###############################
+Now starts iteration for t = 16.
+###############################
+
+
+Loading first model (t = 16)...
+
+
+Training second model (t = 17)...
+
+Coherence Score for Model using old k = 31: 0.38191498983351346
+This coherence of 0.38191498983351346 is worse than the old coherence of 0.3866456602216648.
+Finding new model...
+
+Coherence Score for Model with k = 25: 0.38871153369903
+Coherence Score for Model with k = 26: 0.36117694944989664
+Coherence Score for Model with k = 27: 0.3512059107236454
+Coherence Score for Model with k = 28: 0.3601188192783294
+Coherence Score for Model with k = 29: 0.36434201345528094
+Coherence Score for Model with k = 30: 0.3662138871035193
+Coherence Score for Model with k = 31: 0.3847939975352706
+Coherence Score for Model with k = 32: 0.3590550868790948
+Coherence Score for Model with k = 33: 0.3550021853394648
+Coherence Score for Model with k = 34: 0.3574170442508007
+Coherence Score for Model with k = 35: 0.3596464929404917
+Coherence Score for Model with k = 36: 0.36216072778609737
+Coherence Score for Model with k = 37: 0.36697179081911285
+Coherence Score for Model with k = 38: 0.35657807449183787
+Coherence Score for Model with k = 39: 0.3672046785010711
+Coherence Score for Model with k = 40: 0.3606010774797782
+Coherence Score for Model with k = 41: 0.3552956164964255
+Coherence Score for Model with k = 42: 0.3374732388061884
+Coherence Score for Model with k = 43: 0.37113104512127965
+Coherence Score for Model with k = 44: 0.3629814945855093
+Coherence Score for Model with k = 45: 0.3569355455886951
+Coherence Score for Model with k = 46: 0.3666087575908925
+Coherence Score for Model with k = 47: 0.35399168597869807
+Coherence Score for the best model with k = 25: 0.38871153369903
+Coherence Score for Model using a new best k = 25: 0.38871153369903
+This coherence for k = 25 of 0.38871153369903 is better than the old coherence of 0.3866456602216648.
+Model is updated. New k is 25.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           13        12
+
+###############################
+Now starts iteration for t = 17.
+###############################
+
+
+Loading first model (t = 17)...
+
+
+Training second model (t = 18)...
+
+Coherence Score for Model using old k = 25: 0.3420153505027093
+This coherence of 0.3420153505027093 is worse than the old coherence of 0.38871153369903.
+Finding new model...
+
+Coherence Score for Model with k = 30: 0.3492292037220313
+Coherence Score for Model with k = 31: 0.3484800907788944
+Coherence Score for Model with k = 32: 0.3554133343521804
+Coherence Score for Model with k = 33: 0.3745526781416558
+Coherence Score for Model with k = 34: 0.3351115149433639
+Coherence Score for Model with k = 35: 0.3347227680837379
+Coherence Score for Model with k = 36: 0.3350557089541657
+Coherence Score for Model with k = 37: 0.35378231669466437
+Coherence Score for Model with k = 38: 0.3350658626405845
+Coherence Score for Model with k = 39: 0.3377339187851869
+Coherence Score for Model with k = 40: 0.33792077393660425
+Coherence Score for Model with k = 41: 0.33948747282820574
+Coherence Score for Model with k = 42: 0.32672351867225236
+Coherence Score for Model with k = 43: 0.3571333535908651
+Coherence Score for Model with k = 44: 0.3406407400650931
+Coherence Score for Model with k = 45: 0.3562967380471132
+Coherence Score for Model with k = 46: 0.3400785756917438
+Coherence Score for Model with k = 47: 0.3534809860782606
+Coherence Score for Model with k = 48: 0.34294702511833003
+Coherence Score for Model with k = 49: 0.34680824659452364
+Coherence Score for Model with k = 50: 0.3490357226532213
+Coherence Score for Model with k = 51: 0.3424250751941181
+Coherence Score for Model with k = 52: 0.3365044657455919
+Coherence Score for Model with k = 53: 0.3371390291577845
+Coherence Score for Model with k = 54: 0.3247616219502383
+Coherence Score for Model with k = 55: 0.3386635867011701
+Coherence Score for Model with k = 56: 0.33697446118571533
+Coherence Score for the best model with k = 33: 0.3745526781416558
+Coherence Score for Model using a new best k = 33: 0.3745526781416558
+This coherence for k = 33 of 0.3745526781416558 is still worse than the old coherence of 0.38871153369903.
+Continue to use old k of 25.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           14        11
+
+###############################
+Now starts iteration for t = 18.
+###############################
+
+
+Loading first model (t = 18)...
+
+
+Training second model (t = 19)...
+
+Coherence Score for Model using old k = 25: 0.407524888647395
+This coherence of 0.407524888647395 is better than the old coherence of 0.3420153505027093.
+Continue to use old k of 25.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+['figure', 'supplementary', 'blot', 'panel', 'supplementary_information', 'original', 'supplementary_figure', 'show', 'data', 'information']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'trending', 23: 'declining', 24: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           10        14
+
+###############################
+Now starts iteration for t = 19.
+###############################
+
+
+Loading first model (t = 19)...
+
+
+Training second model (t = 20)...
+
+Coherence Score for Model using old k = 25: 0.3733764403381224
+This coherence of 0.3733764403381224 is worse than the old coherence of 0.407524888647395.
+Finding new model...
+
+Coherence Score for Model with k = 28: 0.3920632878796294
+Coherence Score for Model with k = 29: 0.380940219862664
+Coherence Score for Model with k = 30: 0.3724721845641023
+Coherence Score for Model with k = 31: 0.3760829692988063
+Coherence Score for Model with k = 32: 0.3709747064185149
+Coherence Score for Model with k = 33: 0.37081473382219965
+Coherence Score for Model with k = 34: 0.3645220431189993
+Coherence Score for Model with k = 35: 0.3595139087701755
+Coherence Score for Model with k = 36: 0.3691244752648647
+Coherence Score for Model with k = 37: 0.3809779295524749
+Coherence Score for Model with k = 38: 0.3714366297022882
+Coherence Score for Model with k = 39: 0.3568722855542218
+Coherence Score for Model with k = 40: 0.3649056722556529
+Coherence Score for Model with k = 41: 0.37727776505940497
+Coherence Score for Model with k = 42: 0.35414580833145404
+Coherence Score for Model with k = 43: 0.34753094573795396
+Coherence Score for Model with k = 44: 0.37298375899683156
+Coherence Score for Model with k = 45: 0.3984649365228893
+Coherence Score for Model with k = 46: 0.3761968262056737
+Coherence Score for Model with k = 47: 0.35358898582985954
+Coherence Score for Model with k = 48: 0.375612476237639
+Coherence Score for Model with k = 49: 0.3553692918332937
+Coherence Score for Model with k = 50: 0.35095107326109526
+Coherence Score for Model with k = 51: 0.3696416064465884
+Coherence Score for the best model with k = 45: 0.3984649365228893
+Coherence Score for Model using a new best k = 45: 0.3984649365228893
+This coherence for k = 45 of 0.3984649365228893 is still worse than the old coherence of 0.407524888647395.
+Continue to use old k of 25.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           14        11
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ exit
+[?2004l
+exit

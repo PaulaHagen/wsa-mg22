@@ -1,0 +1,1581 @@
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_adding_artificial_data.py
+[?2004l
+DEBUG:root:API_KEY: 8303dc1cb8274761b5831d0b2d8b9bae
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): wsr-openai.openai.azure.com:443
+DEBUG:urllib3.connectionpool:https://wsr-openai.openai.azure.com:443 "POST /openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-08-01-preview HTTP/11" 200 1093
+Generated artificial_topic:  ['neurogenomics', 'epigenetics', 'cognitive_mapping', 'gene_expression', 'brain_integration', 'molecular_signaling', 'neuromorphic_systems', 'personalized_medicine', 'data_interoperability', 'therapeutic_intervention']
+Successfully added 21 artificial abstracts at t = 2
+Successfully added 19 artificial abstracts at t = 4
+Successfully added 17 artificial abstracts at t = 6
+Successfully added 17 artificial abstracts at t = 8
+Successfully added 12 artificial abstracts at t = 10
+Successfully added 18 artificial abstracts at t = 12
+Successfully added 33 artificial abstracts at t = 14
+Successfully added 26 artificial abstracts at t = 16
+Successfully added 38 artificial abstracts at t = 18
+Successfully added 31 artificial abstracts at t = 20
+Successfully added all artificial abstracts at t = range(2, 21, 2).
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_evaluation.py
+[?2004l
+
+###############################
+Training model for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Training second model (t = 2)...
+
+Coherence Score for Model using old k = 22: 0.3785675950792741
+This coherence of 0.3785675950792741 is worse than the old coherence of 0.43240121014185834.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.39132727945511425
+Coherence Score for Model with k = 24: 0.3641636913187294
+Coherence Score for Model with k = 25: 0.37530553725318283
+Coherence Score for Model with k = 26: 0.4040548704503057
+Coherence Score for Model with k = 27: 0.3712439092440042
+Coherence Score for Model with k = 28: 0.41721114123565434
+Coherence Score for Model with k = 29: 0.35088174129767685
+Coherence Score for Model with k = 30: 0.38923022745145186
+Coherence Score for Model with k = 31: 0.41325843870240364
+Coherence Score for Model with k = 32: 0.3669698075702452
+Coherence Score for Model with k = 33: 0.3790044492713679
+Coherence Score for Model with k = 34: 0.3845921117802152
+Coherence Score for Model with k = 35: 0.37272440111415783
+Coherence Score for Model with k = 36: 0.3673096947761165
+Coherence Score for Model with k = 37: 0.39066821629070136
+Coherence Score for Model with k = 38: 0.385984096414793
+Coherence Score for Model with k = 39: 0.3802883130787988
+Coherence Score for Model with k = 40: 0.37216337609687467
+Coherence Score for Model with k = 41: 0.3644640328172241
+Coherence Score for Model with k = 42: 0.39542109735229514
+Coherence Score for the best model with k = 28: 0.41721114123565434
+Coherence Score for Model using a new best k = 28: 0.41721114123565434
+This coherence for k = 28 of 0.41721114123565434 is still worse than the old coherence of 0.43240121014185834.
+Continue to use old k of 22.
+
+###############################
+Training model for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Training second model (t = 4)...
+
+Coherence Score for Model using old k = 22: 0.507940804431746
+This coherence of 0.507940804431746 is better than the old coherence of 0.3963754649427085.
+Continue to use old k of 22.
+
+###############################
+Training model for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Training second model (t = 6)...
+
+Coherence Score for Model using old k = 22: 0.37863316956456733
+This coherence of 0.37863316956456733 is better than the old coherence of 0.34701256035237854.
+Continue to use old k of 22.
+
+###############################
+Training model for t = 7.
+###############################
+
+
+Loading first model (t = 7)...
+
+
+Training second model (t = 8)...
+
+Coherence Score for Model using old k = 24: 0.39999512867825615
+This coherence of 0.39999512867825615 is better than the old coherence of 0.38444538335341544.
+Continue to use old k of 24.
+
+###############################
+Training model for t = 9.
+###############################
+
+
+Loading first model (t = 9)...
+
+
+Training second model (t = 10)...
+
+Coherence Score for Model using old k = 24: 0.3978914627777274
+This coherence of 0.3978914627777274 is better than the old coherence of 0.3477043604440165.
+Continue to use old k of 24.
+
+###############################
+Training model for t = 11.
+###############################
+
+
+Loading first model (t = 11)...
+
+
+Training second model (t = 12)...
+
+Coherence Score for Model using old k = 30: 0.40433694859108676
+This coherence of 0.40433694859108676 is better than the old coherence of 0.38497555409400486.
+Continue to use old k of 30.
+
+###############################
+Training model for t = 13.
+###############################
+
+
+Loading first model (t = 13)...
+
+
+Training second model (t = 14)...
+
+Coherence Score for Model using old k = 24: 0.3877920979218214
+This coherence of 0.3877920979218214 is better than the old coherence of 0.3614518442014513.
+Continue to use old k of 24.
+
+###############################
+Training model for t = 15.
+###############################
+
+
+Loading first model (t = 15)...
+
+
+Training second model (t = 16)...
+
+Coherence Score for Model using old k = 31: 0.39109335810017665
+This coherence of 0.39109335810017665 is better than the old coherence of 0.3647181206350537.
+Continue to use old k of 31.
+
+###############################
+Training model for t = 17.
+###############################
+
+
+Loading first model (t = 17)...
+
+
+Training second model (t = 18)...
+
+Coherence Score for Model using old k = 25: 0.38797139062271185
+This coherence of 0.38797139062271185 is worse than the old coherence of 0.38871153369903.
+Finding new model...
+
+Coherence Score for Model with k = 31: 0.3769297955871274
+Coherence Score for Model with k = 32: 0.34628838933736467
+Coherence Score for Model with k = 33: 0.3886500963573257
+Coherence Score for Model with k = 34: 0.3716057070980425
+Coherence Score for Model with k = 35: 0.3883211170521599
+Coherence Score for Model with k = 36: 0.39800567328952874
+Coherence Score for Model with k = 37: 0.40704484276651764
+Coherence Score for Model with k = 38: 0.3876612427581173
+Coherence Score for Model with k = 39: 0.3757829150015131
+Coherence Score for Model with k = 40: 0.410131115708939
+Coherence Score for Model with k = 41: 0.41463752005323934
+Coherence Score for Model with k = 42: 0.35890218217905695
+Coherence Score for Model with k = 43: 0.39218791938292336
+Coherence Score for Model with k = 44: 0.37521497117699293
+Coherence Score for Model with k = 45: 0.3912304632583756
+Coherence Score for Model with k = 46: 0.3910857223204507
+Coherence Score for Model with k = 47: 0.3801659899432262
+Coherence Score for Model with k = 48: 0.3830645871016944
+Coherence Score for Model with k = 49: 0.37933913187331425
+Coherence Score for Model with k = 50: 0.38385765561909513
+Coherence Score for Model with k = 51: 0.3805013721206432
+Coherence Score for Model with k = 52: 0.3978803456216878
+Coherence Score for Model with k = 53: 0.3792847892971008
+Coherence Score for Model with k = 54: 0.365695451384723
+Coherence Score for Model with k = 55: 0.3970378951393689
+Coherence Score for Model with k = 56: 0.41695283479857714
+Coherence Score for Model with k = 57: 0.3725903692304849
+Coherence Score for the best model with k = 56: 0.41695283479857714
+Coherence Score for Model using a new best k = 56: 0.41695283479857714
+This coherence for k = 56 of 0.41695283479857714 is better than the old coherence of 0.38871153369903.
+Model is updated. New k is 56.
+
+###############################
+Training model for t = 19.
+###############################
+
+
+Loading first model (t = 19)...
+
+
+Training second model (t = 20)...
+
+Coherence Score for Model using old k = 25: 0.45878279468044886
+This coherence of 0.45878279468044886 is better than the old coherence of 0.407524888647395.
+Continue to use old k of 25.
+
+###############################
+Model update: now starts iteration for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Loading second model (t+1 = 2)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        11
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        11
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        11
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging', 12: 'popular', 13: 'emerging', 14: 'emerging', 15: 'emerging', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['cell' 'stem_cell' 'use' 'show' 'human' 'north_atlantic' 'stem' 'cardiac'
+ 'new' 'oceanic']
+['cell' 'high' 'show' 'supernova' 'type' 'development' 'associate' 'use'
+ 'suggest' 'effect']
+['ice' 'change' 'climate' 'result' 'device' 'use' 'one' 'skin' 'gene'
+ 'show']
+['ice' 'result' 'ribosome' 'study' 'suggest' 'observation' 'light' 'show'
+ 'water' 'protein']
+['cell' 'gene' 'vesicle' 'protein' 'nuclear' 'phase' 'factor' 'show'
+ 'expression' 'target']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+['cell' 'stem_cell' 'use' 'show' 'human' 'north_atlantic' 'stem' 'cardiac'
+ 'new' 'oceanic']
+['cell' 'high' 'show' 'supernova' 'type' 'development' 'associate' 'use'
+ 'suggest' 'effect']
+['ice' 'result' 'ribosome' 'study' 'suggest' 'observation' 'light' 'show'
+ 'water' 'protein']
+['cell' 'gene' 'vesicle' 'protein' 'nuclear' 'phase' 'factor' 'show'
+ 'expression' 'target']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         4
+popular           10         7
+
+###############################
+Model update: now starts iteration for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Loading second model (t+1 = 4)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['publisher_right' 'macmillan_publisher' 'molecular_signaling'
+ 'neuromorphic_systems' 'cell' 'right' 'epigenetics' 'publisher' 'show'
+ 'neurogenomics']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+['publisher_right' 'macmillan_publisher' 'molecular_signaling'
+ 'neuromorphic_systems' 'cell' 'right' 'epigenetics' 'publisher' 'show'
+ 'neurogenomics']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           12         9
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'emerging', 21: 'popular'}
+
+These are the emerging topics:
+
+['publisher_right' 'macmillan_publisher' 'molecular_signaling'
+ 'neuromorphic_systems' 'cell' 'right' 'epigenetics' 'publisher' 'show'
+ 'neurogenomics']
+['nature_publishing' 'cell' 'publisher_right' 'macmillan_publisher'
+ 'nature' 'macmillan' 'publishing' 'protein' 'treg_cell' 'right']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+['publisher_right' 'macmillan_publisher' 'molecular_signaling'
+ 'neuromorphic_systems' 'cell' 'right' 'epigenetics' 'publisher' 'show'
+ 'neurogenomics']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular           11         9
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'emerging', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'emerging', 21: 'popular'}
+
+These are the emerging topics:
+
+['brain_integration' 'cognitive_mapping' 'gene_expression' 'epigenetics'
+ 'neuromorphic_systems' 'molecular_signaling' 'neurogenomics'
+ 'personalized_medicine' 'macmillan_publisher' 'publisher_right']
+['personalized_medicine' 'macmillan_publisher' 'neurogenomics'
+ 'publisher_right' 'gene_expression' 'brain_integration'
+ 'therapeutic_intervention' 'cell' 'macmillan_publisher_publisher_right'
+ 'neuromorphic_systems']
+['personalized_medicine' 'molecular_signaling' 'therapeutic_intervention'
+ 'brain_integration' 'gene_expression' 'neuromorphic_systems'
+ 'publisher_right' 'epigenetics' 'cognitive_mapping' 'cell']
+['quantum' 'macmillan_publisher' 'publisher_right' 'right'
+ 'macmillan_publisher_publisher_right' 'publisher' 'spin' 'macmillan'
+ 'brown' 'use']
+['publisher_right' 'macmillan_publisher' 'molecular_signaling'
+ 'neuromorphic_systems' 'cell' 'right' 'epigenetics' 'publisher' 'show'
+ 'neurogenomics']
+['nature_publishing' 'cell' 'publisher_right' 'macmillan_publisher'
+ 'nature' 'macmillan' 'publishing' 'protein' 'treg_cell' 'right']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+['quantum' 'macmillan_publisher' 'publisher_right' 'right'
+ 'macmillan_publisher_publisher_right' 'publisher' 'spin' 'macmillan'
+ 'brown' 'use']
+['publisher_right' 'macmillan_publisher' 'molecular_signaling'
+ 'neuromorphic_systems' 'cell' 'right' 'epigenetics' 'publisher' 'show'
+ 'neurogenomics']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           4         2
+popular            8         8
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'emerging', 5: 'emerging', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'emerging', 10: 'emerging', 11: 'popular', 12: 'emerging', 13: 'emerging', 14: 'popular', 15: 'emerging', 16: 'emerging', 17: 'emerging', 18: 'emerging', 19: 'emerging', 20: 'emerging', 21: 'popular'}
+
+These are the emerging topics:
+
+['macmillan_publisher' 'publisher_right'
+ 'macmillan_publisher_publisher_right' 'right' 'macmillan' 'publisher'
+ 'show' 'two' 'rna' 'system']
+['cell' 'show' 'nature_publishing' 'macmillan_publisher' 'human'
+ 'publisher_right' 'stem_cell' 'mouse' 'oxidation_state' 'stem']
+['brain_integration' 'cognitive_mapping' 'gene_expression' 'epigenetics'
+ 'neuromorphic_systems' 'molecular_signaling' 'neurogenomics'
+ 'personalized_medicine' 'macmillan_publisher' 'publisher_right']
+['personalized_medicine' 'macmillan_publisher' 'neurogenomics'
+ 'publisher_right' 'gene_expression' 'brain_integration'
+ 'therapeutic_intervention' 'cell' 'macmillan_publisher_publisher_right'
+ 'neuromorphic_systems']
+['macmillan_publisher' 'publisher_right' 'macmillan' 'right'
+ 'macmillan_publisher_publisher_right' 'publisher' 'show' 'use'
+ 'nature_publishing' 'quantum']
+['publisher_right' 'macmillan_publisher' 'structure' 'nature_publishing'
+ 'network' 'show' 'macmillan' 'model' 'gene' 'cell']
+['macmillan_publisher' 'publisher_right' 'macmillan'
+ 'macmillan_publisher_publisher_right' 'publisher' 'protein' 'result'
+ 'show' 'right' 'model']
+['personalized_medicine' 'molecular_signaling' 'therapeutic_intervention'
+ 'brain_integration' 'gene_expression' 'neuromorphic_systems'
+ 'publisher_right' 'epigenetics' 'cognitive_mapping' 'cell']
+['quantum' 'macmillan_publisher' 'publisher_right' 'right'
+ 'macmillan_publisher_publisher_right' 'publisher' 'spin' 'macmillan'
+ 'brown' 'use']
+['cell' 'right' 'publisher_right' 'macmillan_publisher' 'structure'
+ 'protein' 'macmillan' 'show' 'dna' 'macmillan_publishers']
+['macmillan_publisher' 'publisher_right' 'cell' 'macmillan' 'right'
+ 'macmillan_publisher_publisher_right' 'publisher' 'protein' 'show'
+ 'carbon']
+['publisher_right' 'macmillan_publisher' 'molecular_signaling'
+ 'neuromorphic_systems' 'cell' 'right' 'epigenetics' 'publisher' 'show'
+ 'neurogenomics']
+['nature_publishing' 'cell' 'publisher_right' 'macmillan_publisher'
+ 'nature' 'macmillan' 'publishing' 'protein' 'treg_cell' 'right']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+['macmillan_publisher' 'publisher_right'
+ 'macmillan_publisher_publisher_right' 'right' 'macmillan' 'publisher'
+ 'show' 'two' 'rna' 'system']
+['macmillan_publisher' 'publisher_right' 'macmillan' 'right'
+ 'macmillan_publisher_publisher_right' 'publisher' 'show' 'use'
+ 'nature_publishing' 'quantum']
+['quantum' 'macmillan_publisher' 'publisher_right' 'right'
+ 'macmillan_publisher_publisher_right' 'publisher' 'spin' 'macmillan'
+ 'brown' 'use']
+['cell' 'right' 'publisher_right' 'macmillan_publisher' 'structure'
+ 'protein' 'macmillan' 'show' 'dna' 'macmillan_publishers']
+['macmillan_publisher' 'publisher_right' 'cell' 'macmillan' 'right'
+ 'macmillan_publisher_publisher_right' 'publisher' 'protein' 'show'
+ 'carbon']
+['publisher_right' 'macmillan_publisher' 'molecular_signaling'
+ 'neuromorphic_systems' 'cell' 'right' 'epigenetics' 'publisher' 'show'
+ 'neurogenomics']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           7         6
+popular            5         4
+
+###############################
+Model update: now starts iteration for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Loading second model (t+1 = 6)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        10
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        10
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['gene_expression' 'brain_integration' 'neurogenomics' 'epigenetics'
+ 'neuromorphic_systems' 'data_interoperability' 'molecular_signaling'
+ 'therapeutic_intervention' 'cognitive_mapping' 'personalized_medicine']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           11        10
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['gene_expression' 'brain_integration' 'neurogenomics' 'epigenetics'
+ 'neuromorphic_systems' 'data_interoperability' 'molecular_signaling'
+ 'therapeutic_intervention' 'cognitive_mapping' 'personalized_medicine']
+['cell' 'change' 'show' 'protein' 'gene' 'human' 'eruption' 'increase'
+ 'dust' 'two']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         0
+popular           10        10
+
+###############################
+Model update: now starts iteration for t = 7.
+###############################
+
+
+Loading first model (t = 7)...
+
+
+Loading second model (t+1 = 8)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        13
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        13
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['structure' 'mass' 'black_hole' 'show' 'iron' 'regulate' 'spine' 'low'
+ 'human' 'protein']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+['structure' 'mass' 'black_hole' 'show' 'iron' 'regulate' 'spine' 'low'
+ 'human' 'protein']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           11        12
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'emerging', 23: 'popular'}
+
+These are the emerging topics:
+
+['structure' 'mass' 'black_hole' 'show' 'iron' 'regulate' 'spine' 'low'
+ 'human' 'protein']
+['brain_integration' 'therapeutic_intervention' 'gene_expression'
+ 'cognitive_mapping' 'neuromorphic_systems' 'epigenetics'
+ 'personalized_medicine' 'neurogenomics' 'molecular_signaling'
+ 'data_interoperability']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+['structure' 'mass' 'black_hole' 'show' 'iron' 'regulate' 'spine' 'low'
+ 'human' 'protein']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular           10        12
+
+###############################
+Model update: now starts iteration for t = 9.
+###############################
+
+
+Loading first model (t = 9)...
+
+
+Loading second model (t+1 = 10)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['brain_integration' 'molecular_signaling' 'gene_expression'
+ 'neurogenomics' 'cognitive_mapping' 'epigenetics' 'data_interoperability'
+ 'neuromorphic_systems' 'therapeutic_intervention' 'personalized_medicine']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular            9        14
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['gene_expression' 'epigenetics' 'molecular_signaling'
+ 'personalized_medicine' 'data_interoperability' 'neurogenomics'
+ 'therapeutic_intervention' 'cognitive_mapping' 'brain_integration'
+ 'neuromorphic_systems']
+['brain_integration' 'molecular_signaling' 'gene_expression'
+ 'neurogenomics' 'cognitive_mapping' 'epigenetics' 'data_interoperability'
+ 'neuromorphic_systems' 'therapeutic_intervention' 'personalized_medicine']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+['gene_expression' 'epigenetics' 'molecular_signaling'
+ 'personalized_medicine' 'data_interoperability' 'neurogenomics'
+ 'therapeutic_intervention' 'cognitive_mapping' 'brain_integration'
+ 'neuromorphic_systems']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular            9        13
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['gene_expression' 'epigenetics' 'molecular_signaling'
+ 'personalized_medicine' 'data_interoperability' 'neurogenomics'
+ 'therapeutic_intervention' 'cognitive_mapping' 'brain_integration'
+ 'neuromorphic_systems']
+['mutation' 'cancer' 'human' 'use' 'find' 'early' 'gene'
+ 'data_interoperability' 'specie' 'show']
+['brain_integration' 'molecular_signaling' 'gene_expression'
+ 'neurogenomics' 'cognitive_mapping' 'epigenetics' 'data_interoperability'
+ 'neuromorphic_systems' 'therapeutic_intervention' 'personalized_medicine']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+['gene_expression' 'epigenetics' 'molecular_signaling'
+ 'personalized_medicine' 'data_interoperability' 'neurogenomics'
+ 'therapeutic_intervention' 'cognitive_mapping' 'brain_integration'
+ 'neuromorphic_systems']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         1
+popular            8        13
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'emerging', 18: 'popular', 19: 'emerging', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['use' 'quantum' 'complex' 'flow' 'two' 'cell' 'state' 'result' 'gene'
+ 'black_hole']
+['gene_expression' 'epigenetics' 'molecular_signaling'
+ 'personalized_medicine' 'data_interoperability' 'neurogenomics'
+ 'therapeutic_intervention' 'cognitive_mapping' 'brain_integration'
+ 'neuromorphic_systems']
+['gene' 'use' 'cell' 'structure' 'provide' 'result' 'protein' 'show'
+ 'identify' 'activity']
+['mutation' 'cancer' 'human' 'use' 'find' 'early' 'gene'
+ 'data_interoperability' 'specie' 'show']
+['brain_integration' 'molecular_signaling' 'gene_expression'
+ 'neurogenomics' 'cognitive_mapping' 'epigenetics' 'data_interoperability'
+ 'neuromorphic_systems' 'therapeutic_intervention' 'personalized_medicine']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'trending'}
+
+These are the emerging + trending topics:
+
+['use' 'quantum' 'complex' 'flow' 'two' 'cell' 'state' 'result' 'gene'
+ 'black_hole']
+['gene_expression' 'epigenetics' 'molecular_signaling'
+ 'personalized_medicine' 'data_interoperability' 'neurogenomics'
+ 'therapeutic_intervention' 'cognitive_mapping' 'brain_integration'
+ 'neuromorphic_systems']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         2
+popular            7        12
+
+###############################
+Model update: now starts iteration for t = 11.
+###############################
+
+
+Loading first model (t = 11)...
+
+
+Loading second model (t+1 = 12)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular'}
+
+These are the emerging topics:
+
+['brain_integration' 'neuromorphic_systems' 'personalized_medicine'
+ 'neurogenomics' 'molecular_signaling' 'therapeutic_intervention'
+ 'gene_expression' 'epigenetics' 'data_interoperability'
+ 'cognitive_mapping']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           16        13
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular'}
+
+These are the emerging topics:
+
+['brain_integration' 'neuromorphic_systems' 'personalized_medicine'
+ 'neurogenomics' 'molecular_signaling' 'therapeutic_intervention'
+ 'gene_expression' 'epigenetics' 'data_interoperability'
+ 'cognitive_mapping']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           16        13
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'emerging', 28: 'popular', 29: 'popular'}
+
+These are the emerging topics:
+
+['brain_integration' 'neuromorphic_systems' 'personalized_medicine'
+ 'neurogenomics' 'molecular_signaling' 'therapeutic_intervention'
+ 'gene_expression' 'epigenetics' 'data_interoperability'
+ 'cognitive_mapping']
+['black_hole' 'black' 'accretion' 'gas' 'hole' 'plate' 'use'
+ 'supermassive_black' 'cell' 'cloud']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         0
+popular           15        13
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'emerging', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'emerging', 28: 'emerging', 29: 'popular'}
+
+These are the emerging topics:
+
+['therapeutic_intervention' 'brain_integration' 'cognitive_mapping'
+ 'epigenetics' 'data_interoperability' 'neurogenomics' 'gene_expression'
+ 'molecular_signaling' 'neuromorphic_systems' 'increase']
+['ice' 'show' 'dna' 'energy' 'structure' 'antarctic_ice' 'ice_shelf'
+ 'complex' 'model' 'global']
+['cell' 'show' 'stem_cell' 'fusion' 'sediment' 'growth' 'complex' 'stem'
+ 'mitochondrial' 'control']
+['brain_integration' 'neuromorphic_systems' 'personalized_medicine'
+ 'neurogenomics' 'molecular_signaling' 'therapeutic_intervention'
+ 'gene_expression' 'epigenetics' 'data_interoperability'
+ 'cognitive_mapping']
+['black_hole' 'black' 'accretion' 'gas' 'hole' 'plate' 'use'
+ 'supermassive_black' 'cell' 'cloud']
+['use' 'ecosystem' 'quantum' 'sputnik_planitia' 'include' 'author' 'light'
+ 'sputnik' 'rna' 'interaction']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'trending'}
+
+These are the emerging + trending topics:
+
+['therapeutic_intervention' 'brain_integration' 'cognitive_mapping'
+ 'epigenetics' 'data_interoperability' 'neurogenomics' 'gene_expression'
+ 'molecular_signaling' 'neuromorphic_systems' 'increase']
+['cell' 'show' 'stem_cell' 'fusion' 'sediment' 'growth' 'complex' 'stem'
+ 'mitochondrial' 'control']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           4         2
+popular           13        11
+
+###############################
+Model update: now starts iteration for t = 13.
+###############################
+
+
+Loading first model (t = 13)...
+
+
+Loading second model (t+1 = 14)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'emerging', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['neuromorphic_systems' 'gene_expression' 'brain_integration'
+ 'personalized_medicine' 'neurogenomics' 'epigenetics'
+ 'therapeutic_intervention' 'data_interoperability' 'molecular_signaling'
+ 'cognitive_mapping']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           14         9
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'emerging', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['neuromorphic_systems' 'gene_expression' 'brain_integration'
+ 'personalized_medicine' 'neurogenomics' 'epigenetics'
+ 'therapeutic_intervention' 'data_interoperability' 'molecular_signaling'
+ 'cognitive_mapping']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           14         9
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'emerging', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['neuromorphic_systems' 'gene_expression' 'brain_integration'
+ 'personalized_medicine' 'neurogenomics' 'epigenetics'
+ 'therapeutic_intervention' 'data_interoperability' 'molecular_signaling'
+ 'cognitive_mapping']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           14         9
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'emerging', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'emerging', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['neuromorphic_systems' 'gene_expression' 'brain_integration'
+ 'personalized_medicine' 'neurogenomics' 'epigenetics'
+ 'therapeutic_intervention' 'data_interoperability' 'molecular_signaling'
+ 'cognitive_mapping']
+['quantum' 'use' 'material' 'perovskite' 'cell' 'emission' 'high' 'carbon'
+ 'quantum_efficiency' 'show']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+['quantum' 'use' 'material' 'perovskite' 'cell' 'emission' 'high' 'carbon'
+ 'quantum_efficiency' 'show']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular           14         8
+
+###############################
+Model update: now starts iteration for t = 15.
+###############################
+
+
+Loading first model (t = 15)...
+
+
+Loading second model (t+1 = 16)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           18        13
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           18        13
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'emerging', 23: 'popular', 24: 'emerging', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular'}
+
+These are the emerging topics:
+
+['molecular_signaling' 'gene_expression' 'brain_integration'
+ 'neurogenomics' 'personalized_medicine' 'neuromorphic_systems'
+ 'epigenetics' 'cognitive_mapping' 'data_interoperability'
+ 'therapeutic_intervention']
+['publish_access' 'access_link' 'link_top' 'amendment_paper'
+ 'paper_publish' 'link' 'access' 'amendment' 'access_link_link_top'
+ 'paper_publish_publish_access']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'trending'}
+
+These are the emerging + trending topics:
+
+['molecular_signaling' 'gene_expression' 'brain_integration'
+ 'neurogenomics' 'personalized_medicine' 'neuromorphic_systems'
+ 'epigenetics' 'cognitive_mapping' 'data_interoperability'
+ 'therapeutic_intervention']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular           17        12
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'emerging', 23: 'popular', 24: 'emerging', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular'}
+
+These are the emerging topics:
+
+['quantum' 'structure' 'protein' 'use' 'provide' 'study' 'spin' 'basis'
+ 'state' 'couple']
+['molecular_signaling' 'gene_expression' 'brain_integration'
+ 'neurogenomics' 'personalized_medicine' 'neuromorphic_systems'
+ 'epigenetics' 'cognitive_mapping' 'data_interoperability'
+ 'therapeutic_intervention']
+['publish_access' 'access_link' 'link_top' 'amendment_paper'
+ 'paper_publish' 'link' 'access' 'amendment' 'access_link_link_top'
+ 'paper_publish_publish_access']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'trending'}
+
+These are the emerging + trending topics:
+
+['quantum' 'structure' 'protein' 'use' 'provide' 'study' 'spin' 'basis'
+ 'state' 'couple']
+['molecular_signaling' 'gene_expression' 'brain_integration'
+ 'neurogenomics' 'personalized_medicine' 'neuromorphic_systems'
+ 'epigenetics' 'cognitive_mapping' 'data_interoperability'
+ 'therapeutic_intervention']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         2
+popular           17        11
+
+###############################
+Model update: now starts iteration for t = 17.
+###############################
+
+
+Loading first model (t = 17)...
+
+
+Loading second model (t+1 = 18)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'emerging', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'emerging', 36: 'popular', 37: 'popular', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'popular', 48: 'popular', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'popular', 54: 'popular', 55: 'popular'}
+
+These are the emerging topics:
+
+['see' 'molecular_signaling' 'epigenetics' 'data_interoperability'
+ 'neurogenomics' 'gene_expression' 'therapeutic_intervention' 'analysis'
+ 'personalized_medicine' 'research']
+['version' 'version_article' 'html_pdf' 'pdf_version' 'correct_html'
+ 'article' 'html' 'pdf' 'html_pdf_pdf_version' 'error_correct']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'trending', 27: 'declining', 28: 'trending', 29: 'declining', 30: 'declining', 31: 'trending', 32: 'declining', 33: 'trending', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'trending', 41: 'declining', 42: 'declining', 43: 'trending', 44: 'declining', 45: 'declining', 46: 'trending', 47: 'declining', 48: 'trending', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'declining', 53: 'declining', 54: 'trending', 55: 'declining'}
+
+These are the emerging + trending topics:
+
+['version' 'version_article' 'html_pdf' 'pdf_version' 'correct_html'
+ 'article' 'html' 'pdf' 'html_pdf_pdf_version' 'error_correct']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular           28        26
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'emerging', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'emerging', 36: 'popular', 37: 'popular', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'popular', 48: 'popular', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'popular', 54: 'popular', 55: 'popular'}
+
+These are the emerging topics:
+
+['see' 'molecular_signaling' 'epigenetics' 'data_interoperability'
+ 'neurogenomics' 'gene_expression' 'therapeutic_intervention' 'analysis'
+ 'personalized_medicine' 'research']
+['version' 'version_article' 'html_pdf' 'pdf_version' 'correct_html'
+ 'article' 'html' 'pdf' 'html_pdf_pdf_version' 'error_correct']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'trending', 27: 'declining', 28: 'trending', 29: 'declining', 30: 'declining', 31: 'trending', 32: 'declining', 33: 'trending', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'trending', 41: 'declining', 42: 'declining', 43: 'trending', 44: 'declining', 45: 'declining', 46: 'trending', 47: 'declining', 48: 'trending', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'declining', 53: 'declining', 54: 'trending', 55: 'declining'}
+
+These are the emerging + trending topics:
+
+['version' 'version_article' 'html_pdf' 'pdf_version' 'correct_html'
+ 'article' 'html' 'pdf' 'html_pdf_pdf_version' 'error_correct']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular           28        26
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'emerging', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'emerging', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'emerging', 36: 'popular', 37: 'emerging', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'popular', 48: 'popular', 49: 'emerging', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'popular', 54: 'popular', 55: 'popular'}
+
+These are the emerging topics:
+
+['see' 'molecular_signaling' 'epigenetics' 'data_interoperability'
+ 'neurogenomics' 'gene_expression' 'therapeutic_intervention' 'analysis'
+ 'personalized_medicine' 'research']
+['human' 'gene_expression' 'neuromorphic_systems'
+ 'therapeutic_intervention' 'neurogenomics' 'personalized_medicine'
+ 'immune' 'show' 'climate' 'cell']
+['cell' 'see' 'data' 'structure' 'use' 'author' 'patient' 'response'
+ 'result' 'new']
+['version' 'version_article' 'html_pdf' 'pdf_version' 'correct_html'
+ 'article' 'html' 'pdf' 'html_pdf_pdf_version' 'error_correct']
+['gene_expression' 'molecular_signaling' 'see' 'neurogenomics'
+ 'brain_integration' 'therapeutic_intervention' 'cognitive_mapping'
+ 'epigenetics' 'cell' 'structure']
+['brain_integration' 'data_interoperability' 'therapeutic_intervention'
+ 'epigenetics' 'neuromorphic_systems' 'neurogenomics'
+ 'molecular_signaling' 'personalized_medicine' 'gene_expression'
+ 'cognitive_mapping']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'trending', 27: 'declining', 28: 'trending', 29: 'declining', 30: 'declining', 31: 'trending', 32: 'declining', 33: 'trending', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'trending', 41: 'declining', 42: 'declining', 43: 'trending', 44: 'declining', 45: 'declining', 46: 'trending', 47: 'declining', 48: 'trending', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'declining', 53: 'declining', 54: 'trending', 55: 'declining'}
+
+These are the emerging + trending topics:
+
+['version' 'version_article' 'html_pdf' 'pdf_version' 'correct_html'
+ 'article' 'html' 'pdf' 'html_pdf_pdf_version' 'error_correct']
+['gene_expression' 'molecular_signaling' 'see' 'neurogenomics'
+ 'brain_integration' 'therapeutic_intervention' 'cognitive_mapping'
+ 'epigenetics' 'cell' 'structure']
+['brain_integration' 'data_interoperability' 'therapeutic_intervention'
+ 'epigenetics' 'neuromorphic_systems' 'neurogenomics'
+ 'molecular_signaling' 'personalized_medicine' 'gene_expression'
+ 'cognitive_mapping']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         3
+popular           26        24
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'emerging', 9: 'emerging', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'emerging', 19: 'emerging', 20: 'popular', 21: 'emerging', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'emerging', 26: 'emerging', 27: 'emerging', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'emerging', 34: 'popular', 35: 'emerging', 36: 'popular', 37: 'emerging', 38: 'emerging', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'emerging', 43: 'popular', 44: 'emerging', 45: 'emerging', 46: 'popular', 47: 'emerging', 48: 'emerging', 49: 'emerging', 50: 'popular', 51: 'emerging', 52: 'emerging', 53: 'emerging', 54: 'popular', 55: 'popular'}
+
+These are the emerging topics:
+
+['see' 'molecular_signaling' 'epigenetics' 'data_interoperability'
+ 'neurogenomics' 'gene_expression' 'therapeutic_intervention' 'analysis'
+ 'personalized_medicine' 'research']
+['epigenetics' 'gene_expression' 'therapeutic_intervention'
+ 'neuromorphic_systems' 'personalized_medicine' 'brain_integration'
+ 'neurogenomics' 'data_interoperability' 'quantum' 'cognitive_mapping']
+['cognitive_mapping' 'protein' 'structure' 'epigenetics'
+ 'data_interoperability' 'use' 'design' 'complex' 'provide'
+ 'electron_microscopy']
+['cell' 'quantum' 'identify' 'structure' 'use' 'see' 'mechanism' 'phase'
+ 'magnetic' 'rna']
+['use' 'specie' 'cell' 'quantum' 'change' 'show' 'receptor' 'nitrogen'
+ 'global' 'precipitation']
+['human' 'gene_expression' 'neuromorphic_systems'
+ 'therapeutic_intervention' 'neurogenomics' 'personalized_medicine'
+ 'immune' 'show' 'climate' 'cell']
+['quantum' 'high' 'see' 'state' 'tree' 'topological' 'provide' 'show'
+ 'result' 'carbon']
+['gene' 'use' 'show' 'molecular' 'reveal' 'change' 'cell' 'data' 'water'
+ 'chemical']
+['quantum' 'show' 'two' 'use' 'contact' 'sensory' 'error' 'see' 'increase'
+ 'high']
+['cell' 'see' 'data' 'structure' 'use' 'author' 'patient' 'response'
+ 'result' 'new']
+['ice' 'show' 'receptor' 'change' 'immune' 'optical' 'pulse' 'sea'
+ 'structure' 'cell']
+['version' 'version_article' 'html_pdf' 'pdf_version' 'correct_html'
+ 'article' 'html' 'pdf' 'html_pdf_pdf_version' 'error_correct']
+['gene_expression' 'molecular_signaling' 'see' 'neurogenomics'
+ 'brain_integration' 'therapeutic_intervention' 'cognitive_mapping'
+ 'epigenetics' 'cell' 'structure']
+['human' 'use' 'protein' 'energy' 'include' 'show' 'system' 'provide'
+ 'cell' 'make']
+['surface' 'use' 'result' 'new' 'increase' 'immune' 'interaction' 'show'
+ 'immune_system' 'see']
+['cell' 'show' 'monocyte' 'author' 'human' 'infection' 'model' 'function'
+ 'increase' 'see']
+['jawed_vertebrate' 'jawed' 'show' 'early' 'limit' 'degree_celsius'
+ 'cancer' 'change' 'degree' 'tumour']
+['quantum' 'cell' 'field' 'phase' 'show' 'genetic' 'phase_transition'
+ 'magnetic' 'magnetic_field' 'provide']
+['see' 'cell' 'quantum' 'human' 'use' 'show' 'provide' 'charge' 'higgs'
+ 'identify']
+['brain_integration' 'data_interoperability' 'therapeutic_intervention'
+ 'epigenetics' 'neuromorphic_systems' 'neurogenomics'
+ 'molecular_signaling' 'personalized_medicine' 'gene_expression'
+ 'cognitive_mapping']
+['use' 'show' 'include' 'see' 'associate' 'identify' 'lattice' 'moire'
+ 'high' 'topological']
+['neurogenomics' 'cognitive_mapping' 'personalized_medicine' 'epigenetics'
+ 'brain_integration' 'gene_expression' 'therapeutic_intervention'
+ 'molecular_signaling' 'neuromorphic_systems' 'data_interoperability']
+['cell' 'show' 'tumour' 'change' 'mouse' 'effect' 'immune' 'gene' 'use'
+ 'provide']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'trending', 27: 'declining', 28: 'trending', 29: 'declining', 30: 'declining', 31: 'trending', 32: 'declining', 33: 'trending', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'trending', 41: 'declining', 42: 'declining', 43: 'trending', 44: 'declining', 45: 'declining', 46: 'trending', 47: 'declining', 48: 'trending', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'declining', 53: 'declining', 54: 'trending', 55: 'declining'}
+
+These are the emerging + trending topics:
+
+['cell' 'quantum' 'identify' 'structure' 'use' 'see' 'mechanism' 'phase'
+ 'magnetic' 'rna']
+['use' 'specie' 'cell' 'quantum' 'change' 'show' 'receptor' 'nitrogen'
+ 'global' 'precipitation']
+['quantum' 'high' 'see' 'state' 'tree' 'topological' 'provide' 'show'
+ 'result' 'carbon']
+['gene' 'use' 'show' 'molecular' 'reveal' 'change' 'cell' 'data' 'water'
+ 'chemical']
+['quantum' 'show' 'two' 'use' 'contact' 'sensory' 'error' 'see' 'increase'
+ 'high']
+['ice' 'show' 'receptor' 'change' 'immune' 'optical' 'pulse' 'sea'
+ 'structure' 'cell']
+['version' 'version_article' 'html_pdf' 'pdf_version' 'correct_html'
+ 'article' 'html' 'pdf' 'html_pdf_pdf_version' 'error_correct']
+['gene_expression' 'molecular_signaling' 'see' 'neurogenomics'
+ 'brain_integration' 'therapeutic_intervention' 'cognitive_mapping'
+ 'epigenetics' 'cell' 'structure']
+['human' 'use' 'protein' 'energy' 'include' 'show' 'system' 'provide'
+ 'cell' 'make']
+['see' 'cell' 'quantum' 'human' 'use' 'show' 'provide' 'charge' 'higgs'
+ 'identify']
+['brain_integration' 'data_interoperability' 'therapeutic_intervention'
+ 'epigenetics' 'neuromorphic_systems' 'neurogenomics'
+ 'molecular_signaling' 'personalized_medicine' 'gene_expression'
+ 'cognitive_mapping']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          12        11
+popular           17        16
+
+###############################
+Model update: now starts iteration for t = 19.
+###############################
+
+
+Loading first model (t = 19)...
+
+
+Loading second model (t+1 = 20)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           24         1
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           24         1
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           24         1
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+['therapeutic_intervention' 'cognitive_mapping' 'neurogenomics'
+ 'gene_expression' 'epigenetics' 'neuromorphic_systems'
+ 'brain_integration' 'molecular_signaling' 'data_interoperability'
+ 'personalized_medicine']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+['therapeutic_intervention' 'cognitive_mapping' 'neurogenomics'
+ 'gene_expression' 'epigenetics' 'neuromorphic_systems'
+ 'brain_integration' 'molecular_signaling' 'data_interoperability'
+ 'personalized_medicine']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           24         0
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ exit

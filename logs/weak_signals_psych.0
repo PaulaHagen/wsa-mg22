@@ -1,0 +1,1613 @@
+[?2004hphagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ pyenv activate wsa-etm
+[?2004l
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_prepre[Kocessing_dar[K[K[Kpickklekl[K[K[K[K[Kle-py[K[K[K.py_.pyd.pya.pyt.pya.py[C
+[?2004l
+[nltk_data] Downloading package averaged_perceptron_tagger_eng to
+[nltk_data]     /home/phagen/nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger_eng is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading collection 'popular'
+[nltk_data]    | 
+[nltk_data]    | Downloading package cmudict to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package cmudict is already up-to-date!
+[nltk_data]    | Downloading package gazetteers to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package gazetteers is already up-to-date!
+[nltk_data]    | Downloading package genesis to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package genesis is already up-to-date!
+[nltk_data]    | Downloading package gutenberg to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package gutenberg is already up-to-date!
+[nltk_data]    | Downloading package inaugural to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package inaugural is already up-to-date!
+[nltk_data]    | Downloading package movie_reviews to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package movie_reviews is already up-to-date!
+[nltk_data]    | Downloading package names to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package names is already up-to-date!
+[nltk_data]    | Downloading package shakespeare to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package shakespeare is already up-to-date!
+[nltk_data]    | Downloading package stopwords to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package stopwords is already up-to-date!
+[nltk_data]    | Downloading package treebank to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package treebank is already up-to-date!
+[nltk_data]    | Downloading package twitter_samples to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package twitter_samples is already up-to-date!
+[nltk_data]    | Downloading package omw to /home/phagen/nltk_data...
+[nltk_data]    |   Package omw is already up-to-date!
+[nltk_data]    | Downloading package omw-1.4 to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package omw-1.4 is already up-to-date!
+[nltk_data]    | Downloading package wordnet to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet is already up-to-date!
+[nltk_data]    | Downloading package wordnet2021 to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet2021 is already up-to-date!
+[nltk_data]    | Downloading package wordnet31 to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet31 is already up-to-date!
+[nltk_data]    | Downloading package wordnet_ic to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet_ic is already up-to-date!
+[nltk_data]    | Downloading package words to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package words is already up-to-date!
+[nltk_data]    | Downloading package maxent_ne_chunker to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package maxent_ne_chunker is already up-to-date!
+[nltk_data]    | Downloading package punkt to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package punkt is already up-to-date!
+[nltk_data]    | Downloading package snowball_data to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package snowball_data is already up-to-date!
+[nltk_data]    | Downloading package averaged_perceptron_tagger to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package averaged_perceptron_tagger is already up-
+[nltk_data]    |       to-date!
+[nltk_data]    | 
+[nltk_data]  Done downloading collection popular
+[nltk_data] Downloading package stopwords to /home/phagen/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Importing Psychological science data...
+
+Cleaning data...
+None values removed.
+Number of (title + desc) duplicates: 0. Duplicates Removed.
+Dataframe has now {len(clean_df)} entries.
+
+Preprocessing data...
+
+Saving preprocessed corpus to file...
+
+Adding bigrams...
+
+Filtering data...
+
+Transforming into octis format...
+
+Splitting data into years...
+Result: number of dataframes/ calculated years/ t: 20
+
+Repeating steps for different years t...
+
+Preprocessing DONE! Files can be found in Data folder.
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_preprocessing_pickle_data.py[21Penv activate wsa-etmexit[Kpyenv activate wsa-etmthon run_for_preprocessing_pickle_data.py[Kpython run_for_topic_analysis.py
+[?2004l
+Training first model (t = 1)...
+
+Coherence Score for Model with k = 9: 0.4241533125305682
+Coherence Score for Model with k = 10: 0.3803583713394023
+Coherence Score for Model with k = 11: 0.39802401034271107
+Coherence Score for Model with k = 12: 0.3881383863854411
+Coherence Score for Model with k = 13: 0.38099491552464243
+Coherence Score for Model with k = 14: 0.39487539020679296
+Coherence Score for Model with k = 15: 0.4114664418099991
+Coherence Score for Model with k = 16: 0.4043197859538762
+Coherence Score for the best model with k = 9: 0.4241533125305682
+
+###############################
+Now starts iteration for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Training second model (t = 2)...
+
+Coherence Score for Model using old k = 9: 0.32191294311793267
+This coherence of 0.32191294311793267 is worse than the old coherence of 0.4241533125305682.
+Finding new model...
+
+Coherence Score for Model with k = 9: 0.3350507467572086
+Coherence Score for Model with k = 10: 0.32374278362320114
+Coherence Score for Model with k = 11: 0.33803380776514785
+Coherence Score for Model with k = 12: 0.34902847538544785
+Coherence Score for Model with k = 13: 0.31751037482713274
+Coherence Score for Model with k = 14: 0.31288660949342445
+Coherence Score for Model with k = 15: 0.31892005497166587
+Coherence Score for Model with k = 16: 0.33529412932697245
+Coherence Score for Model with k = 17: 0.3396352889861934
+Coherence Score for the best model with k = 12: 0.34902847538544785
+Coherence Score for Model using a new best k = 12: 0.34902847538544785
+This coherence for k = 12 of 0.34902847538544785 is still worse than the old coherence of 0.4241533125305682.
+Continue to use old k of 9.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            7         2
+
+###############################
+Now starts iteration for t = 2.
+###############################
+
+
+Loading first model (t = 2)...
+
+
+Training second model (t = 3)...
+
+Coherence Score for Model using old k = 9: 0.3345997953883722
+This coherence of 0.3345997953883722 is better than the old coherence of 0.32191294311793267.
+Continue to use old k of 9.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            3         6
+
+###############################
+Now starts iteration for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Training second model (t = 4)...
+
+Coherence Score for Model using old k = 9: 0.4008365804033651
+This coherence of 0.4008365804033651 is better than the old coherence of 0.3345997953883722.
+Continue to use old k of 9.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            5         4
+
+###############################
+Now starts iteration for t = 4.
+###############################
+
+
+Loading first model (t = 4)...
+
+
+Training second model (t = 5)...
+
+Coherence Score for Model using old k = 9: 0.30460192352992194
+This coherence of 0.30460192352992194 is worse than the old coherence of 0.4008365804033651.
+Finding new model...
+
+Coherence Score for Model with k = 10: 0.3414015268599034
+Coherence Score for Model with k = 11: 0.3334093816550412
+Coherence Score for Model with k = 12: 0.3210175161112256
+Coherence Score for Model with k = 13: 0.3242688486679279
+Coherence Score for Model with k = 14: 0.302677312749372
+Coherence Score for Model with k = 15: 0.3335074174781654
+Coherence Score for Model with k = 16: 0.3107743670785156
+Coherence Score for Model with k = 17: 0.32325639209329965
+Coherence Score for Model with k = 18: 0.2990115718292364
+Coherence Score for Model with k = 19: 0.3205837741596751
+Coherence Score for the best model with k = 10: 0.3414015268599034
+Coherence Score for Model using a new best k = 10: 0.3414015268599034
+This coherence for k = 10 of 0.3414015268599034 is still worse than the old coherence of 0.4008365804033651.
+Continue to use old k of 9.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            4         5
+
+###############################
+Now starts iteration for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Training second model (t = 6)...
+
+Coherence Score for Model using old k = 9: 0.3271092706441084
+This coherence of 0.3271092706441084 is better than the old coherence of 0.30460192352992194.
+Continue to use old k of 9.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'emerging', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+['visual', 'participant', 'visual_search', 'level', 'show', 'search', 'effect', 'mood', 'information', 'sentence']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+['visual', 'participant', 'visual_search', 'level', 'show', 'search', 'effect', 'mood', 'information', 'sentence']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular            5         3
+
+###############################
+Now starts iteration for t = 6.
+###############################
+
+
+Loading first model (t = 6)...
+
+
+Training second model (t = 7)...
+
+Coherence Score for Model using old k = 9: 0.3000667989844383
+This coherence of 0.3000667989844383 is worse than the old coherence of 0.3271092706441084.
+Finding new model...
+
+Coherence Score for Model with k = 10: 0.3164629385935263
+Coherence Score for Model with k = 11: 0.32584949139002284
+Coherence Score for Model with k = 12: 0.3322633548109902
+Coherence Score for Model with k = 13: 0.3135999196958315
+Coherence Score for Model with k = 14: 0.32297276068383846
+Coherence Score for Model with k = 15: 0.2992137779601969
+Coherence Score for Model with k = 16: 0.34557929541413235
+Coherence Score for Model with k = 17: 0.3057342064968591
+Coherence Score for Model with k = 18: 0.29935596537740355
+Coherence Score for Model with k = 19: 0.3496564695787111
+Coherence Score for the best model with k = 19: 0.3496564695787111
+Coherence Score for Model using a new best k = 19: 0.3496564695787111
+This coherence for k = 19 of 0.3496564695787111 is better than the old coherence of 0.3271092706441084.
+Model is updated. New k is 19.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'emerging', 18: 'emerging'}
+
+These are the emerging topics:
+
+['individual', 'role', 'find', 'structure', 'performance', 'effect', 'study_find', 'hierarchical', 'suggest', 'facial']
+['narrative', 'participant_read', 'result', 'two', 'group', 'become', 'intervention', 'read', 'increase', 'result_suggest']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending'}
+
+These are the emerging + trending topics:
+
+['narrative', 'participant_read', 'result', 'two', 'group', 'become', 'intervention', 'read', 'increase', 'result_suggest']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular           10         7
+
+###############################
+Now starts iteration for t = 7.
+###############################
+
+
+Loading first model (t = 7)...
+
+
+Training second model (t = 8)...
+
+Coherence Score for Model using old k = 19: 0.33115326008826507
+This coherence of 0.33115326008826507 is worse than the old coherence of 0.3496564695787111.
+Finding new model...
+
+Coherence Score for Model with k = 10: 0.3434754358264206
+Coherence Score for Model with k = 11: 0.31672903857075
+Coherence Score for Model with k = 12: 0.3123517089113539
+Coherence Score for Model with k = 13: 0.33015234637167035
+Coherence Score for Model with k = 14: 0.3446922437080938
+Coherence Score for Model with k = 15: 0.3150338015872997
+Coherence Score for Model with k = 16: 0.30306890091613065
+Coherence Score for Model with k = 17: 0.34138126179294304
+Coherence Score for Model with k = 18: 0.3285596460618951
+Coherence Score for the best model with k = 14: 0.3446922437080938
+Coherence Score for Model using a new best k = 14: 0.3446922437080938
+This coherence for k = 14 of 0.3446922437080938 is still worse than the old coherence of 0.3496564695787111.
+Continue to use old k of 19.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'stable', 1: 'stable', 2: 'stable', 3: 'stable', 4: 'stable', 5: 'stable', 6: 'stable', 7: 'stable', 8: 'stable', 9: 'stable', 10: 'stable', 11: 'stable', 12: 'stable', 13: 'stable', 14: 'stable', 15: 'stable', 16: 'stable', 17: 'stable', 18: 'stable'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     stable
+Emergence        
+popular        19
+
+###############################
+Now starts iteration for t = 8.
+###############################
+
+
+Loading first model (t = 8)...
+
+
+Training second model (t = 9)...
+
+Coherence Score for Model using old k = 19: 0.34486241636311465
+This coherence of 0.34486241636311465 is better than the old coherence of 0.33115326008826507.
+Continue to use old k of 19.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            8        11
+
+###############################
+Now starts iteration for t = 9.
+###############################
+
+
+Loading first model (t = 9)...
+
+
+Training second model (t = 10)...
+
+Coherence Score for Model using old k = 19: 0.333255238991923
+This coherence of 0.333255238991923 is worse than the old coherence of 0.34486241636311465.
+Finding new model...
+
+Coherence Score for Model with k = 11: 0.33193962843342234
+Coherence Score for Model with k = 12: 0.312508177984231
+Coherence Score for Model with k = 13: 0.2928536954903209
+Coherence Score for Model with k = 14: 0.3298733480316266
+Coherence Score for Model with k = 15: 0.3181145151606565
+Coherence Score for Model with k = 16: 0.3027336083969816
+Coherence Score for Model with k = 17: 0.3172688172878146
+Coherence Score for Model with k = 18: 0.30519458025174945
+Coherence Score for Model with k = 19: 0.3132865737489321
+Coherence Score for Model with k = 20: 0.3189559929567865
+Coherence Score for the best model with k = 11: 0.33193962843342234
+Coherence Score for Model using a new best k = 11: 0.33193962843342234
+This coherence for k = 11 of 0.33193962843342234 is still worse than the old coherence of 0.34486241636311465.
+Continue to use old k of 19.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           10         9
+
+###############################
+Now starts iteration for t = 10.
+###############################
+
+
+Loading first model (t = 10)...
+
+
+Training second model (t = 11)...
+
+Coherence Score for Model using old k = 19: 0.33250254712257465
+This coherence of 0.33250254712257465 is worse than the old coherence of 0.333255238991923.
+Finding new model...
+
+Coherence Score for Model with k = 9: 0.33441998855881355
+Coherence Score for Model with k = 10: 0.2984359870091743
+Coherence Score for Model with k = 11: 0.32184633131250534
+Coherence Score for Model with k = 12: 0.3579436955743114
+Coherence Score for Model with k = 13: 0.3165990963119261
+Coherence Score for Model with k = 14: 0.3156526858516412
+Coherence Score for Model with k = 15: 0.3216541332618803
+Coherence Score for Model with k = 16: 0.3182833961732057
+Coherence Score for Model with k = 17: 0.3071816952352289
+Coherence Score for the best model with k = 12: 0.3579436955743114
+Coherence Score for Model using a new best k = 12: 0.3579436955743114
+This coherence for k = 12 of 0.3579436955743114 is better than the old coherence of 0.333255238991923.
+Model is updated. New k is 12.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            7         5
+
+###############################
+Now starts iteration for t = 11.
+###############################
+
+
+Loading first model (t = 11)...
+
+
+Training second model (t = 12)...
+
+Coherence Score for Model using old k = 12: 0.3736705761830084
+This coherence of 0.3736705761830084 is better than the old coherence of 0.3579436955743114.
+Continue to use old k of 12.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            7         5
+
+###############################
+Now starts iteration for t = 12.
+###############################
+
+
+Loading first model (t = 12)...
+
+
+Training second model (t = 13)...
+
+Coherence Score for Model using old k = 12: 0.3229716812077104
+This coherence of 0.3229716812077104 is worse than the old coherence of 0.3736705761830084.
+Finding new model...
+
+Coherence Score for Model with k = 9: 0.321953566300741
+Coherence Score for Model with k = 10: 0.3059594497761413
+Coherence Score for Model with k = 11: 0.33109150123280057
+Coherence Score for Model with k = 12: 0.3169612445051249
+Coherence Score for Model with k = 13: 0.3210344801866798
+Coherence Score for Model with k = 14: 0.30941082426669214
+Coherence Score for Model with k = 15: 0.3110504511407111
+Coherence Score for Model with k = 16: 0.29415064106788763
+Coherence Score for Model with k = 17: 0.3120723838266077
+Coherence Score for the best model with k = 11: 0.33109150123280057
+Coherence Score for Model using a new best k = 11: 0.33109150123280057
+This coherence for k = 11 of 0.33109150123280057 is still worse than the old coherence of 0.3736705761830084.
+Continue to use old k of 12.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            5         7
+
+###############################
+Now starts iteration for t = 13.
+###############################
+
+
+Loading first model (t = 13)...
+
+
+Training second model (t = 14)...
+
+Coherence Score for Model using old k = 12: 0.33777098674513684
+This coherence of 0.33777098674513684 is better than the old coherence of 0.3229716812077104.
+Continue to use old k of 12.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging'}
+
+These are the emerging topics:
+
+['visual', 'conversation', 'life_satisfaction', 'effect', 'number', 'choice', 'adaptation', 'use', 'attentional', 'left']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular            6         5
+
+###############################
+Now starts iteration for t = 14.
+###############################
+
+
+Loading first model (t = 14)...
+
+
+Training second model (t = 15)...
+
+Coherence Score for Model using old k = 12: 0.3142612017192142
+This coherence of 0.3142612017192142 is worse than the old coherence of 0.33777098674513684.
+Finding new model...
+
+Coherence Score for Model with k = 9: 0.32513053820416565
+Coherence Score for Model with k = 10: 0.3162347683254213
+Coherence Score for Model with k = 11: 0.31952541416703456
+Coherence Score for Model with k = 12: 0.3096011485138655
+Coherence Score for Model with k = 13: 0.2815759523240967
+Coherence Score for Model with k = 14: 0.33947475817978834
+Coherence Score for Model with k = 15: 0.35218150584740787
+Coherence Score for Model with k = 16: 0.328744748960806
+Coherence Score for the best model with k = 15: 0.35218150584740787
+Coherence Score for Model using a new best k = 15: 0.35218150584740787
+This coherence for k = 15 of 0.35218150584740787 is better than the old coherence of 0.33777098674513684.
+Model is updated. New k is 15.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular'}
+
+These are the emerging topics:
+
+['idea', 'mind', 'generate', 'occur', 'think', 'report', 'two_study', 'participant_report', 'differ', 'work']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular            7         7
+
+###############################
+Now starts iteration for t = 15.
+###############################
+
+
+Loading first model (t = 15)...
+
+
+Training second model (t = 16)...
+
+Coherence Score for Model using old k = 15: 0.342995771877817
+This coherence of 0.342995771877817 is worse than the old coherence of 0.35218150584740787.
+Finding new model...
+
+Coherence Score for Model with k = 8: 0.3081885543847057
+Coherence Score for Model with k = 9: 0.36366414880193937
+Coherence Score for Model with k = 10: 0.30718207354435145
+Coherence Score for Model with k = 11: 0.34906249681139384
+Coherence Score for Model with k = 12: 0.30434203995716946
+Coherence Score for Model with k = 13: 0.31967345803616215
+Coherence Score for Model with k = 14: 0.3418992784940459
+Coherence Score for Model with k = 15: 0.357217939805171
+Coherence Score for the best model with k = 9: 0.36366414880193937
+Coherence Score for Model using a new best k = 9: 0.36366414880193937
+This coherence for k = 9 of 0.36366414880193937 is better than the old coherence of 0.35218150584740787.
+Model is updated. New k is 9.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            3         6
+
+###############################
+Now starts iteration for t = 16.
+###############################
+
+
+Loading first model (t = 16)...
+
+
+Training second model (t = 17)...
+
+Coherence Score for Model using old k = 9: 0.3732988704870798
+This coherence of 0.3732988704870798 is better than the old coherence of 0.36366414880193937.
+Continue to use old k of 9.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            3         6
+
+###############################
+Now starts iteration for t = 17.
+###############################
+
+
+Loading first model (t = 17)...
+
+
+Training second model (t = 18)...
+
+Coherence Score for Model using old k = 9: 0.3325900576941282
+This coherence of 0.3325900576941282 is worse than the old coherence of 0.3732988704870798.
+Finding new model...
+
+Coherence Score for Model with k = 9: 0.3571096556866146
+Coherence Score for Model with k = 10: 0.3030433393463731
+Coherence Score for Model with k = 11: 0.315333667636387
+Coherence Score for Model with k = 12: 0.33721765209969773
+Coherence Score for Model with k = 13: 0.3354887341133623
+Coherence Score for Model with k = 14: 0.34253210663137384
+Coherence Score for Model with k = 15: 0.32015602815072935
+Coherence Score for Model with k = 16: 0.3196962585013761
+Coherence Score for the best model with k = 9: 0.3571096556866146
+Coherence Score for Model using a new best k = 9: 0.3571096556866146
+This coherence for k = 9 of 0.3571096556866146 is still worse than the old coherence of 0.3732988704870798.
+Continue to use old k of 9.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            6         3
+
+###############################
+Now starts iteration for t = 18.
+###############################
+
+
+Loading first model (t = 18)...
+
+
+Training second model (t = 19)...
+
+Coherence Score for Model using old k = 9: 0.34207396432987924
+This coherence of 0.34207396432987924 is better than the old coherence of 0.3325900576941282.
+Continue to use old k of 9.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'emerging', 8: 'popular'}
+
+These are the emerging topics:
+
+['cognitive', 'research', 'article', 'use', 'face', 'present', 'data', 'old_adult', 'study', 'change']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular            4         4
+
+###############################
+Now starts iteration for t = 19.
+###############################
+
+
+Loading first model (t = 19)...
+
+
+Training second model (t = 20)...
+
+Coherence Score for Model using old k = 9: 0.3368170965992268
+This coherence of 0.3368170965992268 is worse than the old coherence of 0.34207396432987924.
+Finding new model...
+
+Coherence Score for Model with k = 7: 0.2925002348187658
+Coherence Score for Model with k = 8: 0.32737394340816967
+Coherence Score for Model with k = 9: 0.28079722108702454
+Coherence Score for Model with k = 10: 0.31241521076943135
+Coherence Score for Model with k = 11: 0.29760660275447154
+Coherence Score for Model with k = 12: 0.36262767205380136
+Coherence Score for the best model with k = 12: 0.36262767205380136
+Coherence Score for Model using a new best k = 12: 0.36262767205380136
+This coherence for k = 12 of 0.36262767205380136 is better than the old coherence of 0.34207396432987924.
+Model is updated. New k is 12.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'emerging', 9: 'popular', 10: 'popular', 11: 'emerging'}
+
+These are the emerging topics:
+
+['bias', 'white', 'experiment', 'share', 'perceive', 'social', 'information', 'people', 'study', 'preregistered_experiment']
+['estimate', 'people', 'experiment', 'influence', 'behavior', 'member', 'game', 'manipulate', 'interaction', 'participant']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         0
+popular            6         4
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_topic_analysis.py
+[?2004l
+
+###############################
+Now starts iteration for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Loading first model (t+1 = 2)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'emerging', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+['memory' 'activity' 'emotion' 'great' 'social' 'show' 'two' 'study'
+ 'recall' 'information']
+['mental' 'study' 'disorder' 'child' 'emotion' 'one' 'contrast'
+ 'experience' 'cause' 'effect']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+['mental' 'study' 'disorder' 'child' 'emotion' 'one' 'contrast'
+ 'experience' 'cause' 'effect']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular            6         1
+
+###############################
+Now starts iteration for t = 2.
+###############################
+
+
+Loading first model (t = 2)...
+
+
+Loading first model (t+1 = 3)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'emerging', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'emerging'}
+
+These are the emerging topics:
+
+['people' 'work_memory' 'perspective' 'semantic' 'effect' 'memory' 'show'
+ 'number' 'research_report' 'difference']
+['show' 'research' 'finding' 'finding_suggest' 'old' 'research_article'
+ 'child' 'suggest' 'delay' 'positive']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+['people' 'work_memory' 'perspective' 'semantic' 'effect' 'memory' 'show'
+ 'number' 'research_report' 'difference']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular            2         5
+
+###############################
+Now starts iteration for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Loading first model (t+1 = 4)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'emerging'}
+
+These are the emerging topics:
+
+['participant' 'copyright_association' 'mechanism' 'research_article'
+ 'individual' 'copyright_association_association_psychological'
+ 'copyright' 'control' 'study' 'suggest']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'trending'}
+
+These are the emerging + trending topics:
+
+['participant' 'copyright_association' 'mechanism' 'research_article'
+ 'individual' 'copyright_association_association_psychological'
+ 'copyright' 'control' 'study' 'suggest']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular            5         3
+
+###############################
+Now starts iteration for t = 4.
+###############################
+
+
+Loading first model (t = 4)...
+
+
+Loading first model (t+1 = 5)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'emerging', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+['study' 'black' 'research_article' 'increase' 'research' 'time' 'facial'
+ 'experiment' 'perspective' 'distinctive']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+['study' 'black' 'research_article' 'increase' 'research' 'time' 'facial'
+ 'experiment' 'perspective' 'distinctive']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular            4         4
+
+###############################
+Now starts iteration for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Loading first model (t+1 = 6)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'emerging', 4: 'emerging', 5: 'popular', 6: 'emerging', 7: 'emerging', 8: 'popular'}
+
+These are the emerging topics:
+
+['participant' 'action' 'result' 'visual' 'goal' 'word' 'memory'
+ 'behavior' 'category' 'task']
+['visual' 'participant' 'visual_search' 'level' 'show' 'search' 'effect'
+ 'mood' 'information' 'sentence']
+['people' 'effect' 'show' 'result' 'influence' 'model' 'high' 'social'
+ 'level' 'temporal']
+['object' 'target' 'facial' 'suggest' 'result' 'visual'
+ 'facial_expression' 'show' 'involve' 'status']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+['visual' 'participant' 'visual_search' 'level' 'show' 'search' 'effect'
+ 'mood' 'information' 'sentence']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         1
+popular            2         3
+
+###############################
+Now starts iteration for t = 6.
+###############################
+
+
+Loading first model (t = 6)...
+
+
+Loading first model (t+1 = 7)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'emerging', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'emerging', 13: 'emerging', 14: 'emerging', 15: 'popular', 16: 'emerging', 17: 'emerging', 18: 'emerging'}
+
+These are the emerging topics:
+
+['participant' 'use' 'problem' 'people' 'two' 'strategy' 'likely'
+ 'influence' 'present' 'information']
+['effect' 'goal' 'participant' 'experiment' 'training' 'use' 'result'
+ 'intention' 'form' 'task']
+['body' 'income' 'people' 'find' 'behavior' 'increase' 'inequality' 'look'
+ 'association' 'experiment']
+['social' 'participant' 'study' 'effect' 'predict' 'compare' 'people'
+ 'facial_expression' 'use' 'finding']
+['target' 'visual' 'search' 'two' 'suggest' 'movement' 'result' 'measure'
+ 'study' 'effect']
+['two' 'global' 'bias' 'hold' 'global_warming' 'individual' 'behavior'
+ 'subject' 'two_experiment' 'adult']
+['result' 'effect' 'value' 'child' 'make' 'mediate' 'parent' 'cognitive'
+ 'cost' 'result_suggest']
+['individual' 'role' 'find' 'structure' 'performance' 'effect'
+ 'study_find' 'hierarchical' 'suggest' 'facial']
+['narrative' 'participant_read' 'result' 'two' 'group' 'become'
+ 'intervention' 'read' 'increase' 'result_suggest']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'declining', 18: 'trending'}
+
+These are the emerging + trending topics:
+
+['body' 'income' 'people' 'find' 'behavior' 'increase' 'inequality' 'look'
+ 'association' 'experiment']
+['target' 'visual' 'search' 'two' 'suggest' 'movement' 'result' 'measure'
+ 'study' 'effect']
+['result' 'effect' 'value' 'child' 'make' 'mediate' 'parent' 'cognitive'
+ 'cost' 'result_suggest']
+['narrative' 'participant_read' 'result' 'two' 'group' 'become'
+ 'intervention' 'read' 'increase' 'result_suggest']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           5         4
+popular            6         4
+
+###############################
+Now starts iteration for t = 7.
+###############################
+
+
+Loading first model (t = 7)...
+
+
+Loading first model (t+1 = 8)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'emerging', 5: 'emerging', 6: 'emerging', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'emerging', 17: 'popular', 18: 'emerging'}
+
+These are the emerging topics:
+
+['study' 'research' 'two' 'result' 'social' 'visual' 'female' 'finding'
+ 'find' 'position']
+['test' 'participant' 'moral' 'intention' 'action' 'alternative'
+ 'movement' 'judgment' 'construct' 'response']
+['high' 'people' 'personality_trait' 'effect' 'high_level' 'individual'
+ 'racial' 'word' 'suggest' 'finding']
+['use' 'problem' 'learn' 'target' 'social' 'feature' 'group' 'effect'
+ 'suggest' 'research']
+['participant' 'help' 'participant_complete' 'shape' 'result_show'
+ 'result' 'show' 'study' 'report' 'observer']
+['attention' 'work_memory' 'representation' 'visual' 'result' 'sexual'
+ 'result_show' 'work' 'study' 'memory']
+['cognitive' 'effect' 'child' 'control' 'bilingual' 'color' 'memory'
+ 'evidence' 'factor' 'study']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'stable', 1: 'stable', 2: 'stable', 3: 'stable', 4: 'stable', 5: 'stable', 6: 'stable', 7: 'stable', 8: 'stable', 9: 'stable', 10: 'stable', 11: 'stable', 12: 'stable', 13: 'stable', 14: 'stable', 15: 'stable', 16: 'stable', 17: 'stable', 18: 'stable'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     stable
+Emergence        
+emerging        7
+popular        12
+
+###############################
+Now starts iteration for t = 8.
+###############################
+
+
+Loading first model (t = 8)...
+
+
+Loading first model (t+1 = 9)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'emerging', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'emerging'}
+
+These are the emerging topics:
+
+['behavior' 'increase' 'high' 'method' 'social' 'response' 'infant'
+ 'difference' 'similarity' 'status']
+['visual' 'face' 'perception' 'neural' 'adaptation' 'system' 'message'
+ 'result' 'visual_system' 'visual_perception']
+['adaptation' 'study' 'attention' 'negative_emotion' 'local' 'perceived'
+ 'people' 'speed' 'task' 'information']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining'}
+
+These are the emerging + trending topics:
+
+['visual' 'face' 'perception' 'neural' 'adaptation' 'system' 'message'
+ 'result' 'visual_system' 'visual_perception']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         1
+popular            6        10
+
+###############################
+Now starts iteration for t = 9.
+###############################
+
+
+Loading first model (t = 9)...
+
+
+Loading first model (t+1 = 10)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'emerging', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging', 12: 'emerging', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular'}
+
+These are the emerging topics:
+
+['effect' 'memory' 'experience' 'work_memory' 'feedback' 'pain'
+ 'participant' 'intervention' 'use' 'material']
+['inhibition' 'association' 'response' 'early' 'emotional' 'ability'
+ 'mapping' 'mental' 'image' 'suggest']
+['hand' 'object' 'language' 'word' 'use' 'size' 'experience' 'perform'
+ 'effect' 'action']
+['group' 'direct' 'social' 'two' 'effect' 'racial' 'cue' 'new' 'lie'
+ 'finding']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'declining', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining'}
+
+These are the emerging + trending topics:
+
+['effect' 'memory' 'experience' 'work_memory' 'feedback' 'pain'
+ 'participant' 'intervention' 'use' 'material']
+['hand' 'object' 'language' 'word' 'use' 'size' 'experience' 'perform'
+ 'effect' 'action']
+['group' 'direct' 'social' 'two' 'effect' 'racial' 'cue' 'new' 'lie'
+ 'finding']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         3
+popular            9         6
+
+###############################
+Now starts iteration for t = 10.
+###############################
+
+
+Loading first model (t = 10)...
+
+
+Loading first model (t+1 = 11)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'emerging', 4: 'popular', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular'}
+
+These are the emerging topics:
+
+['language' 'child' 'study' 'memory' 'face' 'exposure' 'bilingual'
+ 'predict' 'report' 'show']
+['use' 'theory' 'positive' 'expression' 'difference' 'cognitive'
+ 'language' 'response' 'suggest' 'predict']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         0
+popular            5         5
+
+###############################
+Now starts iteration for t = 11.
+###############################
+
+
+Loading first model (t = 11)...
+
+
+Loading first model (t+1 = 12)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'emerging', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'emerging'}
+
+These are the emerging topics:
+
+['affect' 'positive' 'black' 'negative' 'use' 'emotion' 'perception'
+ 'social' 'use_data' 'racial']
+['category' 'relationship' 'frequency' 'research' 'show' 'sexual' 'visual'
+ 'word' 'representation' 'link']
+['use' 'study' 'participant' 'neural' 'show' 'neural_representation'
+ 'attention' 'concept' 'finding' 'effect']
+['people' 'knowledge' 'infant' 'individual' 'experiment'
+ 'individual_difference' 'task' 'one' 'prior' 'desire']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'trending'}
+
+These are the emerging + trending topics:
+
+['affect' 'positive' 'black' 'negative' 'use' 'emotion' 'perception'
+ 'social' 'use_data' 'racial']
+['category' 'relationship' 'frequency' 'research' 'show' 'sexual' 'visual'
+ 'word' 'representation' 'link']
+['people' 'knowledge' 'infant' 'individual' 'experiment'
+ 'individual_difference' 'task' 'one' 'prior' 'desire']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         3
+popular            6         2
+
+###############################
+Now starts iteration for t = 12.
+###############################
+
+
+Loading first model (t = 12)...
+
+
+Loading first model (t+1 = 13)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            5         7
+
+###############################
+Now starts iteration for t = 13.
+###############################
+
+
+Loading first model (t = 13)...
+
+
+Loading first model (t+1 = 14)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'emerging', 7: 'emerging', 8: 'emerging', 9: 'popular', 10: 'popular', 11: 'emerging'}
+
+These are the emerging topics:
+
+['behavior' 'language' 'externalize_behavior' 'facial' 'expression'
+ 'visual' 'result' 'base' 'relation' 'result_suggest']
+['study' 'show' 'behavior' 'color' 'effect' 'experiment' 'help' 'make'
+ 'individual' 'face']
+['visual' 'give' 'memory' 'people' 'memory_representation' 'predict'
+ 'task' 'political' 'experiment' 'decision']
+['visual' 'conversation' 'life_satisfaction' 'effect' 'number' 'choice'
+ 'adaptation' 'use' 'attentional' 'left']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining'}
+
+These are the emerging + trending topics:
+
+['study' 'show' 'behavior' 'color' 'effect' 'experiment' 'help' 'make'
+ 'individual' 'face']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         1
+popular            4         4
+
+###############################
+Now starts iteration for t = 14.
+###############################
+
+
+Loading first model (t = 14)...
+
+
+Loading first model (t+1 = 15)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular'}
+
+These are the emerging topics:
+
+['idea' 'mind' 'generate' 'occur' 'think' 'report' 'two_study'
+ 'participant_report' 'differ' 'work']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular            7         7
+
+###############################
+Now starts iteration for t = 15.
+###############################
+
+
+Loading first model (t = 15)...
+
+
+Loading first model (t+1 = 16)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            3         6
+
+###############################
+Now starts iteration for t = 16.
+###############################
+
+
+Loading first model (t = 16)...
+
+
+Loading first model (t+1 = 17)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            3         6
+
+###############################
+Now starts iteration for t = 17.
+###############################
+
+
+Loading first model (t = 17)...
+
+
+Loading first model (t+1 = 18)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'emerging', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'emerging', 8: 'emerging'}
+
+These are the emerging topics:
+
+['work' 'number' 'people' 'finding' 'work_memory' 'suggest' 'show' 'study'
+ 'representation' 'find']
+['participant' 'effect' 'moral' 'people' 'frame' 'adult'
+ 'adult_participant' 'social' 'study' 'finding']
+['social' 'visual' 'pain' 'black' 'evidence' 'white' 'study' 'adult'
+ 'two_experiment' 'effect']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'trending', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         0
+popular            3         3
+
+###############################
+Now starts iteration for t = 18.
+###############################
+
+
+Loading first model (t = 18)...
+
+
+Loading first model (t+1 = 19)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'emerging', 3: 'popular', 4: 'emerging', 5: 'popular', 6: 'popular', 7: 'emerging', 8: 'popular'}
+
+These are the emerging topics:
+
+['child' 'social' 'study' 'future' 'event' 'individual' 'language' 'test'
+ 'experiment' 'use']
+['preregistered' 'people' 'analysis' 'study' 'article' 'child' 'effect'
+ 'report' 'preregistered_study' 'harm']
+['cognitive' 'research' 'article' 'use' 'face' 'present' 'data'
+ 'old_adult' 'study' 'change']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         0
+popular            2         4
+
+###############################
+Now starts iteration for t = 19.
+###############################
+
+
+Loading first model (t = 19)...
+
+
+Loading first model (t+1 = 20)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'emerging', 3: 'emerging', 4: 'emerging', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'emerging', 9: 'popular', 10: 'popular', 11: 'emerging'}
+
+These are the emerging topics:
+
+['risk' 'relate' 'distinct' 'involve' 'factor' 'use' 'show' 'influence'
+ 'prior' 'estimate']
+['effect' 'gender' 'intervention' 'people' 'conversation' 'social'
+ 'increase' 'low' 'high' 'study']
+['social' 'object' 'political' 'effect' 'perception' 'racial' 'individual'
+ 'examine' 'preference' 'face']
+['neural' 'speaker' 'language' 'attention' 'adult' 'use' 'finding'
+ 'participant' 'cognitive' 'study']
+['bias' 'white' 'experiment' 'share' 'perceive' 'social' 'information'
+ 'people' 'study' 'preregistered_experiment']
+['estimate' 'people' 'experiment' 'influence' 'behavior' 'member' 'game'
+ 'manipulate' 'interaction' 'participant']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'declining', 9: 'trending', 10: 'trending', 11: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           6         0
+popular            2         4
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ exit
+[?2004l
+exit

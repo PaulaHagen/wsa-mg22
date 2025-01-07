@@ -1,0 +1,1475 @@
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_adding_artificial_data.py
+[?2004l
+DEBUG:root:API_KEY: 8303dc1cb8274761b5831d0b2d8b9bae
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): wsr-openai.openai.azure.com:443
+DEBUG:urllib3.connectionpool:https://wsr-openai.openai.azure.com:443 "POST /openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-08-01-preview HTTP/11" 200 1084
+Generated artificial_topic:  ['eco_dendrochronology', 'climate_variability', 'tree_rings', 'carbon_sensitivity', 'phylogenetic_analysis', 'land_use_change', 'wood_density', 'ecosystem_services', 'climate_mitigation', 'historical_ecology']
+Successfully added 10 artificial abstracts at t = 2
+Successfully added 9 artificial abstracts at t = 4
+Successfully added 8 artificial abstracts at t = 6
+Successfully added 8 artificial abstracts at t = 8
+Successfully added 6 artificial abstracts at t = 10
+Successfully added 9 artificial abstracts at t = 12
+Successfully added 16 artificial abstracts at t = 14
+Successfully added 12 artificial abstracts at t = 16
+Successfully added 18 artificial abstracts at t = 18
+Successfully added 15 artificial abstracts at t = 20
+Successfully added all artificial abstracts at t = range(2, 21, 2).
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_evaluation.py
+[?2004l
+
+###############################
+Training model for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Training second model (t = 2)...
+
+Coherence Score for Model using old k = 22: 0.381496446245785
+This coherence of 0.381496446245785 is worse than the old coherence of 0.43240121014185834.
+Finding new model...
+
+Coherence Score for Model with k = 23: 0.3577818889739913
+Coherence Score for Model with k = 24: 0.3588373756528289
+Coherence Score for Model with k = 25: 0.34548350433656294
+Coherence Score for Model with k = 26: 0.3340966323142368
+Coherence Score for Model with k = 27: 0.325890047931307
+Coherence Score for Model with k = 28: 0.3470607343712602
+Coherence Score for Model with k = 29: 0.3748655255189343
+Coherence Score for Model with k = 30: 0.3608417512117081
+Coherence Score for Model with k = 31: 0.37872224970931023
+Coherence Score for Model with k = 32: 0.35930722027817463
+Coherence Score for Model with k = 33: 0.3573140034328791
+Coherence Score for Model with k = 34: 0.3557565552802678
+Coherence Score for Model with k = 35: 0.34701070410449447
+Coherence Score for Model with k = 36: 0.35852922504422574
+Coherence Score for Model with k = 37: 0.3658924240312989
+Coherence Score for Model with k = 38: 0.35399590655196006
+Coherence Score for Model with k = 39: 0.3516268699765969
+Coherence Score for Model with k = 40: 0.3686598082402399
+Coherence Score for Model with k = 41: 0.34047667875368975
+Coherence Score for Model with k = 42: 0.35924375792953134
+Coherence Score for the best model with k = 31: 0.37872224970931023
+Coherence Score for Model using a new best k = 31: 0.37872224970931023
+This coherence for k = 31 of 0.37872224970931023 is still worse than the old coherence of 0.43240121014185834.
+Continue to use old k of 22.
+
+###############################
+Training model for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Training second model (t = 4)...
+
+Coherence Score for Model using old k = 22: 0.49405796440974875
+This coherence of 0.49405796440974875 is better than the old coherence of 0.3963754649427085.
+Continue to use old k of 22.
+
+###############################
+Training model for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Training second model (t = 6)...
+
+Coherence Score for Model using old k = 22: 0.392553076256033
+This coherence of 0.392553076256033 is better than the old coherence of 0.34701256035237854.
+Continue to use old k of 22.
+
+###############################
+Training model for t = 7.
+###############################
+
+
+Loading first model (t = 7)...
+
+
+Training second model (t = 8)...
+
+Coherence Score for Model using old k = 24: 0.3917577964396081
+This coherence of 0.3917577964396081 is better than the old coherence of 0.38444538335341544.
+Continue to use old k of 24.
+
+###############################
+Training model for t = 9.
+###############################
+
+
+Loading first model (t = 9)...
+
+
+Training second model (t = 10)...
+
+Coherence Score for Model using old k = 24: 0.3725700067579427
+This coherence of 0.3725700067579427 is better than the old coherence of 0.3477043604440165.
+Continue to use old k of 24.
+
+###############################
+Training model for t = 11.
+###############################
+
+
+Loading first model (t = 11)...
+
+
+Training second model (t = 12)...
+
+Coherence Score for Model using old k = 30: 0.3505187927388646
+This coherence of 0.3505187927388646 is worse than the old coherence of 0.38497555409400486.
+Finding new model...
+
+Coherence Score for Model with k = 21: 0.39281315267199063
+Coherence Score for Model with k = 22: 0.3917685219545442
+Coherence Score for Model with k = 23: 0.3859342094326502
+Coherence Score for Model with k = 24: 0.3908744985679043
+Coherence Score for Model with k = 25: 0.3635204653628747
+Coherence Score for Model with k = 26: 0.3989879957312533
+Coherence Score for Model with k = 27: 0.3777435598516283
+Coherence Score for Model with k = 28: 0.3906040021447504
+Coherence Score for Model with k = 29: 0.3250934041557092
+Coherence Score for Model with k = 30: 0.384204619487643
+Coherence Score for Model with k = 31: 0.3609900826973422
+Coherence Score for Model with k = 32: 0.3732030880057055
+Coherence Score for Model with k = 33: 0.3527696564306831
+Coherence Score for Model with k = 34: 0.3885866112447765
+Coherence Score for Model with k = 35: 0.3821249508338605
+Coherence Score for Model with k = 36: 0.3751535971383916
+Coherence Score for Model with k = 37: 0.38250666945940326
+Coherence Score for Model with k = 38: 0.3627934327376405
+Coherence Score for Model with k = 39: 0.3696456622124892
+Coherence Score for Model with k = 40: 0.37739006077015835
+Coherence Score for the best model with k = 26: 0.3989879957312533
+Coherence Score for Model using a new best k = 26: 0.3989879957312533
+This coherence for k = 26 of 0.3989879957312533 is better than the old coherence of 0.38497555409400486.
+Model is updated. New k is 26.
+
+###############################
+Training model for t = 13.
+###############################
+
+
+Loading first model (t = 13)...
+
+
+Training second model (t = 14)...
+
+Coherence Score for Model using old k = 24: 0.38138622544739964
+This coherence of 0.38138622544739964 is better than the old coherence of 0.3614518442014513.
+Continue to use old k of 24.
+
+###############################
+Training model for t = 15.
+###############################
+
+
+Loading first model (t = 15)...
+
+
+Training second model (t = 16)...
+
+Coherence Score for Model using old k = 31: 0.3629342350542117
+This coherence of 0.3629342350542117 is worse than the old coherence of 0.3647181206350537.
+Finding new model...
+
+Coherence Score for Model with k = 25: 0.4280064415283751
+Coherence Score for Model with k = 26: 0.3830908400504781
+Coherence Score for Model with k = 27: 0.39545027099362245
+Coherence Score for Model with k = 28: 0.35271420314272933
+Coherence Score for Model with k = 29: 0.38381225957406684
+Coherence Score for Model with k = 30: 0.3805916539202835
+Coherence Score for Model with k = 31: 0.35675010020885933
+Coherence Score for Model with k = 32: 0.3661140180167115
+Coherence Score for Model with k = 33: 0.3621201260094824
+Coherence Score for Model with k = 34: 0.37579933848392116
+Coherence Score for Model with k = 35: 0.37653384508150217
+Coherence Score for Model with k = 36: 0.38340901690022605
+Coherence Score for Model with k = 37: 0.4018152129763019
+Coherence Score for Model with k = 38: 0.3660804726608486
+Coherence Score for Model with k = 39: 0.36761902384006495
+Coherence Score for Model with k = 40: 0.35583310763676224
+Coherence Score for Model with k = 41: 0.39312256302989357
+Coherence Score for Model with k = 42: 0.3620973343559145
+Coherence Score for Model with k = 43: 0.35928200013378747
+Coherence Score for Model with k = 44: 0.3701296120814223
+Coherence Score for Model with k = 45: 0.36359971447134243
+Coherence Score for Model with k = 46: 0.3567224971713193
+Coherence Score for Model with k = 47: 0.3658629705059548
+Coherence Score for the best model with k = 25: 0.4280064415283751
+Coherence Score for Model using a new best k = 25: 0.4280064415283751
+This coherence for k = 25 of 0.4280064415283751 is better than the old coherence of 0.3647181206350537.
+Model is updated. New k is 25.
+
+###############################
+Training model for t = 17.
+###############################
+
+
+Loading first model (t = 17)...
+
+
+Training second model (t = 18)...
+
+Coherence Score for Model using old k = 25: 0.3762319137585318
+This coherence of 0.3762319137585318 is worse than the old coherence of 0.38871153369903.
+Finding new model...
+
+Coherence Score for Model with k = 30: 0.3735002007349843
+Coherence Score for Model with k = 31: 0.36537314796471326
+Coherence Score for Model with k = 32: 0.3672712175055348
+Coherence Score for Model with k = 33: 0.3820222938817381
+Coherence Score for Model with k = 34: 0.34952471243898314
+Coherence Score for Model with k = 35: 0.3636996475469321
+Coherence Score for Model with k = 36: 0.4042240043784713
+Coherence Score for Model with k = 37: 0.39989906724325947
+Coherence Score for Model with k = 38: 0.36942198917352403
+Coherence Score for Model with k = 39: 0.3617926873223627
+Coherence Score for Model with k = 40: 0.36198947255836134
+Coherence Score for Model with k = 41: 0.3387057765457884
+Coherence Score for Model with k = 42: 0.35659025633199676
+Coherence Score for Model with k = 43: 0.37351654712889587
+Coherence Score for Model with k = 44: 0.39130175083163715
+Coherence Score for Model with k = 45: 0.37237049593592003
+Coherence Score for Model with k = 46: 0.38483888088530305
+Coherence Score for Model with k = 47: 0.36838813440497564
+Coherence Score for Model with k = 48: 0.3480701244461948
+Coherence Score for Model with k = 49: 0.36771942329250557
+Coherence Score for Model with k = 50: 0.3676315527306199
+Coherence Score for Model with k = 51: 0.3546096573328753
+Coherence Score for Model with k = 52: 0.3373149488643537
+Coherence Score for Model with k = 53: 0.3504706370920865
+Coherence Score for Model with k = 54: 0.36095292764280074
+Coherence Score for Model with k = 55: 0.38798756540058643
+Coherence Score for Model with k = 56: 0.3607891218370111
+Coherence Score for the best model with k = 36: 0.4042240043784713
+Coherence Score for Model using a new best k = 36: 0.4042240043784713
+This coherence for k = 36 of 0.4042240043784713 is better than the old coherence of 0.38871153369903.
+Model is updated. New k is 36.
+
+###############################
+Training model for t = 19.
+###############################
+
+
+Loading first model (t = 19)...
+
+
+Training second model (t = 20)...
+
+Coherence Score for Model using old k = 25: 0.4309350676265217
+This coherence of 0.4309350676265217 is better than the old coherence of 0.407524888647395.
+Continue to use old k of 25.
+
+###############################
+Model update: now starts iteration for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Loading second model (t+1 = 2)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        10
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        10
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular'}
+
+These are the emerging topics:
+
+['wood_density' 'ecosystem_services' 'land_use_change'
+ 'phylogenetic_analysis' 'eco_dendrochronology' 'climate_variability'
+ 'tree_rings' 'carbon_sensitivity' 'historical_ecology'
+ 'climate_mitigation']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           11        10
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular'}
+
+These are the emerging topics:
+
+['wood_density' 'ecosystem_services' 'land_use_change'
+ 'phylogenetic_analysis' 'eco_dendrochronology' 'climate_variability'
+ 'tree_rings' 'carbon_sensitivity' 'historical_ecology'
+ 'climate_mitigation']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           11        10
+
+###############################
+Model update: now starts iteration for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Loading second model (t+1 = 4)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            9        13
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular            9        13
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['macmillan_publisher' 'publisher_right' 'right' 'show'
+ 'macmillan_publisher_publisher_right' 'macmillan' 'field' 'publisher'
+ 'magnetic_field' 'structure']
+['publisher_right' 'macmillan_publisher' 'cell' 'land_use_change'
+ 'carbon_sensitivity' 'macmillan_publisher_publisher_right' 'right'
+ 'ecosystem_services' 'climate_variability' 'wood_density']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+['macmillan_publisher' 'publisher_right' 'right' 'show'
+ 'macmillan_publisher_publisher_right' 'macmillan' 'field' 'publisher'
+ 'magnetic_field' 'structure']
+['publisher_right' 'macmillan_publisher' 'cell' 'land_use_change'
+ 'carbon_sensitivity' 'macmillan_publisher_publisher_right' 'right'
+ 'ecosystem_services' 'climate_variability' 'wood_density']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         2
+popular            9        11
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'emerging'}
+
+These are the emerging topics:
+
+['macmillan_publisher' 'publisher_right' 'right' 'show'
+ 'macmillan_publisher_publisher_right' 'macmillan' 'field' 'publisher'
+ 'magnetic_field' 'structure']
+['publisher_right' 'macmillan_publisher' 'cell' 'land_use_change'
+ 'carbon_sensitivity' 'macmillan_publisher_publisher_right' 'right'
+ 'ecosystem_services' 'climate_variability' 'wood_density']
+['rna' 'nature_publishing' 'model' 'macmillan_publisher' 'publisher_right'
+ 'nature' 'use' 'cell' 'gene' 'small_rna']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'trending', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+['macmillan_publisher' 'publisher_right' 'right' 'show'
+ 'macmillan_publisher_publisher_right' 'macmillan' 'field' 'publisher'
+ 'magnetic_field' 'structure']
+['publisher_right' 'macmillan_publisher' 'cell' 'land_use_change'
+ 'carbon_sensitivity' 'macmillan_publisher_publisher_right' 'right'
+ 'ecosystem_services' 'climate_variability' 'wood_density']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         2
+popular            8        11
+
+###############################
+Model update: now starts iteration for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Loading second model (t+1 = 6)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        11
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        11
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           11        11
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'emerging', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'emerging', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular'}
+
+These are the emerging topics:
+
+['eco_dendrochronology' 'land_use_change' 'phylogenetic_analysis'
+ 'climate_mitigation' 'tree_rings' 'historical_ecology'
+ 'ecosystem_services' 'wood_density' 'carbon_sensitivity'
+ 'climate_variability']
+['cell' 'show' 'study' 'enhancer' 'level' 'human' 'mouse' 'type' 'two'
+ 'response']
+['chromosome' 'protein' 'show' 'include' 'mutation' 'provide' 'sequence'
+ 'gene' 'cell' 'genome']
+['dna' 'show' 'quantum' 'use' 'cell' 'result' 'report' 'structure' 'model'
+ 'lead']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining'}
+
+These are the emerging + trending topics:
+
+['eco_dendrochronology' 'land_use_change' 'phylogenetic_analysis'
+ 'climate_mitigation' 'tree_rings' 'historical_ecology'
+ 'ecosystem_services' 'wood_density' 'carbon_sensitivity'
+ 'climate_variability']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           3         1
+popular            8        10
+
+###############################
+Model update: now starts iteration for t = 7.
+###############################
+
+
+Loading first model (t = 7)...
+
+
+Loading second model (t+1 = 8)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           10        14
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           10        14
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           10        14
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'emerging', 21: 'emerging', 22: 'emerging', 23: 'popular'}
+
+These are the emerging topics:
+
+['cell' 'climate_variability' 'ecosystem_services' 'eco_dendrochronology'
+ 'carbon_sensitivity' 'phylogenetic_analysis' 'historical_ecology'
+ 'land_use_change' 'tree_rings' 'show']
+['use' 'show' 'quantum' 'protein' 'result' 'report' 'human' 'provide'
+ 'model' 'dna']
+['increase' 'show' 'global' 'rate' 'result' 'ice' 'climate' 'change'
+ 'carbon' 'find']
+['early' 'provide' 'cell' 'tetrapod' 'show' 'report' 'brain' 'use'
+ 'increase' 'structure']
+['cell' 'stem_cell' 'show' 'cancer' 'stem' 'gene' 'complex' 'insulin'
+ 'human' 'breast_cancer']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+['cell' 'climate_variability' 'ecosystem_services' 'eco_dendrochronology'
+ 'carbon_sensitivity' 'phylogenetic_analysis' 'historical_ecology'
+ 'land_use_change' 'tree_rings' 'show']
+['use' 'show' 'quantum' 'protein' 'result' 'report' 'human' 'provide'
+ 'model' 'dna']
+['increase' 'show' 'global' 'rate' 'result' 'ice' 'climate' 'change'
+ 'carbon' 'find']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         3
+popular            8        11
+
+###############################
+Model update: now starts iteration for t = 9.
+###############################
+
+
+Loading first model (t = 9)...
+
+
+Loading second model (t+1 = 10)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['carbon_sensitivity' 'tree_rings' 'climate_mitigation'
+ 'ecosystem_services' 'phylogenetic_analysis' 'land_use_change'
+ 'wood_density' 'historical_ecology' 'climate_variability'
+ 'eco_dendrochronology']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular            8        15
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['carbon_sensitivity' 'tree_rings' 'climate_mitigation'
+ 'ecosystem_services' 'phylogenetic_analysis' 'land_use_change'
+ 'wood_density' 'historical_ecology' 'climate_variability'
+ 'eco_dendrochronology']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular            8        15
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'emerging', 23: 'popular'}
+
+These are the emerging topics:
+
+['carbon_sensitivity' 'tree_rings' 'climate_mitigation'
+ 'ecosystem_services' 'phylogenetic_analysis' 'land_use_change'
+ 'wood_density' 'historical_ecology' 'climate_variability'
+ 'eco_dendrochronology']
+['germinal_centre' 'change' 'emission' 'show' 'clock' 'climate' 'gene'
+ 'structure' 'centre' 'terrestrial']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+['germinal_centre' 'change' 'emission' 'show' 'clock' 'climate' 'gene'
+ 'structure' 'centre' 'terrestrial']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular            8        14
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'emerging', 23: 'popular'}
+
+These are the emerging topics:
+
+['carbon_sensitivity' 'tree_rings' 'climate_mitigation'
+ 'ecosystem_services' 'phylogenetic_analysis' 'land_use_change'
+ 'wood_density' 'historical_ecology' 'climate_variability'
+ 'eco_dendrochronology']
+['germinal_centre' 'change' 'emission' 'show' 'clock' 'climate' 'gene'
+ 'structure' 'centre' 'terrestrial']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+['germinal_centre' 'change' 'emission' 'show' 'clock' 'climate' 'gene'
+ 'structure' 'centre' 'terrestrial']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular            8        14
+
+###############################
+Model update: now starts iteration for t = 11.
+###############################
+
+
+Loading first model (t = 11)...
+
+
+Loading second model (t+1 = 12)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'declining', 25: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           14        12
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular'}
+
+These are the emerging topics:
+
+['show' 'cancer' 'bond' 'dna' 'mutation' 'gene' 'greenhouse_gas' 'tumour'
+ 'protein' 'data']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'declining', 25: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           13        12
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'emerging', 4: 'popular', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'emerging', 12: 'popular', 13: 'emerging', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'emerging'}
+
+These are the emerging topics:
+
+['use' 'show' 'increase' 'effect' 'particle' 'dynamic' 'model' 'cell'
+ 'result' 'human']
+['cell' 'neuron' 'protein' 'show' 'use' 'result' 'virus' 'cause' 'single'
+ 'demonstrate']
+['phylogenetic_analysis' 'tree_rings' 'wood_density'
+ 'eco_dendrochronology' 'land_use_change' 'carbon_sensitivity'
+ 'climate_variability' 'climate_mitigation' 'historical_ecology'
+ 'ecosystem_services']
+['use' 'bond' 'activation' 'membrane' 'protein' 'structure' 'show'
+ 'provide' 'water' 'cell']
+['carbon_sensitivity' 'wood_density' 'eco_dendrochronology' 'cell'
+ 'climate_variability' 'tree_rings' 'gene' 'phylogenetic_analysis'
+ 'structure' 'ecosystem_services']
+['show' 'cancer' 'bond' 'dna' 'mutation' 'gene' 'greenhouse_gas' 'tumour'
+ 'protein' 'data']
+['structure' 'black_hole' 'protein' 'use' 'system' 'show' 'virus' 'black'
+ 'wood_density' 'climate_variability']
+['use' 'cell' 'show' 'water' 'energy' 'tumour_growth' 'quantum' 'system'
+ 'provide' 'pattern']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'declining', 25: 'trending'}
+
+These are the emerging + trending topics:
+
+['cell' 'neuron' 'protein' 'show' 'use' 'result' 'virus' 'cause' 'single'
+ 'demonstrate']
+['phylogenetic_analysis' 'tree_rings' 'wood_density'
+ 'eco_dendrochronology' 'land_use_change' 'carbon_sensitivity'
+ 'climate_variability' 'climate_mitigation' 'historical_ecology'
+ 'ecosystem_services']
+['carbon_sensitivity' 'wood_density' 'eco_dendrochronology' 'cell'
+ 'climate_variability' 'tree_rings' 'gene' 'phylogenetic_analysis'
+ 'structure' 'ecosystem_services']
+['use' 'cell' 'show' 'water' 'energy' 'tumour_growth' 'quantum' 'system'
+ 'provide' 'pattern']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           4         4
+popular           10         8
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'emerging', 4: 'popular', 5: 'emerging', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'emerging', 12: 'emerging', 13: 'emerging', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'emerging', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'emerging'}
+
+These are the emerging topics:
+
+['use' 'show' 'increase' 'effect' 'particle' 'dynamic' 'model' 'cell'
+ 'result' 'human']
+['protein' 'show' 'island' 'provide' 'dna' 'target' 'gene' 'use' 'mouse'
+ 'find']
+['cell' 'neuron' 'protein' 'show' 'use' 'result' 'virus' 'cause' 'single'
+ 'demonstrate']
+['phylogenetic_analysis' 'tree_rings' 'wood_density'
+ 'eco_dendrochronology' 'land_use_change' 'carbon_sensitivity'
+ 'climate_variability' 'climate_mitigation' 'historical_ecology'
+ 'ecosystem_services']
+['use' 'bond' 'activation' 'membrane' 'protein' 'structure' 'show'
+ 'provide' 'water' 'cell']
+['dna' 'receptor' 'use' 'structure' 'protein' 'complex' 'show' 'mechanism'
+ 'bind' 'domain']
+['carbon_sensitivity' 'wood_density' 'eco_dendrochronology' 'cell'
+ 'climate_variability' 'tree_rings' 'gene' 'phylogenetic_analysis'
+ 'structure' 'ecosystem_services']
+['show' 'cancer' 'bond' 'dna' 'mutation' 'gene' 'greenhouse_gas' 'tumour'
+ 'protein' 'data']
+['protein' 'use' 'membrane' 'cell' 'show' 'structure' 'result' 'human'
+ 'gene' 'provide']
+['show' 'cell' 'structure' 'use' 'climate' 'gene' 'result' 'domain'
+ 'complex' 'two']
+['structure' 'black_hole' 'protein' 'use' 'system' 'show' 'virus' 'black'
+ 'wood_density' 'climate_variability']
+['use' 'cell' 'show' 'water' 'energy' 'tumour_growth' 'quantum' 'system'
+ 'provide' 'pattern']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'trending', 11: 'declining', 12: 'declining', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining', 24: 'declining', 25: 'trending'}
+
+These are the emerging + trending topics:
+
+['protein' 'show' 'island' 'provide' 'dna' 'target' 'gene' 'use' 'mouse'
+ 'find']
+['cell' 'neuron' 'protein' 'show' 'use' 'result' 'virus' 'cause' 'single'
+ 'demonstrate']
+['phylogenetic_analysis' 'tree_rings' 'wood_density'
+ 'eco_dendrochronology' 'land_use_change' 'carbon_sensitivity'
+ 'climate_variability' 'climate_mitigation' 'historical_ecology'
+ 'ecosystem_services']
+['carbon_sensitivity' 'wood_density' 'eco_dendrochronology' 'cell'
+ 'climate_variability' 'tree_rings' 'gene' 'phylogenetic_analysis'
+ 'structure' 'ecosystem_services']
+['protein' 'use' 'membrane' 'cell' 'show' 'structure' 'result' 'human'
+ 'gene' 'provide']
+['use' 'cell' 'show' 'water' 'energy' 'tumour_growth' 'quantum' 'system'
+ 'provide' 'pattern']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           6         6
+popular            8         6
+
+###############################
+Model update: now starts iteration for t = 13.
+###############################
+
+
+Loading first model (t = 13)...
+
+
+Loading second model (t+1 = 14)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           16         8
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           16         8
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['use' 'genome' 'energy' 'high' 'film' 'optical' 'chemical' 'provide'
+ 'result' 'show']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           15         8
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'popular', 16: 'emerging', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular'}
+
+These are the emerging topics:
+
+['climate_variability' 'eco_dendrochronology' 'tree_rings' 'cell'
+ 'ecosystem_services' 'climate_mitigation' 'carbon_sensitivity'
+ 'land_use_change' 'historical_ecology' 'phylogenetic_analysis']
+['team' 'large' 'magnetic' 'small' 'change' 'spin' 'result' 'show' 'use'
+ 'carbon']
+['use' 'genome' 'energy' 'high' 'film' 'optical' 'chemical' 'provide'
+ 'result' 'show']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'declining', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'declining'}
+
+These are the emerging + trending topics:
+
+['team' 'large' 'magnetic' 'small' 'change' 'spin' 'result' 'show' 'use'
+ 'carbon']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         1
+popular           14         7
+
+###############################
+Model update: now starts iteration for t = 15.
+###############################
+
+
+Loading first model (t = 15)...
+
+
+Loading second model (t+1 = 16)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'trending', 24: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        13
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'trending', 24: 'trending'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           12        13
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+['protein' 'provide' 'cell' 'mechanism' 'infection' 'host' 'complex'
+ 'gene' 'control' 'mouse']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'trending', 24: 'trending'}
+
+These are the emerging + trending topics:
+
+['protein' 'provide' 'cell' 'mechanism' 'infection' 'host' 'complex'
+ 'gene' 'control' 'mouse']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           12        12
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'emerging', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'emerging', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+['eco_dendrochronology' 'tree_rings' 'climate_variability' 'use'
+ 'land_use_change' 'ecosystem_services' 'wood_density'
+ 'carbon_sensitivity' 'historical_ecology' 'climate_mitigation']
+['access_link' 'paper_publish' 'amendment_paper' 'link_top'
+ 'publish_access' 'cell' 'link' 'quantum' 'structure' 'paper']
+['carbon_sensitivity' 'climate_mitigation' 'wood_density'
+ 'land_use_change' 'use' 'phylogenetic_analysis' 'climate_variability'
+ 'ecosystem_services' 'tree_rings' 'show']
+['use' 'show' 'identify' 'acute_respiratory' 'protein' 'severe'
+ 'respiratory_syndrome' 'coronavirus' 'severe_acute' 'disease']
+['protein' 'provide' 'cell' 'mechanism' 'infection' 'host' 'complex'
+ 'gene' 'control' 'mouse']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'trending', 6: 'trending', 7: 'trending', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'trending', 16: 'declining', 17: 'declining', 18: 'trending', 19: 'trending', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'trending', 24: 'trending'}
+
+These are the emerging + trending topics:
+
+['carbon_sensitivity' 'climate_mitigation' 'wood_density'
+ 'land_use_change' 'use' 'phylogenetic_analysis' 'climate_variability'
+ 'ecosystem_services' 'tree_rings' 'show']
+['use' 'show' 'identify' 'acute_respiratory' 'protein' 'severe'
+ 'respiratory_syndrome' 'coronavirus' 'severe_acute' 'disease']
+['protein' 'provide' 'cell' 'mechanism' 'infection' 'host' 'complex'
+ 'gene' 'control' 'mouse']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         3
+popular           10        10
+
+###############################
+Model update: now starts iteration for t = 17.
+###############################
+
+
+Loading first model (t = 17)...
+
+
+Loading second model (t+1 = 18)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'trending', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           15        21
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'trending', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           15        21
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'emerging', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular'}
+
+These are the emerging topics:
+
+['water' 'cell' 'use' 'show' 'high' 'increase' 'tumour' 'synthesis'
+ 'change' 'climate']
+['use' 'see' 'phase' 'include' 'show' 'form' 'identify' 'structure' 'high'
+ 'find']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'trending', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining'}
+
+These are the emerging + trending topics:
+
+['water' 'cell' 'use' 'show' 'high' 'increase' 'tumour' 'synthesis'
+ 'change' 'climate']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         1
+popular           14        20
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'emerging', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'emerging', 26: 'emerging', 27: 'popular', 28: 'emerging', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular'}
+
+These are the emerging topics:
+
+['water' 'cell' 'use' 'show' 'high' 'increase' 'tumour' 'synthesis'
+ 'change' 'climate']
+['eco_dendrochronology' 'tree_rings' 'phylogenetic_analysis'
+ 'historical_ecology' 'ecosystem_services' 'climate_mitigation' 'cell'
+ 'carbon_sensitivity' 'complex' 'wood_density']
+['chromosome' 'use' 'show' 'cell' 'structure' 'increase' 'observe'
+ 'interaction' 'temperature' 'dynamic']
+['cell' 'show' 'stem_cell' 'cancer' 'use' 'tumour' 'mechanism' 'ice'
+ 'stem' 'protein']
+['use' 'see' 'phase' 'include' 'show' 'form' 'identify' 'structure' 'high'
+ 'find']
+['carbon_sensitivity' 'wood_density' 'use' 'phylogenetic_analysis'
+ 'ecosystem_services' 'historical_ecology' 'climate_variability' 'show'
+ 'tree_rings' 'eco_dendrochronology']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'trending', 8: 'trending', 9: 'declining', 10: 'trending', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'trending', 19: 'declining', 20: 'trending', 21: 'trending', 22: 'trending', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'trending', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining'}
+
+These are the emerging + trending topics:
+
+['water' 'cell' 'use' 'show' 'high' 'increase' 'tumour' 'synthesis'
+ 'change' 'climate']
+['eco_dendrochronology' 'tree_rings' 'phylogenetic_analysis'
+ 'historical_ecology' 'ecosystem_services' 'climate_mitigation' 'cell'
+ 'carbon_sensitivity' 'complex' 'wood_density']
+['chromosome' 'use' 'show' 'cell' 'structure' 'increase' 'observe'
+ 'interaction' 'temperature' 'dynamic']
+['cell' 'show' 'stem_cell' 'cancer' 'use' 'tumour' 'mechanism' 'ice'
+ 'stem' 'protein']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           2         4
+popular           13        17
+
+###############################
+Model update: now starts iteration for t = 19.
+###############################
+
+
+Loading first model (t = 19)...
+
+
+Loading second model (t+1 = 20)...
+
+
+Weak Signal Analysis with pi = 0.3625 :
+
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           24         1
+
+Weak Signal Analysis with pi = 0.4 :
+
+Calculating topic emergences with pi = 0.4...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           24         1
+
+Weak Signal Analysis with pi = 0.5 :
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           24         1
+
+Weak Signal Analysis with pi = 0.6 :
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular'}
+
+These are the emerging topics:
+
+['ecosystem_services' 'wood_density' 'climate_variability'
+ 'phylogenetic_analysis' 'historical_ecology' 'carbon_sensitivity'
+ 'climate_mitigation' 'tree_rings' 'eco_dendrochronology'
+ 'land_use_change']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining'}
+
+These are the emerging + trending topics:
+
+['ecosystem_services' 'wood_density' 'climate_variability'
+ 'phylogenetic_analysis' 'historical_ecology' 'carbon_sensitivity'
+ 'climate_mitigation' 'tree_rings' 'eco_dendrochronology'
+ 'land_use_change']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           0         1
+popular           24         0
+[?2004h(wsa-etm) phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 

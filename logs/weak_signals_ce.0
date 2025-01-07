@@ -1,0 +1,2783 @@
+[?2004hphagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ pyenv activate wsa-etm
+[?2004l
+pyenv-virtualenv: version `wsa-etm' is already activated
+[?2004hphagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_preprocessing_json_data.py
+[?2004l
+[nltk_data] Downloading package averaged_perceptron_tagger_eng to
+[nltk_data]     /home/phagen/nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger_eng is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading collection 'popular'
+[nltk_data]    | 
+[nltk_data]    | Downloading package cmudict to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package cmudict is already up-to-date!
+[nltk_data]    | Downloading package gazetteers to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package gazetteers is already up-to-date!
+[nltk_data]    | Downloading package genesis to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package genesis is already up-to-date!
+[nltk_data]    | Downloading package gutenberg to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package gutenberg is already up-to-date!
+[nltk_data]    | Downloading package inaugural to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package inaugural is already up-to-date!
+[nltk_data]    | Downloading package movie_reviews to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package movie_reviews is already up-to-date!
+[nltk_data]    | Downloading package names to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package names is already up-to-date!
+[nltk_data]    | Downloading package shakespeare to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package shakespeare is already up-to-date!
+[nltk_data]    | Downloading package stopwords to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package stopwords is already up-to-date!
+[nltk_data]    | Downloading package treebank to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package treebank is already up-to-date!
+[nltk_data]    | Downloading package twitter_samples to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package twitter_samples is already up-to-date!
+[nltk_data]    | Downloading package omw to /home/phagen/nltk_data...
+[nltk_data]    |   Package omw is already up-to-date!
+[nltk_data]    | Downloading package omw-1.4 to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package omw-1.4 is already up-to-date!
+[nltk_data]    | Downloading package wordnet to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet is already up-to-date!
+[nltk_data]    | Downloading package wordnet2021 to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet2021 is already up-to-date!
+[nltk_data]    | Downloading package wordnet31 to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet31 is already up-to-date!
+[nltk_data]    | Downloading package wordnet_ic to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package wordnet_ic is already up-to-date!
+[nltk_data]    | Downloading package words to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package words is already up-to-date!
+[nltk_data]    | Downloading package maxent_ne_chunker to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package maxent_ne_chunker is already up-to-date!
+[nltk_data]    | Downloading package punkt to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package punkt is already up-to-date!
+[nltk_data]    | Downloading package snowball_data to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package snowball_data is already up-to-date!
+[nltk_data]    | Downloading package averaged_perceptron_tagger to
+[nltk_data]    |     /home/phagen/nltk_data...
+[nltk_data]    |   Package averaged_perceptron_tagger is already up-
+[nltk_data]    |       to-date!
+[nltk_data]    | 
+[nltk_data]  Done downloading collection popular
+[nltk_data] Downloading package stopwords to /home/phagen/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Importing scopus data...
+
+Cleaning data...
+None values removed.
+Number of (title + desc) duplicates: 118. Duplicates Removed.
+Dataframe has now 80075 entries.
+
+Preprocessing data...
+
+Saving preprocessed corpus to file...
+
+Adding bigrams...
+
+Filtering data...
+
+Transforming into octis format...
+
+Splitting data into years...
+Result: number of dataframes/ calculated years/ t: 7
+
+Repeating steps for different years t...
+
+Preprocessing DONE! Files can be found in Data folder.
+[?2004hphagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_topic_analysis.py
+[?2004l
+
+###############################
+Now starts iteration for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Training second model (t = 2)...
+
+Coherence Score for Model using old k = 71: 0.5109504250281612
+This coherence of 0.5109504250281612 is worse than the old coherence of 0.5593212448204045.
+Finding new model...
+
+Coherence Score for Model with k = 74: 0.5038473562187707
+Coherence Score for Model with k = 75: 0.5282164666264383
+Coherence Score for Model with k = 76: 0.5119152033863936
+Coherence Score for Model with k = 77: 0.48759762409698065
+Coherence Score for Model with k = 78: 0.5072387708992044
+Coherence Score for Model with k = 79: 0.5083815985155726
+Coherence Score for Model with k = 80: 0.4879576289732868
+Coherence Score for Model with k = 81: 0.5172188065010523
+Coherence Score for Model with k = 82: 0.506832784890152
+Coherence Score for Model with k = 83: 0.48749708435160655
+Coherence Score for Model with k = 84: 0.4964817082322603
+Coherence Score for Model with k = 85: 0.4872894299459126
+Coherence Score for Model with k = 86: 0.49678643736099676
+Coherence Score for Model with k = 87: 0.4950477945239127
+Coherence Score for Model with k = 88: 0.4919530996149033
+Coherence Score for Model with k = 89: 0.48726793024087395
+Coherence Score for Model with k = 90: 0.4768392752138026
+Coherence Score for Model with k = 91: 0.49539943797088926
+Coherence Score for Model with k = 92: 0.4956947898191875
+Coherence Score for Model with k = 93: 0.4965642877180069
+Coherence Score for Model with k = 94: 0.4874703033462505
+Coherence Score for Model with k = 95: 0.4641805817429102
+Coherence Score for Model with k = 96: 0.4855394882302648
+Coherence Score for Model with k = 97: 0.4973783282696856
+Coherence Score for Model with k = 98: 0.48790369822468066
+Coherence Score for Model with k = 99: 0.4815206484419704
+Coherence Score for Model with k = 100: 0.47157379552407896
+Coherence Score for Model with k = 101: 0.46341171623842153
+Coherence Score for Model with k = 102: 0.47616125884706506
+Coherence Score for Model with k = 103: 0.46403945092329046
+Coherence Score for Model with k = 104: 0.4734065568382999
+Coherence Score for Model with k = 105: 0.4806165013172556
+Coherence Score for Model with k = 106: 0.4720742690941975
+Coherence Score for Model with k = 107: 0.4856604945718889
+Coherence Score for Model with k = 108: 0.47436261510457817
+Coherence Score for Model with k = 109: 0.48351962060074494
+Coherence Score for Model with k = 110: 0.47498202596503786
+Coherence Score for Model with k = 111: 0.4699000348433263
+Coherence Score for Model with k = 112: 0.4679962626280563
+Coherence Score for Model with k = 113: 0.4714854620846063
+Coherence Score for Model with k = 114: 0.4770612731982793
+Coherence Score for Model with k = 115: 0.4655104663616559
+Coherence Score for Model with k = 116: 0.46673399061181936
+Coherence Score for Model with k = 117: 0.47058476900557555
+Coherence Score for Model with k = 118: 0.47522101577771236
+Coherence Score for Model with k = 119: 0.4694661546877392
+Coherence Score for Model with k = 120: 0.44906224952172014
+Coherence Score for Model with k = 121: 0.4602238022500155
+Coherence Score for Model with k = 122: 0.4719897306642136
+Coherence Score for Model with k = 123: 0.4564575444862708
+Coherence Score for Model with k = 124: 0.4560544659307401
+Coherence Score for Model with k = 125: 0.4551543015398095
+Coherence Score for Model with k = 126: 0.4649051237942003
+Coherence Score for Model with k = 127: 0.4664679737555347
+Coherence Score for Model with k = 128: 0.46227762272138295
+Coherence Score for Model with k = 129: 0.4480471496533706
+Coherence Score for Model with k = 130: 0.458725310250279
+Coherence Score for Model with k = 131: 0.465049430215662
+Coherence Score for Model with k = 132: 0.45018710508596227
+Coherence Score for Model with k = 133: 0.45985041715281355
+Coherence Score for Model with k = 134: 0.44761108056588833
+Coherence Score for Model with k = 135: 0.4395536200239951
+Coherence Score for Model with k = 136: 0.4592966928250808
+Coherence Score for Model with k = 137: 0.47029228969790104
+Coherence Score for the best model with k = 75: 0.5282164666264383
+Coherence Score for Model using a new best k = 75: 0.5282164666264383
+This coherence for k = 75 of 0.5282164666264383 is still worse than the old coherence of 0.5593212448204045.
+Continue to use old k of 71.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular', 36: 'popular', 37: 'popular', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'popular', 48: 'popular', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'popular', 54: 'popular', 55: 'popular', 56: 'popular', 57: 'popular', 58: 'popular', 59: 'popular', 60: 'popular', 61: 'popular', 62: 'popular', 63: 'popular', 64: 'popular', 65: 'popular', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'popular', 70: 'popular'}
+
+These are the emerging topics:
+
+['change', 'dynamic', 'performance_measurement', 'dynamic_capability', 'supplier_management', 'culture', 'change_management', 'case_research', 'use_dynamic', 'research_topic']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'declining', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'declining', 38: 'declining', 39: 'declining', 40: 'trending', 41: 'trending', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'declining', 47: 'declining', 48: 'trending', 49: 'trending', 50: 'declining', 51: 'declining', 52: 'declining', 53: 'declining', 54: 'declining', 55: 'trending', 56: 'declining', 57: 'trending', 58: 'declining', 59: 'declining', 60: 'trending', 61: 'declining', 62: 'declining', 63: 'declining', 64: 'declining', 65: 'declining', 66: 'declining', 67: 'declining', 68: 'declining', 69: 'declining', 70: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging           1         0
+popular           50        20
+
+###############################
+Now starts iteration for t = 2.
+###############################
+
+
+Loading first model (t = 2)...
+
+
+Training second model (t = 3)...
+
+Coherence Score for Model using old k = 71: 0.4931559948038601
+This coherence of 0.4931559948038601 is worse than the old coherence of 0.5109504250281612.
+Finding new model...
+
+Coherence Score for Model with k = 79: 0.5092860497497897
+Coherence Score for Model with k = 80: 0.5049589838496733
+Coherence Score for Model with k = 81: 0.49982778712107834
+Coherence Score for Model with k = 82: 0.5128546170571643
+Coherence Score for Model with k = 83: 0.49155032284683436
+Coherence Score for Model with k = 84: 0.49995832291818926
+Coherence Score for Model with k = 85: 0.4962369662595332
+Coherence Score for Model with k = 86: 0.5108506358114111
+Coherence Score for Model with k = 87: 0.49209936383648717
+Coherence Score for Model with k = 88: 0.5027535852014009
+Coherence Score for Model with k = 89: 0.4912097054113713
+Coherence Score for Model with k = 90: 0.49620533907359327
+Coherence Score for Model with k = 91: 0.47751833327362264
+Coherence Score for Model with k = 92: 0.4921823241328094
+Coherence Score for Model with k = 93: 0.4865922317253939
+Coherence Score for Model with k = 94: 0.493974024056244
+Coherence Score for Model with k = 95: 0.4929472527151613
+Coherence Score for Model with k = 96: 0.4891563134798389
+Coherence Score for Model with k = 97: 0.4871258171103713
+Coherence Score for Model with k = 98: 0.487829860535107
+Coherence Score for Model with k = 99: 0.47083379319234325
+Coherence Score for Model with k = 100: 0.47737958636012073
+Coherence Score for Model with k = 101: 0.5096539275449606
+Coherence Score for Model with k = 102: 0.4800705787450705
+Coherence Score for Model with k = 103: 0.48972129302753103
+Coherence Score for Model with k = 104: 0.4664942088921392
+Coherence Score for Model with k = 105: 0.47982787247134395
+Coherence Score for Model with k = 106: 0.47517154332708644
+Coherence Score for Model with k = 107: 0.48495987243353506
+Coherence Score for Model with k = 108: 0.4537926145375503
+Coherence Score for Model with k = 109: 0.4819540318896176
+Coherence Score for Model with k = 110: 0.4749695914422839
+Coherence Score for Model with k = 111: 0.4739962334916423
+Coherence Score for Model with k = 112: 0.4655569837904759
+Coherence Score for Model with k = 113: 0.47367988969639224
+Coherence Score for Model with k = 114: 0.4799929117910056
+Coherence Score for Model with k = 115: 0.4900276781184403
+Coherence Score for Model with k = 116: 0.46570802136521594
+Coherence Score for Model with k = 117: 0.4795097814918336
+Coherence Score for Model with k = 118: 0.4878459902687133
+Coherence Score for Model with k = 119: 0.4714590114421149
+Coherence Score for Model with k = 120: 0.4834693119323328
+Coherence Score for Model with k = 121: 0.4563040101662288
+Coherence Score for Model with k = 122: 0.4834325030411901
+Coherence Score for Model with k = 123: 0.476610397204506
+Coherence Score for Model with k = 124: 0.4589518277889094
+Coherence Score for Model with k = 125: 0.47454110590655557
+Coherence Score for Model with k = 126: 0.44381745725082217
+Coherence Score for Model with k = 127: 0.4586457197439828
+Coherence Score for Model with k = 128: 0.46020652280520175
+Coherence Score for Model with k = 129: 0.4668249144488227
+Coherence Score for Model with k = 130: 0.4666385015247335
+Coherence Score for Model with k = 131: 0.4416767993026647
+Coherence Score for Model with k = 132: 0.46134701148608165
+Coherence Score for Model with k = 133: 0.4725632919743373
+Coherence Score for Model with k = 134: 0.46368833104049095
+Coherence Score for Model with k = 135: 0.46627312565522927
+Coherence Score for Model with k = 136: 0.4592558629914433
+Coherence Score for Model with k = 137: 0.4716091291288288
+Coherence Score for Model with k = 138: 0.45943513865904406
+Coherence Score for Model with k = 139: 0.4547984255469836
+Coherence Score for Model with k = 140: 0.4480319215718762
+Coherence Score for Model with k = 141: 0.463390887012015
+Coherence Score for Model with k = 142: 0.4521536032316256
+Coherence Score for Model with k = 143: 0.45517244476729063
+Coherence Score for Model with k = 144: 0.46529482295698205
+Coherence Score for Model with k = 145: 0.45953011396220284
+Coherence Score for Model with k = 146: 0.46032397672804476
+Coherence Score for Model with k = 147: 0.4551000046820604
+Coherence Score for the best model with k = 82: 0.5128546170571643
+Coherence Score for Model using a new best k = 82: 0.5128546170571643
+This coherence for k = 82 of 0.5128546170571643 is better than the old coherence of 0.5109504250281612.
+Model is updated. New k is 82.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'emerging', 3: 'popular', 4: 'popular', 5: 'emerging', 6: 'emerging', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'emerging', 28: 'emerging', 29: 'emerging', 30: 'emerging', 31: 'emerging', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'emerging', 36: 'popular', 37: 'popular', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'emerging', 47: 'emerging', 48: 'popular', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'emerging', 54: 'emerging', 55: 'popular', 56: 'emerging', 57: 'emerging', 58: 'popular', 59: 'emerging', 60: 'popular', 61: 'popular', 62: 'emerging', 63: 'emerging', 64: 'popular', 65: 'popular', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'emerging', 70: 'emerging', 71: 'popular', 72: 'emerging', 73: 'popular', 74: 'emerging', 75: 'emerging', 76: 'popular', 77: 'popular', 78: 'emerging', 79: 'emerging', 80: 'emerging', 81: 'emerging'}
+
+These are the emerging topics:
+
+['demand', 'fiber', 'inventory_management', 'composite', 'property', 'mechanical', 'use', 'inventory', 'material', 'strength']
+['meat', 'eat', 'model', 'participant', 'inventory_model', 'analysis_perform', 'inventory', 'cost_inventory', 'model_emergency', 'people']
+['disaster', 'remanufacturing', 'relief', 'emergency', 'clothing', 'design', 'disaster_relief', 'textile_clothing', 'humanitarian_relief', 'natural_disaster']
+['public_sector', 'green_design', 'chemical', 'united_state', 'system', 'ecological_footprint', 'provide_basis', 'industrial_wastewater', 'use', 'cadmium']
+['water', 'water_use', 'use', 'operating', 'treatment', 'operating_cost', 'water_treatment', 'treatment_method', 'environmental_cost', 'water_footprint']
+['cognitive', 'study', 'provide_useful', 'reduction_potential', 'consider_chain', 'use', 'model', 'social_identity', 'impact_business', 'business']
+['emission_reduction', 'reactive_dye', 'special_issue', 'transport', 'body', 'reduction', 'woman', 'significant_role', 'play_significant', 'shape']
+['humanitarian', 'neural_network', 'network', 'humanitarian_logistics', 'neural', 'model', 'artificial_neural', 'reverse_supply', 'model_find', 'passenger']
+['construction', 'software', 'young', 'use', 'waist', 'vital_role', 'result', 'purchase_behavior', 'linear_regression', 'evaluation_laboratory']
+['value_stream', 'cost', 'fresh', 'stream', 'firm', 'value', 'stream_mapping', 'used_product', 'supply_chain', 'paper_consider']
+['quality', 'vegetarian', 'product', 'product_quality', 'electric_vehicle', 'electric', 'vegan', 'return_policy', 'battery', 'quality_improvement']
+['development', 'product', 'remanufactured_product', 'small_medium', 'agricultural_product', 'remanufactured', 'new_product', 'medium_enterprise', 'agricultural', 'green_development']
+['heuristic', 'lca_result', 'heuristic_algorithm', 'problem', 'study_extend', 'size_problem', 'digital_platform', 'study', 'flexible_supply', 'chain_flexibility']
+['demand', 'use', 'cooperative', 'model', 'company', 'capacity', 'power', 'value', 'determine_optimum', 'inventory']
+['cement', 'assessment_use', 'green_logistics', 'fuel_consumption', 'study', 'indirect', 'direct_indirect', 'paper_build', 'aim_assess', 'use']
+['optimal_control', 'beverage', 'reduction_environmental', 'component_analysis', 'time_horizon', 'research_case', 'cost_use', 'food_beverage', 'wte_plant', 'paper_take']
+['land_use', 'land', 'economic', 'use', 'oil_gas', 'oil', 'present_value', 'indicator', 'pool', 'model']
+['performance', 'cold_chain', 'performance_indicator', 'cold', 'metric', 'indicator', 'key_performance', 'dynamic', 'network', 'commitment']
+['reverse_logistics', 'reverse', 'purchasing_supply', 'compare_traditional', 'logistics', 'effect_increase', 'management_strategy', 'seed', 'structure', 'indigo']
+['industrial', 'industrial_symbiosis', 'symbiosis', 'resource', 'co2_emission', 'material', 'use', 'co2', 'carbon_dioxide', 'rotation']
+['carbon', 'carbon_emission', 'emission', 'low_carbon', 'tax', 'carbon_tax', 'low', 'reduce_carbon', 'develop_base', 'equipment_maintenance']
+['apparel', 'study', 'subsidy', 'government_subsidy', 'startup', 'government', 'education', 'student', 'purpose_study', 'study_consider']
+['circular_economy', 'circular', 'raw_material', 'material', 'economy', 'raw', 'ce', 'resource', 'product', 'transition_circular']
+['diet', 'building', 'healthy', 'environmental_impact', 'dietary', 'sustainable_consumption', 'sustainable_diet', 'potential_environmental', 'emergency', 'environmental']
+['consumer', 'heat', 'strategic', 'use', 'approach_assess', 'power', 'book', 'study', 'strategic_consumer', 'ethical']
+['risk', 'supply_risk', 'mitigation', 'use', 'risk_risk', 'aluminum_electrode', 'risk_assessment', 'method', 'use_impact', 'high']
+['use', 'supplier', 'process', 'industry', 'flexibility', 'action_research', 'supplier_performance', 'solvent', 'three_case', 'public_opinion']
+['use', 'efficiency', 'service', 'energy', 'production', 'input', 'mineral', 'use_determine', 'study', 'high']
+['spare_part', 'part', 'spare', 'carbon_fiber', 'fiber', 'system', 'equipment', 'maintenance', 'electrical_electronic', 'mining']
+['procurement', 'public', 'public_procurement', 'robust', 'use', 'robust_optimization', 'model', 'green_public', 'analysis', 'aircraft']
+['product', 'product_return', 'simulation', 'return', 'consumer', 'simulation_model', 'intention', 'purchase', 'heat_power', 'purchase_intention']
+['fashion', 'use', 'brand', 'internet_thing', 'internet', 'industrial_internet', 'chain_consist', 'choice', 'fashion_industry', 'low_bound']
+['financial_performance', 'hospital', 'index_system', 'service_market', 'financial', 'cost_high', 'use', 'use_aluminum', 'study', 'performance']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'trending', 25: 'declining', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'declining', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining', 36: 'declining', 37: 'trending', 38: 'declining', 39: 'trending', 40: 'declining', 41: 'declining', 42: 'declining', 43: 'trending', 44: 'trending', 45: 'trending', 46: 'declining', 47: 'declining', 48: 'declining', 49: 'trending', 50: 'declining', 51: 'trending', 52: 'trending', 53: 'declining', 54: 'declining', 55: 'declining', 56: 'declining', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'declining', 61: 'trending', 62: 'trending', 63: 'trending', 64: 'declining', 65: 'declining', 66: 'trending', 67: 'trending', 68: 'trending', 69: 'declining', 70: 'declining', 71: 'declining', 72: 'declining', 73: 'trending', 74: 'declining', 75: 'declining', 76: 'trending', 77: 'trending', 78: 'trending', 79: 'declining', 80: 'declining', 81: 'declining'}
+
+These are the emerging + trending topics:
+
+['disaster', 'remanufacturing', 'relief', 'emergency', 'clothing', 'design', 'disaster_relief', 'textile_clothing', 'humanitarian_relief', 'natural_disaster']
+['construction', 'software', 'young', 'use', 'waist', 'vital_role', 'result', 'purchase_behavior', 'linear_regression', 'evaluation_laboratory']
+['circular_economy', 'circular', 'raw_material', 'material', 'economy', 'raw', 'ce', 'resource', 'product', 'transition_circular']
+['diet', 'building', 'healthy', 'environmental_impact', 'dietary', 'sustainable_consumption', 'sustainable_diet', 'potential_environmental', 'emergency', 'environmental']
+['procurement', 'public', 'public_procurement', 'robust', 'use', 'robust_optimization', 'model', 'green_public', 'analysis', 'aircraft']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          28         5
+popular           26        23
+
+###############################
+Now starts iteration for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Training second model (t = 4)...
+
+Coherence Score for Model using old k = 82: 0.529900772545965
+This coherence of 0.529900772545965 is better than the old coherence of 0.5128546170571643.
+Continue to use old k of 82.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'popular', 26: 'emerging', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'emerging', 34: 'popular', 35: 'popular', 36: 'emerging', 37: 'popular', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'emerging', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'emerging', 47: 'popular', 48: 'emerging', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'emerging', 54: 'popular', 55: 'popular', 56: 'popular', 57: 'popular', 58: 'popular', 59: 'emerging', 60: 'popular', 61: 'popular', 62: 'popular', 63: 'popular', 64: 'popular', 65: 'popular', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'emerging', 70: 'emerging', 71: 'popular', 72: 'popular', 73: 'popular', 74: 'popular', 75: 'emerging', 76: 'emerging', 77: 'popular', 78: 'popular', 79: 'popular', 80: 'emerging', 81: 'emerging'}
+
+These are the emerging topics:
+
+['recycle', 'glass_fiber', 'article_analyze', 'waste_material', 'construction_waste', 'recycling', 'special_issue', 'use', 'paper', 'land']
+['strategy', 'management_system', 'risk_aversion', 'management', 'current_practice', 'carbon_trading', 'analysis_key', 'impact_carbon', 'trading', 'lead_significant']
+['key_performance', 'operation_management', 'indian', 'indian_manufacturing', 'performance_indicator', 'key_performance_performance_indicator', 'play_key', 'recovery_rate', 'emergency_medical', 'pharmaceutical_industry']
+['solution_approach', 'upstream_downstream', 'downstream', 'uncertainty', 'upstream', 'use_recycled', 'human_toxicity', 'optimal_location', 'cost', 'yield']
+['clothing', 'plastic_waste', 'textile_clothing', 'textile', 'lean_production', 'efficient_use', 'transition_circular', 'system', 'eu', 'clothing_industry']
+['meat', 'dairy', 'meat_consumption', 'hybrid', 'milk', 'protein', 'use', 'consumption', 'composite', 'reduce_meat']
+['medical', 'maintenance', 'quality', 'medical_supply', 'preventive', 'production', 'issue_relate', 'quality_control', 'preventive_maintenance', 'random_forest']
+['dye', 'fabric', 'cotton', 'evaluation', 'use', 'index', 'evaluation_model', 'dyeing', 'index_system', 'evaluation_index']
+['concern', 'procurement', 'fairness_concern', 'fairness', 'robust_optimization', 'material_supplier', 'public', 'public_sector', 'collector', 'manufacture_flexibility']
+['neural_network', 'trade', 'trade_credit', 'credit', 'neural', 'artificial_neural', 'sale', 'model', 'fuzzy', 'artificial']
+['online', 'online_channel', 'channel', 'commodity', 'customer', 'increase_total', 'compare_current', 'rate_increase', 'intuitionistic_fuzzy', 'strategy']
+['production', 'food_production', 'tourism', 'hotel', 'barrier', 'high_environmental', 'wheat_production', 'use', 'wheat', 'environmental_regulation']
+['present_value', 'private_sector', 'preservation_technology', 'preservation', 'chemical', 'use_change', 'grain', 'perishable_food', 'review_article', 'analyze_effect']
+['service', 'battery', 'service_quality', 'scrap', 'customer', 'vehicle', 'service_supply', 'electric_vehicle', 'quality', 'electric']
+['diet', 'land_use', 'sustainable_diet', 'healthy', 'facility_location', 'cultural', 'sustainable', 'critical_factor', 'import', 'good_quality']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'declining', 39: 'declining', 40: 'declining', 41: 'declining', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'trending', 47: 'declining', 48: 'declining', 49: 'declining', 50: 'declining', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'trending', 55: 'declining', 56: 'trending', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'trending', 61: 'declining', 62: 'declining', 63: 'trending', 64: 'trending', 65: 'trending', 66: 'declining', 67: 'trending', 68: 'trending', 69: 'declining', 70: 'declining', 71: 'declining', 72: 'declining', 73: 'declining', 74: 'trending', 75: 'declining', 76: 'declining', 77: 'declining', 78: 'declining', 79: 'declining', 80: 'declining', 81: 'trending'}
+
+These are the emerging + trending topics:
+
+['meat', 'dairy', 'meat_consumption', 'hybrid', 'milk', 'protein', 'use', 'consumption', 'composite', 'reduce_meat']
+['diet', 'land_use', 'sustainable_diet', 'healthy', 'facility_location', 'cultural', 'sustainable', 'critical_factor', 'import', 'good_quality']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          13         2
+popular           42        25
+
+###############################
+Now starts iteration for t = 4.
+###############################
+
+
+Loading first model (t = 4)...
+
+
+Training second model (t = 5)...
+
+Coherence Score for Model using old k = 82: 0.496259393584463
+This coherence of 0.496259393584463 is worse than the old coherence of 0.529900772545965.
+Finding new model...
+
+Coherence Score for Model with k = 86: 0.4932437559871498
+Coherence Score for Model with k = 87: 0.5133420320911691
+Coherence Score for Model with k = 88: 0.4957850468044485
+Coherence Score for Model with k = 89: 0.5281605359584696
+Coherence Score for Model with k = 90: 0.5369419392199338
+Coherence Score for Model with k = 91: 0.5040419799151313
+Coherence Score for Model with k = 92: 0.5092653237539557
+Coherence Score for Model with k = 93: 0.49225563102273456
+Coherence Score for Model with k = 94: 0.49400179746029077
+Coherence Score for Model with k = 95: 0.5023428251754531
+Coherence Score for Model with k = 96: 0.5015377982654879
+Coherence Score for Model with k = 97: 0.5077072572626045
+Coherence Score for Model with k = 98: 0.492410982312794
+Coherence Score for Model with k = 99: 0.49099772753465504
+Coherence Score for Model with k = 100: 0.5005331398427518
+Coherence Score for Model with k = 101: 0.4880982336575684
+Coherence Score for Model with k = 102: 0.5046050961023628
+Coherence Score for Model with k = 103: 0.50535565981875
+Coherence Score for Model with k = 104: 0.5076215382577304
+Coherence Score for Model with k = 105: 0.5099741419333663
+Coherence Score for Model with k = 106: 0.4753591482879362
+Coherence Score for Model with k = 107: 0.49204117672148867
+Coherence Score for Model with k = 108: 0.48446588858881073
+Coherence Score for Model with k = 109: 0.4812720612907495
+Coherence Score for Model with k = 110: 0.48330441381495376
+Coherence Score for Model with k = 111: 0.4930942648102899
+Coherence Score for Model with k = 112: 0.4847098442573325
+Coherence Score for Model with k = 113: 0.48725286674105217
+Coherence Score for Model with k = 114: 0.4874928649433913
+Coherence Score for Model with k = 115: 0.48227572128481
+Coherence Score for Model with k = 116: 0.495886452090468
+Coherence Score for Model with k = 117: 0.4849612672822972
+Coherence Score for Model with k = 118: 0.4874120901154184
+Coherence Score for Model with k = 119: 0.4712601304660598
+Coherence Score for Model with k = 120: 0.4810142160096114
+Coherence Score for Model with k = 121: 0.48426599096214257
+Coherence Score for Model with k = 122: 0.47604864622209075
+Coherence Score for Model with k = 123: 0.46938632045442735
+Coherence Score for Model with k = 124: 0.4757089433741439
+Coherence Score for Model with k = 125: 0.4682764587781937
+Coherence Score for Model with k = 126: 0.4672991187343573
+Coherence Score for Model with k = 127: 0.4764050528739681
+Coherence Score for Model with k = 128: 0.486691940248725
+Coherence Score for Model with k = 129: 0.473231716923209
+Coherence Score for Model with k = 130: 0.4813260056975688
+Coherence Score for Model with k = 131: 0.4608884443333104
+Coherence Score for Model with k = 132: 0.48225297363007175
+Coherence Score for Model with k = 133: 0.48525499189375665
+Coherence Score for Model with k = 134: 0.465844690847641
+Coherence Score for Model with k = 135: 0.48155814610066283
+Coherence Score for Model with k = 136: 0.4637222019870767
+Coherence Score for Model with k = 137: 0.47185492750122016
+Coherence Score for Model with k = 138: 0.462733698036925
+Coherence Score for Model with k = 139: 0.4779897567416011
+Coherence Score for Model with k = 140: 0.45660327815034546
+Coherence Score for Model with k = 141: 0.4708257593791731
+Coherence Score for Model with k = 142: 0.4561934563887674
+Coherence Score for Model with k = 143: 0.47658354866259156
+Coherence Score for Model with k = 144: 0.4555410744030972
+Coherence Score for Model with k = 145: 0.45583339135775985
+Coherence Score for Model with k = 146: 0.4678728371910328
+Coherence Score for Model with k = 147: 0.46788461418998384
+Coherence Score for Model with k = 148: 0.45778261689588495
+Coherence Score for Model with k = 149: 0.46724957867041667
+Coherence Score for Model with k = 150: 0.4589117712234602
+Coherence Score for Model with k = 151: 0.4622641276347468
+Coherence Score for Model with k = 152: 0.4488085032233426
+Coherence Score for Model with k = 153: 0.4488340475745821
+Coherence Score for Model with k = 154: 0.4641257525949658
+Coherence Score for Model with k = 155: 0.4585059475098411
+Coherence Score for Model with k = 156: 0.4523511894903341
+Coherence Score for Model with k = 157: 0.4562016695992916
+Coherence Score for Model with k = 158: 0.44959415308301576
+Coherence Score for Model with k = 159: 0.4567347132569414
+Coherence Score for Model with k = 160: 0.4616169357879575
+Coherence Score for the best model with k = 90: 0.5369419392199338
+Coherence Score for Model using a new best k = 90: 0.5369419392199338
+This coherence for k = 90 of 0.5369419392199338 is better than the old coherence of 0.529900772545965.
+Model is updated. New k is 90.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'emerging', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'emerging', 30: 'popular', 31: 'emerging', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular', 36: 'emerging', 37: 'popular', 38: 'popular', 39: 'emerging', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'popular', 48: 'emerging', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'emerging', 54: 'popular', 55: 'popular', 56: 'emerging', 57: 'popular', 58: 'popular', 59: 'popular', 60: 'popular', 61: 'popular', 62: 'emerging', 63: 'popular', 64: 'popular', 65: 'emerging', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'popular', 70: 'popular', 71: 'popular', 72: 'popular', 73: 'popular', 74: 'popular', 75: 'popular', 76: 'emerging', 77: 'emerging', 78: 'popular', 79: 'popular', 80: 'popular', 81: 'popular', 82: 'emerging', 83: 'popular', 84: 'popular', 85: 'emerging', 86: 'emerging', 87: 'popular', 88: 'popular', 89: 'popular'}
+
+These are the emerging topics:
+
+['flexibility', 'medicine', 'slow', 'slow_fashion', 'use', 'supply_chain', 'model', 'provide_reliable', 'study', 'reference_point']
+['textile', 'mineral', 'rare_earth', 'clothing', 'rare', 'textile_clothing', 'wool', 'value_chain', 'earth', 'value']
+['packaging', 'use_electrocoagulation', 'ec_process', 'use', 'environmental_damage', 'service_cost', 'aircraft', 'result', 'packaging_waste', 'effective_method']
+['poultry', 'performance', 'sustainability_practice', 'technology_innovation', 'direct_indirect', 'investigate_effect', 'government', 'clean_production', 'logistic_regression', 'analyze_effect']
+['industry', 'value', 'cost', 'value_chain', 'product', 'economic_value', 'system_increase', 'development', 'pesticide', 'vital_role']
+['risk', 'risk_aversion', 'payment', 'aversion', 'information_asymmetry', 'interest_rate', 'sourcing', 'price', 'market', 'adjustment']
+['industrial', 'food_waste', 'industrial_symbiosis', 'symbiosis', 'system', 'performance_measurement', 'measurement', 'cycle_impact', 'park', 'glass_fiber']
+['supply_chain', 'supply', 'chain', 'critical_raw', 'aim_review', 'research_case', 'practical_implication', 'paper_aim', 'strategy', 'cost_product']
+['oil', 'oil_gas', 'agricultural_system', 'approach_implement', 'gas', 'relaxation', 'market_price', 'farmer', 'additive', 'demonstrate_applicability']
+['use', 'energy', 'fibre', 'factor', 'mechanical_property', 'mechanical', 'recycled', 'carbon_fibre', 'input', 'energy_input']
+['beef', 'driver', 'cattle', 'vegan', 'consumption_pattern', 'beef_production', 'assessment_model', 'key_driver', 'move_towards', 'consumption_food']
+['social_impact', 'apparel', 'health_environmental', 'environmental_management', 'packaging_material', 'supplier_relationship', 'social', 'advance_payment', 'social_performance', 'apparel_industry']
+['european_union', 'eu', 'european', 'union', 'current_state', 'state', 'capacity_investment', 'model_system', 'textile_manufacturing', 'technological_development']
+['method', 'green_innovation', 'capacity', 'evaluation', 'evaluation_model', 'production_capacity', 'enterprise', 'exponential_smoothing', 'economic_analysis', 'model']
+['show_increase', 'paper_describe', 'take_consideration', 'fiber_composite', 'circular_public', 'improve_energy', 'research_project', 'circular_building', 'opportunity_improve', 'forestry']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'trending', 41: 'declining', 42: 'declining', 43: 'declining', 44: 'trending', 45: 'declining', 46: 'declining', 47: 'trending', 48: 'declining', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'trending', 55: 'declining', 56: 'declining', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'trending', 61: 'declining', 62: 'declining', 63: 'declining', 64: 'trending', 65: 'declining', 66: 'trending', 67: 'declining', 68: 'trending', 69: 'trending', 70: 'trending', 71: 'declining', 72: 'declining', 73: 'declining', 74: 'trending', 75: 'declining', 76: 'declining', 77: 'declining', 78: 'declining', 79: 'declining', 80: 'trending', 81: 'declining', 82: 'declining', 83: 'declining', 84: 'declining', 85: 'declining', 86: 'declining', 87: 'trending', 88: 'declining', 89: 'declining'}
+
+These are the emerging + trending topics:
+
+['textile', 'mineral', 'rare_earth', 'clothing', 'rare', 'textile_clothing', 'wool', 'value_chain', 'earth', 'value']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          14         1
+popular           50        25
+
+###############################
+Now starts iteration for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Training second model (t = 6)...
+
+Coherence Score for Model using old k = 90: 0.5104169604651025
+This coherence of 0.5104169604651025 is worse than the old coherence of 0.5369419392199338.
+Finding new model...
+
+Coherence Score for Model with k = 89: 0.49397459847405334
+Coherence Score for Model with k = 90: 0.48458181576893944
+Coherence Score for Model with k = 91: 0.4791216822784911
+Coherence Score for Model with k = 92: 0.46299962784457727
+Coherence Score for Model with k = 93: 0.4782189212313149
+Coherence Score for Model with k = 94: 0.5024296531900427
+Coherence Score for Model with k = 95: 0.48864362287349417
+Coherence Score for Model with k = 96: 0.47758833477636403
+Coherence Score for Model with k = 97: 0.47550832671017174
+Coherence Score for Model with k = 98: 0.4632561666835249
+Coherence Score for Model with k = 99: 0.4721573248294135
+Coherence Score for Model with k = 100: 0.4869448148323029
+Coherence Score for Model with k = 101: 0.4666648457259322
+Coherence Score for Model with k = 102: 0.4798139957817343
+Coherence Score for Model with k = 103: 0.47621315885587134
+Coherence Score for Model with k = 104: 0.47567051167506913
+Coherence Score for Model with k = 105: 0.46980621282332113
+Coherence Score for Model with k = 106: 0.4834481632521947
+Coherence Score for Model with k = 107: 0.4583763669655237
+Coherence Score for Model with k = 108: 0.47953916867391266
+Coherence Score for Model with k = 109: 0.47339183455749095
+Coherence Score for Model with k = 110: 0.47724015088494587
+Coherence Score for Model with k = 111: 0.47895796535362
+Coherence Score for Model with k = 112: 0.4668655919037389
+Coherence Score for Model with k = 113: 0.47322775135742406
+Coherence Score for Model with k = 114: 0.45801674168367157
+Coherence Score for Model with k = 115: 0.4901944081132231
+Coherence Score for Model with k = 116: 0.4934931732300283
+Coherence Score for Model with k = 117: 0.47496955021348486
+Coherence Score for Model with k = 118: 0.4523421076646479
+Coherence Score for Model with k = 119: 0.48404088236309056
+Coherence Score for Model with k = 120: 0.4805961166341493
+Coherence Score for Model with k = 121: 0.4772860718320228
+Coherence Score for Model with k = 122: 0.46719384064029884
+Coherence Score for Model with k = 123: 0.4541059311287998
+Coherence Score for Model with k = 124: 0.46534169169143674
+Coherence Score for Model with k = 125: 0.47802261238815735
+Coherence Score for Model with k = 126: 0.46179305383347974
+Coherence Score for Model with k = 127: 0.47104608365602446
+Coherence Score for Model with k = 128: 0.48116726734107834
+Coherence Score for Model with k = 129: 0.4471790119262088
+Coherence Score for Model with k = 130: 0.47003543783242024
+Coherence Score for Model with k = 131: 0.45885308621730203
+Coherence Score for Model with k = 132: 0.4730954935780954
+Coherence Score for Model with k = 133: 0.45171723459115937
+Coherence Score for Model with k = 134: 0.4584615072459754
+Coherence Score for Model with k = 135: 0.4537499136274147
+Coherence Score for Model with k = 136: 0.4681192799802181
+Coherence Score for Model with k = 137: 0.4645868023393632
+Coherence Score for Model with k = 138: 0.4555545110985403
+Coherence Score for Model with k = 139: 0.4603553663180533
+Coherence Score for Model with k = 140: 0.46630419411320095
+Coherence Score for Model with k = 141: 0.46594835651775696
+Coherence Score for Model with k = 142: 0.4598395867092585
+Coherence Score for Model with k = 143: 0.4482555930099551
+Coherence Score for Model with k = 144: 0.4599230531287536
+Coherence Score for Model with k = 145: 0.46108764462755747
+Coherence Score for Model with k = 146: 0.4468342811127141
+Coherence Score for Model with k = 147: 0.45224729164020305
+Coherence Score for Model with k = 148: 0.4536608872538652
+Coherence Score for Model with k = 149: 0.4483012184422981
+Coherence Score for Model with k = 150: 0.44789233864429945
+Coherence Score for Model with k = 151: 0.4462410358522837
+Coherence Score for Model with k = 152: 0.45957371179991774
+Coherence Score for Model with k = 153: 0.444210121088674
+Coherence Score for Model with k = 154: 0.45823906290785704
+Coherence Score for Model with k = 155: 0.4755647981121307
+Coherence Score for Model with k = 156: 0.4601620181813536
+Coherence Score for Model with k = 157: 0.45511335102395784
+Coherence Score for Model with k = 158: 0.45166337503324144
+Coherence Score for Model with k = 159: 0.4562467452825119
+Coherence Score for Model with k = 160: 0.45768305845898205
+Coherence Score for Model with k = 161: 0.44441219810390825
+Coherence Score for Model with k = 162: 0.4562456215061837
+Coherence Score for Model with k = 163: 0.4499885575053614
+Coherence Score for Model with k = 164: 0.44814025999952545
+Coherence Score for Model with k = 165: 0.43386021471412844
+Coherence Score for Model with k = 166: 0.45475730627239225
+Coherence Score for the best model with k = 94: 0.5024296531900427
+Coherence Score for Model using a new best k = 94: 0.5024296531900427
+This coherence for k = 94 of 0.5024296531900427 is still worse than the old coherence of 0.5369419392199338.
+Continue to use old k of 90.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'emerging', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'emerging', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'emerging', 23: 'emerging', 24: 'emerging', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'emerging', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'emerging', 33: 'popular', 34: 'emerging', 35: 'emerging', 36: 'emerging', 37: 'popular', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'emerging', 42: 'emerging', 43: 'popular', 44: 'emerging', 45: 'popular', 46: 'popular', 47: 'popular', 48: 'emerging', 49: 'popular', 50: 'popular', 51: 'emerging', 52: 'popular', 53: 'popular', 54: 'emerging', 55: 'popular', 56: 'popular', 57: 'emerging', 58: 'popular', 59: 'popular', 60: 'popular', 61: 'popular', 62: 'popular', 63: 'popular', 64: 'emerging', 65: 'popular', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'popular', 70: 'popular', 71: 'emerging', 72: 'popular', 73: 'emerging', 74: 'popular', 75: 'emerging', 76: 'emerging', 77: 'emerging', 78: 'popular', 79: 'popular', 80: 'emerging', 81: 'emerging', 82: 'popular', 83: 'emerging', 84: 'emerging', 85: 'emerging', 86: 'popular', 87: 'emerging', 88: 'emerging', 89: 'popular'}
+
+These are the emerging topics:
+
+['meat', 'cultured_meat', 'meat_alternative', 'consumer', 'cultured', 'shape', 'alternative', 'body', 'meat_production', 'gown']
+['lean', 'lean_manufacturing', 'manufacturing', 'sludge', 'cod_removal', 'lean_tool', 'relationship_lean', 'reduction', 'time', 'humanitarian_logistics']
+['carbon_footprint', 'value_chain', 'feed', 'carbon', 'footprint', 'milk', 'cf', 'packaging', 'low_environmental', 'beef']
+['trade', 'technology', 'enterprise', 'china', 'export', 'relate_environmental', 'new_energy', 'sector_one', 'material_product', 'industry']
+['vegetable', 'ce_implementation', 'waste', 'hong_kong', 'eu_member', 'newsvendor_model', 'meat_substitute', 'site', 'pharmaceutical', 'work_propose']
+['port', 'safety', 'carbon_supply', 'find_information', 'safety_stock', 'network_relationship', 'vaccine', 'demonstration', 'promote_development', 'development_global']
+['service', 'service_level', 'customer', 'demand', 'product', 'stock', 'high', 'revenue', 'strategy_high', 'market']
+['insurance', 'emergency', 'bullwhip_effect', 'promote_circular', 'roll', 'emergency_supply', 'msme', 'smart_technology', 'bullwhip', 'manufacture_process']
+['rare_earth', 'banking', 'rare', 'earth', 'explore_use', 'preferred_reporting', 'china_large', 'product_design', 'recycle_waste', 'sustainability_discuss']
+['carbon_fiber', 'fiber', 'wine', 'carbon', 'operational_performance', 'social_performance', 'design_sustainable', 'technological_innovation', 'sustainability', 'economic_sustainability']
+['logistics', 'distribution', 'system', 'equitable', 'analysis', 'geographical_location', 'system_manage', 'study', 'research', 'pellet']
+['customer_perceive', 'steel_industry', 'indicator', 'evaluation', 'marketing', 'index_system', 'comprehensive_evaluation', 'environmental', 'product', 'symbiotic_relationship']
+['fashion', 'organic', 'sustainable', 'sustainable_fashion', 'production', 'chemical', 'copper', 'sustainability', 'economic', 'use']
+['measurement', 'dimension', 'agility', 'framework', 'ecological_footprint', 'sustainability', 'performance_measurement', 'performance', 'framework_evaluate', 'manufacture_system']
+['urban', 'city', 'spatial', 'principal_component', 'supply_management', 'component_analysis', 'input_output', 'territorial', 'sustainability_risk', 'analysis_find']
+['factor', 'factor_affect', 'interpretive_structural', 'factor_influence', 'structural', 'interpretive', 'affect', 'study', 'total_interpretive', 'use']
+['forest', 'demand', 'ecosystem', 'design', '3d', 'effort_reduce', 'new', 'increase_competition', 'limit_global', '3d_printing']
+['green_supplier', 'rental', 'support_system', 'decision_support', 'model_perishable', 'use_hybrid', 'sustainability_concept', 'system', 'type_business', 'mobile']
+['vehicle', 'battery', 'electric_vehicle', 'upcycling', 'electric', 'rout_problem', 'vehicle_battery', 'provide_systematic', 'beverage', 'plastic_use']
+['order', 'quantity', 'order_quantity', 'recycle', 'optimal_order', 'carbon', 'nutritional_quality', 'evaluate_potential', 'carbon_trading', 'recycling']
+['evaluation', 'important_role', 'play_important', 'raw_material', 'evaluation_method', 'production', 'raw', 'evaluation_model', 'play', 'play_important_important_role']
+['circular_bioeconomy', 'financial', 'blockchain', 'scale', 'blockchain_technology', 'wool', 'scale_measure', 'performance_system', 'consider_important', 'coal']
+['humanitarian', 'social_impact', 'humanitarian_supply', 'manage_inventory', 'social', 'power_plant', 'social_life', 'environmental_social', 'contract', 'healthcare']
+['plastic', 'plastic_waste', 'recycled_material', 'industry', 'similarity_difference', 'use_plastic', 'new_exist', 'recycle_process', 'emerge_technology', 'combine_fuzzy']
+['disaster', 'automotive', 'automotive_industry', 'model_first', 'relief', 'entropy', 'risk', 'first_stage', 'solution_result', 'critical_supply']
+['data_envelopment', 'envelopment_analysis', 'use', 'envelopment', 'data_envelopment_envelopment_analysis', 'air', 'natural', 'emergency', 'consumption_food', 'dea']
+['wind_turbine', 'wind', 'turbine', 'dietary_guideline', 'fiber', 'indium', 'blade', 'turbine_blade', 'reuse', 'wind_power']
+['damage_cost', 'key_role', 'drug', 'play_key', 'carbon_dioxide', 'political_economic', 'mitigate_environmental', 'chemistry', 'negative_environmental', 'menu']
+['government', 'subsidy', 'government_subsidy', 'environmental_protection', 'environmental', 'social_welfare', 'green', 'protection', 'subsidy_policy', 'activate']
+['maturity', 'impact_sustainable', 'effect', 'study', 'model', 'design_resilient', 'smart', 'mediating_effect', 'small_business', 'expect_total']
+['base_current', 'assortment', 'art', 'deep', 'sustainable_healthy', 'approach_integrate', 'production_inventory', 'give_rise', 'deep_learning', 'heuristic_solve']
+['blood', 'capacity', 'information_system', 'logistics_service', 'oil', 'park', 'information', 'allocation', 'quality', 'power_battery']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'declining', 41: 'declining', 42: 'declining', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'declining', 47: 'declining', 48: 'declining', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'declining', 55: 'trending', 56: 'declining', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'declining', 61: 'trending', 62: 'declining', 63: 'declining', 64: 'declining', 65: 'trending', 66: 'trending', 67: 'declining', 68: 'declining', 69: 'trending', 70: 'declining', 71: 'declining', 72: 'trending', 73: 'declining', 74: 'declining', 75: 'trending', 76: 'declining', 77: 'declining', 78: 'trending', 79: 'declining', 80: 'declining', 81: 'declining', 82: 'declining', 83: 'declining', 84: 'declining', 85: 'declining', 86: 'trending', 87: 'declining', 88: 'declining', 89: 'declining'}
+
+These are the emerging + trending topics:
+
+['meat', 'cultured_meat', 'meat_alternative', 'consumer', 'cultured', 'shape', 'alternative', 'body', 'meat_production', 'gown']
+['carbon_footprint', 'value_chain', 'feed', 'carbon', 'footprint', 'milk', 'cf', 'packaging', 'low_environmental', 'beef']
+['carbon_fiber', 'fiber', 'wine', 'carbon', 'operational_performance', 'social_performance', 'design_sustainable', 'technological_innovation', 'sustainability', 'economic_sustainability']
+['humanitarian', 'social_impact', 'humanitarian_supply', 'manage_inventory', 'social', 'power_plant', 'social_life', 'environmental_social', 'contract', 'healthcare']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          28         4
+popular           38        20
+
+###############################
+Now starts iteration for t = 6.
+###############################
+
+
+Loading first model (t = 6)...
+
+
+Training second model (t = 7)...
+
+Coherence Score for Model using old k = 90: 0.41844169914456175
+This coherence of 0.41844169914456175 is worse than the old coherence of 0.5104169604651025.
+Finding new model...
+
+Coherence Score for Model with k = 25: 0.44209092361336716
+Coherence Score for Model with k = 26: 0.4419182906143124
+Coherence Score for Model with k = 27: 0.44846740193414225
+Coherence Score for Model with k = 28: 0.4374452092711024
+Coherence Score for Model with k = 29: 0.4480733439572
+Coherence Score for Model with k = 30: 0.4522053839935735
+Coherence Score for Model with k = 31: 0.4499951609530964
+Coherence Score for Model with k = 32: 0.4361931202009394
+Coherence Score for Model with k = 33: 0.4397820076320281
+Coherence Score for Model with k = 34: 0.4519520826181419
+Coherence Score for Model with k = 35: 0.446231476494311
+Coherence Score for Model with k = 36: 0.4303282542175458
+Coherence Score for Model with k = 37: 0.42856047307440776
+Coherence Score for Model with k = 38: 0.4387639703413252
+Coherence Score for Model with k = 39: 0.447670010897162
+Coherence Score for Model with k = 40: 0.44626911224289384
+Coherence Score for Model with k = 41: 0.44312021204650687
+Coherence Score for Model with k = 42: 0.4256034257678489
+Coherence Score for Model with k = 43: 0.4454387981808482
+Coherence Score for Model with k = 44: 0.4429699703049225
+Coherence Score for Model with k = 45: 0.4447326712056217
+Coherence Score for Model with k = 46: 0.4368929537185716
+Coherence Score for the best model with k = 30: 0.4522053839935735
+Coherence Score for Model using a new best k = 30: 0.4522053839935735
+This coherence for k = 30 of 0.4522053839935735 is still worse than the old coherence of 0.5104169604651025.
+Continue to use old k of 90.
+Calculating topic emergences with pi = 0.3625...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'popular', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular', 36: 'popular', 37: 'popular', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'popular', 48: 'popular', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'popular', 54: 'popular', 55: 'popular', 56: 'popular', 57: 'popular', 58: 'popular', 59: 'popular', 60: 'popular', 61: 'popular', 62: 'popular', 63: 'popular', 64: 'popular', 65: 'popular', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'popular', 70: 'popular', 71: 'popular', 72: 'popular', 73: 'popular', 74: 'popular', 75: 'popular', 76: 'popular', 77: 'popular', 78: 'popular', 79: 'popular', 80: 'popular', 81: 'popular', 82: 'popular', 83: 'popular', 84: 'popular', 85: 'popular', 86: 'popular', 87: 'popular', 88: 'popular', 89: 'popular'}
+
+These are the emerging topics:
+
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'declining', 30: 'declining', 31: 'declining', 32: 'declining', 33: 'trending', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'declining', 38: 'declining', 39: 'declining', 40: 'declining', 41: 'trending', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'declining', 47: 'declining', 48: 'declining', 49: 'declining', 50: 'trending', 51: 'declining', 52: 'declining', 53: 'trending', 54: 'declining', 55: 'declining', 56: 'declining', 57: 'trending', 58: 'trending', 59: 'declining', 60: 'declining', 61: 'declining', 62: 'declining', 63: 'declining', 64: 'declining', 65: 'declining', 66: 'trending', 67: 'trending', 68: 'declining', 69: 'declining', 70: 'declining', 71: 'trending', 72: 'trending', 73: 'declining', 74: 'trending', 75: 'declining', 76: 'declining', 77: 'trending', 78: 'declining', 79: 'trending', 80: 'declining', 81: 'trending', 82: 'trending', 83: 'declining', 84: 'declining', 85: 'trending', 86: 'declining', 87: 'declining', 88: 'declining', 89: 'declining'}
+
+These are the emerging + trending topics:
+
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+popular           60        30
+[?2004hphagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_topic_analysis.py
+[?2004l
+
+###############################
+Now starts iteration for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Loading first model (t+1 = 2)...
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'popular', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'emerging', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'popular', 22: 'emerging', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'emerging', 27: 'emerging', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'emerging', 34: 'emerging', 35: 'popular', 36: 'popular', 37: 'emerging', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'popular', 48: 'emerging', 49: 'popular', 50: 'emerging', 51: 'emerging', 52: 'emerging', 53: 'popular', 54: 'emerging', 55: 'popular', 56: 'emerging', 57: 'popular', 58: 'emerging', 59: 'popular', 60: 'popular', 61: 'popular', 62: 'popular', 63: 'emerging', 64: 'popular', 65: 'emerging', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'popular', 70: 'popular'}
+
+These are the emerging topics:
+
+['remanufacturing' 'use' 'use_game' 'game_analysis' 'perishable_inventory'
+ 'model' 'intellectual_capital' 'remanufacturing_supply' 'mass_transfer'
+ 'make_model']
+['factor_influence' 'control_system' 'optimal_location' 'chinese'
+ 'supplier_development' 'aversion' 'level_use' 'loss_aversion'
+ 'manager_understand' 'factor']
+['change' 'dynamic' 'performance_measurement' 'dynamic_capability'
+ 'supplier_management' 'culture' 'change_management' 'case_research'
+ 'use_dynamic' 'research_topic']
+['decision_support' 'textile_apparel' 'apparel' 'development'
+ 'support_system' 'business_performance' 'study' 'textile' 'clothing'
+ 'use']
+['pattern' 'fashion' 'cash' 'material_supply' 'result' 'use'
+ 'experimental_data' 'season' 'study' 'block']
+['evaluation' 'model' 'use' 'base' 'method' 'result_analysis'
+ 'index_system' 'inventory_control' 'result' 'evaluation_system']
+['review' 'research' 'blood' 'literature' 'future_research' 'study'
+ 'case_study' 'result' 'literature_review' 'donation']
+['flexibility' 'technological_innovation' 'fruit' 'zero_waste' 'protein'
+ 'nickel' 'intake' 'fruit_vegetable' 'reduce_total' 'supply_chain']
+['environmental_economic' 'sustainable_intensification' 'use'
+ 'environmental_protection' 'intensification' 'environmental'
+ 'drinking_water' 'economic_performance' 'meat_production' 'economic']
+['food_waste' 'wool' 'railway' 'rescue' 'facility' 'facility_location'
+ 'location' 'green_technology' 'network' 'acid']
+['industrial' 'park' 'industrial_park' 'warranty' 'forest' 'spatial'
+ 'analysis_variance' 'telecommunication' 'climate_impact' 'factor']
+['enzyme' 'green_development' 'use' 'freight' 'model' 'dual' 'system_high'
+ 'value' 'channel_supply' 'quality']
+['steel' 'import' 'option' 'green_procurement' 'image' 'option_contract'
+ 'stainless_steel' 'study' 'shoulder' 'steel_industry']
+['systematic_literature' 'inventory' 'automotive' 'automotive_industry'
+ 'literature_review' 'product_innovation'
+ 'systematic_literature_literature_review' 'hospital' 'reserve' 'review']
+['meat' 'composite' 'meat_consumption' 'material' 'use' 'fiber'
+ 'meet_demand' 'reinforce' 'fiber_reinforce' 'goal_program']
+['experimental_result' 'particle_swarm' 'swarm_optimization'
+ 'optimization' 'water' 'water_use' 'swarm' 'particle' 'experimental'
+ 'use']
+['energy_efficiency' 'process' 'efficiency' 'waste_plastic' 'coal' 'rice'
+ 'energy' 'use' 'industry' 'logistics_industry']
+['material_flow' 'flow_analysis' 'plastic' 'trade' 'flow' 'credit'
+ 'material' 'trade_credit' 'use_efficiency' 'lead']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'declining', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'declining', 38: 'declining', 39: 'declining', 40: 'trending', 41: 'trending', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'declining', 47: 'declining', 48: 'trending', 49: 'trending', 50: 'declining', 51: 'declining', 52: 'declining', 53: 'declining', 54: 'declining', 55: 'trending', 56: 'declining', 57: 'trending', 58: 'declining', 59: 'declining', 60: 'trending', 61: 'declining', 62: 'declining', 63: 'declining', 64: 'declining', 65: 'declining', 66: 'declining', 67: 'declining', 68: 'declining', 69: 'declining', 70: 'declining'}
+
+These are the emerging + trending topics:
+
+['food_waste' 'wool' 'railway' 'rescue' 'facility' 'facility_location'
+ 'location' 'green_technology' 'network' 'acid']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          17         1
+popular           34        19
+
+###############################
+Now starts iteration for t = 2.
+###############################
+
+
+Loading first model (t = 2)...
+
+
+Loading first model (t+1 = 3)...
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'emerging', 1: 'popular', 2: 'emerging', 3: 'popular', 4: 'emerging', 5: 'emerging', 6: 'emerging', 7: 'emerging', 8: 'emerging', 9: 'emerging', 10: 'emerging', 11: 'popular', 12: 'emerging', 13: 'emerging', 14: 'popular', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'emerging', 21: 'emerging', 22: 'emerging', 23: 'emerging', 24: 'popular', 25: 'emerging', 26: 'emerging', 27: 'emerging', 28: 'emerging', 29: 'emerging', 30: 'emerging', 31: 'emerging', 32: 'emerging', 33: 'emerging', 34: 'popular', 35: 'emerging', 36: 'emerging', 37: 'popular', 38: 'emerging', 39: 'popular', 40: 'emerging', 41: 'emerging', 42: 'emerging', 43: 'emerging', 44: 'emerging', 45: 'popular', 46: 'emerging', 47: 'emerging', 48: 'emerging', 49: 'emerging', 50: 'emerging', 51: 'emerging', 52: 'emerging', 53: 'emerging', 54: 'emerging', 55: 'emerging', 56: 'emerging', 57: 'emerging', 58: 'popular', 59: 'emerging', 60: 'popular', 61: 'emerging', 62: 'emerging', 63: 'emerging', 64: 'emerging', 65: 'emerging', 66: 'emerging', 67: 'popular', 68: 'popular', 69: 'emerging', 70: 'emerging', 71: 'emerging', 72: 'emerging', 73: 'emerging', 74: 'emerging', 75: 'emerging', 76: 'popular', 77: 'emerging', 78: 'emerging', 79: 'emerging', 80: 'emerging', 81: 'emerging'}
+
+These are the emerging topics:
+
+['customer' 'operational' 'integration' 'supply_chain' 'supply' 'study'
+ 'internal' 'performance' 'operational_performance' 'satisfaction']
+['demand' 'fiber' 'inventory_management' 'composite' 'property'
+ 'mechanical' 'use' 'inventory' 'material' 'strength']
+['lean' 'production' 'company' 'manufacturing' 'performance' 'tool'
+ 'study' 'use' 'lean_manufacturing' 'improvement']
+['meat' 'eat' 'model' 'participant' 'inventory_model' 'analysis_perform'
+ 'inventory' 'cost_inventory' 'model_emergency' 'people']
+['disaster' 'remanufacturing' 'relief' 'emergency' 'clothing' 'design'
+ 'disaster_relief' 'textile_clothing' 'humanitarian_relief'
+ 'natural_disaster']
+['public_sector' 'green_design' 'chemical' 'united_state' 'system'
+ 'ecological_footprint' 'provide_basis' 'industrial_wastewater' 'use'
+ 'cadmium']
+['factor' 'chain_finance' 'barrier' 'lean_green' 'industry' 'identify'
+ 'implementation' 'study' 'structural_model' 'extensive_literature']
+['sustainability' 'social' 'research' 'performance' 'sustainable'
+ 'sustainability_performance' 'study' 'social_sustainability' 'review'
+ 'literature_review']
+['economic' 'evaluation' 'indicator' 'use' 'evaluate' 'study' 'energy'
+ 'environmental' 'production' 'base']
+['demand' 'lead_time' 'time' 'lead' 'product' 'model' 'system' 'sale'
+ 'inventory' 'use']
+['water' 'water_use' 'use' 'operating' 'treatment' 'operating_cost'
+ 'water_treatment' 'treatment_method' 'environmental_cost'
+ 'water_footprint']
+['cognitive' 'study' 'provide_useful' 'reduction_potential'
+ 'consider_chain' 'use' 'model' 'social_identity' 'impact_business'
+ 'business']
+['emission_reduction' 'reactive_dye' 'special_issue' 'transport' 'body'
+ 'reduction' 'woman' 'significant_role' 'play_significant' 'shape']
+['humanitarian' 'neural_network' 'network' 'humanitarian_logistics'
+ 'neural' 'model' 'artificial_neural' 'reverse_supply' 'model_find'
+ 'passenger']
+['use' 'result' 'data' 'fibre' 'method' 'show' 'new' 'analysis' 'surface'
+ 'thermal']
+['design' 'system' 'decision_support' 'decision' 'support' 'approach'
+ 'big_data' 'method' 'use' 'base']
+['method' 'model' 'problem' 'algorithm' 'use' 'genetic_algorithm'
+ 'propose' 'result' 'solve' 'decision']
+['construction' 'software' 'young' 'use' 'waist' 'vital_role' 'result'
+ 'purchase_behavior' 'linear_regression' 'evaluation_laboratory']
+['sustainability' 'fine_fraction' 'supply_network' 'information'
+ 'consumer' 'sustainable_development' 'supply' 'social' 'supply_chain'
+ 'sustainable']
+['use' 'material' 'economic' 'increase' 'analysis' 'make' 'development'
+ 'sustainable' 'critical_raw' 'park']
+['value_stream' 'cost' 'fresh' 'stream' 'firm' 'value' 'stream_mapping'
+ 'used_product' 'supply_chain' 'paper_consider']
+['quality' 'vegetarian' 'product' 'product_quality' 'electric_vehicle'
+ 'electric' 'vegan' 'return_policy' 'battery' 'quality_improvement']
+['development' 'product' 'remanufactured_product' 'small_medium'
+ 'agricultural_product' 'remanufactured' 'new_product' 'medium_enterprise'
+ 'agricultural' 'green_development']
+['heuristic' 'lca_result' 'heuristic_algorithm' 'problem' 'study_extend'
+ 'size_problem' 'digital_platform' 'study' 'flexible_supply'
+ 'chain_flexibility']
+['demand' 'use' 'cooperative' 'model' 'company' 'capacity' 'power' 'value'
+ 'determine_optimum' 'inventory']
+['risk' 'supply_chain' 'supply' 'risk_management' 'chain' 'chain_risk'
+ 'supply_chain_chain_risk' 'high_low' 'management' 'initial_ph']
+['dye' 'value' 'fabric' 'sustainable' 'sustainability' 'water_supply'
+ 'value_chain' 'study' 'regional' 'reactive']
+['cement' 'assessment_use' 'green_logistics' 'fuel_consumption' 'study'
+ 'indirect' 'direct_indirect' 'paper_build' 'aim_assess' 'use']
+['urban' 'landfill_mining' 'system' 'use' 'study' 'research' 'base'
+ 'large_amount' 'industry' 'production_system']
+['system' 'maintenance' 'dynamic' 'control' 'system_dynamic'
+ 'dynamic_model' 'inventory' 'model' 'policy' 'failure']
+['supplier' 'supplier_selection' 'supply_chain' 'selection' 'supply'
+ 'green_supplier' 'chain' 'fuzzy' 'sustainable_supplier' 'evaluation']
+['supply_chain' 'supply' 'retailer' 'chain' 'decision' 'manufacturer'
+ 'return' 'retail' 'preference' 'profit']
+['item' 'model' 'fuzzy' 'rate' 'inventory' 'cost' 'numerical_example'
+ 'female' 'production' 'total']
+['energy' 'production' 'energy_use' 'crop' 'high' 'use_efficiency'
+ 'system' 'soil' 'yield' 'use']
+['hierarchy_process' 'selection' 'criterion' 'method' 'hierarchy'
+ 'supplier' 'analytical_hierarchy' 'process' 'use' 'analytic_hierarchy']
+['optimal_control' 'beverage' 'reduction_environmental'
+ 'component_analysis' 'time_horizon' 'research_case' 'cost_use'
+ 'food_beverage' 'wte_plant' 'paper_take']
+['land_use' 'land' 'economic' 'use' 'oil_gas' 'oil' 'present_value'
+ 'indicator' 'pool' 'model']
+['humanitarian_supply' 'important_role' 'play_important' 'humanitarian'
+ 'management' 'role' 'study' 'use' 'play' 'collaborative_research']
+['logistics' 'service' 'logistics_service' 'service_provider'
+ 'development' 'provider' 'human_resource' 'resource' 'technology'
+ 'industry']
+['product' 'blood' 'new' 'digital' 'value' 'blood_supply' 'model'
+ 'different' 'newsvendor' 'use']
+['method' 'data' 'use' 'forecast' 'time_series' 'model' 'time' 'series'
+ 'forecasting' 'performance']
+['energy' 'farm' 'production' 'dairy' 'milk' 'renewable_energy' 'increase'
+ 'use' 'organic' 'feed']
+['performance' 'cold_chain' 'performance_indicator' 'cold' 'metric'
+ 'indicator' 'key_performance' 'dynamic' 'network' 'commitment']
+['reverse_logistics' 'reverse' 'purchasing_supply' 'compare_traditional'
+ 'logistics' 'effect_increase' 'management_strategy' 'seed' 'structure'
+ 'indigo']
+['circular_economy' 'circular' 'material' 'economy' 'waste' 'plastic'
+ 'use' 'resource' 'value' 'recycle']
+['industrial' 'industrial_symbiosis' 'symbiosis' 'resource' 'co2_emission'
+ 'material' 'use' 'co2' 'carbon_dioxide' 'rotation']
+['carbon' 'carbon_emission' 'emission' 'low_carbon' 'tax' 'carbon_tax'
+ 'low' 'reduce_carbon' 'develop_base' 'equipment_maintenance']
+['apparel' 'study' 'subsidy' 'government_subsidy' 'startup' 'government'
+ 'education' 'student' 'purpose_study' 'study_consider']
+['cell' 'use' 'removal' 'reaction_time' 'efficiency' 'treatment'
+ 'response_surface' 'reaction' 'voltage' 'ph']
+['circular_economy' 'circular' 'raw_material' 'material' 'economy' 'raw'
+ 'ce' 'resource' 'product' 'transition_circular']
+['diet' 'building' 'healthy' 'environmental_impact' 'dietary'
+ 'sustainable_consumption' 'sustainable_diet' 'potential_environmental'
+ 'emergency' 'environmental']
+['supplier' 'credit' 'use' 'trade_credit' 'process' 'selection' 'part'
+ 'trade' 'supplier_evaluation' 'payment']
+['order_quantity' 'order' 'quantity' 'optimal' 'optimal_order'
+ 'remediation' 'economic_order' 'sustainable_remediation' 'model'
+ 'utility']
+['game' 'production' 'stackelberg_game' 'channel' 'game_model'
+ 'manufacturer' 'product' 'quality' 'supply_chain' 'quality_management']
+['consumer' 'heat' 'strategic' 'use' 'approach_assess' 'power' 'book'
+ 'study' 'strategic_consumer' 'ethical']
+['risk' 'supply_risk' 'mitigation' 'use' 'risk_risk' 'aluminum_electrode'
+ 'risk_assessment' 'method' 'use_impact' 'high']
+['manufacturing' 'lean' 'implementation' 'industry' 'lean_manufacturing'
+ 'manufacture' 'study' 'automotive_industry' 'paper'
+ 'manufacturing_industry']
+['use' 'supplier' 'process' 'industry' 'flexibility' 'action_research'
+ 'supplier_performance' 'solvent' 'three_case' 'public_opinion']
+['metal' 'increase' 'product' 'meat_consumption' 'profit' 'retailer'
+ 'manufacturer' 'strategy' 'perishable' 'impact']
+['use' 'efficiency' 'service' 'energy' 'production' 'input' 'mineral'
+ 'use_determine' 'study' 'high']
+['spare_part' 'part' 'spare' 'carbon_fiber' 'fiber' 'system' 'equipment'
+ 'maintenance' 'electrical_electronic' 'mining']
+['waste' 'energy' 'recycle' 'material' 'use' 'recycling' 'resource'
+ 'rare_earth' 'production' 'environmental']
+['procurement' 'public' 'public_procurement' 'robust' 'use'
+ 'robust_optimization' 'model' 'green_public' 'analysis' 'aircraft']
+['product' 'product_return' 'simulation' 'return' 'consumer'
+ 'simulation_model' 'intention' 'purchase' 'heat_power'
+ 'purchase_intention']
+['fashion' 'use' 'brand' 'internet_thing' 'internet' 'industrial_internet'
+ 'chain_consist' 'choice' 'fashion_industry' 'low_bound']
+['financial_performance' 'hospital' 'index_system' 'service_market'
+ 'financial' 'cost_high' 'use' 'use_aluminum' 'study' 'performance']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'trending', 25: 'declining', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'declining', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining', 36: 'declining', 37: 'trending', 38: 'declining', 39: 'trending', 40: 'declining', 41: 'declining', 42: 'declining', 43: 'trending', 44: 'trending', 45: 'trending', 46: 'declining', 47: 'declining', 48: 'declining', 49: 'trending', 50: 'declining', 51: 'trending', 52: 'trending', 53: 'declining', 54: 'declining', 55: 'declining', 56: 'declining', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'declining', 61: 'trending', 62: 'trending', 63: 'trending', 64: 'declining', 65: 'declining', 66: 'trending', 67: 'trending', 68: 'trending', 69: 'declining', 70: 'declining', 71: 'declining', 72: 'declining', 73: 'trending', 74: 'declining', 75: 'declining', 76: 'trending', 77: 'trending', 78: 'trending', 79: 'declining', 80: 'declining', 81: 'declining'}
+
+These are the emerging + trending topics:
+
+['disaster' 'remanufacturing' 'relief' 'emergency' 'clothing' 'design'
+ 'disaster_relief' 'textile_clothing' 'humanitarian_relief'
+ 'natural_disaster']
+['sustainability' 'social' 'research' 'performance' 'sustainable'
+ 'sustainability_performance' 'study' 'social_sustainability' 'review'
+ 'literature_review']
+['method' 'model' 'problem' 'algorithm' 'use' 'genetic_algorithm'
+ 'propose' 'result' 'solve' 'decision']
+['construction' 'software' 'young' 'use' 'waist' 'vital_role' 'result'
+ 'purchase_behavior' 'linear_regression' 'evaluation_laboratory']
+['energy' 'production' 'energy_use' 'crop' 'high' 'use_efficiency'
+ 'system' 'soil' 'yield' 'use']
+['hierarchy_process' 'selection' 'criterion' 'method' 'hierarchy'
+ 'supplier' 'analytical_hierarchy' 'process' 'use' 'analytic_hierarchy']
+['logistics' 'service' 'logistics_service' 'service_provider'
+ 'development' 'provider' 'human_resource' 'resource' 'technology'
+ 'industry']
+['method' 'data' 'use' 'forecast' 'time_series' 'model' 'time' 'series'
+ 'forecasting' 'performance']
+['energy' 'farm' 'production' 'dairy' 'milk' 'renewable_energy' 'increase'
+ 'use' 'organic' 'feed']
+['cell' 'use' 'removal' 'reaction_time' 'efficiency' 'treatment'
+ 'response_surface' 'reaction' 'voltage' 'ph']
+['circular_economy' 'circular' 'raw_material' 'material' 'economy' 'raw'
+ 'ce' 'resource' 'product' 'transition_circular']
+['diet' 'building' 'healthy' 'environmental_impact' 'dietary'
+ 'sustainable_consumption' 'sustainable_diet' 'potential_environmental'
+ 'emergency' 'environmental']
+['game' 'production' 'stackelberg_game' 'channel' 'game_model'
+ 'manufacturer' 'product' 'quality' 'supply_chain' 'quality_management']
+['metal' 'increase' 'product' 'meat_consumption' 'profit' 'retailer'
+ 'manufacturer' 'strategy' 'perishable' 'impact']
+['waste' 'energy' 'recycle' 'material' 'use' 'recycling' 'resource'
+ 'rare_earth' 'production' 'environmental']
+['procurement' 'public' 'public_procurement' 'robust' 'use'
+ 'robust_optimization' 'model' 'green_public' 'analysis' 'aircraft']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          50        16
+popular            4        12
+
+###############################
+Now starts iteration for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Loading first model (t+1 = 4)...
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'emerging', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'emerging', 12: 'popular', 13: 'emerging', 14: 'popular', 15: 'popular', 16: 'emerging', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'emerging', 26: 'emerging', 27: 'emerging', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'emerging', 32: 'emerging', 33: 'emerging', 34: 'popular', 35: 'emerging', 36: 'emerging', 37: 'popular', 38: 'emerging', 39: 'emerging', 40: 'popular', 41: 'emerging', 42: 'popular', 43: 'popular', 44: 'emerging', 45: 'emerging', 46: 'emerging', 47: 'popular', 48: 'emerging', 49: 'emerging', 50: 'emerging', 51: 'emerging', 52: 'popular', 53: 'emerging', 54: 'popular', 55: 'emerging', 56: 'popular', 57: 'popular', 58: 'emerging', 59: 'emerging', 60: 'popular', 61: 'emerging', 62: 'popular', 63: 'popular', 64: 'emerging', 65: 'popular', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'emerging', 70: 'emerging', 71: 'emerging', 72: 'popular', 73: 'emerging', 74: 'popular', 75: 'emerging', 76: 'emerging', 77: 'popular', 78: 'emerging', 79: 'emerging', 80: 'emerging', 81: 'emerging'}
+
+These are the emerging topics:
+
+['use' 'response' 'composite_design' 'reactive_dye' 'central_composite'
+ 'time' 'implementation_sustainable' 'result' 'study' 'show']
+['system' 'use' 'component' 'result' 'study' 'process' 'use_base'
+ 'online_shopping' 'base' 'exergy']
+['food' 'food_waste' 'evaluation_laboratory' 'trial_evaluation'
+ 'framework' 'economic_environmental' 'transportation_mode' 'support'
+ 'environmental' 'value']
+['return' 'brand' 'return_policy' 'bullwhip_effect' 'approach'
+ 'product_return' 'study' 'policy' 'use' 'production']
+['industrial_symbiosis' 'symbiosis' 'industrial' 'fibre' 'use' 'chemical'
+ 'energy_transition' 'recycle' 'process' 'symbiosis_network']
+['spare_part' 'part' 'factor' 'health' 'spare' 'method' 'factor_affect'
+ 'study' 'base' 'digital_twin']
+['process' 'use' 'business_process' 'study' 'value' 'production' 'result'
+ 'analytical' 'model' 'pattern']
+['recycle' 'glass_fiber' 'article_analyze' 'waste_material'
+ 'construction_waste' 'recycling' 'special_issue' 'use' 'paper' 'land']
+['management' 'management_system' 'system' 'risk_management' 'use'
+ 'education' 'supply_chain' 'supply' 'research' 'original_equipment']
+['strategy' 'management_system' 'risk_aversion' 'management'
+ 'current_practice' 'carbon_trading' 'analysis_key' 'impact_carbon'
+ 'trading' 'lead_significant']
+['supply_network' 'supply' 'method' 'factor' 'critical_role'
+ 'supply_chain' 'chain_manufacturer' 'study' 'play_critical' 'uncertainty']
+['pattern' 'blood' 'future' 'dietary' 'journal' 'blood_supply' 'hospital'
+ 'study' 'review' 'virtual']
+['use' 'method' 'selection' 'decision' 'decision_support' 'case_study'
+ 'approach' 'supplier_selection' 'study' 'base']
+['key_performance' 'operation_management' 'indian' 'indian_manufacturing'
+ 'performance_indicator' 'key_performance_performance_indicator'
+ 'play_key' 'recovery_rate' 'emergency_medical' 'pharmaceutical_industry']
+['social' 'sustainable' 'sustainability' 'sustainable_development'
+ 'development' 'social_sustainability' 'economic_growth' 'economic'
+ 'development_goal' 'growth']
+['solution_approach' 'upstream_downstream' 'downstream' 'uncertainty'
+ 'upstream' 'use_recycled' 'human_toxicity' 'optimal_location' 'cost'
+ 'yield']
+['information' 'information_share' 'supply_chain' 'demand_information'
+ 'supply' 'consumer_good' 'use' 'study' 'model' 'develop_test']
+['big_data' 'big' 'data' 'analytics' 'article_provide' 'supply_risk' 'rl'
+ 'paper' 'strategic' 'management_control']
+['clothing' 'plastic_waste' 'textile_clothing' 'textile' 'lean_production'
+ 'efficient_use' 'transition_circular' 'system' 'eu' 'clothing_industry']
+['supply' 'supply_chain' 'selection_order' 'risk' 'quality' 'enterprise'
+ 'model' 'product_quality' 'chain' 'decision']
+['design' 'fashion' 'sustainable' 'use' 'study' 'approach' 'garment'
+ 'product' 'development' 'design_method']
+['meat' 'dairy' 'meat_consumption' 'hybrid' 'milk' 'protein' 'use'
+ 'consumption' 'composite' 'reduce_meat']
+['medical' 'maintenance' 'quality' 'medical_supply' 'preventive'
+ 'production' 'issue_relate' 'quality_control' 'preventive_maintenance'
+ 'random_forest']
+['use' 'study' 'clean_production' 'research_explore' 'consumption'
+ 'methodology_use' 'small_business' 'remediation' 'result'
+ 'operating_condition']
+['park' 'impact' 'industrial_park' 'environmental' 'use' 'method'
+ 'industrial' 'transport' 'assessment' 'automobile']
+['meat' 'data_envelopment' 'envelopment_analysis' 'emergency'
+ 'cultured_meat' 'small_medium' 'data' 'logistics' 'development'
+ 'analysis']
+['dye' 'fabric' 'cotton' 'evaluation' 'use' 'index' 'evaluation_model'
+ 'dyeing' 'index_system' 'evaluation_index']
+['social_responsibility' 'capital' 'corporate' 'corporate_social' 'bank'
+ 'csr' 'responsibility' 'study' 'supply' 'risk']
+['raw_material' 'plastic' 'product' 'material' 'raw' 'production'
+ 'process' 'impact' 'use' 'consider']
+['concern' 'procurement' 'fairness_concern' 'fairness'
+ 'robust_optimization' 'material_supplier' 'public' 'public_sector'
+ 'collector' 'manufacture_flexibility']
+['green' 'green_supplier' 'green_green' 'study' 'purchase'
+ 'material_stock' 'intention' 'product' 'environmental'
+ 'purchase_intention']
+['development' 'production' 'play_important' 'important_role' 'rare_earth'
+ 'consumption' 'important' 'social' 'ecological' 'intervention']
+['neural_network' 'trade' 'trade_credit' 'credit' 'neural'
+ 'artificial_neural' 'sale' 'model' 'fuzzy' 'artificial']
+['online' 'online_channel' 'channel' 'commodity' 'customer'
+ 'increase_total' 'compare_current' 'rate_increase' 'intuitionistic_fuzzy'
+ 'strategy']
+['use' 'metal' 'revenue_management' 'heavy_metal' 'process' 'method'
+ 'material' 'result' 'high' 'blade']
+['study' 'product' 'use' 'oem' 'product_variety' 'practical_result'
+ 'financial' 'model' 'product_innovation' 'new']
+['production' 'food_production' 'tourism' 'hotel' 'barrier'
+ 'high_environmental' 'wheat_production' 'use' 'wheat'
+ 'environmental_regulation']
+['present_value' 'private_sector' 'preservation_technology' 'preservation'
+ 'chemical' 'use_change' 'grain' 'perishable_food' 'review_article'
+ 'analyze_effect']
+['industry' 'success_factor' 'internet_thing' 'critical_success' 'iot'
+ 'study' 'green_manufacturing' 'success' 'base' 'challenge']
+['industry' 'industrial' 'value' 'paper' 'industrial_revolution' 'study'
+ 'technology' 'fourth_industrial' 'logistics_cost' 'process']
+['service' 'battery' 'service_quality' 'scrap' 'customer' 'vehicle'
+ 'service_supply' 'electric_vehicle' 'quality' 'electric']
+['diet' 'land_use' 'sustainable_diet' 'healthy' 'facility_location'
+ 'cultural' 'sustainable' 'critical_factor' 'import' 'good_quality']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'declining', 39: 'declining', 40: 'declining', 41: 'declining', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'trending', 47: 'declining', 48: 'declining', 49: 'declining', 50: 'declining', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'trending', 55: 'declining', 56: 'trending', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'trending', 61: 'declining', 62: 'declining', 63: 'trending', 64: 'trending', 65: 'trending', 66: 'declining', 67: 'trending', 68: 'trending', 69: 'declining', 70: 'declining', 71: 'declining', 72: 'declining', 73: 'declining', 74: 'trending', 75: 'declining', 76: 'declining', 77: 'declining', 78: 'declining', 79: 'declining', 80: 'declining', 81: 'trending'}
+
+These are the emerging + trending topics:
+
+['spare_part' 'part' 'factor' 'health' 'spare' 'method' 'factor_affect'
+ 'study' 'base' 'digital_twin']
+['social' 'sustainable' 'sustainability' 'sustainable_development'
+ 'development' 'social_sustainability' 'economic_growth' 'economic'
+ 'development_goal' 'growth']
+['meat' 'dairy' 'meat_consumption' 'hybrid' 'milk' 'protein' 'use'
+ 'consumption' 'composite' 'reduce_meat']
+['development' 'production' 'play_important' 'important_role' 'rare_earth'
+ 'consumption' 'important' 'social' 'ecological' 'intervention']
+['diet' 'land_use' 'sustainable_diet' 'healthy' 'facility_location'
+ 'cultural' 'sustainable' 'critical_factor' 'import' 'good_quality']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          37         5
+popular           18        22
+
+###############################
+Now starts iteration for t = 4.
+###############################
+
+
+Loading first model (t = 4)...
+
+
+Loading first model (t+1 = 5)...
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'emerging', 1: 'emerging', 2: 'emerging', 3: 'emerging', 4: 'emerging', 5: 'emerging', 6: 'emerging', 7: 'popular', 8: 'emerging', 9: 'emerging', 10: 'popular', 11: 'emerging', 12: 'popular', 13: 'emerging', 14: 'emerging', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'popular', 21: 'emerging', 22: 'popular', 23: 'emerging', 24: 'emerging', 25: 'popular', 26: 'emerging', 27: 'popular', 28: 'popular', 29: 'emerging', 30: 'popular', 31: 'emerging', 32: 'emerging', 33: 'emerging', 34: 'emerging', 35: 'emerging', 36: 'emerging', 37: 'popular', 38: 'popular', 39: 'emerging', 40: 'emerging', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'emerging', 48: 'emerging', 49: 'popular', 50: 'popular', 51: 'popular', 52: 'popular', 53: 'emerging', 54: 'popular', 55: 'emerging', 56: 'emerging', 57: 'popular', 58: 'popular', 59: 'emerging', 60: 'popular', 61: 'popular', 62: 'emerging', 63: 'emerging', 64: 'emerging', 65: 'emerging', 66: 'emerging', 67: 'emerging', 68: 'popular', 69: 'popular', 70: 'emerging', 71: 'popular', 72: 'popular', 73: 'popular', 74: 'emerging', 75: 'emerging', 76: 'emerging', 77: 'emerging', 78: 'emerging', 79: 'emerging', 80: 'popular', 81: 'popular', 82: 'emerging', 83: 'popular', 84: 'popular', 85: 'emerging', 86: 'emerging', 87: 'popular', 88: 'emerging', 89: 'emerging'}
+
+These are the emerging topics:
+
+['disaster' 'humanitarian' 'use' 'disaster_relief' 'food_bank' 'response'
+ 'humanitarian_logistics' 'relief' 'aid' 'critical_review']
+['body' 'shape' 'use' 'chemistry' 'hospital' 'green_chemistry' '3d'
+ 'model' 'human_body' 'size']
+['big_data' 'data' 'big' 'base' 'internet' 'technology' 'paper'
+ 'intelligent' 'new' 'container']
+['part' 'spare_part' 'spare' 'maintenance' 'model' 'risk_assessment'
+ 'strategy' 'new' 'research' 'use']
+['logistics' 'reverse_logistics' 'reverse' 'repair' 'logistics_industry'
+ 'electric_vehicle' 'sale_channel' 'apple' 'logistics_logistics' 'policy']
+['digital' 'artificial_intelligence' 'digital_technology' 'transformation'
+ 'digital_transformation' 'carbon_footprint' 'artificial' 'ai' 'new'
+ 'domestic_waste']
+['fabric' 'cotton' 'social' 'high' 'government' 'dye' 'show' 'result'
+ 'result_show' 'use']
+['flexibility' 'medicine' 'slow' 'slow_fashion' 'use' 'supply_chain'
+ 'model' 'provide_reliable' 'study' 'reference_point']
+['sustainability' 'indicator' 'sustainability_assessment' 'social'
+ 'performance_indicator' 'assessment' 'sustainability_performance'
+ 'cycle_sustainability' 'use' 'cycle_cost']
+['sustainable' 'sustainability' 'environmental'
+ 'environmental_sustainability' 'practice' 'study' 'implementation'
+ 'manufacturing' 'industry' 'triple_bottom']
+['supply_chain' 'pharmaceutical' 'supply' 'study' 'contribute_literature'
+ 'chain' 'vehicle' 'agility' 'rout_problem' 'rout']
+['lean' 'study' 'education' 'mineral_resource' 'model' 'result' 'use'
+ 'practice' 'production' 'lean_practice']
+['food' 'water' 'option' 'option_contract' 'industry' 'need_develop'
+ 'environmental_regulation' 'attitude_towards' 'implementation_ce'
+ 'water_quality']
+['waste' 'system' 'waste_collection' 'waste_disposal' 'disposal'
+ 'collection' 'processing' 'quality' 'study' 'fuzzy_logic']
+['study' 'production' 'product' 'factor' 'use' 'lot_size' 'cost'
+ 'emission_intensity' 'factor_affect' 'size']
+['use' 'copper' 'model' 'increase' 'resource_use' 'rate' 'irrigation'
+ 'use_lca' 'study' 'work']
+['product' 'carbon_tax' 'strategy' 'power' 'agricultural_product' 'tax'
+ 'product_supply' 'original_equipment' 'equipment_manufacturer'
+ 'power_structure']
+['procurement' 'public' 'public_procurement' 'decision' 'decision_support'
+ 'support_system' 'decision_maker' 'use' 'support' 'propose']
+['raw_material' 'material' 'raw' 'transport' 'vehicle' 'red_meat'
+ 'airline' 'use' 'base' 'car']
+['textile' 'mineral' 'rare_earth' 'clothing' 'rare' 'textile_clothing'
+ 'wool' 'value_chain' 'earth' 'value']
+['packaging' 'use_electrocoagulation' 'ec_process' 'use'
+ 'environmental_damage' 'service_cost' 'aircraft' 'result'
+ 'packaging_waste' 'effective_method']
+['innovation' 'business' 'supply_chain' 'model' 'business_model' 'study'
+ 'chain' 'supply' 'development' 'enterprise']
+['small_medium' 'product_life' 'small' 'medium' 'competitive_advantage'
+ 'value' 'process' 'medium_enterprise' 'use' 'competitive']
+['use' 'study' 'value' 'value_stream' 'stream' 'sustainable_business'
+ 'construction_material' 'process' 'lean' 'coffee']
+['sustainable_development' 'product' 'environmental' 'social'
+ 'sustainable' 'development' 'development_goal' 'country' 'organic' 'goal']
+['poultry' 'performance' 'sustainability_practice' 'technology_innovation'
+ 'direct_indirect' 'investigate_effect' 'government' 'clean_production'
+ 'logistic_regression' 'analyze_effect']
+['industry' 'value' 'cost' 'value_chain' 'product' 'economic_value'
+ 'system_increase' 'development' 'pesticide' 'vital_role']
+['energy' 'energy_consumption' 'efficiency' 'fashion' 'water'
+ 'consumption' 'energy_efficiency' 'use' 'dietary_pattern' 'system']
+['meat' 'time_series' 'meat_consumption' 'time' 'series' 'flow'
+ 'flow_analysis' 'use' 'material_flow' 'reduce_meat']
+['risk' 'risk_aversion' 'payment' 'aversion' 'information_asymmetry'
+ 'interest_rate' 'sourcing' 'price' 'market' 'adjustment']
+['industrial' 'food_waste' 'industrial_symbiosis' 'symbiosis' 'system'
+ 'performance_measurement' 'measurement' 'cycle_impact' 'park'
+ 'glass_fiber']
+['garment' 'design' 'ce_practice' 'clothing' 'process' 'approach'
+ 'company' 'patent' 'use' 'fashion']
+['supply_chain' 'supply' 'chain' 'critical_raw' 'aim_review'
+ 'research_case' 'practical_implication' 'paper_aim' 'strategy'
+ 'cost_product']
+['model' 'business_model' 'value' 'sustainable_business' 'business'
+ 'value_creation' 'model_base' 'base'
+ 'sustainable_business_business_model' 'use']
+['oil' 'oil_gas' 'agricultural_system' 'approach_implement' 'gas'
+ 'relaxation' 'market_price' 'farmer' 'additive'
+ 'demonstrate_applicability']
+['return' 'price' 'model' 'machine' 'machine_learn' 'demand' 'learning'
+ 'product' 'machine_learning' 'learn']
+['food' 'food_system' 'healthy' 'system' 'agriculture' 'low_environmental'
+ 'healthy_sustainable' 'plant' 'sustainable' 'use']
+['use' 'energy' 'fibre' 'factor' 'mechanical_property' 'mechanical'
+ 'recycled' 'carbon_fibre' 'input' 'energy_input']
+['energy' 'production' 'renewable_energy' 'renewable' 'increase'
+ 'strategy' 'high' 'import' 'energy_resource' 'country']
+['kg_co2' 'method' 'risk' 'supply' 'demand' 'supply_chain' 'model'
+ 'propose' 'base' 'use']
+['dye' 'use' 'vegetarian' 'reaction' 'compound' 'meet_requirement'
+ 'concentration' 'show' 'process' 'percentage']
+['system' 'process' 'power' 'use' 'wind' 'dye' 'reactive'
+ 'electrochemical' 'power_plant' 'wind_turbine']
+['facility_location' 'location' 'facility' 'simulation' 'use'
+ 'simulation_model' 'model' 'lca_study' 'location_problem' 'propose']
+['beef' 'driver' 'cattle' 'vegan' 'consumption_pattern' 'beef_production'
+ 'assessment_model' 'key_driver' 'move_towards' 'consumption_food']
+['social_impact' 'apparel' 'health_environmental'
+ 'environmental_management' 'packaging_material' 'supplier_relationship'
+ 'social' 'advance_payment' 'social_performance' 'apparel_industry']
+['company' 'clothing' 'forest' 'dynamic_capability' 'capability' 'dynamic'
+ 'united_state' 'use' 'sustainable' 'forecasting_method']
+['neural_network' 'use' 'neural' 'network' 'performance_evaluation'
+ 'evaluation' 'component' 'artificial_neural' 'process' 'method']
+['european_union' 'eu' 'european' 'union' 'current_state' 'state'
+ 'capacity_investment' 'model_system' 'textile_manufacturing'
+ 'technological_development']
+['method' 'green_innovation' 'capacity' 'evaluation' 'evaluation_model'
+ 'production_capacity' 'enterprise' 'exponential_smoothing'
+ 'economic_analysis' 'model']
+['show_increase' 'paper_describe' 'take_consideration' 'fiber_composite'
+ 'circular_public' 'improve_energy' 'research_project' 'circular_building'
+ 'opportunity_improve' 'forestry']
+['remanufacturing' 'information' 'digital_transformation' 'transformation'
+ 'digital' 'share' 'remanufactured' 'remanufactured_product'
+ 'demand_information' 'demand']
+['food' 'supply_chain' 'supply' 'chain' 'global' 'food_supply'
+ 'sustainable' 'global_supply' 'sustainability' 'food_security']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'trending', 41: 'declining', 42: 'declining', 43: 'declining', 44: 'trending', 45: 'declining', 46: 'declining', 47: 'trending', 48: 'declining', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'trending', 55: 'declining', 56: 'declining', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'trending', 61: 'declining', 62: 'declining', 63: 'declining', 64: 'trending', 65: 'declining', 66: 'trending', 67: 'declining', 68: 'trending', 69: 'trending', 70: 'trending', 71: 'declining', 72: 'declining', 73: 'declining', 74: 'trending', 75: 'declining', 76: 'declining', 77: 'declining', 78: 'declining', 79: 'declining', 80: 'trending', 81: 'declining', 82: 'declining', 83: 'declining', 84: 'declining', 85: 'declining', 86: 'declining', 87: 'trending', 88: 'declining', 89: 'declining'}
+
+These are the emerging + trending topics:
+
+['fabric' 'cotton' 'social' 'high' 'government' 'dye' 'show' 'result'
+ 'result_show' 'use']
+['sustainability' 'indicator' 'sustainability_assessment' 'social'
+ 'performance_indicator' 'assessment' 'sustainability_performance'
+ 'cycle_sustainability' 'use' 'cycle_cost']
+['textile' 'mineral' 'rare_earth' 'clothing' 'rare' 'textile_clothing'
+ 'wool' 'value_chain' 'earth' 'value']
+['sustainable_development' 'product' 'environmental' 'social'
+ 'sustainable' 'development' 'development_goal' 'country' 'organic' 'goal']
+['energy' 'energy_consumption' 'efficiency' 'fashion' 'water'
+ 'consumption' 'energy_efficiency' 'use' 'dietary_pattern' 'system']
+['meat' 'time_series' 'meat_consumption' 'time' 'series' 'flow'
+ 'flow_analysis' 'use' 'material_flow' 'reduce_meat']
+['food' 'food_system' 'healthy' 'system' 'agriculture' 'low_environmental'
+ 'healthy_sustainable' 'plant' 'sustainable' 'use']
+['energy' 'production' 'renewable_energy' 'renewable' 'increase'
+ 'strategy' 'high' 'import' 'energy_resource' 'country']
+['dye' 'use' 'vegetarian' 'reaction' 'compound' 'meet_requirement'
+ 'concentration' 'show' 'process' 'percentage']
+['system' 'process' 'power' 'use' 'wind' 'dye' 'reactive'
+ 'electrochemical' 'power_plant' 'wind_turbine']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          42        10
+popular           22        16
+
+###############################
+Now starts iteration for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Loading first model (t+1 = 6)...
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'emerging', 1: 'popular', 2: 'emerging', 3: 'emerging', 4: 'emerging', 5: 'emerging', 6: 'emerging', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'emerging', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'popular', 21: 'emerging', 22: 'emerging', 23: 'emerging', 24: 'emerging', 25: 'popular', 26: 'emerging', 27: 'popular', 28: 'emerging', 29: 'emerging', 30: 'emerging', 31: 'emerging', 32: 'emerging', 33: 'popular', 34: 'emerging', 35: 'emerging', 36: 'emerging', 37: 'emerging', 38: 'popular', 39: 'popular', 40: 'emerging', 41: 'emerging', 42: 'emerging', 43: 'emerging', 44: 'emerging', 45: 'popular', 46: 'emerging', 47: 'emerging', 48: 'emerging', 49: 'emerging', 50: 'popular', 51: 'emerging', 52: 'emerging', 53: 'emerging', 54: 'emerging', 55: 'popular', 56: 'emerging', 57: 'emerging', 58: 'popular', 59: 'emerging', 60: 'popular', 61: 'popular', 62: 'popular', 63: 'emerging', 64: 'emerging', 65: 'popular', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'popular', 70: 'emerging', 71: 'emerging', 72: 'popular', 73: 'emerging', 74: 'emerging', 75: 'emerging', 76: 'emerging', 77: 'emerging', 78: 'popular', 79: 'popular', 80: 'emerging', 81: 'emerging', 82: 'popular', 83: 'emerging', 84: 'emerging', 85: 'emerging', 86: 'emerging', 87: 'emerging', 88: 'emerging', 89: 'emerging'}
+
+These are the emerging topics:
+
+['procurement' 'public' 'study' 'use' 'public_procurement' 'factor'
+ 'policy' 'aim_evaluate' 'industry_implementation' 'main_factor']
+['environmental' 'animal' 'global' 'sustainable' 'environmental_economic'
+ 'agriculture' 'impact' 'supply_risk' 'resource' 'market_expansion']
+['market' 'competition' 'service' 'strategic_decision' 'consumer' 'merger'
+ 'practice_consider' 'product' 'market_share' 'strategy']
+['meat' 'cultured_meat' 'meat_alternative' 'consumer' 'cultured' 'shape'
+ 'alternative' 'body' 'meat_production' 'gown']
+['use' 'analysis' 'bioeconomy' 'feed' 'bioeconomy_strategy' 'eu' 'study'
+ 'factor' 'result' 'country']
+['cash' 'research' 'cash_flow' 'study' 'consumer' 'internet_thing'
+ 'multiple_case' 'grocery' 'sustainable' 'attitude']
+['supply' 'demand' 'quantity_product' 'study' 'supply_chain' 'inverse'
+ 'strategy' 'use' 'process_carbon' 'symbiotic']
+['lean' 'lean_manufacturing' 'manufacturing' 'sludge' 'cod_removal'
+ 'lean_tool' 'relationship_lean' 'reduction' 'time'
+ 'humanitarian_logistics']
+['carbon_footprint' 'value_chain' 'feed' 'carbon' 'footprint' 'milk' 'cf'
+ 'packaging' 'low_environmental' 'beef']
+['trade' 'technology' 'enterprise' 'china' 'export' 'relate_environmental'
+ 'new_energy' 'sector_one' 'material_product' 'industry']
+['risk' 'crop_production' 'risk_management' 'food_value' 'risk_mitigation'
+ 'supply_chain' 'food_choice' 'supply' 'health_environmental'
+ 'institutional_pressure']
+['industrial' 'indicator' 'industrial_symbiosis' 'paper' 'symbiosis' 'use'
+ 'challenge' 'cotton' 'industry' 'technology']
+['consumption' 'animal_product' 'food_consumption' 'rural'
+ 'power_structure' 'repurposing' 'food' 'product' 'food_group'
+ 'recovery_rate']
+['production' 'system' 'case_study' 'value_stream' 'lean_production'
+ 'lean' 'total_environmental' 'production_system' 'credit_period' 'case']
+['vegetable' 'ce_implementation' 'waste' 'hong_kong' 'eu_member'
+ 'newsvendor_model' 'meat_substitute' 'site' 'pharmaceutical'
+ 'work_propose']
+['port' 'safety' 'carbon_supply' 'find_information' 'safety_stock'
+ 'network_relationship' 'vaccine' 'demonstration' 'promote_development'
+ 'development_global']
+['service' 'service_level' 'customer' 'demand' 'product' 'stock' 'high'
+ 'revenue' 'strategy_high' 'market']
+['product' 'remanufacturing' 'model' 'demand' 'new'
+ 'remanufactured_product' 'new_product' 'remanufactured' 'profit'
+ 'inventory']
+['insurance' 'emergency' 'bullwhip_effect' 'promote_circular' 'roll'
+ 'emergency_supply' 'msme' 'smart_technology' 'bullwhip'
+ 'manufacture_process']
+['greenhouse_gas' 'gas_emission' 'greenhouse' 'emission' 'gas' 'livestock'
+ 'greenhouse_gas_gas_emission' 'agricultural' 'farm' 'mitigation']
+['use' 'electrode' 'reaction' 'solvent' 'water' 'treatment' 'chemical'
+ 'aluminum' 'process' 'choice']
+['model' 'neural_network' 'artificial_neural' 'neural' 'network'
+ 'production_information' 'management_model' 'textile_industry' 'yarn'
+ 'artificial_neural_neural_network']
+['rare_earth' 'banking' 'rare' 'earth' 'explore_use' 'preferred_reporting'
+ 'china_large' 'product_design' 'recycle_waste' 'sustainability_discuss']
+['carbon_fiber' 'fiber' 'wine' 'carbon' 'operational_performance'
+ 'social_performance' 'design_sustainable' 'technological_innovation'
+ 'sustainability' 'economic_sustainability']
+['logistics' 'distribution' 'system' 'equitable' 'analysis'
+ 'geographical_location' 'system_manage' 'study' 'research' 'pellet']
+['customer_perceive' 'steel_industry' 'indicator' 'evaluation' 'marketing'
+ 'index_system' 'comprehensive_evaluation' 'environmental' 'product'
+ 'symbiotic_relationship']
+['energy' 'energy_use' 'energy_efficiency' 'efficiency' 'use' 'input' 'mj'
+ 'change_impact' 'energy_input' 'production']
+['supply_chain' 'study' 'supply' 'fiber_reinforce' 'fish' 'chain'
+ 'performance' 'cycle_sustainability' 'use' 'reinforce_polymer']
+['fashion' 'organic' 'sustainable' 'sustainable_fashion' 'production'
+ 'chemical' 'copper' 'sustainability' 'economic' 'use']
+['measurement' 'dimension' 'agility' 'framework' 'ecological_footprint'
+ 'sustainability' 'performance_measurement' 'performance'
+ 'framework_evaluate' 'manufacture_system']
+['manufacturer' 'agency' 'platform' 'triple_bottom' 'strategy'
+ 'risk_aversion' 'bottom_line' 'sensory' 'profit_optimal' 'two']
+['urban' 'city' 'spatial' 'principal_component' 'supply_management'
+ 'component_analysis' 'input_output' 'territorial' 'sustainability_risk'
+ 'analysis_find']
+['use' 'study' 'performance' 'water_footprint' 'environmental_performance'
+ 'sustainability' 'performance_assessment' 'assessment_framework'
+ 'economic' 'effect']
+['supply_chain' 'supply' 'chain' 'contract' 'demand' 'promotional' 'price'
+ 'promotional_effort' 'gap_analysis' 'competition']
+['factor' 'factor_affect' 'interpretive_structural' 'factor_influence'
+ 'structural' 'interpretive' 'affect' 'study' 'total_interpretive' 'use']
+['composite' 'steel' 'mechanical' 'reinforce' 'use' 'epoxy' 'resin'
+ 'property' 'glass_fibre' 'epoxy_resin']
+['forest' 'demand' 'ecosystem' 'design' '3d' 'effort_reduce' 'new'
+ 'increase_competition' 'limit_global' '3d_printing']
+['effect' 'sc' 'supply_chain' 'disruption' 'supply' 'impact' 'chain'
+ 'study' 'stock_price' 'research']
+['digital' 'digital_transformation' 'transformation' 'technology'
+ 'digital_technology' 'affect_adoption' 'pbma' 'development'
+ 'digitalization' 'research']
+['green_supplier' 'rental' 'support_system' 'decision_support'
+ 'model_perishable' 'use_hybrid' 'sustainability_concept' 'system'
+ 'type_business' 'mobile']
+['body' 'system' 'model' 'size' 'inventory' 'fit' 'cost' 'body_shape'
+ 'shape' 'identification_system']
+['vehicle' 'battery' 'electric_vehicle' 'upcycling' 'electric'
+ 'rout_problem' 'vehicle_battery' 'provide_systematic' 'beverage'
+ 'plastic_use']
+['australian' 'company' 'sustainability' 'autonomous' 'iot'
+ 'medical_device' 'study' 'business' 'use' 'knowledge']
+['biobased' 'adoption_circular' 'transition' 'fossil_fuel' 'towards'
+ 'improve_environmental' 'circular' 'ce_practice' 'impact_climate' 'dairy']
+['order' 'quantity' 'order_quantity' 'recycle' 'optimal_order' 'carbon'
+ 'nutritional_quality' 'evaluate_potential' 'carbon_trading' 'recycling']
+['price' 'pricing' 'consumer' 'purchase' 'pricing_strategy' 'strategy'
+ 'reference_diet' 'dynamic_pricing' 'product' 'organic_food']
+['evaluation' 'important_role' 'play_important' 'raw_material'
+ 'evaluation_method' 'production' 'raw' 'evaluation_model' 'play'
+ 'play_important_important_role']
+['circular_bioeconomy' 'financial' 'blockchain' 'scale'
+ 'blockchain_technology' 'wool' 'scale_measure' 'performance_system'
+ 'consider_important' 'coal']
+['food' 'food_waste' 'food_product' 'food_security' 'security'
+ 'food_supply' 'global_food' 'sustainable_food' 'biogas' 'ethical']
+['humanitarian' 'social_impact' 'humanitarian_supply' 'manage_inventory'
+ 'social' 'power_plant' 'social_life' 'environmental_social' 'contract'
+ 'healthcare']
+['plastic' 'plastic_waste' 'recycled_material' 'industry'
+ 'similarity_difference' 'use_plastic' 'new_exist' 'recycle_process'
+ 'emerge_technology' 'combine_fuzzy']
+['disaster' 'automotive' 'automotive_industry' 'model_first' 'relief'
+ 'entropy' 'risk' 'first_stage' 'solution_result' 'critical_supply']
+['data_envelopment' 'envelopment_analysis' 'use' 'envelopment'
+ 'data_envelopment_envelopment_analysis' 'air' 'natural' 'emergency'
+ 'consumption_food' 'dea']
+['wind_turbine' 'wind' 'turbine' 'dietary_guideline' 'fiber' 'indium'
+ 'blade' 'turbine_blade' 'reuse' 'wind_power']
+['damage_cost' 'key_role' 'drug' 'play_key' 'carbon_dioxide'
+ 'political_economic' 'mitigate_environmental' 'chemistry'
+ 'negative_environmental' 'menu']
+['government' 'subsidy' 'government_subsidy' 'environmental_protection'
+ 'environmental' 'social_welfare' 'green' 'protection' 'subsidy_policy'
+ 'activate']
+['maturity' 'impact_sustainable' 'effect' 'study' 'model'
+ 'design_resilient' 'smart' 'mediating_effect' 'small_business'
+ 'expect_total']
+['dye' 'network' 'logistics' 'reverse_logistics' 'reverse' 'design'
+ 'logistics_network' 'reactive' 'model' 'supply_network']
+['base_current' 'assortment' 'art' 'deep' 'sustainable_healthy'
+ 'approach_integrate' 'production_inventory' 'give_rise' 'deep_learning'
+ 'heuristic_solve']
+['blood' 'capacity' 'information_system' 'logistics_service' 'oil' 'park'
+ 'information' 'allocation' 'quality' 'power_battery']
+['industry' 'barrier' 'implementation' 'manufacturing_industry'
+ 'manufacturing' 'reduction_lead' 'study' 'area_improvement'
+ 'green_production' 'industry_technology']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'declining', 41: 'declining', 42: 'declining', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'declining', 47: 'declining', 48: 'declining', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'declining', 55: 'trending', 56: 'declining', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'declining', 61: 'trending', 62: 'declining', 63: 'declining', 64: 'declining', 65: 'trending', 66: 'trending', 67: 'declining', 68: 'declining', 69: 'trending', 70: 'declining', 71: 'declining', 72: 'trending', 73: 'declining', 74: 'declining', 75: 'trending', 76: 'declining', 77: 'declining', 78: 'trending', 79: 'declining', 80: 'declining', 81: 'declining', 82: 'declining', 83: 'declining', 84: 'declining', 85: 'declining', 86: 'trending', 87: 'declining', 88: 'declining', 89: 'declining'}
+
+These are the emerging + trending topics:
+
+['meat' 'cultured_meat' 'meat_alternative' 'consumer' 'cultured' 'shape'
+ 'alternative' 'body' 'meat_production' 'gown']
+['carbon_footprint' 'value_chain' 'feed' 'carbon' 'footprint' 'milk' 'cf'
+ 'packaging' 'low_environmental' 'beef']
+['greenhouse_gas' 'gas_emission' 'greenhouse' 'emission' 'gas' 'livestock'
+ 'greenhouse_gas_gas_emission' 'agricultural' 'farm' 'mitigation']
+['use' 'electrode' 'reaction' 'solvent' 'water' 'treatment' 'chemical'
+ 'aluminum' 'process' 'choice']
+['carbon_fiber' 'fiber' 'wine' 'carbon' 'operational_performance'
+ 'social_performance' 'design_sustainable' 'technological_innovation'
+ 'sustainability' 'economic_sustainability']
+['energy' 'energy_use' 'energy_efficiency' 'efficiency' 'use' 'input' 'mj'
+ 'change_impact' 'energy_input' 'production']
+['composite' 'steel' 'mechanical' 'reinforce' 'use' 'epoxy' 'resin'
+ 'property' 'glass_fibre' 'epoxy_resin']
+['effect' 'sc' 'supply_chain' 'disruption' 'supply' 'impact' 'chain'
+ 'study' 'stock_price' 'research']
+['humanitarian' 'social_impact' 'humanitarian_supply' 'manage_inventory'
+ 'social' 'power_plant' 'social_life' 'environmental_social' 'contract'
+ 'healthcare']
+['dye' 'network' 'logistics' 'reverse_logistics' 'reverse' 'design'
+ 'logistics_network' 'reactive' 'model' 'supply_network']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          51        10
+popular           15        14
+
+###############################
+Now starts iteration for t = 6.
+###############################
+
+
+Loading first model (t = 6)...
+
+
+Loading first model (t+1 = 7)...
+
+Calculating topic emergences with pi = 0.5...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'popular', 3: 'popular', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'popular', 8: 'popular', 9: 'emerging', 10: 'popular', 11: 'popular', 12: 'emerging', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'popular', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'popular', 27: 'popular', 28: 'popular', 29: 'popular', 30: 'popular', 31: 'popular', 32: 'popular', 33: 'popular', 34: 'popular', 35: 'popular', 36: 'emerging', 37: 'popular', 38: 'popular', 39: 'popular', 40: 'popular', 41: 'emerging', 42: 'popular', 43: 'popular', 44: 'popular', 45: 'emerging', 46: 'popular', 47: 'popular', 48: 'popular', 49: 'popular', 50: 'popular', 51: 'emerging', 52: 'popular', 53: 'popular', 54: 'popular', 55: 'popular', 56: 'popular', 57: 'popular', 58: 'popular', 59: 'popular', 60: 'popular', 61: 'popular', 62: 'emerging', 63: 'popular', 64: 'popular', 65: 'emerging', 66: 'popular', 67: 'popular', 68: 'popular', 69: 'popular', 70: 'popular', 71: 'popular', 72: 'popular', 73: 'emerging', 74: 'popular', 75: 'emerging', 76: 'popular', 77: 'emerging', 78: 'popular', 79: 'popular', 80: 'popular', 81: 'popular', 82: 'emerging', 83: 'popular', 84: 'emerging', 85: 'popular', 86: 'popular', 87: 'emerging', 88: 'popular', 89: 'popular'}
+
+These are the emerging topics:
+
+['product' 'model' 'information' 'product_quality' 'carbon' 'quality'
+ 'price' 'cost' 'volunteer' 'study']
+['study' 'model' 'case_study' 'management' 'sustainable' 'logistics'
+ 'research' 'green' 'problem' 'supply_chain']
+['model' 'study' 'animal' 'product' 'use' 'impact' 'environmental'
+ 'environmental_impact' 'meat' 'review']
+['use' 'model' 'supply_chain' 'result' 'optimal' 'industry' 'construction'
+ 'strategy' 'analysis' 'supply']
+['use' 'supply' 'supply_chain' 'model' 'information' 'study' 'chain'
+ 'impact' 'management' 'research']
+['lean_green' 'lean' 'research' 'result' 'capability' 'use' 'policy'
+ 'manufacturing' 'supply_chain' 'study']
+['supply_chain' 'material' 'supply' 'demand' 'chain' 'model' 'use' 'study'
+ 'fuzzy' 'waste']
+['information' 'product' 'manufacturer' 'supply_chain' 'online' 'consider'
+ 'production' 'use' 'waste' 'result']
+['use' 'product' 'meat' 'logistics' 'identity' 'study' 'cost' 'approach'
+ 'high' 'model']
+['impact_assessment' 'assessment_method' 'method' 'cf' 'impact' 'effect'
+ 'assessment' 'beef_production' 'three' 'energy']
+['effect' 'demand' 'data' 'energy' 'channel' 'model' 'analysis'
+ 'supply_chain' 'impact' 'relief_distribution']
+['supply_chain' 'model' 'research' 'study' 'supply' 'management'
+ 'consumer' 'product' 'performance' 'contract']
+['model' 'supply_chain' 'supply' 'use' 'business_model' 'study' 'chain'
+ 'effect' 'show' 'glass_fiber']
+['product' 'model' 'supply_chain' 'study' 'use' 'circular_economy' 'cost'
+ 'supply' 'optimal' 'consumer']
+['manufacturer' 'supply' 'supply_chain' 'retail_price' 'use' 'retailer'
+ 'chain' 'high' 'electrode' 'spare_part']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'declining', 30: 'declining', 31: 'declining', 32: 'declining', 33: 'trending', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'declining', 38: 'declining', 39: 'declining', 40: 'declining', 41: 'trending', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'declining', 47: 'declining', 48: 'declining', 49: 'declining', 50: 'trending', 51: 'declining', 52: 'declining', 53: 'trending', 54: 'declining', 55: 'declining', 56: 'declining', 57: 'trending', 58: 'trending', 59: 'declining', 60: 'declining', 61: 'declining', 62: 'declining', 63: 'declining', 64: 'declining', 65: 'declining', 66: 'trending', 67: 'trending', 68: 'declining', 69: 'declining', 70: 'declining', 71: 'trending', 72: 'trending', 73: 'declining', 74: 'trending', 75: 'declining', 76: 'declining', 77: 'trending', 78: 'declining', 79: 'trending', 80: 'declining', 81: 'trending', 82: 'trending', 83: 'declining', 84: 'declining', 85: 'trending', 86: 'declining', 87: 'declining', 88: 'declining', 89: 'declining'}
+
+These are the emerging + trending topics:
+
+['use' 'supply' 'supply_chain' 'model' 'information' 'study' 'chain'
+ 'impact' 'management' 'research']
+['supply_chain' 'model' 'research' 'study' 'supply' 'management'
+ 'consumer' 'product' 'performance' 'contract']
+['model' 'supply_chain' 'supply' 'use' 'business_model' 'study' 'chain'
+ 'effect' 'show' 'glass_fiber']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          12         3
+popular           48        27
+[?2004hphagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 
+[K
+phagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ python run_for_topic_analysis.py
+[?2004l
+
+###############################
+Now starts iteration for t = 1.
+###############################
+
+
+Loading first model (t = 1)...
+
+
+Loading first model (t+1 = 2)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'popular', 1: 'popular', 2: 'emerging', 3: 'popular', 4: 'popular', 5: 'emerging', 6: 'popular', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'popular', 11: 'emerging', 12: 'popular', 13: 'popular', 14: 'popular', 15: 'popular', 16: 'emerging', 17: 'popular', 18: 'popular', 19: 'emerging', 20: 'popular', 21: 'emerging', 22: 'emerging', 23: 'popular', 24: 'popular', 25: 'popular', 26: 'emerging', 27: 'emerging', 28: 'emerging', 29: 'popular', 30: 'popular', 31: 'emerging', 32: 'popular', 33: 'emerging', 34: 'emerging', 35: 'popular', 36: 'popular', 37: 'emerging', 38: 'popular', 39: 'emerging', 40: 'popular', 41: 'popular', 42: 'popular', 43: 'popular', 44: 'emerging', 45: 'popular', 46: 'popular', 47: 'emerging', 48: 'emerging', 49: 'emerging', 50: 'emerging', 51: 'emerging', 52: 'emerging', 53: 'popular', 54: 'emerging', 55: 'popular', 56: 'emerging', 57: 'popular', 58: 'emerging', 59: 'popular', 60: 'popular', 61: 'emerging', 62: 'popular', 63: 'emerging', 64: 'popular', 65: 'emerging', 66: 'popular', 67: 'emerging', 68: 'emerging', 69: 'emerging', 70: 'popular'}
+
+These are the emerging topics:
+
+['use' 'model' 'sustainability' 'bottom_line' 'triple_bottom' 'delivery'
+ 'result' 'forecast' 'provide' 'study']
+['energy' 'business' 'business_model' 'model' 'renewable_energy'
+ 'reaction_time' 'power' 'use' 'medical' 'reaction']
+['remanufacturing' 'use' 'use_game' 'game_analysis' 'perishable_inventory'
+ 'model' 'intellectual_capital' 'remanufacturing_supply' 'mass_transfer'
+ 'make_model']
+['spare_part' 'part' 'spare' 'study' 'effect' 'online_retailer'
+ 'supply_chain' 'use' 'supply' 'forecast']
+['factor_influence' 'control_system' 'optimal_location' 'chinese'
+ 'supplier_development' 'aversion' 'level_use' 'loss_aversion'
+ 'manager_understand' 'factor']
+['change' 'dynamic' 'performance_measurement' 'dynamic_capability'
+ 'supplier_management' 'culture' 'change_management' 'case_research'
+ 'use_dynamic' 'research_topic']
+['information' 'supplier' 'game' 'demand_information' 'cost' 'buyer'
+ 'sharing' 'model' 'random' 'game_theory']
+['decision_support' 'textile_apparel' 'apparel' 'development'
+ 'support_system' 'business_performance' 'study' 'textile' 'clothing'
+ 'use']
+['pattern' 'fashion' 'cash' 'material_supply' 'result' 'use'
+ 'experimental_data' 'season' 'study' 'block']
+['evaluation' 'model' 'use' 'base' 'method' 'result_analysis'
+ 'index_system' 'inventory_control' 'result' 'evaluation_system']
+['mineral' 'export' 'system' 'copper' 'resource' 'stock' 'waste' 'oil_gas'
+ 'estimate' 'biogas']
+['energy' 'public' 'agricultural' 'public_procurement' 'use' 'procurement'
+ 'yield' 'vehicle' 'electric_vehicle' 'system']
+['review' 'research' 'blood' 'literature' 'future_research' 'study'
+ 'case_study' 'result' 'literature_review' 'donation']
+['flexibility' 'technological_innovation' 'fruit' 'zero_waste' 'protein'
+ 'nickel' 'intake' 'fruit_vegetable' 'reduce_total' 'supply_chain']
+['environmental_economic' 'sustainable_intensification' 'use'
+ 'environmental_protection' 'intensification' 'environmental'
+ 'drinking_water' 'economic_performance' 'meat_production' 'economic']
+['production' 'system' 'production_system' 'production_quantity' 'social'
+ 'manufacturing' 'manufacturing_system' 'use' 'machine'
+ 'production_planning']
+['use' 'data_envelopment' 'risk' 'envelopment_analysis' 'feed' 'financial'
+ 'impact' 'outsource' 'livestock' 'cf']
+['crop' 'business' 'ecosystem' 'model' 'crop_system' 'use' 'case' 'study'
+ 'case_study' 'business_model']
+['food_waste' 'wool' 'railway' 'rescue' 'facility' 'facility_location'
+ 'location' 'green_technology' 'network' 'acid']
+['carbon_emission' 'carbon' 'emission' 'model' 'emission_factor'
+ 'landfill_gas' 'reduction' 'transportation' 'reduce_carbon' 'carbon_tax']
+['industrial' 'park' 'industrial_park' 'warranty' 'forest' 'spatial'
+ 'analysis_variance' 'telecommunication' 'climate_impact' 'factor']
+['enzyme' 'green_development' 'use' 'freight' 'model' 'dual' 'system_high'
+ 'value' 'channel_supply' 'quality']
+['steel' 'import' 'option' 'green_procurement' 'image' 'option_contract'
+ 'stainless_steel' 'study' 'shoulder' 'steel_industry']
+['systematic_literature' 'inventory' 'automotive' 'automotive_industry'
+ 'literature_review' 'product_innovation'
+ 'systematic_literature_literature_review' 'hospital' 'reserve' 'review']
+['meat' 'composite' 'meat_consumption' 'material' 'use' 'fiber'
+ 'meet_demand' 'reinforce' 'fiber_reinforce' 'goal_program']
+['experimental_result' 'particle_swarm' 'swarm_optimization'
+ 'optimization' 'water' 'water_use' 'swarm' 'particle' 'experimental'
+ 'use']
+['use' 'method' 'interpretive_structural' 'garment' 'design' 'base' '3d'
+ 'information_system' 'interpretive' 'propose']
+['energy_efficiency' 'process' 'efficiency' 'waste_plastic' 'coal' 'rice'
+ 'energy' 'use' 'industry' 'logistics_industry']
+['material_flow' 'flow_analysis' 'plastic' 'trade' 'flow' 'credit'
+ 'material' 'trade_credit' 'use_efficiency' 'lead']
+['circular_economy' 'industrial' 'circular' 'dairy' 'economy'
+ 'industrial_symbiosis' 'production' 'ce' 'ghg_emission' 'milk']
+['supply_network' 'supply' 'analytic_hierarchy' 'risk' 'supply_chain'
+ 'hierarchy_process' 'use' 'model' 'fuzzy' 'evaluation']
+['raw_material' 'material' 'raw' 'logistics_service' 'service_provider'
+ 'development' 'logistics' 'enterprise' 'study' 'resource']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'trending', 4: 'trending', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'trending', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'declining', 20: 'trending', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'trending', 25: 'trending', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'declining', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'declining', 38: 'declining', 39: 'declining', 40: 'trending', 41: 'trending', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'declining', 47: 'declining', 48: 'trending', 49: 'trending', 50: 'declining', 51: 'declining', 52: 'declining', 53: 'declining', 54: 'declining', 55: 'trending', 56: 'declining', 57: 'trending', 58: 'declining', 59: 'declining', 60: 'trending', 61: 'declining', 62: 'declining', 63: 'declining', 64: 'declining', 65: 'declining', 66: 'declining', 67: 'declining', 68: 'declining', 69: 'declining', 70: 'declining'}
+
+These are the emerging + trending topics:
+
+['food_waste' 'wool' 'railway' 'rescue' 'facility' 'facility_location'
+ 'location' 'green_technology' 'network' 'acid']
+['carbon_emission' 'carbon' 'emission' 'model' 'emission_factor'
+ 'landfill_gas' 'reduction' 'transportation' 'reduce_carbon' 'carbon_tax']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          30         2
+popular           21        18
+
+###############################
+Now starts iteration for t = 2.
+###############################
+
+
+Loading first model (t = 2)...
+
+
+Loading first model (t+1 = 3)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'emerging', 1: 'emerging', 2: 'emerging', 3: 'popular', 4: 'emerging', 5: 'emerging', 6: 'emerging', 7: 'emerging', 8: 'emerging', 9: 'emerging', 10: 'emerging', 11: 'popular', 12: 'emerging', 13: 'emerging', 14: 'popular', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'emerging', 19: 'emerging', 20: 'emerging', 21: 'emerging', 22: 'emerging', 23: 'emerging', 24: 'emerging', 25: 'emerging', 26: 'emerging', 27: 'emerging', 28: 'emerging', 29: 'emerging', 30: 'emerging', 31: 'emerging', 32: 'emerging', 33: 'emerging', 34: 'popular', 35: 'emerging', 36: 'emerging', 37: 'popular', 38: 'emerging', 39: 'popular', 40: 'emerging', 41: 'emerging', 42: 'emerging', 43: 'emerging', 44: 'emerging', 45: 'emerging', 46: 'emerging', 47: 'emerging', 48: 'emerging', 49: 'emerging', 50: 'emerging', 51: 'emerging', 52: 'emerging', 53: 'emerging', 54: 'emerging', 55: 'emerging', 56: 'emerging', 57: 'emerging', 58: 'emerging', 59: 'emerging', 60: 'emerging', 61: 'emerging', 62: 'emerging', 63: 'emerging', 64: 'emerging', 65: 'emerging', 66: 'emerging', 67: 'popular', 68: 'popular', 69: 'emerging', 70: 'emerging', 71: 'emerging', 72: 'emerging', 73: 'emerging', 74: 'emerging', 75: 'emerging', 76: 'popular', 77: 'emerging', 78: 'emerging', 79: 'emerging', 80: 'emerging', 81: 'emerging'}
+
+These are the emerging topics:
+
+['customer' 'operational' 'integration' 'supply_chain' 'supply' 'study'
+ 'internal' 'performance' 'operational_performance' 'satisfaction']
+['study' 'strategy' 'supply' 'product' 'use' 'research' 'industry'
+ 'analysis' 'review' 'develop']
+['demand' 'fiber' 'inventory_management' 'composite' 'property'
+ 'mechanical' 'use' 'inventory' 'material' 'strength']
+['lean' 'production' 'company' 'manufacturing' 'performance' 'tool'
+ 'study' 'use' 'lean_manufacturing' 'improvement']
+['meat' 'eat' 'model' 'participant' 'inventory_model' 'analysis_perform'
+ 'inventory' 'cost_inventory' 'model_emergency' 'people']
+['disaster' 'remanufacturing' 'relief' 'emergency' 'clothing' 'design'
+ 'disaster_relief' 'textile_clothing' 'humanitarian_relief'
+ 'natural_disaster']
+['public_sector' 'green_design' 'chemical' 'united_state' 'system'
+ 'ecological_footprint' 'provide_basis' 'industrial_wastewater' 'use'
+ 'cadmium']
+['factor' 'chain_finance' 'barrier' 'lean_green' 'industry' 'identify'
+ 'implementation' 'study' 'structural_model' 'extensive_literature']
+['sustainability' 'social' 'research' 'performance' 'sustainable'
+ 'sustainability_performance' 'study' 'social_sustainability' 'review'
+ 'literature_review']
+['economic' 'evaluation' 'indicator' 'use' 'evaluate' 'study' 'energy'
+ 'environmental' 'production' 'base']
+['demand' 'lead_time' 'time' 'lead' 'product' 'model' 'system' 'sale'
+ 'inventory' 'use']
+['water' 'water_use' 'use' 'operating' 'treatment' 'operating_cost'
+ 'water_treatment' 'treatment_method' 'environmental_cost'
+ 'water_footprint']
+['cognitive' 'study' 'provide_useful' 'reduction_potential'
+ 'consider_chain' 'use' 'model' 'social_identity' 'impact_business'
+ 'business']
+['emission_reduction' 'reactive_dye' 'special_issue' 'transport' 'body'
+ 'reduction' 'woman' 'significant_role' 'play_significant' 'shape']
+['humanitarian' 'neural_network' 'network' 'humanitarian_logistics'
+ 'neural' 'model' 'artificial_neural' 'reverse_supply' 'model_find'
+ 'passenger']
+['emission' 'carbon' 'greenhouse_gas' 'ghg_emission' 'gas_emission' 'gas'
+ 'greenhouse' 'ghg' 'carbon_footprint' 'reduction']
+['use' 'result' 'data' 'fibre' 'method' 'show' 'new' 'analysis' 'surface'
+ 'thermal']
+['design' 'system' 'decision_support' 'decision' 'support' 'approach'
+ 'big_data' 'method' 'use' 'base']
+['method' 'model' 'problem' 'algorithm' 'use' 'genetic_algorithm'
+ 'propose' 'result' 'solve' 'decision']
+['construction' 'software' 'young' 'use' 'waist' 'vital_role' 'result'
+ 'purchase_behavior' 'linear_regression' 'evaluation_laboratory']
+['model' 'inventory' 'cost' 'demand' 'optimization' 'propose'
+ 'propose_model' 'stock' 'total' 'total_cost']
+['sustainability' 'fine_fraction' 'supply_network' 'information'
+ 'consumer' 'sustainable_development' 'supply' 'social' 'supply_chain'
+ 'sustainable']
+['use' 'material' 'economic' 'increase' 'analysis' 'make' 'development'
+ 'sustainable' 'critical_raw' 'park']
+['value_stream' 'cost' 'fresh' 'stream' 'firm' 'value' 'stream_mapping'
+ 'used_product' 'supply_chain' 'paper_consider']
+['quality' 'vegetarian' 'product' 'product_quality' 'electric_vehicle'
+ 'electric' 'vegan' 'return_policy' 'battery' 'quality_improvement']
+['development' 'product' 'remanufactured_product' 'small_medium'
+ 'agricultural_product' 'remanufactured' 'new_product' 'medium_enterprise'
+ 'agricultural' 'green_development']
+['heuristic' 'lca_result' 'heuristic_algorithm' 'problem' 'study_extend'
+ 'size_problem' 'digital_platform' 'study' 'flexible_supply'
+ 'chain_flexibility']
+['demand' 'use' 'cooperative' 'model' 'company' 'capacity' 'power' 'value'
+ 'determine_optimum' 'inventory']
+['risk' 'supply_chain' 'supply' 'risk_management' 'chain' 'chain_risk'
+ 'supply_chain_chain_risk' 'high_low' 'management' 'initial_ph']
+['dye' 'value' 'fabric' 'sustainable' 'sustainability' 'water_supply'
+ 'value_chain' 'study' 'regional' 'reactive']
+['cement' 'assessment_use' 'green_logistics' 'fuel_consumption' 'study'
+ 'indirect' 'direct_indirect' 'paper_build' 'aim_assess' 'use']
+['urban' 'landfill_mining' 'system' 'use' 'study' 'research' 'base'
+ 'large_amount' 'industry' 'production_system']
+['system' 'maintenance' 'dynamic' 'control' 'system_dynamic'
+ 'dynamic_model' 'inventory' 'model' 'policy' 'failure']
+['supplier' 'supplier_selection' 'supply_chain' 'selection' 'supply'
+ 'green_supplier' 'chain' 'fuzzy' 'sustainable_supplier' 'evaluation']
+['supply_chain' 'supply' 'retailer' 'chain' 'decision' 'manufacturer'
+ 'return' 'retail' 'preference' 'profit']
+['item' 'model' 'fuzzy' 'rate' 'inventory' 'cost' 'numerical_example'
+ 'female' 'production' 'total']
+['energy' 'production' 'energy_use' 'crop' 'high' 'use_efficiency'
+ 'system' 'soil' 'yield' 'use']
+['hierarchy_process' 'selection' 'criterion' 'method' 'hierarchy'
+ 'supplier' 'analytical_hierarchy' 'process' 'use' 'analytic_hierarchy']
+['problem' 'propose' 'algorithm' 'location' 'solve' 'model' 'distribution'
+ 'optimization' 'relief' 'facility']
+['optimal_control' 'beverage' 'reduction_environmental'
+ 'component_analysis' 'time_horizon' 'research_case' 'cost_use'
+ 'food_beverage' 'wte_plant' 'paper_take']
+['land_use' 'land' 'economic' 'use' 'oil_gas' 'oil' 'present_value'
+ 'indicator' 'pool' 'model']
+['humanitarian_supply' 'important_role' 'play_important' 'humanitarian'
+ 'management' 'role' 'study' 'use' 'play' 'collaborative_research']
+['logistics' 'service' 'logistics_service' 'service_provider'
+ 'development' 'provider' 'human_resource' 'resource' 'technology'
+ 'industry']
+['product' 'blood' 'new' 'digital' 'value' 'blood_supply' 'model'
+ 'different' 'newsvendor' 'use']
+['method' 'data' 'use' 'forecast' 'time_series' 'model' 'time' 'series'
+ 'forecasting' 'performance']
+['energy' 'farm' 'production' 'dairy' 'milk' 'renewable_energy' 'increase'
+ 'use' 'organic' 'feed']
+['performance' 'cold_chain' 'performance_indicator' 'cold' 'metric'
+ 'indicator' 'key_performance' 'dynamic' 'network' 'commitment']
+['reverse_logistics' 'reverse' 'purchasing_supply' 'compare_traditional'
+ 'logistics' 'effect_increase' 'management_strategy' 'seed' 'structure'
+ 'indigo']
+['circular_economy' 'circular' 'material' 'economy' 'waste' 'plastic'
+ 'use' 'resource' 'value' 'recycle']
+['industrial' 'industrial_symbiosis' 'symbiosis' 'resource' 'co2_emission'
+ 'material' 'use' 'co2' 'carbon_dioxide' 'rotation']
+['carbon' 'carbon_emission' 'emission' 'low_carbon' 'tax' 'carbon_tax'
+ 'low' 'reduce_carbon' 'develop_base' 'equipment_maintenance']
+['production' 'time' 'item' 'inventory_model' 'model' 'production_process'
+ 'optimal' 'demand' 'product' 'rate']
+['apparel' 'study' 'subsidy' 'government_subsidy' 'startup' 'government'
+ 'education' 'student' 'purpose_study' 'study_consider']
+['business' 'business_process' 'new' 'information' 'model' 'development'
+ 'enterprise' 'technology' 'industry' 'company']
+['cell' 'use' 'removal' 'reaction_time' 'efficiency' 'treatment'
+ 'response_surface' 'reaction' 'voltage' 'ph']
+['circular_economy' 'circular' 'raw_material' 'material' 'economy' 'raw'
+ 'ce' 'resource' 'product' 'transition_circular']
+['diet' 'building' 'healthy' 'environmental_impact' 'dietary'
+ 'sustainable_consumption' 'sustainable_diet' 'potential_environmental'
+ 'emergency' 'environmental']
+['supplier' 'credit' 'use' 'trade_credit' 'process' 'selection' 'part'
+ 'trade' 'supplier_evaluation' 'payment']
+['order_quantity' 'order' 'quantity' 'optimal' 'optimal_order'
+ 'remediation' 'economic_order' 'sustainable_remediation' 'model'
+ 'utility']
+['game' 'production' 'stackelberg_game' 'channel' 'game_model'
+ 'manufacturer' 'product' 'quality' 'supply_chain' 'quality_management']
+['consumer' 'heat' 'strategic' 'use' 'approach_assess' 'power' 'book'
+ 'study' 'strategic_consumer' 'ethical']
+['risk' 'supply_risk' 'mitigation' 'use' 'risk_risk' 'aluminum_electrode'
+ 'risk_assessment' 'method' 'use_impact' 'high']
+['manufacturing' 'lean' 'implementation' 'industry' 'lean_manufacturing'
+ 'manufacture' 'study' 'automotive_industry' 'paper'
+ 'manufacturing_industry']
+['use' 'supplier' 'process' 'industry' 'flexibility' 'action_research'
+ 'supplier_performance' 'solvent' 'three_case' 'public_opinion']
+['metal' 'increase' 'product' 'meat_consumption' 'profit' 'retailer'
+ 'manufacturer' 'strategy' 'perishable' 'impact']
+['use' 'efficiency' 'service' 'energy' 'production' 'input' 'mineral'
+ 'use_determine' 'study' 'high']
+['spare_part' 'part' 'spare' 'carbon_fiber' 'fiber' 'system' 'equipment'
+ 'maintenance' 'electrical_electronic' 'mining']
+['waste' 'energy' 'recycle' 'material' 'use' 'recycling' 'resource'
+ 'rare_earth' 'production' 'environmental']
+['procurement' 'public' 'public_procurement' 'robust' 'use'
+ 'robust_optimization' 'model' 'green_public' 'analysis' 'aircraft']
+['product' 'product_return' 'simulation' 'return' 'consumer'
+ 'simulation_model' 'intention' 'purchase' 'heat_power'
+ 'purchase_intention']
+['fashion' 'use' 'brand' 'internet_thing' 'internet' 'industrial_internet'
+ 'chain_consist' 'choice' 'fashion_industry' 'low_bound']
+['financial_performance' 'hospital' 'index_system' 'service_market'
+ 'financial' 'cost_high' 'use' 'use_aluminum' 'study' 'performance']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'trending', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'trending', 23: 'trending', 24: 'trending', 25: 'declining', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'declining', 30: 'declining', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining', 36: 'declining', 37: 'trending', 38: 'declining', 39: 'trending', 40: 'declining', 41: 'declining', 42: 'declining', 43: 'trending', 44: 'trending', 45: 'trending', 46: 'declining', 47: 'declining', 48: 'declining', 49: 'trending', 50: 'declining', 51: 'trending', 52: 'trending', 53: 'declining', 54: 'declining', 55: 'declining', 56: 'declining', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'declining', 61: 'trending', 62: 'trending', 63: 'trending', 64: 'declining', 65: 'declining', 66: 'trending', 67: 'trending', 68: 'trending', 69: 'declining', 70: 'declining', 71: 'declining', 72: 'declining', 73: 'trending', 74: 'declining', 75: 'declining', 76: 'trending', 77: 'trending', 78: 'trending', 79: 'declining', 80: 'declining', 81: 'declining'}
+
+These are the emerging + trending topics:
+
+['disaster' 'remanufacturing' 'relief' 'emergency' 'clothing' 'design'
+ 'disaster_relief' 'textile_clothing' 'humanitarian_relief'
+ 'natural_disaster']
+['sustainability' 'social' 'research' 'performance' 'sustainable'
+ 'sustainability_performance' 'study' 'social_sustainability' 'review'
+ 'literature_review']
+['emission' 'carbon' 'greenhouse_gas' 'ghg_emission' 'gas_emission' 'gas'
+ 'greenhouse' 'ghg' 'carbon_footprint' 'reduction']
+['method' 'model' 'problem' 'algorithm' 'use' 'genetic_algorithm'
+ 'propose' 'result' 'solve' 'decision']
+['construction' 'software' 'young' 'use' 'waist' 'vital_role' 'result'
+ 'purchase_behavior' 'linear_regression' 'evaluation_laboratory']
+['model' 'inventory' 'cost' 'demand' 'optimization' 'propose'
+ 'propose_model' 'stock' 'total' 'total_cost']
+['energy' 'production' 'energy_use' 'crop' 'high' 'use_efficiency'
+ 'system' 'soil' 'yield' 'use']
+['hierarchy_process' 'selection' 'criterion' 'method' 'hierarchy'
+ 'supplier' 'analytical_hierarchy' 'process' 'use' 'analytic_hierarchy']
+['problem' 'propose' 'algorithm' 'location' 'solve' 'model' 'distribution'
+ 'optimization' 'relief' 'facility']
+['logistics' 'service' 'logistics_service' 'service_provider'
+ 'development' 'provider' 'human_resource' 'resource' 'technology'
+ 'industry']
+['method' 'data' 'use' 'forecast' 'time_series' 'model' 'time' 'series'
+ 'forecasting' 'performance']
+['energy' 'farm' 'production' 'dairy' 'milk' 'renewable_energy' 'increase'
+ 'use' 'organic' 'feed']
+['cell' 'use' 'removal' 'reaction_time' 'efficiency' 'treatment'
+ 'response_surface' 'reaction' 'voltage' 'ph']
+['circular_economy' 'circular' 'raw_material' 'material' 'economy' 'raw'
+ 'ce' 'resource' 'product' 'transition_circular']
+['diet' 'building' 'healthy' 'environmental_impact' 'dietary'
+ 'sustainable_consumption' 'sustainable_diet' 'potential_environmental'
+ 'emergency' 'environmental']
+['game' 'production' 'stackelberg_game' 'channel' 'game_model'
+ 'manufacturer' 'product' 'quality' 'supply_chain' 'quality_management']
+['metal' 'increase' 'product' 'meat_consumption' 'profit' 'retailer'
+ 'manufacturer' 'strategy' 'perishable' 'impact']
+['waste' 'energy' 'recycle' 'material' 'use' 'recycling' 'resource'
+ 'rare_earth' 'production' 'environmental']
+['procurement' 'public' 'public_procurement' 'robust' 'use'
+ 'robust_optimization' 'model' 'green_public' 'analysis' 'aircraft']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          53        19
+popular            1         9
+
+###############################
+Now starts iteration for t = 3.
+###############################
+
+
+Loading first model (t = 3)...
+
+
+Loading first model (t+1 = 4)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'emerging', 1: 'emerging', 2: 'emerging', 3: 'emerging', 4: 'popular', 5: 'popular', 6: 'popular', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'emerging', 12: 'popular', 13: 'emerging', 14: 'emerging', 15: 'popular', 16: 'emerging', 17: 'popular', 18: 'popular', 19: 'popular', 20: 'emerging', 21: 'emerging', 22: 'popular', 23: 'emerging', 24: 'popular', 25: 'emerging', 26: 'emerging', 27: 'emerging', 28: 'popular', 29: 'emerging', 30: 'popular', 31: 'emerging', 32: 'emerging', 33: 'emerging', 34: 'emerging', 35: 'emerging', 36: 'emerging', 37: 'popular', 38: 'emerging', 39: 'emerging', 40: 'emerging', 41: 'emerging', 42: 'emerging', 43: 'emerging', 44: 'emerging', 45: 'emerging', 46: 'emerging', 47: 'emerging', 48: 'emerging', 49: 'emerging', 50: 'emerging', 51: 'emerging', 52: 'popular', 53: 'emerging', 54: 'popular', 55: 'emerging', 56: 'popular', 57: 'popular', 58: 'emerging', 59: 'emerging', 60: 'popular', 61: 'emerging', 62: 'emerging', 63: 'popular', 64: 'emerging', 65: 'popular', 66: 'emerging', 67: 'popular', 68: 'popular', 69: 'emerging', 70: 'emerging', 71: 'emerging', 72: 'emerging', 73: 'emerging', 74: 'popular', 75: 'emerging', 76: 'emerging', 77: 'emerging', 78: 'emerging', 79: 'emerging', 80: 'emerging', 81: 'emerging'}
+
+These are the emerging topics:
+
+['technology' 'material' 'industry' 'data' 'artificial_intelligence' 'use'
+ 'new' 'smart' 'material_flow' 'research']
+['sustainability' 'study' 'use' 'assessment' 'result' 'level' 'base'
+ 'sustainable_food' 'approach' 'sustainability_assessment']
+['use' 'response' 'composite_design' 'reactive_dye' 'central_composite'
+ 'time' 'implementation_sustainable' 'result' 'study' 'show']
+['performance' 'use' 'study' 'evaluation' 'fuzzy' 'method' 'analysis'
+ 'base' 'process' 'supplier']
+['system' 'use' 'component' 'result' 'study' 'process' 'use_base'
+ 'online_shopping' 'base' 'exergy']
+['food' 'food_waste' 'evaluation_laboratory' 'trial_evaluation'
+ 'framework' 'economic_environmental' 'transportation_mode' 'support'
+ 'environmental' 'value']
+['return' 'brand' 'return_policy' 'bullwhip_effect' 'approach'
+ 'product_return' 'study' 'policy' 'use' 'production']
+['industrial_symbiosis' 'symbiosis' 'industrial' 'fibre' 'use' 'chemical'
+ 'energy_transition' 'recycle' 'process' 'symbiosis_network']
+['supply_chain' 'sustainability' 'sustainable' 'supply' 'chain'
+ 'sustainable_supply' 'agricultural_product' 'sustainability_supply'
+ 'sustainable_supplier' 'fresh']
+['spare_part' 'part' 'factor' 'health' 'spare' 'method' 'factor_affect'
+ 'study' 'base' 'digital_twin']
+['process' 'use' 'business_process' 'study' 'value' 'production' 'result'
+ 'analytical' 'model' 'pattern']
+['fiber' 'composite' 'property' 'material' 'copper' 'strength'
+ 'carbon_fiber' 'recycle' 'mechanical' 'composite_material']
+['recycle' 'glass_fiber' 'article_analyze' 'waste_material'
+ 'construction_waste' 'recycling' 'special_issue' 'use' 'paper' 'land']
+['management' 'management_system' 'system' 'risk_management' 'use'
+ 'education' 'supply_chain' 'supply' 'research' 'original_equipment']
+['strategy' 'management_system' 'risk_aversion' 'management'
+ 'current_practice' 'carbon_trading' 'analysis_key' 'impact_carbon'
+ 'trading' 'lead_significant']
+['supply_network' 'supply' 'method' 'factor' 'critical_role'
+ 'supply_chain' 'chain_manufacturer' 'study' 'play_critical' 'uncertainty']
+['energy' 'agricultural' 'farm' 'use' 'farmer' 'production' 'input' 'crop'
+ 'study' 'analysis']
+['pattern' 'blood' 'future' 'dietary' 'journal' 'blood_supply' 'hospital'
+ 'study' 'review' 'virtual']
+['use' 'method' 'selection' 'decision' 'decision_support' 'case_study'
+ 'approach' 'supplier_selection' 'study' 'base']
+['key_performance' 'operation_management' 'indian' 'indian_manufacturing'
+ 'performance_indicator' 'key_performance_performance_indicator'
+ 'play_key' 'recovery_rate' 'emergency_medical' 'pharmaceutical_industry']
+['supplier' 'supply' 'supply_chain' 'risk' 'chain' 'supplier_selection'
+ 'disruption' 'selection' 'buyer' 'strategy']
+['social' 'sustainable' 'sustainability' 'sustainable_development'
+ 'development' 'social_sustainability' 'economic_growth' 'economic'
+ 'development_goal' 'growth']
+['solution_approach' 'upstream_downstream' 'downstream' 'uncertainty'
+ 'upstream' 'use_recycled' 'human_toxicity' 'optimal_location' 'cost'
+ 'yield']
+['information' 'information_share' 'supply_chain' 'demand_information'
+ 'supply' 'consumer_good' 'use' 'study' 'model' 'develop_test']
+['big_data' 'big' 'data' 'analytics' 'article_provide' 'supply_risk' 'rl'
+ 'paper' 'strategic' 'management_control']
+['green' 'green_supply' 'supply_chain' 'supply' 'chain' 'government'
+ 'environmental_protection' 'green_supply_supply_chain' 'packaging'
+ 'environmental']
+['clothing' 'plastic_waste' 'textile_clothing' 'textile' 'lean_production'
+ 'efficient_use' 'transition_circular' 'system' 'eu' 'clothing_industry']
+['carbon' 'energy' 'production' 'carbon_footprint' 'increase' 'emission'
+ 'carbon_fiber' 'low' 'high' 'consumer']
+['public' 'research' 'public_procurement' 'textile' 'procurement'
+ 'remanufactured_product' 'review' 'attitude' 'mass_customization'
+ 'literature']
+['supply' 'supply_chain' 'selection_order' 'risk' 'quality' 'enterprise'
+ 'model' 'product_quality' 'chain' 'decision']
+['design' 'fashion' 'sustainable' 'use' 'study' 'approach' 'garment'
+ 'product' 'development' 'design_method']
+['meat' 'dairy' 'meat_consumption' 'hybrid' 'milk' 'protein' 'use'
+ 'consumption' 'composite' 'reduce_meat']
+['supply_chain' 'supply' 'model' 'chain' 'business' 'study' 'performance'
+ 'research' 'paper' 'chain_performance']
+['medical' 'maintenance' 'quality' 'medical_supply' 'preventive'
+ 'production' 'issue_relate' 'quality_control' 'preventive_maintenance'
+ 'random_forest']
+['use' 'study' 'clean_production' 'research_explore' 'consumption'
+ 'methodology_use' 'small_business' 'remediation' 'result'
+ 'operating_condition']
+['park' 'impact' 'industrial_park' 'environmental' 'use' 'method'
+ 'industrial' 'transport' 'assessment' 'automobile']
+['meat' 'data_envelopment' 'envelopment_analysis' 'emergency'
+ 'cultured_meat' 'small_medium' 'data' 'logistics' 'development'
+ 'analysis']
+['dye' 'fabric' 'cotton' 'evaluation' 'use' 'index' 'evaluation_model'
+ 'dyeing' 'index_system' 'evaluation_index']
+['social_responsibility' 'capital' 'corporate' 'corporate_social' 'bank'
+ 'csr' 'responsibility' 'study' 'supply' 'risk']
+['raw_material' 'plastic' 'product' 'material' 'raw' 'production'
+ 'process' 'impact' 'use' 'consider']
+['concern' 'procurement' 'fairness_concern' 'fairness'
+ 'robust_optimization' 'material_supplier' 'public' 'public_sector'
+ 'collector' 'manufacture_flexibility']
+['green' 'green_supplier' 'green_green' 'study' 'purchase'
+ 'material_stock' 'intention' 'product' 'environmental'
+ 'purchase_intention']
+['supply_chain' 'supply' 'sustainable_supply' 'chain'
+ 'sustainable_supply_supply_chain' 'dynamic_capability' 'network'
+ 'conceptual_framework' 'sustainable' 'framework']
+['development' 'production' 'play_important' 'important_role' 'rare_earth'
+ 'consumption' 'important' 'social' 'ecological' 'intervention']
+['company' 'industry' 'strategy' 'study' 'loop' 'paper' 'identify'
+ 'research' 'development' 'manufacturing']
+['neural_network' 'trade' 'trade_credit' 'credit' 'neural'
+ 'artificial_neural' 'sale' 'model' 'fuzzy' 'artificial']
+['online' 'online_channel' 'channel' 'commodity' 'customer'
+ 'increase_total' 'compare_current' 'rate_increase' 'intuitionistic_fuzzy'
+ 'strategy']
+['use' 'metal' 'revenue_management' 'heavy_metal' 'process' 'method'
+ 'material' 'result' 'high' 'blade']
+['body' 'food_supply' 'supply_chain' 'model' 'shape' 'supply' 'structural'
+ 'study' 'use' 'chain']
+['study' 'product' 'use' 'oem' 'product_variety' 'practical_result'
+ 'financial' 'model' 'product_innovation' 'new']
+['production' 'food_production' 'tourism' 'hotel' 'barrier'
+ 'high_environmental' 'wheat_production' 'use' 'wheat'
+ 'environmental_regulation']
+['present_value' 'private_sector' 'preservation_technology' 'preservation'
+ 'chemical' 'use_change' 'grain' 'perishable_food' 'review_article'
+ 'analyze_effect']
+['disaster' 'relief' 'humanitarian' 'emergency' 'use' 'propose'
+ 'warehouse' 'disaster_relief' 'case_study' 'humanitarian_logistics']
+['industry' 'success_factor' 'internet_thing' 'critical_success' 'iot'
+ 'study' 'green_manufacturing' 'success' 'base' 'challenge']
+['industry' 'industrial' 'value' 'paper' 'industrial_revolution' 'study'
+ 'technology' 'fourth_industrial' 'logistics_cost' 'process']
+['service' 'battery' 'service_quality' 'scrap' 'customer' 'vehicle'
+ 'service_supply' 'electric_vehicle' 'quality' 'electric']
+['diet' 'land_use' 'sustainable_diet' 'healthy' 'facility_location'
+ 'cultural' 'sustainable' 'critical_factor' 'import' 'good_quality']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'trending', 6: 'declining', 7: 'declining', 8: 'trending', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'trending', 13: 'declining', 14: 'trending', 15: 'trending', 16: 'trending', 17: 'declining', 18: 'trending', 19: 'declining', 20: 'declining', 21: 'trending', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'declining', 27: 'declining', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'declining', 39: 'declining', 40: 'declining', 41: 'declining', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'trending', 47: 'declining', 48: 'declining', 49: 'declining', 50: 'declining', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'trending', 55: 'declining', 56: 'trending', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'trending', 61: 'declining', 62: 'declining', 63: 'trending', 64: 'trending', 65: 'trending', 66: 'declining', 67: 'trending', 68: 'trending', 69: 'declining', 70: 'declining', 71: 'declining', 72: 'declining', 73: 'declining', 74: 'trending', 75: 'declining', 76: 'declining', 77: 'declining', 78: 'declining', 79: 'declining', 80: 'declining', 81: 'trending'}
+
+These are the emerging + trending topics:
+
+['supply_chain' 'sustainability' 'sustainable' 'supply' 'chain'
+ 'sustainable_supply' 'agricultural_product' 'sustainability_supply'
+ 'sustainable_supplier' 'fresh']
+['spare_part' 'part' 'factor' 'health' 'spare' 'method' 'factor_affect'
+ 'study' 'base' 'digital_twin']
+['fiber' 'composite' 'property' 'material' 'copper' 'strength'
+ 'carbon_fiber' 'recycle' 'mechanical' 'composite_material']
+['energy' 'agricultural' 'farm' 'use' 'farmer' 'production' 'input' 'crop'
+ 'study' 'analysis']
+['social' 'sustainable' 'sustainability' 'sustainable_development'
+ 'development' 'social_sustainability' 'economic_growth' 'economic'
+ 'development_goal' 'growth']
+['carbon' 'energy' 'production' 'carbon_footprint' 'increase' 'emission'
+ 'carbon_fiber' 'low' 'high' 'consumer']
+['meat' 'dairy' 'meat_consumption' 'hybrid' 'milk' 'protein' 'use'
+ 'consumption' 'composite' 'reduce_meat']
+['development' 'production' 'play_important' 'important_role' 'rare_earth'
+ 'consumption' 'important' 'social' 'ecological' 'intervention']
+['diet' 'land_use' 'sustainable_diet' 'healthy' 'facility_location'
+ 'cultural' 'sustainable' 'critical_factor' 'import' 'good_quality']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          48         9
+popular            7        18
+
+###############################
+Now starts iteration for t = 4.
+###############################
+
+
+Loading first model (t = 4)...
+
+
+Loading first model (t+1 = 5)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'emerging', 1: 'emerging', 2: 'emerging', 3: 'emerging', 4: 'emerging', 5: 'emerging', 6: 'emerging', 7: 'popular', 8: 'emerging', 9: 'emerging', 10: 'popular', 11: 'emerging', 12: 'popular', 13: 'emerging', 14: 'emerging', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'emerging', 19: 'popular', 20: 'emerging', 21: 'emerging', 22: 'emerging', 23: 'emerging', 24: 'emerging', 25: 'popular', 26: 'emerging', 27: 'popular', 28: 'emerging', 29: 'emerging', 30: 'popular', 31: 'emerging', 32: 'emerging', 33: 'emerging', 34: 'emerging', 35: 'emerging', 36: 'emerging', 37: 'emerging', 38: 'popular', 39: 'emerging', 40: 'emerging', 41: 'popular', 42: 'emerging', 43: 'popular', 44: 'popular', 45: 'popular', 46: 'popular', 47: 'emerging', 48: 'emerging', 49: 'popular', 50: 'popular', 51: 'emerging', 52: 'emerging', 53: 'emerging', 54: 'popular', 55: 'emerging', 56: 'emerging', 57: 'popular', 58: 'popular', 59: 'emerging', 60: 'popular', 61: 'popular', 62: 'emerging', 63: 'emerging', 64: 'emerging', 65: 'emerging', 66: 'emerging', 67: 'emerging', 68: 'emerging', 69: 'popular', 70: 'emerging', 71: 'popular', 72: 'popular', 73: 'emerging', 74: 'emerging', 75: 'emerging', 76: 'emerging', 77: 'emerging', 78: 'emerging', 79: 'emerging', 80: 'emerging', 81: 'popular', 82: 'emerging', 83: 'emerging', 84: 'popular', 85: 'emerging', 86: 'emerging', 87: 'popular', 88: 'emerging', 89: 'emerging'}
+
+These are the emerging topics:
+
+['disaster' 'humanitarian' 'use' 'disaster_relief' 'food_bank' 'response'
+ 'humanitarian_logistics' 'relief' 'aid' 'critical_review']
+['body' 'shape' 'use' 'chemistry' 'hospital' 'green_chemistry' '3d'
+ 'model' 'human_body' 'size']
+['big_data' 'data' 'big' 'base' 'internet' 'technology' 'paper'
+ 'intelligent' 'new' 'container']
+['part' 'spare_part' 'spare' 'maintenance' 'model' 'risk_assessment'
+ 'strategy' 'new' 'research' 'use']
+['logistics' 'reverse_logistics' 'reverse' 'repair' 'logistics_industry'
+ 'electric_vehicle' 'sale_channel' 'apple' 'logistics_logistics' 'policy']
+['digital' 'artificial_intelligence' 'digital_technology' 'transformation'
+ 'digital_transformation' 'carbon_footprint' 'artificial' 'ai' 'new'
+ 'domestic_waste']
+['fabric' 'cotton' 'social' 'high' 'government' 'dye' 'show' 'result'
+ 'result_show' 'use']
+['flexibility' 'medicine' 'slow' 'slow_fashion' 'use' 'supply_chain'
+ 'model' 'provide_reliable' 'study' 'reference_point']
+['sustainability' 'indicator' 'sustainability_assessment' 'social'
+ 'performance_indicator' 'assessment' 'sustainability_performance'
+ 'cycle_sustainability' 'use' 'cycle_cost']
+['sustainable' 'sustainability' 'environmental'
+ 'environmental_sustainability' 'practice' 'study' 'implementation'
+ 'manufacturing' 'industry' 'triple_bottom']
+['supply_chain' 'pharmaceutical' 'supply' 'study' 'contribute_literature'
+ 'chain' 'vehicle' 'agility' 'rout_problem' 'rout']
+['lean' 'study' 'education' 'mineral_resource' 'model' 'result' 'use'
+ 'practice' 'production' 'lean_practice']
+['food' 'water' 'option' 'option_contract' 'industry' 'need_develop'
+ 'environmental_regulation' 'attitude_towards' 'implementation_ce'
+ 'water_quality']
+['waste' 'system' 'waste_collection' 'waste_disposal' 'disposal'
+ 'collection' 'processing' 'quality' 'study' 'fuzzy_logic']
+['study' 'production' 'product' 'factor' 'use' 'lot_size' 'cost'
+ 'emission_intensity' 'factor_affect' 'size']
+['risk' 'supply_chain' 'supply' 'chain' 'network' 'risk_management'
+ 'supply_network' 'supply_risk' 'study' 'chain_design']
+['use' 'copper' 'model' 'increase' 'resource_use' 'rate' 'irrigation'
+ 'use_lca' 'study' 'work']
+['service' 'logistics_service' 'logistics' 'supply_chain'
+ 'service_provider' 'customer' 'provider' 'supply' 'chain' 'financial']
+['product' 'carbon_tax' 'strategy' 'power' 'agricultural_product' 'tax'
+ 'product_supply' 'original_equipment' 'equipment_manufacturer'
+ 'power_structure']
+['procurement' 'public' 'public_procurement' 'decision' 'decision_support'
+ 'support_system' 'decision_maker' 'use' 'support' 'propose']
+['raw_material' 'material' 'raw' 'transport' 'vehicle' 'red_meat'
+ 'airline' 'use' 'base' 'car']
+['use' 'model' 'development' 'approach' 'information'
+ 'information_communication' 'communication_technology' 'company' 'method'
+ 'enterprise']
+['textile' 'mineral' 'rare_earth' 'clothing' 'rare' 'textile_clothing'
+ 'wool' 'value_chain' 'earth' 'value']
+['packaging' 'use_electrocoagulation' 'ec_process' 'use'
+ 'environmental_damage' 'service_cost' 'aircraft' 'result'
+ 'packaging_waste' 'effective_method']
+['innovation' 'business' 'supply_chain' 'model' 'business_model' 'study'
+ 'chain' 'supply' 'development' 'enterprise']
+['small_medium' 'product_life' 'small' 'medium' 'competitive_advantage'
+ 'value' 'process' 'medium_enterprise' 'use' 'competitive']
+['use' 'study' 'value' 'value_stream' 'stream' 'sustainable_business'
+ 'construction_material' 'process' 'lean' 'coffee']
+['sustainable_development' 'product' 'environmental' 'social'
+ 'sustainable' 'development' 'development_goal' 'country' 'organic' 'goal']
+['poultry' 'performance' 'sustainability_practice' 'technology_innovation'
+ 'direct_indirect' 'investigate_effect' 'government' 'clean_production'
+ 'logistic_regression' 'analyze_effect']
+['material' 'recycle' 'construction' 'waste' 'composite' 'recycling'
+ 'industrial' 'building' 'development' 'sector']
+['industry' 'value' 'cost' 'value_chain' 'product' 'economic_value'
+ 'system_increase' 'development' 'pesticide' 'vital_role']
+['energy' 'energy_consumption' 'efficiency' 'fashion' 'water'
+ 'consumption' 'energy_efficiency' 'use' 'dietary_pattern' 'system']
+['model' 'emergency' 'optimization' 'method' 'allocation' 'problem'
+ 'medical' 'propose' 'solve' 'optimization_model']
+['meat' 'time_series' 'meat_consumption' 'time' 'series' 'flow'
+ 'flow_analysis' 'use' 'material_flow' 'reduce_meat']
+['risk' 'risk_aversion' 'payment' 'aversion' 'information_asymmetry'
+ 'interest_rate' 'sourcing' 'price' 'market' 'adjustment']
+['use' 'hierarchy_process' 'method' 'analytic_hierarchy' 'analytical'
+ 'hierarchy' 'base' 'air' 'result' 'analytic']
+['ghg_emission' 'municipal_solid' 'emission' 'ghg' 'solid_waste'
+ 'municipal' 'msw' 'municipal_solid_solid_waste' 'waste' 'solid']
+['industrial' 'food_waste' 'industrial_symbiosis' 'symbiosis' 'system'
+ 'performance_measurement' 'measurement' 'cycle_impact' 'park'
+ 'glass_fiber']
+['garment' 'design' 'ce_practice' 'clothing' 'process' 'approach'
+ 'company' 'patent' 'use' 'fashion']
+['supply_chain' 'supply' 'chain' 'critical_raw' 'aim_review'
+ 'research_case' 'practical_implication' 'paper_aim' 'strategy'
+ 'cost_product']
+['model' 'business_model' 'value' 'sustainable_business' 'business'
+ 'value_creation' 'model_base' 'base'
+ 'sustainable_business_business_model' 'use']
+['oil' 'oil_gas' 'agricultural_system' 'approach_implement' 'gas'
+ 'relaxation' 'market_price' 'farmer' 'additive'
+ 'demonstrate_applicability']
+['return' 'price' 'model' 'machine' 'machine_learn' 'demand' 'learning'
+ 'product' 'machine_learning' 'learn']
+['food' 'food_system' 'healthy' 'system' 'agriculture' 'low_environmental'
+ 'healthy_sustainable' 'plant' 'sustainable' 'use']
+['use' 'energy' 'fibre' 'factor' 'mechanical_property' 'mechanical'
+ 'recycled' 'carbon_fibre' 'input' 'energy_input']
+['energy' 'production' 'renewable_energy' 'renewable' 'increase'
+ 'strategy' 'high' 'import' 'energy_resource' 'country']
+['kg_co2' 'method' 'risk' 'supply' 'demand' 'supply_chain' 'model'
+ 'propose' 'base' 'use']
+['ec' 'removal' 'removal_efficiency' 'process' 'current' 'heavy_metal'
+ 'cod' 'pollutant' 'efficiency' 'new_energy']
+['dye' 'use' 'vegetarian' 'reaction' 'compound' 'meet_requirement'
+ 'concentration' 'show' 'process' 'percentage']
+['business' 'business_model' 'sustainable' 'management' 'project'
+ 'research' 'model' 'bibliometric' 'web_science' 'science']
+['system' 'process' 'power' 'use' 'wind' 'dye' 'reactive'
+ 'electrochemical' 'power_plant' 'wind_turbine']
+['facility_location' 'location' 'facility' 'simulation' 'use'
+ 'simulation_model' 'model' 'lca_study' 'location_problem' 'propose']
+['beef' 'driver' 'cattle' 'vegan' 'consumption_pattern' 'beef_production'
+ 'assessment_model' 'key_driver' 'move_towards' 'consumption_food']
+['social_impact' 'apparel' 'health_environmental'
+ 'environmental_management' 'packaging_material' 'supplier_relationship'
+ 'social' 'advance_payment' 'social_performance' 'apparel_industry']
+['company' 'clothing' 'forest' 'dynamic_capability' 'capability' 'dynamic'
+ 'united_state' 'use' 'sustainable' 'forecasting_method']
+['neural_network' 'use' 'neural' 'network' 'performance_evaluation'
+ 'evaluation' 'component' 'artificial_neural' 'process' 'method']
+['food' 'diet' 'consumption' 'footprint' 'carbon_footprint' 'dietary'
+ 'animal' 'meat' 'health' 'agricultural']
+['european_union' 'eu' 'european' 'union' 'current_state' 'state'
+ 'capacity_investment' 'model_system' 'textile_manufacturing'
+ 'technological_development']
+['model' 'quality' 'system' 'inspection' 'fuzzy' 'order' 'vaccine'
+ 'imperfect' 'supplier' 'cost']
+['method' 'green_innovation' 'capacity' 'evaluation' 'evaluation_model'
+ 'production_capacity' 'enterprise' 'exponential_smoothing'
+ 'economic_analysis' 'model']
+['show_increase' 'paper_describe' 'take_consideration' 'fiber_composite'
+ 'circular_public' 'improve_energy' 'research_project' 'circular_building'
+ 'opportunity_improve' 'forestry']
+['remanufacturing' 'information' 'digital_transformation' 'transformation'
+ 'digital' 'share' 'remanufactured' 'remanufactured_product'
+ 'demand_information' 'demand']
+['food' 'supply_chain' 'supply' 'chain' 'global' 'food_supply'
+ 'sustainable' 'global_supply' 'sustainability' 'food_security']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'declining', 2: 'declining', 3: 'declining', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'declining', 8: 'declining', 9: 'trending', 10: 'declining', 11: 'declining', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'trending', 41: 'declining', 42: 'declining', 43: 'declining', 44: 'trending', 45: 'declining', 46: 'declining', 47: 'trending', 48: 'declining', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'trending', 55: 'declining', 56: 'declining', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'trending', 61: 'declining', 62: 'declining', 63: 'declining', 64: 'trending', 65: 'declining', 66: 'trending', 67: 'declining', 68: 'trending', 69: 'trending', 70: 'trending', 71: 'declining', 72: 'declining', 73: 'declining', 74: 'trending', 75: 'declining', 76: 'declining', 77: 'declining', 78: 'declining', 79: 'declining', 80: 'trending', 81: 'declining', 82: 'declining', 83: 'declining', 84: 'declining', 85: 'declining', 86: 'declining', 87: 'trending', 88: 'declining', 89: 'declining'}
+
+These are the emerging + trending topics:
+
+['fabric' 'cotton' 'social' 'high' 'government' 'dye' 'show' 'result'
+ 'result_show' 'use']
+['sustainability' 'indicator' 'sustainability_assessment' 'social'
+ 'performance_indicator' 'assessment' 'sustainability_performance'
+ 'cycle_sustainability' 'use' 'cycle_cost']
+['textile' 'mineral' 'rare_earth' 'clothing' 'rare' 'textile_clothing'
+ 'wool' 'value_chain' 'earth' 'value']
+['sustainable_development' 'product' 'environmental' 'social'
+ 'sustainable' 'development' 'development_goal' 'country' 'organic' 'goal']
+['material' 'recycle' 'construction' 'waste' 'composite' 'recycling'
+ 'industrial' 'building' 'development' 'sector']
+['energy' 'energy_consumption' 'efficiency' 'fashion' 'water'
+ 'consumption' 'energy_efficiency' 'use' 'dietary_pattern' 'system']
+['meat' 'time_series' 'meat_consumption' 'time' 'series' 'flow'
+ 'flow_analysis' 'use' 'material_flow' 'reduce_meat']
+['ghg_emission' 'municipal_solid' 'emission' 'ghg' 'solid_waste'
+ 'municipal' 'msw' 'municipal_solid_solid_waste' 'waste' 'solid']
+['food' 'food_system' 'healthy' 'system' 'agriculture' 'low_environmental'
+ 'healthy_sustainable' 'plant' 'sustainable' 'use']
+['energy' 'production' 'renewable_energy' 'renewable' 'increase'
+ 'strategy' 'high' 'import' 'energy_resource' 'country']
+['ec' 'removal' 'removal_efficiency' 'process' 'current' 'heavy_metal'
+ 'cod' 'pollutant' 'efficiency' 'new_energy']
+['dye' 'use' 'vegetarian' 'reaction' 'compound' 'meet_requirement'
+ 'concentration' 'show' 'process' 'percentage']
+['system' 'process' 'power' 'use' 'wind' 'dye' 'reactive'
+ 'electrochemical' 'power_plant' 'wind_turbine']
+['food' 'diet' 'consumption' 'footprint' 'carbon_footprint' 'dietary'
+ 'animal' 'meat' 'health' 'agricultural']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          49        14
+popular           15        12
+
+###############################
+Now starts iteration for t = 5.
+###############################
+
+
+Loading first model (t = 5)...
+
+
+Loading first model (t+1 = 6)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'emerging', 1: 'popular', 2: 'emerging', 3: 'emerging', 4: 'emerging', 5: 'emerging', 6: 'emerging', 7: 'emerging', 8: 'popular', 9: 'popular', 10: 'emerging', 11: 'popular', 12: 'popular', 13: 'emerging', 14: 'emerging', 15: 'emerging', 16: 'emerging', 17: 'emerging', 18: 'emerging', 19: 'popular', 20: 'popular', 21: 'emerging', 22: 'emerging', 23: 'emerging', 24: 'emerging', 25: 'popular', 26: 'emerging', 27: 'popular', 28: 'emerging', 29: 'emerging', 30: 'emerging', 31: 'emerging', 32: 'emerging', 33: 'popular', 34: 'emerging', 35: 'emerging', 36: 'emerging', 37: 'emerging', 38: 'popular', 39: 'emerging', 40: 'emerging', 41: 'emerging', 42: 'emerging', 43: 'emerging', 44: 'emerging', 45: 'emerging', 46: 'emerging', 47: 'emerging', 48: 'emerging', 49: 'emerging', 50: 'popular', 51: 'emerging', 52: 'emerging', 53: 'emerging', 54: 'emerging', 55: 'emerging', 56: 'emerging', 57: 'emerging', 58: 'popular', 59: 'emerging', 60: 'popular', 61: 'popular', 62: 'emerging', 63: 'emerging', 64: 'emerging', 65: 'popular', 66: 'popular', 67: 'popular', 68: 'emerging', 69: 'emerging', 70: 'emerging', 71: 'emerging', 72: 'popular', 73: 'emerging', 74: 'emerging', 75: 'emerging', 76: 'emerging', 77: 'emerging', 78: 'popular', 79: 'popular', 80: 'emerging', 81: 'emerging', 82: 'popular', 83: 'emerging', 84: 'emerging', 85: 'emerging', 86: 'emerging', 87: 'emerging', 88: 'emerging', 89: 'emerging'}
+
+These are the emerging topics:
+
+['procurement' 'public' 'study' 'use' 'public_procurement' 'factor'
+ 'policy' 'aim_evaluate' 'industry_implementation' 'main_factor']
+['environmental' 'animal' 'global' 'sustainable' 'environmental_economic'
+ 'agriculture' 'impact' 'supply_risk' 'resource' 'market_expansion']
+['market' 'competition' 'service' 'strategic_decision' 'consumer' 'merger'
+ 'practice_consider' 'product' 'market_share' 'strategy']
+['meat' 'cultured_meat' 'meat_alternative' 'consumer' 'cultured' 'shape'
+ 'alternative' 'body' 'meat_production' 'gown']
+['use' 'analysis' 'bioeconomy' 'feed' 'bioeconomy_strategy' 'eu' 'study'
+ 'factor' 'result' 'country']
+['cash' 'research' 'cash_flow' 'study' 'consumer' 'internet_thing'
+ 'multiple_case' 'grocery' 'sustainable' 'attitude']
+['supply' 'demand' 'quantity_product' 'study' 'supply_chain' 'inverse'
+ 'strategy' 'use' 'process_carbon' 'symbiotic']
+['lean' 'lean_manufacturing' 'manufacturing' 'sludge' 'cod_removal'
+ 'lean_tool' 'relationship_lean' 'reduction' 'time'
+ 'humanitarian_logistics']
+['carbon_footprint' 'value_chain' 'feed' 'carbon' 'footprint' 'milk' 'cf'
+ 'packaging' 'low_environmental' 'beef']
+['trade' 'technology' 'enterprise' 'china' 'export' 'relate_environmental'
+ 'new_energy' 'sector_one' 'material_product' 'industry']
+['risk' 'crop_production' 'risk_management' 'food_value' 'risk_mitigation'
+ 'supply_chain' 'food_choice' 'supply' 'health_environmental'
+ 'institutional_pressure']
+['industrial' 'indicator' 'industrial_symbiosis' 'paper' 'symbiosis' 'use'
+ 'challenge' 'cotton' 'industry' 'technology']
+['process' 'production' 'use' 'impact_potential' 'assessment' 'study'
+ 'cycle' 'performance' 'result' 'environmental']
+['consumption' 'animal_product' 'food_consumption' 'rural'
+ 'power_structure' 'repurposing' 'food' 'product' 'food_group'
+ 'recovery_rate']
+['production' 'system' 'case_study' 'value_stream' 'lean_production'
+ 'lean' 'total_environmental' 'production_system' 'credit_period' 'case']
+['vegetable' 'ce_implementation' 'waste' 'hong_kong' 'eu_member'
+ 'newsvendor_model' 'meat_substitute' 'site' 'pharmaceutical'
+ 'work_propose']
+['port' 'safety' 'carbon_supply' 'find_information' 'safety_stock'
+ 'network_relationship' 'vaccine' 'demonstration' 'promote_development'
+ 'development_global']
+['service' 'service_level' 'customer' 'demand' 'product' 'stock' 'high'
+ 'revenue' 'strategy_high' 'market']
+['product' 'remanufacturing' 'model' 'demand' 'new'
+ 'remanufactured_product' 'new_product' 'remanufactured' 'profit'
+ 'inventory']
+['insurance' 'emergency' 'bullwhip_effect' 'promote_circular' 'roll'
+ 'emergency_supply' 'msme' 'smart_technology' 'bullwhip'
+ 'manufacture_process']
+['greenhouse_gas' 'gas_emission' 'greenhouse' 'emission' 'gas' 'livestock'
+ 'greenhouse_gas_gas_emission' 'agricultural' 'farm' 'mitigation']
+['use' 'electrode' 'reaction' 'solvent' 'water' 'treatment' 'chemical'
+ 'aluminum' 'process' 'choice']
+['model' 'neural_network' 'artificial_neural' 'neural' 'network'
+ 'production_information' 'management_model' 'textile_industry' 'yarn'
+ 'artificial_neural_neural_network']
+['rare_earth' 'banking' 'rare' 'earth' 'explore_use' 'preferred_reporting'
+ 'china_large' 'product_design' 'recycle_waste' 'sustainability_discuss']
+['carbon_fiber' 'fiber' 'wine' 'carbon' 'operational_performance'
+ 'social_performance' 'design_sustainable' 'technological_innovation'
+ 'sustainability' 'economic_sustainability']
+['logistics' 'distribution' 'system' 'equitable' 'analysis'
+ 'geographical_location' 'system_manage' 'study' 'research' 'pellet']
+['customer_perceive' 'steel_industry' 'indicator' 'evaluation' 'marketing'
+ 'index_system' 'comprehensive_evaluation' 'environmental' 'product'
+ 'symbiotic_relationship']
+['energy' 'energy_use' 'energy_efficiency' 'efficiency' 'use' 'input' 'mj'
+ 'change_impact' 'energy_input' 'production']
+['method' 'use' 'propose' 'propose_method' 'model' 'system' 'demand'
+ 'base' 'hospital' 'result']
+['supply_chain' 'study' 'supply' 'fiber_reinforce' 'fish' 'chain'
+ 'performance' 'cycle_sustainability' 'use' 'reinforce_polymer']
+['fashion' 'organic' 'sustainable' 'sustainable_fashion' 'production'
+ 'chemical' 'copper' 'sustainability' 'economic' 'use']
+['measurement' 'dimension' 'agility' 'framework' 'ecological_footprint'
+ 'sustainability' 'performance_measurement' 'performance'
+ 'framework_evaluate' 'manufacture_system']
+['manufacturer' 'agency' 'platform' 'triple_bottom' 'strategy'
+ 'risk_aversion' 'bottom_line' 'sensory' 'profit_optimal' 'two']
+['urban' 'city' 'spatial' 'principal_component' 'supply_management'
+ 'component_analysis' 'input_output' 'territorial' 'sustainability_risk'
+ 'analysis_find']
+['information' 'supply_chain' 'product' 'firm' 'supply'
+ 'information_share' 'chain' 'integration' 'share' 'decision']
+['use' 'study' 'performance' 'water_footprint' 'environmental_performance'
+ 'sustainability' 'performance_assessment' 'assessment_framework'
+ 'economic' 'effect']
+['supply_chain' 'supply' 'chain' 'contract' 'demand' 'promotional' 'price'
+ 'promotional_effort' 'gap_analysis' 'competition']
+['factor' 'factor_affect' 'interpretive_structural' 'factor_influence'
+ 'structural' 'interpretive' 'affect' 'study' 'total_interpretive' 'use']
+['composite' 'steel' 'mechanical' 'reinforce' 'use' 'epoxy' 'resin'
+ 'property' 'glass_fibre' 'epoxy_resin']
+['forest' 'demand' 'ecosystem' 'design' '3d' 'effort_reduce' 'new'
+ 'increase_competition' 'limit_global' '3d_printing']
+['effect' 'sc' 'supply_chain' 'disruption' 'supply' 'impact' 'chain'
+ 'study' 'stock_price' 'research']
+['digital' 'digital_transformation' 'transformation' 'technology'
+ 'digital_technology' 'affect_adoption' 'pbma' 'development'
+ 'digitalization' 'research']
+['green_supplier' 'rental' 'support_system' 'decision_support'
+ 'model_perishable' 'use_hybrid' 'sustainability_concept' 'system'
+ 'type_business' 'mobile']
+['online' 'return' 'retailer' 'sale' 'product' 'retail' 'channel'
+ 'consumer' 'brand' 'online_retailer']
+['body' 'system' 'model' 'size' 'inventory' 'fit' 'cost' 'body_shape'
+ 'shape' 'identification_system']
+['vehicle' 'battery' 'electric_vehicle' 'upcycling' 'electric'
+ 'rout_problem' 'vehicle_battery' 'provide_systematic' 'beverage'
+ 'plastic_use']
+['australian' 'company' 'sustainability' 'autonomous' 'iot'
+ 'medical_device' 'study' 'business' 'use' 'knowledge']
+['sustainability' 'product' 'social' 'environmental_risk' 'data'
+ 'social_sustainability' 'social_responsibility' 'shoulder' 'design'
+ 'development']
+['biobased' 'adoption_circular' 'transition' 'fossil_fuel' 'towards'
+ 'improve_environmental' 'circular' 'ce_practice' 'impact_climate' 'dairy']
+['order' 'quantity' 'order_quantity' 'recycle' 'optimal_order' 'carbon'
+ 'nutritional_quality' 'evaluate_potential' 'carbon_trading' 'recycling']
+['inventory' 'model' 'inventory_model' 'inventory_management' 'demand'
+ 'fuzzy' 'sensitivity_analysis' 'consider' 'item' 'order']
+['green' 'green_supply' 'supply_chain' 'supply'
+ 'green_supply_supply_chain' 'credit' 'investment' 'chain'
+ 'carbon_emission' 'gscm']
+['price' 'pricing' 'consumer' 'purchase' 'pricing_strategy' 'strategy'
+ 'reference_diet' 'dynamic_pricing' 'product' 'organic_food']
+['evaluation' 'important_role' 'play_important' 'raw_material'
+ 'evaluation_method' 'production' 'raw' 'evaluation_model' 'play'
+ 'play_important_important_role']
+['circular_bioeconomy' 'financial' 'blockchain' 'scale'
+ 'blockchain_technology' 'wool' 'scale_measure' 'performance_system'
+ 'consider_important' 'coal']
+['food' 'food_waste' 'food_product' 'food_security' 'security'
+ 'food_supply' 'global_food' 'sustainable_food' 'biogas' 'ethical']
+['humanitarian' 'social_impact' 'humanitarian_supply' 'manage_inventory'
+ 'social' 'power_plant' 'social_life' 'environmental_social' 'contract'
+ 'healthcare']
+['plastic' 'plastic_waste' 'recycled_material' 'industry'
+ 'similarity_difference' 'use_plastic' 'new_exist' 'recycle_process'
+ 'emerge_technology' 'combine_fuzzy']
+['disaster' 'automotive' 'automotive_industry' 'model_first' 'relief'
+ 'entropy' 'risk' 'first_stage' 'solution_result' 'critical_supply']
+['data_envelopment' 'envelopment_analysis' 'use' 'envelopment'
+ 'data_envelopment_envelopment_analysis' 'air' 'natural' 'emergency'
+ 'consumption_food' 'dea']
+['wind_turbine' 'wind' 'turbine' 'dietary_guideline' 'fiber' 'indium'
+ 'blade' 'turbine_blade' 'reuse' 'wind_power']
+['damage_cost' 'key_role' 'drug' 'play_key' 'carbon_dioxide'
+ 'political_economic' 'mitigate_environmental' 'chemistry'
+ 'negative_environmental' 'menu']
+['government' 'subsidy' 'government_subsidy' 'environmental_protection'
+ 'environmental' 'social_welfare' 'green' 'protection' 'subsidy_policy'
+ 'activate']
+['maturity' 'impact_sustainable' 'effect' 'study' 'model'
+ 'design_resilient' 'smart' 'mediating_effect' 'small_business'
+ 'expect_total']
+['dye' 'network' 'logistics' 'reverse_logistics' 'reverse' 'design'
+ 'logistics_network' 'reactive' 'model' 'supply_network']
+['base_current' 'assortment' 'art' 'deep' 'sustainable_healthy'
+ 'approach_integrate' 'production_inventory' 'give_rise' 'deep_learning'
+ 'heuristic_solve']
+['blood' 'capacity' 'information_system' 'logistics_service' 'oil' 'park'
+ 'information' 'allocation' 'quality' 'power_battery']
+['industry' 'barrier' 'implementation' 'manufacturing_industry'
+ 'manufacturing' 'reduction_lead' 'study' 'area_improvement'
+ 'green_production' 'industry_technology']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'declining', 1: 'trending', 2: 'declining', 3: 'declining', 4: 'trending', 5: 'declining', 6: 'declining', 7: 'declining', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'trending', 13: 'trending', 14: 'declining', 15: 'declining', 16: 'declining', 17: 'declining', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'declining', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'trending', 30: 'trending', 31: 'declining', 32: 'declining', 33: 'declining', 34: 'trending', 35: 'declining', 36: 'declining', 37: 'trending', 38: 'trending', 39: 'declining', 40: 'declining', 41: 'declining', 42: 'declining', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'declining', 47: 'declining', 48: 'declining', 49: 'trending', 50: 'trending', 51: 'declining', 52: 'trending', 53: 'declining', 54: 'declining', 55: 'trending', 56: 'declining', 57: 'declining', 58: 'declining', 59: 'declining', 60: 'declining', 61: 'trending', 62: 'declining', 63: 'declining', 64: 'declining', 65: 'trending', 66: 'trending', 67: 'declining', 68: 'declining', 69: 'trending', 70: 'declining', 71: 'declining', 72: 'trending', 73: 'declining', 74: 'declining', 75: 'trending', 76: 'declining', 77: 'declining', 78: 'trending', 79: 'declining', 80: 'declining', 81: 'declining', 82: 'declining', 83: 'declining', 84: 'declining', 85: 'declining', 86: 'trending', 87: 'declining', 88: 'declining', 89: 'declining'}
+
+These are the emerging + trending topics:
+
+['meat' 'cultured_meat' 'meat_alternative' 'consumer' 'cultured' 'shape'
+ 'alternative' 'body' 'meat_production' 'gown']
+['carbon_footprint' 'value_chain' 'feed' 'carbon' 'footprint' 'milk' 'cf'
+ 'packaging' 'low_environmental' 'beef']
+['greenhouse_gas' 'gas_emission' 'greenhouse' 'emission' 'gas' 'livestock'
+ 'greenhouse_gas_gas_emission' 'agricultural' 'farm' 'mitigation']
+['use' 'electrode' 'reaction' 'solvent' 'water' 'treatment' 'chemical'
+ 'aluminum' 'process' 'choice']
+['carbon_fiber' 'fiber' 'wine' 'carbon' 'operational_performance'
+ 'social_performance' 'design_sustainable' 'technological_innovation'
+ 'sustainability' 'economic_sustainability']
+['energy' 'energy_use' 'energy_efficiency' 'efficiency' 'use' 'input' 'mj'
+ 'change_impact' 'energy_input' 'production']
+['composite' 'steel' 'mechanical' 'reinforce' 'use' 'epoxy' 'resin'
+ 'property' 'glass_fibre' 'epoxy_resin']
+['effect' 'sc' 'supply_chain' 'disruption' 'supply' 'impact' 'chain'
+ 'study' 'stock_price' 'research']
+['online' 'return' 'retailer' 'sale' 'product' 'retail' 'channel'
+ 'consumer' 'brand' 'online_retailer']
+['green' 'green_supply' 'supply_chain' 'supply'
+ 'green_supply_supply_chain' 'credit' 'investment' 'chain'
+ 'carbon_emission' 'gscm']
+['humanitarian' 'social_impact' 'humanitarian_supply' 'manage_inventory'
+ 'social' 'power_plant' 'social_life' 'environmental_social' 'contract'
+ 'healthcare']
+['dye' 'network' 'logistics' 'reverse_logistics' 'reverse' 'design'
+ 'logistics_network' 'reactive' 'model' 'supply_network']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          56        12
+popular           10        12
+
+###############################
+Now starts iteration for t = 6.
+###############################
+
+
+Loading first model (t = 6)...
+
+
+Loading first model (t+1 = 7)...
+
+Calculating topic emergences with pi = 0.6...
+
+Topic emergences:  {0: 'emerging', 1: 'emerging', 2: 'emerging', 3: 'popular', 4: 'emerging', 5: 'popular', 6: 'emerging', 7: 'popular', 8: 'popular', 9: 'emerging', 10: 'popular', 11: 'popular', 12: 'emerging', 13: 'emerging', 14: 'emerging', 15: 'emerging', 16: 'emerging', 17: 'popular', 18: 'emerging', 19: 'emerging', 20: 'emerging', 21: 'popular', 22: 'popular', 23: 'emerging', 24: 'emerging', 25: 'popular', 26: 'emerging', 27: 'popular', 28: 'emerging', 29: 'emerging', 30: 'emerging', 31: 'emerging', 32: 'emerging', 33: 'emerging', 34: 'emerging', 35: 'popular', 36: 'emerging', 37: 'emerging', 38: 'emerging', 39: 'emerging', 40: 'emerging', 41: 'emerging', 42: 'popular', 43: 'emerging', 44: 'emerging', 45: 'emerging', 46: 'popular', 47: 'emerging', 48: 'emerging', 49: 'popular', 50: 'emerging', 51: 'emerging', 52: 'emerging', 53: 'emerging', 54: 'emerging', 55: 'popular', 56: 'emerging', 57: 'emerging', 58: 'popular', 59: 'popular', 60: 'emerging', 61: 'popular', 62: 'emerging', 63: 'emerging', 64: 'popular', 65: 'emerging', 66: 'emerging', 67: 'popular', 68: 'emerging', 69: 'emerging', 70: 'emerging', 71: 'popular', 72: 'popular', 73: 'emerging', 74: 'popular', 75: 'emerging', 76: 'emerging', 77: 'emerging', 78: 'emerging', 79: 'emerging', 80: 'popular', 81: 'popular', 82: 'emerging', 83: 'emerging', 84: 'emerging', 85: 'emerging', 86: 'emerging', 87: 'emerging', 88: 'emerging', 89: 'emerging'}
+
+These are the emerging topics:
+
+['supply_chain' 'supply' 'use' 'food' 'chain' 'lean_agile' 'potential'
+ 'production' 'result' 'research']
+['study' 'research' 'use' 'model' 'performance' 'cost' 'supply_chain'
+ 'quality' 'technology' 'factor']
+['use' 'supply_chain' 'research' 'study' 'chain' 'supply' 'waste'
+ 'production' 'management' 'waste_management']
+['emission' 'study' 'model' 'waste' 'use' 'circular_economy'
+ 'greenhouse_gas' 'result' 'ghg_emission' 'material']
+['model' 'use' 'result' 'propose' 'impact' 'method' 'approach'
+ 'environmental' 'performance' 'show']
+['product' 'model' 'information' 'product_quality' 'carbon' 'quality'
+ 'price' 'cost' 'volunteer' 'study']
+['study' 'model' 'case_study' 'management' 'sustainable' 'logistics'
+ 'research' 'green' 'problem' 'supply_chain']
+['use' 'emission' 'emission_reduction' 'result' 'carbon' 'sustainability'
+ 'study' 'circular_economy' 'level' 'high']
+['supply_chain' 'chain' 'supply' 'study' 'model' 'food' 'use'
+ 'information' 'share' 'result']
+['use' 'study' 'industry' 'research' 'model' 'base' 'social' 'value'
+ 'result' 'policy']
+['supply_chain' 'production' 'chain' 'supply' 'energy' 'use'
+ 'environmental' 'study' 'model' 'impact']
+['circular_economy' 'supply_chain' 'model' 'circular' 'supply' 'carbon'
+ 'waste' 'use' 'study' 'carbon_footprint']
+['supply_chain' 'circular_economy' 'circular' 'study' 'supply' 'chain'
+ 'use' 'research' 'result' 'environmental']
+['model' 'study' 'animal' 'product' 'use' 'impact' 'environmental'
+ 'environmental_impact' 'meat' 'review']
+['carbon' 'use' 'sustainable' 'emission' 'supply_chain' 'production'
+ 'study' 'cost' 'energy' 'approach']
+['meat' 'environmental' 'ce' 'supply_chain' 'supply' 'sustainable'
+ 'sustainability' 'study' 'circular_economy' 'new']
+['study' 'use' 'channel' 'environmental_impact' 'sustainable' 'impact'
+ 'environmental' 'research' 'result' 'consumer']
+['demand' 'study' 'use' 'model' 'supply_chain' 'ri' 'supply'
+ 'environmental' 'environmental_impact' 'research']
+['product' 'use' 'manufacturer' 'model' 'live' 'study' 'impact' 'decision'
+ 'channel' 'order']
+['supply_chain' 'supply' 'product' 'chain' 'life_cycle' 'use' 'result'
+ 'management' 'performance' 'cycle_assessment']
+['food' 'model' 'use' 'environmental' 'system' 'study' 'waste'
+ 'technology' 'result' 'return']
+['approach' 'system' 'lean' 'use' 'manufacturing' 'design' 'performance'
+ 'supply_chain' 'life_cycle' 'study']
+['supply_chain' 'use' 'supply' 'environmental' 'system' 'model' 'chain'
+ 'research' 'service' 'scenario']
+['supply_chain' 'supply' 'information' 'use' 'chain' 'study' 'risk'
+ 'model' 'system' 'impact']
+['use' 'model' 'supply_chain' 'result' 'optimal' 'industry' 'construction'
+ 'strategy' 'analysis' 'supply']
+['use' 'product' 'energy' 'system' 'consumption' 'circular' 'study'
+ 'production' 'food' 'method']
+['use' 'sustainability' 'study' 'environmental' 'result' 'product'
+ 'indicator' 'different' 'impact' 'carbon']
+['business_model' 'business' 'chain' 'supply_chain' 'model' 'waste'
+ 'supply' 'study' 'result' 'value']
+['supply_chain' 'green' 'chain' 'supply' 'use' 'supplier' 'study'
+ 'economy' 'environmental' 'protein']
+['use' 'supply' 'supply_chain' 'model' 'information' 'study' 'chain'
+ 'impact' 'management' 'research']
+['use' 'return_policy' 'emission_reduction' 'policy' 'study' 'process'
+ 'product' 'lean' 'return' 'manufacturing']
+['research' 'carbon' 'use' 'supply_chain' 'study' 'repair' 'supply'
+ 'production' 'base' 'policy']
+['lean_green' 'lean' 'research' 'result' 'capability' 'use' 'policy'
+ 'manufacturing' 'supply_chain' 'study']
+['model' 'study' 'production' 'research' 'supply_chain' 'use' 'business'
+ 'business_model' 'consumer' 'supply']
+['supply_chain' 'supply' 'use' 'management' 'removal' 'chain' 'waste'
+ 'model' 'study' 'online']
+['supply_chain' 'chain' 'supply' 'waste' 'management' 'waste_management'
+ 'protein' 'risk_management' 'chain_risk' 'municipal_solid']
+['supply_chain' 'material' 'supply' 'demand' 'chain' 'model' 'use' 'study'
+ 'fuzzy' 'waste']
+['model' 'business_model' 'industry' 'study' 'use' 'business' 'research'
+ 'process' 'data' 'result']
+['framework' 'use' 'supplier' 'method' 'study' 'research'
+ 'supplier_selection' 'criterion' 'ai' 'supply_chain']
+['chain' 'supply_chain' 'result' 'model' 'supply' 'management'
+ 'technology' 'green' 'green_technology' 'emergency']
+['waste_management' 'use' 'waste' 'study' 'supply_chain' 'sustainability'
+ 'sustainable' 'strategy' 'method' 'development']
+['model' 'study' 'use' 'supply_chain' 'supply' 'time' 'time_series'
+ 'result' 'dye' 'chain']
+['use' 'model' 'supply_chain' 'study' 'supply' 'chain' 'result'
+ 'performance' 'impact' 'environmental_impact']
+['information' 'product' 'manufacturer' 'supply_chain' 'online' 'consider'
+ 'production' 'use' 'waste' 'result']
+['research' 'paper' 'use' 'manufacturing' 'study' 'result' 'show'
+ 'support' 'impact' 'part']
+['use' 'product' 'meat' 'logistics' 'identity' 'study' 'cost' 'approach'
+ 'high' 'model']
+['result' 'supply_chain' 'supply' 'government_subsidy' 'product' 'base'
+ 'government' 'manufacturer' 'chain' 'subsidy']
+['model' 'supply_chain' 'study' 'impact' 'supply' 'practice' 'green'
+ 'environmental' 'result' 'chain']
+['system' 'production' 'energy' 'production_system' 'study' 'use' 'model'
+ 'readiness' 'base' 'optimal']
+['supply' 'supply_chain' 'waste' 'global' 'chain' 'energy' 'study' 'use'
+ 'strategy' 'global_supply']
+['impact_assessment' 'assessment_method' 'method' 'cf' 'impact' 'effect'
+ 'assessment' 'beef_production' 'three' 'energy']
+['effect' 'demand' 'data' 'energy' 'channel' 'model' 'analysis'
+ 'supply_chain' 'impact' 'relief_distribution']
+['use' 'circular_economy' 'model' 'business_model' 'research' 'study'
+ 'business' 'energy' 'circular' 'impact']
+['supply_chain' 'model' 'research' 'study' 'supply' 'management'
+ 'consumer' 'product' 'performance' 'contract']
+['demand' 'information' 'demand_information' 'use' 'model' 'supply_chain'
+ 'supply' 'product' 'size' 'result']
+['model' 'supply_chain' 'study' 'use' 'supply' 'chain' 'business'
+ 'production' 'business_model' 'impact']
+['model' 'supply_chain' 'supply' 'use' 'business_model' 'study' 'chain'
+ 'effect' 'show' 'glass_fiber']
+['use' 'protein' 'climate' 'natural_gas' 'impact' 'change' 'gas' 'food'
+ 'waste' 'study']
+['product' 'model' 'supply_chain' 'study' 'use' 'circular_economy' 'cost'
+ 'supply' 'optimal' 'consumer']
+['use' 'study' 'waste' 'model' 'supply_chain' 'high' 'impact'
+ 'environmental' 'result' 'supply']
+['model' 'energy' 'waste' 'high' 'use' 'strategy' 'study' 'oil' 'system'
+ 'consumption']
+['manufacturer' 'supply' 'supply_chain' 'retail_price' 'use' 'retailer'
+ 'chain' 'high' 'electrode' 'spare_part']
+['model' 'study' 'use' 'supply_chain' 'product' 'approach' 'meat' 'design'
+ 'result' 'consumer']
+['policy' 'use' 'method' 'impact' 'cost' 'food' 'study' 'high'
+ 'supply_chain' 'supply']
+Calculating topic trends...
+
+Trending vs. declining topics:  {0: 'trending', 1: 'trending', 2: 'trending', 3: 'trending', 4: 'declining', 5: 'declining', 6: 'trending', 7: 'trending', 8: 'declining', 9: 'declining', 10: 'declining', 11: 'trending', 12: 'declining', 13: 'declining', 14: 'declining', 15: 'declining', 16: 'trending', 17: 'trending', 18: 'declining', 19: 'trending', 20: 'declining', 21: 'declining', 22: 'declining', 23: 'declining', 24: 'declining', 25: 'trending', 26: 'declining', 27: 'trending', 28: 'declining', 29: 'declining', 30: 'declining', 31: 'declining', 32: 'declining', 33: 'trending', 34: 'declining', 35: 'trending', 36: 'declining', 37: 'declining', 38: 'declining', 39: 'declining', 40: 'declining', 41: 'trending', 42: 'trending', 43: 'declining', 44: 'declining', 45: 'declining', 46: 'declining', 47: 'declining', 48: 'declining', 49: 'declining', 50: 'trending', 51: 'declining', 52: 'declining', 53: 'trending', 54: 'declining', 55: 'declining', 56: 'declining', 57: 'trending', 58: 'trending', 59: 'declining', 60: 'declining', 61: 'declining', 62: 'declining', 63: 'declining', 64: 'declining', 65: 'declining', 66: 'trending', 67: 'trending', 68: 'declining', 69: 'declining', 70: 'declining', 71: 'trending', 72: 'trending', 73: 'declining', 74: 'trending', 75: 'declining', 76: 'declining', 77: 'trending', 78: 'declining', 79: 'trending', 80: 'declining', 81: 'trending', 82: 'trending', 83: 'declining', 84: 'declining', 85: 'trending', 86: 'declining', 87: 'declining', 88: 'declining', 89: 'declining'}
+
+These are the emerging + trending topics:
+
+['supply_chain' 'supply' 'use' 'food' 'chain' 'lean_agile' 'potential'
+ 'production' 'result' 'research']
+['study' 'research' 'use' 'model' 'performance' 'cost' 'supply_chain'
+ 'quality' 'technology' 'factor']
+['use' 'supply_chain' 'research' 'study' 'chain' 'supply' 'waste'
+ 'production' 'management' 'waste_management']
+['model' 'use' 'result' 'propose' 'impact' 'method' 'approach'
+ 'environmental' 'performance' 'show']
+['supply_chain' 'production' 'chain' 'supply' 'energy' 'use'
+ 'environmental' 'study' 'model' 'impact']
+['supply_chain' 'circular_economy' 'circular' 'study' 'supply' 'chain'
+ 'use' 'research' 'result' 'environmental']
+['supply_chain' 'use' 'supply' 'environmental' 'system' 'model' 'chain'
+ 'research' 'service' 'scenario']
+['use' 'supply' 'supply_chain' 'model' 'information' 'study' 'chain'
+ 'impact' 'management' 'research']
+['supply_chain' 'chain' 'supply' 'waste' 'management' 'waste_management'
+ 'protein' 'risk_management' 'chain_risk' 'municipal_solid']
+['framework' 'use' 'supplier' 'method' 'study' 'research'
+ 'supplier_selection' 'criterion' 'ai' 'supply_chain']
+['model' 'study' 'use' 'supply_chain' 'supply' 'time' 'time_series'
+ 'result' 'dye' 'chain']
+['result' 'supply_chain' 'supply' 'government_subsidy' 'product' 'base'
+ 'government' 'manufacturer' 'chain' 'subsidy']
+['supply_chain' 'model' 'research' 'study' 'supply' 'management'
+ 'consumer' 'product' 'performance' 'contract']
+['model' 'supply_chain' 'study' 'use' 'supply' 'chain' 'business'
+ 'production' 'business_model' 'impact']
+['model' 'supply_chain' 'supply' 'use' 'business_model' 'study' 'chain'
+ 'effect' 'show' 'glass_fiber']
+['use' 'study' 'waste' 'model' 'supply_chain' 'high' 'impact'
+ 'environmental' 'result' 'supply']
+
+Topic Matrix:
+
+Growth     declining  trending
+Emergence                     
+emerging          48        16
+popular           12        14
+[?2004hphagen@imw-gpu-srv-2:/datadrive/projects/wsa-mg22$ 

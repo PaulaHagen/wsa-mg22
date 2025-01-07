@@ -1,0 +1,24 @@
+jupyter
+# !!! install manually: octis==1.13.1 --no-dependencies
+gensim==4.2.0
+nltk==3.8.1
+pandas==2.0.0 #2.2.2
+spacy==3.7.5
+scikit-learn==1.1.0
+scikit-optimize==0.10.2
+matplotlib==3.9.0
+torch==2.0.0 #2.3.1
+numpy==1.23.0
+libsvm==3.23.0.4
+flask==3.0.3
+sentence_transformers==3.0.0
+requests==2.32.3
+tomotopy==0.12.7
+scipy==1.10.0
+dcl==1.0.0
+rbo==0.1.3
+dill
+
+openai
+python-dotenv
+logging
