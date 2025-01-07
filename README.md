@@ -14,7 +14,7 @@ In case you want to execute any of the code, I recommend using the psychology da
 Alternatively, you can check the log files in the "logs" folder.
 
 ### Evaluation
-"run_for_evaluation.py" carries out the proposed evaluation method. For using the OpenAI API, you need to put a valid API key in the .env file. Alternatively you can generate one by hand and plug it in the create_artificial_topic() function from src.evaluation_with_artificial_data.py and it will create the artificial data on the base of this hard-coded topic.
+"run_for_adding_artificial_data.py" --> "run_for_evaluation.py" carries out the proposed evaluation method. For using the OpenAI API, you need to put a valid API key in the .env file. Alternatively you can generate one by hand and plug it in the create_artificial_topic() function from src.evaluation_with_artificial_data.py and it will create the artificial data on the base of this hard-coded topic.
 
 ### Visualisation
 vis.ipynb and the "graphs" folder contain graphs used in the thesis.
